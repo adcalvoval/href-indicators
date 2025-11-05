@@ -218,64 +218,108 @@ async function loadIndicatorData() {
     }
 }
 
+// Parse CSV with proper handling of quoted fields
+function parseCSVLine(line) {
+    const result = [];
+    let current = '';
+    let inQuotes = false;
+
+    for (let i = 0; i < line.length; i++) {
+        const char = line[i];
+
+        if (char === '"') {
+            inQuotes = !inQuotes;
+        } else if (char === ',' && !inQuotes) {
+            result.push(current.trim());
+            current = '';
+        } else {
+            current += char;
+        }
+    }
+    result.push(current.trim());
+    return result;
+}
+
 // Load data from CSV file
 async function loadDataFile(fileName, indicatorId, year) {
     try {
         const response = await fetch(`Portfolios/${fileName}`);
         const csvText = await response.text();
 
-        // Parse CSV
-        const rows = csvText.split('\n');
-        const headers = rows[0].split(',');
+        // Parse CSV with proper handling
+        const lines = csvText.split('\n').filter(line => line.trim());
+        const headers = parseCSVLine(lines[0]);
 
         const data = [];
         const targetCountries = categoriesData.countries.map(c => c.name);
 
-        for (let i = 1; i < rows.length; i++) {
-            const row = rows[i].split(',');
-            if (row.length < headers.length) continue;
+        // Determine CSV type
+        const isWHO = headers.includes('GEO_NAME_SHORT') || headers.includes('DIM_TIME');
+        const isWorldBank = headers.includes('Country Name') && headers.some(h => h.includes('[YR'));
+
+        console.log(`Loading ${fileName}: ${isWHO ? 'WHO' : isWorldBank ? 'World Bank' : 'Unknown'} format`);
+
+        for (let i = 1; i < lines.length; i++) {
+            const values = parseCSVLine(lines[i]);
+            if (values.length < 2) continue;
 
             const rowData = {};
             headers.forEach((header, index) => {
-                rowData[header.trim()] = row[index] ? row[index].trim() : '';
+                rowData[header] = values[index] || '';
             });
 
-            // Check if this row matches our criteria
+            // Get country name
             const countryName = rowData['Country Name'] || rowData['GEO_NAME_SHORT'];
-            if (targetCountries.includes(countryName)) {
-                // For year-based data, extract the value for the selected year
-                // This is a simplified parser - you may need to adjust based on actual CSV structure
+            if (!countryName || !targetCountries.includes(countryName)) continue;
+
+            // Extract value based on CSV type
+            let value = null;
+
+            if (isWHO) {
+                // WHO format: check if row matches the year in DIM_TIME
+                const rowYear = rowData['DIM_TIME'];
+                if (rowYear == year) {
+                    // Try different value columns
+                    value = extractValueFromRow(rowData, [
+                        'PERCENT_POP_N', 'Value', 'Numeric', 'VALUE',
+                        'Rate', 'RATE', 'Prevalence', 'Incidence'
+                    ]);
+                }
+            } else if (isWorldBank) {
+                // World Bank format: year is in column header
+                const yearColumn = `${year} [YR${year}]`;
+                value = parseFloat(rowData[yearColumn]);
+            }
+
+            if (value !== null && !isNaN(value)) {
                 data.push({
                     country: countryName,
-                    value: extractValue(rowData, year),
+                    value: value,
                     rowData: rowData
                 });
             }
         }
 
-        return data.filter(d => d.value !== null && d.value !== '');
+        console.log(`Found ${data.length} data points for year ${year}`);
+        return data;
+
     } catch (error) {
         console.error('Error parsing CSV:', error);
         throw error;
     }
 }
 
-// Extract value from row data based on year
-function extractValue(rowData, year) {
-    // Check various possible column formats
-    const possibleKeys = [
-        `${year} [YR${year}]`,
-        `${year}`,
-        'PERCENT_POP_N',
-        'Value'
-    ];
-
-    for (let key of possibleKeys) {
-        if (rowData[key] && rowData[key] !== '..' && rowData[key] !== '') {
-            return parseFloat(rowData[key]);
+// Extract value from row trying multiple column names
+function extractValueFromRow(rowData, possibleColumns) {
+    for (let col of possibleColumns) {
+        const val = rowData[col];
+        if (val && val !== '..' && val !== '' && val !== 'N/A') {
+            const parsed = parseFloat(val);
+            if (!isNaN(parsed)) {
+                return parsed;
+            }
         }
     }
-
     return null;
 }
 
