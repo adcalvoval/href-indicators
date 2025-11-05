@@ -1,0 +1,493 @@
+{
+  "categories": [
+    {
+      "id": "dref",
+      "name": "DREF - Disaster Response Emergency Fund",
+      "color": "#DC2626",
+      "indicators": [
+        {
+          "id": "ACTIVE_DREFS",
+          "name": "Active DREFs",
+          "file": "API",
+          "unit": "count",
+          "description": "Currently active DREF operations"
+        }
+      ]
+    },
+    {
+      "id": "wash",
+      "name": "Water, Sanitation & Hygiene",
+      "color": "#2196F3",
+      "indicators": [
+        {
+          "id": "WSH_SANITATION_SAFELY_MANAGED",
+          "name": "Safely Managed Sanitation Services",
+          "file": "12EE54A_ALL_LATEST.csv",
+          "unit": "% of population",
+          "description": "Percentage of population using safely managed sanitation services"
+        },
+        {
+          "id": "WSH_WATER_SAFELY_MANAGED",
+          "name": "Safely Managed Drinking Water",
+          "file": "1548EA3_ALL_LATEST.csv",
+          "unit": "% of population",
+          "description": "Percentage of population using safely managed drinking-water services"
+        },
+        {
+          "id": "WSH_HYGIENE_BASIC",
+          "name": "Hand-washing Facilities",
+          "file": "D1223E8_ALL_LATEST.csv",
+          "unit": "% of population",
+          "description": "Population using hand-washing facilities with soap and water"
+        },
+        {
+          "id": "WSH_DOMESTIC_WASTE_SAFELY_TREATED",
+          "name": "Treated Domestic Wastewater",
+          "file": "A37BDD6_ALL_LATEST.csv",
+          "unit": "%",
+          "description": "Percentage of safely treated domestic wastewater flows"
+        },
+        {
+          "id": "SDGWSHBOD",
+          "name": "Deaths from Unsafe WASH",
+          "file": "ED50112_ALL_LATEST.csv",
+          "unit": "per 100,000",
+          "description": "Deaths attributed to unsafe water, sanitation and hygiene services"
+        }
+      ]
+    },
+    {
+      "id": "mortality",
+      "name": "Mortality & Life Expectancy",
+      "color": "#E91E63",
+      "indicators": [
+        {
+          "id": "WHOSIS_000001",
+          "name": "Life Expectancy at Birth",
+          "file": "90E2E48_ALL_LATEST.csv",
+          "unit": "years",
+          "description": "Life expectancy at birth"
+        },
+        {
+          "id": "WHOSIS_000002",
+          "name": "Healthy Life Expectancy",
+          "file": "C64284D_ALL_LATEST.csv",
+          "unit": "years",
+          "description": "Healthy life expectancy (HALE) at birth"
+        },
+        {
+          "id": "MDG_0000000007",
+          "name": "Under-5 Mortality Rate",
+          "file": "2322814_ALL_LATEST.csv",
+          "unit": "per 1,000 live births",
+          "description": "Mortality rate for children under 5 years"
+        },
+        {
+          "id": "WHOSIS_000003",
+          "name": "Neonatal Mortality Rate",
+          "file": "A4C49D3_ALL_LATEST.csv",
+          "unit": "per 1,000 live births",
+          "description": "Mortality rate for neonatal period (0-27 days)"
+        },
+        {
+          "id": "MDG_0000000026",
+          "name": "Maternal Mortality Ratio",
+          "file": "AC597B1_ALL_LATEST.csv",
+          "unit": "per 100,000 live births",
+          "description": "Maternal deaths per 100,000 live births"
+        },
+        {
+          "id": "SDGSUICIDE",
+          "name": "Suicide Deaths",
+          "file": "16BBF41_ALL_LATEST.csv",
+          "unit": "per 100,000",
+          "description": "Suicide mortality rate"
+        },
+        {
+          "id": "NCDMORT3070",
+          "name": "NCD Deaths (Ages 30-70)",
+          "file": "1F96863_ALL_LATEST.csv",
+          "unit": "per 100 population",
+          "description": "Probability of dying from NCDs between ages 30-70"
+        },
+        {
+          "id": "RS_198",
+          "name": "Road Traffic Deaths",
+          "file": "D6176E2_ALL_LATEST.csv",
+          "unit": "per 100,000",
+          "description": "Road traffic mortality rate"
+        }
+      ]
+    },
+    {
+      "id": "infectious",
+      "name": "Infectious Diseases",
+      "color": "#FF9800",
+      "indicators": [
+        {
+          "id": "MALARIA_EST_INCIDENCE",
+          "name": "Malaria Cases",
+          "file": "442CEA8_ALL_LATEST.csv",
+          "unit": "per 1,000",
+          "description": "Estimated malaria incidence"
+        },
+        {
+          "id": "MDG_0000000020",
+          "name": "Tuberculosis Cases",
+          "file": "C288D13_ALL_LATEST.csv",
+          "unit": "per 100,000",
+          "description": "Tuberculosis incidence rate"
+        },
+        {
+          "id": "SDGHIV",
+          "name": "HIV Infections",
+          "file": "77D059C_ALL_LATEST.csv",
+          "unit": "per 1,000",
+          "description": "HIV infection rate (new infections)"
+        },
+        {
+          "id": "VACCINEPREVENTABLE_WILDPOLIO",
+          "name": "Wild Polio Cases",
+          "file": "7B2BFA6_ALL_LATEST.csv",
+          "unit": "count",
+          "description": "Number of wild polio virus cases"
+        },
+        {
+          "id": "SDGNTDTREATMENT",
+          "name": "Neglected Tropical Diseases",
+          "file": "2D6FBE4_ALL_LATEST.csv",
+          "unit": "count",
+          "description": "People requiring interventions against NTDs"
+        },
+        {
+          "id": "SDGHEPHBSAGPRV",
+          "name": "Hepatitis B in Children",
+          "file": "F513188_ALL_LATEST.csv",
+          "unit": "%",
+          "description": "HBsAg prevalence in children under 5"
+        }
+      ]
+    },
+    {
+      "id": "nutrition",
+      "name": "Nutrition",
+      "color": "#4CAF50",
+      "indicators": [
+        {
+          "id": "NUTSTUNTINGPREV",
+          "name": "Child Stunting",
+          "file": "5F8A486_ALL_LATEST.csv",
+          "unit": "%",
+          "description": "Prevalence of stunting in children under 5"
+        },
+        {
+          "id": "NUTOVERWEIGHTPREV",
+          "name": "Child Overweight",
+          "file": "64E2430_ALL_LATEST.csv",
+          "unit": "%",
+          "description": "Prevalence of overweight in children under 5"
+        },
+        {
+          "id": "NCD_BMI_30A",
+          "name": "Adult Obesity",
+          "file": "BEFA58B_ALL_LATEST.csv",
+          "unit": "%",
+          "description": "Prevalence of obesity (BMI ≥30) in adults"
+        },
+        {
+          "id": "NCD_BMI_PLUS2C",
+          "name": "Child & Adolescent Obesity",
+          "file": "EF93DDB_ALL_LATEST.csv",
+          "unit": "%",
+          "description": "Prevalence of obesity in children ages 5-19"
+        },
+        {
+          "id": "NUTRITION_ANAEMIA_REPRODUCTIVEAGE_PREV",
+          "name": "Anaemia in Women",
+          "file": "8D58801_ALL_LATEST.csv",
+          "unit": "%",
+          "description": "Prevalence of anaemia in women of reproductive age"
+        }
+      ]
+    },
+    {
+      "id": "immunization",
+      "name": "Immunization",
+      "color": "#9C27B0",
+      "indicators": [
+        {
+          "id": "WHS4_100",
+          "name": "DTP3 Coverage",
+          "file": "F8E084C_ALL_LATEST.csv",
+          "unit": "%",
+          "description": "DTP3 immunization coverage in 1-year-olds"
+        },
+        {
+          "id": "MCV2",
+          "name": "Measles MCV2 Coverage",
+          "file": "BB4567B_ALL_LATEST.csv",
+          "unit": "%",
+          "description": "Measles second dose immunization coverage"
+        },
+        {
+          "id": "PCV3",
+          "name": "PCV3 Coverage",
+          "file": "D45F91C_ALL_LATEST.csv",
+          "unit": "%",
+          "description": "Pneumococcal conjugate vaccine coverage in 1-year-olds"
+        },
+        {
+          "id": "SDGHPVRECEIVED",
+          "name": "HPV Coverage",
+          "file": "287D1D2_ALL_LATEST.csv",
+          "unit": "%",
+          "description": "HPV immunization coverage for 15-year-old girls"
+        }
+      ]
+    },
+    {
+      "id": "workforce",
+      "name": "Health Workforce",
+      "color": "#795548",
+      "indicators": [
+        {
+          "id": "HWF_0001",
+          "name": "Doctors Density",
+          "file": "217795A_ALL_LATEST.csv",
+          "unit": "per 10,000",
+          "description": "Number of doctors per 10,000 population"
+        },
+        {
+          "id": "HWF_0006",
+          "name": "Nurses & Midwives Density",
+          "file": "5C8435F_ALL_LATEST.csv",
+          "unit": "per 10,000",
+          "description": "Number of nurses and midwives per 10,000 population"
+        },
+        {
+          "id": "HWF_0014",
+          "name": "Pharmacists Density",
+          "file": "45CA7C8_ALL_LATEST.csv",
+          "unit": "per 10,000",
+          "description": "Number of pharmacists per 10,000 population"
+        },
+        {
+          "id": "HWF_0010",
+          "name": "Dentists Density",
+          "file": "9F88C44_ALL_LATEST.csv",
+          "unit": "per 10,000",
+          "description": "Number of dentists per 10,000 population"
+        }
+      ]
+    },
+    {
+      "id": "health_systems",
+      "name": "Health Systems & Access",
+      "color": "#00BCD4",
+      "indicators": [
+        {
+          "id": "UHC_INDEX_REPORTED",
+          "name": "UHC Service Coverage Index",
+          "file": "9A706FD_ALL_LATEST.csv",
+          "unit": "index (0-100)",
+          "description": "Universal Health Coverage service coverage index"
+        },
+        {
+          "id": "SDGHEALTHFACILITIESESSENTIALMEDS",
+          "name": "Essential Medicines Access",
+          "file": "D2A45A5_ALL_LATEST.csv",
+          "unit": "%",
+          "description": "Health facilities with essential medicines available"
+        },
+        {
+          "id": "SDGIHR2021",
+          "name": "IHR Core Capacity",
+          "file": "FDBB8E8_ALL_LATEST.csv",
+          "unit": "index",
+          "description": "International Health Regulations core capacity score"
+        }
+      ]
+    },
+    {
+      "id": "ncd_risk",
+      "name": "NCD Risk Factors",
+      "color": "#F44336",
+      "indicators": [
+        {
+          "id": "NCD_HYP_PREVALENCE_A",
+          "name": "Hypertension",
+          "file": "608DE39_ALL_LATEST.csv",
+          "unit": "%",
+          "description": "Prevalence of raised blood pressure in adults ages 30-79"
+        },
+        {
+          "id": "M_Est_tob_curr_std",
+          "name": "Tobacco Use",
+          "file": "75DDA77_ALL_LATEST.csv",
+          "unit": "%",
+          "description": "Age-standardized prevalence of current tobacco use"
+        },
+        {
+          "id": "SA_0000001688",
+          "name": "Alcohol Consumption",
+          "file": "EE6F72A_ALL_LATEST.csv",
+          "unit": "liters per capita",
+          "description": "Total alcohol consumption per capita (age 15+)"
+        }
+      ]
+    },
+    {
+      "id": "reproductive",
+      "name": "Reproductive Health",
+      "color": "#E91E63",
+      "indicators": [
+        {
+          "id": "SDGFPALL",
+          "name": "Family Planning Coverage",
+          "file": "8074BD9_ALL_LATEST.csv",
+          "unit": "%",
+          "description": "Women with family planning needs satisfied with modern methods"
+        }
+      ]
+    },
+    {
+      "id": "environmental",
+      "name": "Environmental Health",
+      "color": "#607D8B",
+      "indicators": [
+        {
+          "id": "SDGPM25",
+          "name": "Air Pollution (PM2.5)",
+          "file": "F810947_ALL_LATEST.csv",
+          "unit": "μg/m³",
+          "description": "Annual mean PM2.5 concentration in urban areas"
+        }
+      ]
+    },
+    {
+      "id": "economic",
+      "name": "Economic Indicators",
+      "color": "#FFC107",
+      "indicators": [
+        {
+          "id": "NY.GNP.PCAP.CD",
+          "name": "GNI per capita",
+          "file": "WB Data 25b.csv",
+          "unit": "current US$",
+          "description": "Gross National Income per capita, Atlas method"
+        },
+        {
+          "id": "NY.GDP.PCAP.KD.ZG",
+          "name": "GDP per capita growth",
+          "file": "WB Data 25b.csv",
+          "unit": "annual %",
+          "description": "Annual percentage growth rate of GDP per capita"
+        },
+        {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "name": "GDP growth",
+          "file": "WB Data 25b.csv",
+          "unit": "annual %",
+          "description": "Annual percentage growth rate of GDP"
+        }
+      ]
+    },
+    {
+      "id": "poverty",
+      "name": "Poverty",
+      "color": "#9E9E9E",
+      "indicators": [
+        {
+          "id": "POVERTY_HEADCOUNT_NATIONAL",
+          "name": "National Poverty Headcount",
+          "file": "WB Data 25b.csv",
+          "unit": "%",
+          "description": "Population below national poverty line"
+        },
+        {
+          "id": "MULTIDIM_POVERTY_UNDP",
+          "name": "Multidimensional Poverty (UNDP)",
+          "file": "WB Data 25b.csv",
+          "unit": "%",
+          "description": "Percentage in multidimensional poverty (UNDP)"
+        }
+      ]
+    },
+    {
+      "id": "health_expenditure",
+      "name": "Health Expenditure",
+      "color": "#3F51B5",
+      "indicators": [
+        {
+          "id": "SH.XPD.CHEX.GD.ZS",
+          "name": "Health Expenditure (% of GDP)",
+          "file": "WB Data 25b.csv",
+          "unit": "% of GDP",
+          "description": "Current health expenditure as percentage of GDP"
+        },
+        {
+          "id": "SH.XPD.CHEX.PP.CD",
+          "name": "Health Expenditure per capita",
+          "file": "WB Data 25b.csv",
+          "unit": "PPP $",
+          "description": "Per capita health expenditure in PPP dollars"
+        },
+        {
+          "id": "OUT_OF_POCKET_HEALTH",
+          "name": "Out-of-pocket Health Spending",
+          "file": "WB Data 25b.csv",
+          "unit": "% of health expenditure",
+          "description": "Share of health spending paid directly by households"
+        }
+      ]
+    },
+    {
+      "id": "demographic",
+      "name": "Demographics",
+      "color": "#009688",
+      "indicators": [
+        {
+          "id": "POPULATION_TOTAL",
+          "name": "Total Population",
+          "file": "WB Data 25b.csv",
+          "unit": "count",
+          "description": "Total population"
+        },
+        {
+          "id": "POPULATION_GROWTH",
+          "name": "Population Growth",
+          "file": "WB Data 25b.csv",
+          "unit": "annual %",
+          "description": "Annual population growth rate"
+        }
+      ]
+    }
+  ],
+  "countries": [
+    {"name": "Afghanistan", "code": "AFG"},
+    {"name": "Bangladesh", "code": "BGD"},
+    {"name": "Burkina Faso", "code": "BFA"},
+    {"name": "Cameroon", "code": "CMR"},
+    {"name": "Central African Republic", "code": "CAF"},
+    {"name": "Chad", "code": "TCD"},
+    {"name": "Colombia", "code": "COL"},
+    {"name": "Congo DR", "code": "COD"},
+    {"name": "Ethiopia", "code": "ETH"},
+    {"name": "Haiti", "code": "HTI"},
+    {"name": "Lebanon", "code": "LBN"},
+    {"name": "Mali", "code": "MLI"},
+    {"name": "Mozambique", "code": "MOZ"},
+    {"name": "Myanmar", "code": "MMR"},
+    {"name": "Niger", "code": "NER"},
+    {"name": "Nigeria", "code": "NGA"},
+    {"name": "Pakistan", "code": "PAK"},
+    {"name": "Somalia", "code": "SOM"},
+    {"name": "South Sudan", "code": "SSD"},
+    {"name": "Sudan", "code": "SDN"},
+    {"name": "Syria", "code": "SYR"},
+    {"name": "Uganda", "code": "UGA"},
+    {"name": "Ukraine", "code": "UKR"},
+    {"name": "Venezuela", "code": "VEN"},
+    {"name": "Yemen", "code": "YEM"}
+  ]
+}

@@ -1,0 +1,1566 @@
+Series Name,Series Code,Country Name,Country Code,2018 [YR2018],2019 [YR2019],2020 [YR2020],2021 [YR2021],2022 [YR2022],2023 [YR2023],2024 [YR2024]
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,Afghanistan,AFG,520,520,490,380,370,370,..
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,Bangladesh,BGD,2020,2220,2320,2600,2850,2880,2820
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,Burkina Faso,BFA,730,750,780,830,860,860,880
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,Cameroon,CMR,1520,1560,1540,1610,1660,1690,1680
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,Central African Republic,CAF,470,500,490,510,520,530,520
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,Chad,TCD,890,920,890,890,1000,1000,970
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,"Congo, Dem. Rep.",COD,460,490,520,540,590,640,640
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,Colombia,COL,6350,6630,5850,6310,6560,6720,7040
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,Ethiopia,ETH,770,820,860,930,1010,..,..
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,Haiti,HTI,1430,1410,1340,1450,1620,1760,1760
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,Lebanon,LBN,8700,8630,6350,4770,4170,3730,..
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,Mali,MLI,930,960,930,960,990,1010,1020
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,Mozambique,MOZ,470,500,480,490,500,540,550
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,Myanmar,MMR,1310,1380,1320,1240,1290,1230,1220
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,Niger,NER,580,610,560,600,600,640,660
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,Nigeria,NGA,1950,2050,2060,2110,2120,1880,1250
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,Pakistan,PAK,1560,1520,1370,1420,1510,1460,1430
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,"Somalia, Fed. Rep.",SOM,510,520,500,540,570,590,600
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,South Sudan,SSD,..,..,..,..,..,..,..
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,Sudan,SDN,810,720,600,620,720,640,720
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,Syrian Arab Republic,SYR,810,970,790,700,710,770,..
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,Uganda,UGA,770,810,820,860,930,970,1020
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,Ukraine,UKR,2720,3270,3530,4060,3930,4980,5220
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,"Venezuela, RB",VEN,..,..,..,..,..,..,..
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,"Yemen, Rep.",YEM,740,..,..,..,..,..,..
+"GNI per capita, Atlas method (current US$)",NY.GNP.PCAP.CD,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,Afghanistan,AFG,-1.713742693,0.856294729,-5.382514642,-22.58448187,-7.576668912,0.106092801,..
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,Bangladesh,BGD,6.441974947,6.972643998,2.586478166,6.07069417,6.008474629,4.490704094,2.96499838
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,Burkina Faso,BFA,3.767726783,3.243918662,-0.443420002,4.431005409,-0.819552931,0.64957799,2.653443724
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,Cameroon,CMR,1.115149469,0.636415291,-2.434760311,0.631351992,1.045029975,0.555787082,0.997232288
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,Central African Republic,CAF,1.978031976,1.722901598,-0.744488615,-0.705468756,0.730965732,-0.362884525,-1.856057153
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,Chad,TCD,2.247689721,2.049286083,-3.527966683,-3.101573735,9.060809281,-0.537599858,-1.350074347
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,"Congo, Dem. Rep.",COD,2.337633681,1.127913721,-1.48924363,2.816564591,5.469359924,5.125907589,3.272361748
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,Colombia,COL,0.695264947,1.36014068,-8.509494776,9.592978284,6.187799537,-0.410230298,0.656437667
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,Ethiopia,ETH,3.974075459,5.48664148,3.223115995,2.855657631,2.595399676,3.854750252,4.579667789
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,Haiti,HTI,0.32667856,-2.986837119,-4.498164422,-2.926958043,-2.784680848,-2.992128438,-5.269848333
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,Lebanon,LBN,1.00112837,-3.870371669,-20.12909838,-7.25697163,-1.077821926,-1.259128421,..
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,Mali,MLI,1.640975264,1.87829273,-4.106766109,-0.006524311,0.439682902,1.648720986,1.961178244
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,Mozambique,MOZ,0.445674339,-0.646283516,-4.105273995,-0.606316437,1.333359974,2.368236363,-1.079236062
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,Myanmar,MMR,5.501797464,5.833094747,-9.693060345,-12.62710001,3.322028415,0.255328678,-1.637609453
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,Niger,NER,3.574788852,2.43270219,0.189464641,-1.86257596,8.319863726,-1.627618809,4.921994414
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,Nigeria,NGA,-0.406836852,-0.010004759,-3.864201003,1.497160848,1.113267394,0.724295704,1.29437207
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,Pakistan,PAK,4.442019422,0.778096107,-3.038893283,4.523045652,2.962502872,-1.576098987,1.688057462
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,"Somalia, Fed. Rep.",SOM,-1.484702379,-0.886143106,-6.37473582,-0.257094286,-0.333977531,1.056062208,0.414153603
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,South Sudan,SSD,..,..,..,..,..,..,..
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,Sudan,SDN,-6.01716756,-5.007959438,-6.185958079,-4.477007796,-3.598008466,-30.36317357,-14.1897699
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,Syrian Arab Republic,SYR,-0.435918888,-2.636894526,-3.980110715,-0.874333294,-3.004348297,-5.948930711,..
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,Uganda,UGA,2.753003825,2.889586902,-0.423922683,0.258075577,1.489270851,2.427594598,3.253613878
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,Ukraine,UKR,4.099379754,3.872846983,-3.084585764,4.410508833,-22.7456813,15.44802199,2.531181661
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,"Venezuela, RB",VEN,..,..,..,..,..,..,..
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,"Yemen, Rep.",YEM,-2.186490193,..,..,..,..,..,..
+GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,Afghanistan,AFG,1.189228129,3.911603416,-2.351100672,-20.73883937,-6.240171992,2.266943736,..
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,Bangladesh,BGD,7.31941263,7.881915151,3.448017551,6.938679124,7.099828776,5.77511237,4.223259113
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,Burkina Faso,BFA,6.604569068,5.889204971,2.010772624,6.942524926,1.497239741,2.960181474,4.985103006
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,Cameroon,CMR,3.955514239,3.475059982,0.259932916,3.338857472,3.736784006,3.248344978,3.670742847
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,Central African Republic,CAF,3.789443593,3.1,0.899999997,0.982919996,0.453901882,0.69996839,1.539632475
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,Chad,TCD,5.741115808,5.388656469,-0.408894363,0.293979163,12.89661643,4.117451792,3.654451105
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,"Congo, Dem. Rep.",COD,5.8211211,4.384528874,1.735422767,6.200154011,8.924447851,8.609089723,6.67593029
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,Colombia,COL,2.564324283,3.186855392,-7.185914138,10.80119819,7.328277294,0.712380032,1.74380145
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,Ethiopia,ETH,6.816147786,8.364085733,6.059530891,5.641530693,5.321759884,6.594245994,7.316691128
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,Haiti,HTI,1.667810955,-1.723096998,-3.30550547,-1.798239889,-1.681983969,-1.863884203,-4.169633958
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,Lebanon,LBN,-1.884705756,-6.914924729,-21.39989969,-7.001238625,-0.621678971,-0.76058447,..
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,Mali,MLI,4.867849999,4.999999117,-1.16907501,3.100941244,3.50828279,4.71716104,5.004545937
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,Mozambique,MOZ,3.484932024,2.317813948,-1.2195225,2.377435728,4.364450744,5.436859123,1.851775025
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,Myanmar,MMR,6.268862215,6.579110068,-9.04834718,-12.01637248,4.037493436,0.958446625,-0.972046414
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,Niger,NER,7.211418028,5.939852571,3.550641094,1.383596362,11.9,1.667634065,8.421597895
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,Nigeria,NGA,1.922757342,2.208429277,-1.794253083,3.647186541,3.251681408,2.860214991,3.426439471
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,Pakistan,PAK,6.151702611,2.497636929,-1.274087443,6.513885759,4.778106869,-0.039838972,3.234784432
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,"Somalia, Fed. Rep.",SOM,2.054315073,2.824313365,-2.752481039,3.458227929,2.727114296,4.216384326,3.972320809
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,South Sudan,SSD,..,..,..,..,..,..,..
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,Sudan,SDN,-2.68093055,-2.178251045,-3.629800824,-1.868520483,-0.957816591,-29.43327183,-13.49329206
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,Syrian Arab Republic,SYR,1.393176078,1.220705221,-0.697154504,1.854215901,0.732781302,-1.207264203,..
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,Uganda,UGA,6.303923783,6.438745033,2.951306422,3.536580341,4.588021922,5.336972955,6.136452018
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,Ukraine,UKR,3.48836234,3.199503864,-3.75281794,3.445620659,-28.75858422,5.534733547,2.913822215
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,"Venezuela, RB",VEN,..,..,..,..,..,..,..
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,"Yemen, Rep.",YEM,0.752447592,..,..,..,..,..,..
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,Afghanistan,AFG,14.20841885,14.83131981,15.53361416,21.508461,23.0881691,..,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,Bangladesh,BGD,2.31622243,2.25762248,2.27063942,2.36551309,2.39038587,..,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,Burkina Faso,BFA,4.9995389,5.36802721,6.57714844,6.40747881,6.77182007,..,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,Cameroon,CMR,3.61970162,3.65157914,4.25051928,4.30539274,4.47835922,..,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,Central African Republic,CAF,10.99526691,7.76140118,8.98555374,9.15270615,9.95509052,..,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,Chad,TCD,3.2893219,3.38253808,4.4533143,4.17851543,4.52549791,..,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,"Congo, Dem. Rep.",COD,3.24127173,3.508039,3.97694445,3.67749357,3.78614616,..,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,Colombia,COL,7.62541389,7.77954912,8.71432114,9.01772404,7.57361269,7.69168758,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,Ethiopia,ETH,3.30371761,3.24287128,3.48096275,3.2075386,2.85274577,..,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,Haiti,HTI,4.31650305,3.91107917,3.22171092,3.44216156,3.20848918,..,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,Lebanon,LBN,8.07092381,8.6936779,7.57650805,4.85634661,5.73500204,..,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,Mali,MLI,3.73249912,3.82943797,3.47597885,3.46649742,3.67284775,..,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,Mozambique,MOZ,7.97903347,7.90207434,7.54172373,8.86981869,8.77717781,..,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,Myanmar,MMR,4.89992189,4.07903337,4.38807583,5.83599281,5.20476246,..,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,Niger,NER,5.30310822,5.66642094,6.17007589,5.81452751,4.35259724,..,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,Nigeria,NGA,3.09069347,2.98547053,3.38063431,4.07625723,4.27090406,..,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,Pakistan,PAK,2.82844949,2.84736943,2.95273018,2.99015832,2.90434051,..,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,"Somalia, Fed. Rep.",SOM,2.37169838,2.19059515,2.24750042,2.56882048,2.62183189,..,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,South Sudan,SSD,10.05650043,9.03741074,9.31798267,6.25598812,6.76125622,..,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,Sudan,SDN,4.46358299,4.57118368,3.00965381,2.83127832,4.61874437,..,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,Syrian Arab Republic,SYR,3.86612964,3.94000149,3.71555972,4.70613527,4.15098715,..,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,Uganda,UGA,4.02143908,3.79371166,5.23698568,5.48128128,4.39089251,..,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,Ukraine,UKR,7.51989269,7.09175062,7.56217051,8.2027483,..,..,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,"Venezuela, RB",VEN,2.41691327,2.18563724,4.11615229,4.10222006,4.55047369,..,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,"Yemen, Rep.",YEM,5.27201796,5.83812618,5.77270842,6.17542744,6.18666697,..,..
+Current health expenditure (% of GDP),SH.XPD.CHEX.GD.ZS,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,Afghanistan,AFG,299.3724978,320.8269919,324.6671049,360.7583878,383.1072879,..,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,Bangladesh,BGD,121.6678472,129.1342641,134.9767455,155.8539874,178.7105474,..,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,Burkina Faso,BFA,104.907253,117.7692301,145.4577741,154.6025995,174.3619201,..,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,Cameroon,CMR,139.8613293,144.5381965,166.4185949,178.5896196,202.4702667,..,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,Central African Republic,CAF,103.100399,75.33766951,87.64989172,92.75722297,109.1965376,..,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,Chad,TCD,69.36658315,70.17754298,92.16868747,86.23505863,93.5078031,..,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,"Congo, Dem. Rep.",COD,33.98077316,36.85118592,43.20407212,44.31031483,49.82165562,..,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,Colombia,COL,1162.067706,1258.854781,1351.406457,1596.078345,1598.868658,1674.415202,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,Ethiopia,ETH,68.99217072,72.7186737,81.6153601,80.84374686,78.95125142,..,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,Haiti,HTI,142.9579129,125.5630728,101.6260508,110.4906957,106.8286646,..,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,Lebanon,LBN,1474.285957,1553.972239,896.6474328,519.1711088,653.2593843,..,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,Mali,MLI,81.46291046,86.47464502,76.86353315,81.28007574,89.90893029,..,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,Mozambique,MOZ,107.5278971,107.7005614,99.85563899,121.9725538,130.913528,..,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,Myanmar,MMR,230.5722181,208.7719798,224.5341118,242.3941562,241.9415465,..,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,Niger,NER,65.79082937,73.61729372,81.18821099,78.46028731,68.17015066,..,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,Nigeria,NGA,155.941742,153.3195974,169.0825165,216.2232304,245.1984672,..,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,Pakistan,PAK,143.4104404,148.1031095,150.8593382,166.8556834,178.5367731,..,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,"Somalia, Fed. Rep.",SOM,37.47890073,35.16998205,34.22350447,40.76260508,44.35373338,..,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,South Sudan,SSD,57.41186394,51.3845086,48.90275145,35.611222,38.51018353,..,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,Sudan,SDN,195.356071,194.064609,149.1127553,121.4949332,122.2726657,..,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,Syrian Arab Republic,SYR,344.8870125,348.783691,385.8585861,503.4659379,453.5876794,..,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,Uganda,UGA,94.76937262,94.25073622,125.098689,140.2988614,127.3554734,..,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,Ukraine,UKR,888.3372433,885.1905648,925.7753724,1094.812868,..,..,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,"Venezuela, RB",VEN,..,79.02016694,96.92451258,102.2402727,131.270981,..,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,"Yemen, Rep.",YEM,96.46250609,107.6533985,95.89004814,103.3352495,109.2885479,..,..
+"Current health expenditure per capita, PPP (current international $)",SH.XPD.CHEX.PP.CD,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,Afghanistan,AFG,..,..,..,-21.62732234,-6.905356865,5.840036276,..
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,Bangladesh,BGD,7.865364776,8.015685031,3.479955963,8.097439923,5.785286436,5.799850591,4.563589003
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,Burkina Faso,BFA,7.773351774,7.810557488,5.250658103,4.443351067,1.839409498,1.98005161,11.75388271
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,Cameroon,CMR,4.53759678,2.858793945,-0.694873955,5.410111001,4.478358988,2.708368669,2.126595548
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,Central African Republic,CAF,26.76822037,3.318359468,-0.75758777,2.156863759,-0.685394115,1.171782204,1.537032984
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,Chad,TCD,6.280309606,-2.624022886,-0.502782308,13.42291356,13.00706591,0.37614392,2.10335683
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,"Congo, Dem. Rep.",COD,9.364751882,-5.060990236,10.12541756,23.44076441,9.851637737,66.65811047,12.47868612
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,Colombia,COL,2.951137658,3.303999308,-7.658192366,12.61884411,7.462913896,1.52421295,2.601065295
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,Ethiopia,ETH,5.021926783,8.115444594,8.675474736,6.802732411,4.969758133,8.046853154,11.05267443
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,Haiti,HTI,-0.230942383,0.274424382,-5.792827447,-1.339682631,0.66956189,0.414006483,-2.607157671
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,Lebanon,LBN,-2.991094216,-6.051411893,-24.33456971,-23.71834267,-6.488754119,4.699096219,..
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,Mali,MLI,5.391531388,5.105437576,4.792783843,2.819723447,4.539598769,4.529647639,5.932920591
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,Mozambique,MOZ,4.694493534,-2.142806405,-1.340593028,4.783653004,2.829784212,4.510161982,3.319934784
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,Myanmar,MMR,..,..,..,..,..,..,..
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,Niger,NER,8.40428556,6.092654307,-5.101010812,8.074859551,15.84462574,8.624506564,13.46663372
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,Nigeria,NGA,..,..,..,..,..,..,..
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,Pakistan,PAK,5.990865109,2.640747159,-0.488487061,7.769543337,2.875946703,3.729200646,4.013544234
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,"Somalia, Fed. Rep.",SOM,1.736697425,2.983326252,-3.001240391,4.252411286,2.432226583,6.742134196,5.987152695
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,South Sudan,SSD,..,..,..,..,..,..,..
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,Sudan,SDN,..,-3.180475758,4.659161135,-0.212982401,1.504213533,-28.95280547,-14.62593781
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,Syrian Arab Republic,SYR,..,..,..,..,..,..,..
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,Uganda,UGA,2.342229614,8.584646861,2.669123493,2.618888159,5.226102392,3.88338443,3.729593978
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,Ukraine,UKR,3.860599458,3.79875264,2.783237905,9.061035711,-22.53542115,3.721896307,3.150632473
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,"Venezuela, RB",VEN,..,..,..,..,..,..,..
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,"Yemen, Rep.",YEM,..,..,..,..,..,..,..
+GNI growth (annual %),NY.GNP.MKTP.KD.ZG,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,Afghanistan,AFG,0.4,0.38,0.34,0.36,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,Bangladesh,BGD,0.88,0.88,..,..,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,Burkina Faso,BFA,..,..,0.2,..,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,Cameroon,CMR,..,..,..,..,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,Central African Republic,CAF,..,..,..,..,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,Chad,TCD,..,..,..,..,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,"Congo, Dem. Rep.",COD,..,..,..,..,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,Colombia,COL,1.73,1.74,1.69,..,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,Ethiopia,ETH,..,..,..,..,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,Haiti,HTI,5.26,4.87,5.03,4.77,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,Lebanon,LBN,2.73,2.73,2.73,2.73,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,Mali,MLI,0.25,..,..,..,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,Mozambique,MOZ,0.76,0.71,0.7,0.73,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,Myanmar,MMR,1.05,1.04,1.06,..,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,Niger,NER,0.24,0.29,0.27,..,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,Nigeria,NGA,..,..,..,..,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,Pakistan,PAK,0.51,0.51,..,..,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,"Somalia, Fed. Rep.",SOM,0.87,0.87,..,..,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,South Sudan,SSD,..,..,..,..,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,Sudan,SDN,0.66,0.66,0.66,..,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,Syrian Arab Republic,SYR,1.26,1.26,1.39,1.43,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,Uganda,UGA,..,..,..,..,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,Ukraine,UKR,6.79,6.67,6.26,..,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,"Venezuela, RB",VEN,1.09,0.93,0.99,..,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,"Yemen, Rep.",YEM,..,..,..,..,..,..,..
+"Hospital beds (per 1,000 people)",SH.MED.BEDS.ZS,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,Afghanistan,AFG,68,65,61,55,58,60,59
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,Bangladesh,BGD,98,98,98,97,97,97,97
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,Burkina Faso,BFA,91,91,91,91,91,91,91
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,Cameroon,CMR,68,67,68,71,71,75,77
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,Central African Republic,CAF,40,38,37,35,33,40,42
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,Chad,TCD,47,53,55,62,66,67,68
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,"Congo, Dem. Rep.",COD,71,73,70,65,65,60,65
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,Colombia,COL,92,92,88,87,87,90,89
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,Ethiopia,ETH,62,61,62,63,63,70,73
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,Haiti,HTI,56,54,58,48,48,54,60
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,Lebanon,LBN,80,80,68,64,64,50,46
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,Mali,MLI,76,77,70,77,75,75,82
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,Mozambique,MOZ,85,85,71,56,55,70,70
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,Myanmar,MMR,91,90,84,37,71,71,71
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,Niger,NER,79,81,81,82,84,85,86
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,Nigeria,NGA,61,66,62,61,59,67,67
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,Pakistan,PAK,80,84,80,83,85,86,87
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,"Somalia, Fed. Rep.",SOM,53,57,55,62,71,69,70
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,South Sudan,SSD,59,61,67,69,73,73,73
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,Sudan,SDN,93,93,90,84,84,51,39
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,Syrian Arab Republic,SYR,60,67,62,59,59,66,73
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,Uganda,UGA,93,93,89,91,89,91,91
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,Ukraine,UKR,67,77,81,77,62,79,88
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,"Venezuela, RB",VEN,60,64,54,56,43,54,62
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,"Yemen, Rep.",YEM,54,60,57,56,58,46,42
+"Immunization, HepB3 (% of one-year-old children)",SH.IMM.HEPB,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,Afghanistan,AFG,59.175,59.91,58.455,57.052,63.941,64.467,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,Bangladesh,BGD,70.379,70.933,69.584,69.484,72.566,73.032,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,Burkina Faso,BFA,58.243,58.335,58.504,58.19,58.773,58.921,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,Cameroon,CMR,59.111,59.629,59.465,59.071,60.326,61.522,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,Central African Republic,CAF,49.403,26.386,47.219,35.327,15.387,55.26,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,Chad,TCD,51.021,51.444,51.341,51.359,52.656,53.195,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,"Congo, Dem. Rep.",COD,58.062,58.358,58.373,57.999,58.885,59.792,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,Colombia,COL,73.663,73.907,71.49,69.288,73.56,74.95,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,Ethiopia,ETH,62.369,62.778,62.779,62.144,63.662,64.078,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,Haiti,HTI,61.278,61.483,60.707,59.681,60.836,61.729,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,Lebanon,LBN,76.26,76.211,73.855,71.022,75.979,75.744,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,Mali,MLI,57.713,58.045,57.464,57.871,58.603,59.036,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,Mozambique,MOZ,58.131,58.518,58.238,57.076,59.776,60.301,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,Myanmar,MMR,63.376,63.574,63.678,62.484,63.281,63.79,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,Niger,NER,58.881,59.129,58.797,58.591,59.47,60.26,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,Nigeria,NGA,52.415,52.769,52.707,53.163,53.778,54.176,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,Pakistan,PAK,64.264,64.493,63.281,63.486,65.115,65.332,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,"Somalia, Fed. Rep.",SOM,52.694,55.241,55.076,53.724,51.791,56.35,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,South Sudan,SSD,49.151,55.734,54.843,54.371,54.289,54.636,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,Sudan,SDN,62.877,63.205,62.413,61.798,63.03,63.272,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,Syrian Arab Republic,SYR,63.031,67.833,69.174,70.235,70.383,69.829,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,Uganda,UGA,62.969,63.475,63.352,63.584,64.697,65.268,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,Ukraine,UKR,68.569,68.866,68.348,67.124,66.193,66.9,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,"Venezuela, RB",VEN,68.902,69.025,68.459,67.683,68.789,68.72,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,"Yemen, Rep.",YEM,62.311,63.337,63.33,63.09,65.665,67.235,..
+"Life expectancy at birth, male (years)",SP.DYN.LE00.MA.IN,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,Afghanistan,AFG,62.443,62.941,61.454,60.417,65.617,66.035,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,Bangladesh,BGD,72.122,72.625,71.421,71.103,74.265,74.672,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,Burkina Faso,BFA,59.972,60.184,60.454,60.046,60.7,61.092,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,Cameroon,CMR,61.189,61.695,61.674,61.146,62.443,63.7,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,Central African Republic,CAF,52.297,31.53,50.596,40.279,18.818,57.408,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,Chad,TCD,52.447,52.993,53.082,53.136,54.528,55.069,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,"Congo, Dem. Rep.",COD,59.926,60.242,60.428,60.044,60.979,61.895,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,Colombia,COL,76.579,76.793,74.757,72.698,76.508,77.725,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,Ethiopia,ETH,65.257,65.741,65.969,65.33,66.897,67.315,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,Haiti,HTI,64.077,64.328,63.773,62.613,63.948,64.936,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,Lebanon,LBN,78.263,78.208,76.299,73.65,78.003,77.817,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,Mali,MLI,58.873,59.217,58.858,59.116,60.035,60.439,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,Mozambique,MOZ,60.79,61.306,61.39,60.268,63.011,63.611,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,Myanmar,MMR,66.232,66.457,66.612,65.553,66.506,66.889,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,Niger,NER,59.765,60.031,59.89,59.542,60.398,61.183,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,Nigeria,NGA,52.669,53.009,53.072,53.455,54.079,54.462,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,Pakistan,PAK,66.481,66.729,65.701,65.773,67.417,67.649,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,"Somalia, Fed. Rep.",SOM,54.767,57.249,57.095,55.703,53.931,58.816,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,South Sudan,SSD,51.905,58.129,57.648,57.047,57.203,57.617,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,Sudan,SDN,65.501,65.803,65.124,64.46,65.695,66.331,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,Syrian Arab Republic,SYR,67.371,70.97,71.944,72.418,72.79,72.12,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,Uganda,UGA,65.775,66.354,66.41,66.45,67.675,68.252,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,Ukraine,UKR,73.569,73.92,73.283,71.631,72.658,73.422,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,"Venezuela, RB",VEN,72.641,72.766,72.369,71.536,72.566,72.514,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,"Yemen, Rep.",YEM,65.915,66.567,66.435,66.019,67.952,69.295,..
+"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,Afghanistan,AFG,65.942,66.144,64.656,64.079,67.236,67.536,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,Bangladesh,BGD,73.953,74.399,73.428,72.847,76.051,76.373,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,Burkina Faso,BFA,61.604,61.948,62.314,61.831,62.558,63.222,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,Cameroon,CMR,63.334,63.825,63.976,63.297,64.634,65.944,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,Central African Republic,CAF,55.201,38.771,54.011,46.032,25.552,59.29,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,Chad,TCD,53.903,54.583,54.893,54.983,56.471,57.014,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,"Congo, Dem. Rep.",COD,61.816,62.153,62.535,62.137,63.116,64.038,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,Colombia,COL,79.517,79.695,78.23,76.349,79.471,80.452,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,Ethiopia,ETH,68.298,68.863,69.368,68.715,70.313,70.726,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,Haiti,HTI,66.988,67.29,67.03,65.712,67.228,68.3,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,Lebanon,LBN,80.093,80.048,78.669,76.357,79.864,79.734,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,Mali,MLI,60.064,60.424,60.316,60.406,61.527,61.9,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,Mozambique,MOZ,63.093,63.736,64.17,63.142,65.867,66.544,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,Myanmar,MMR,69.224,69.478,69.702,68.824,69.935,70.164,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,Niger,NER,60.658,60.947,61.018,60.523,61.344,62.129,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,Nigeria,NGA,52.914,53.24,53.432,53.741,54.375,54.743,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,Pakistan,PAK,68.938,69.2,68.447,68.299,69.928,70.163,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,"Somalia, Fed. Rep.",SOM,56.911,59.31,59.176,57.752,56.159,61.388,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,South Sudan,SSD,54.673,60.474,60.46,59.726,60.131,60.627,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,Sudan,SDN,68.381,68.642,68.153,67.354,68.569,69.626,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,Syrian Arab Republic,SYR,72.185,74.253,74.808,74.594,75.204,74.412,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,Uganda,UGA,68.473,69.13,69.43,69.235,70.544,71.116,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,Ukraine,UKR,78.326,78.73,78.024,76.033,79.413,80.198,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,"Venezuela, RB",VEN,76.554,76.677,76.501,75.619,76.525,76.501,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,"Yemen, Rep.",YEM,69.883,70.061,69.805,69.17,70.319,71.388,..
+"Life expectancy at birth, female (years)",SP.DYN.LE00.FE.IN,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+Income share held by lowest 20%,SI.DST.FRST.20,Afghanistan,AFG,..,..,..,..,..,..,..
+Income share held by lowest 20%,SI.DST.FRST.20,Bangladesh,BGD,..,..,..,..,8.8,..,..
+Income share held by lowest 20%,SI.DST.FRST.20,Burkina Faso,BFA,6.3,..,..,7.3,..,..,..
+Income share held by lowest 20%,SI.DST.FRST.20,Cameroon,CMR,..,..,..,5.4,..,..,..
+Income share held by lowest 20%,SI.DST.FRST.20,Central African Republic,CAF,..,..,..,5.6,..,..,..
+Income share held by lowest 20%,SI.DST.FRST.20,Chad,TCD,7.1,..,..,..,6.9,..,..
+Income share held by lowest 20%,SI.DST.FRST.20,"Congo, Dem. Rep.",COD,..,..,5.5,..,..,..,..
+Income share held by lowest 20%,SI.DST.FRST.20,Colombia,COL,4,3.7,3.1,3.1,3.2,3.4,..
+Income share held by lowest 20%,SI.DST.FRST.20,Ethiopia,ETH,..,..,..,8.3,..,..,..
+Income share held by lowest 20%,SI.DST.FRST.20,Haiti,HTI,..,..,..,..,..,..,..
+Income share held by lowest 20%,SI.DST.FRST.20,Lebanon,LBN,..,..,..,..,6.8,..,..
+Income share held by lowest 20%,SI.DST.FRST.20,Mali,MLI,7.5,..,..,7.6,..,..,..
+Income share held by lowest 20%,SI.DST.FRST.20,Mozambique,MOZ,..,4.5,..,..,4.7,..,..
+Income share held by lowest 20%,SI.DST.FRST.20,Myanmar,MMR,..,..,..,..,..,..,..
+Income share held by lowest 20%,SI.DST.FRST.20,Niger,NER,7.6,..,..,8.7,..,..,..
+Income share held by lowest 20%,SI.DST.FRST.20,Nigeria,NGA,7.1,..,..,..,7.5,..,..
+Income share held by lowest 20%,SI.DST.FRST.20,Pakistan,PAK,9.6,..,..,..,..,..,..
+Income share held by lowest 20%,SI.DST.FRST.20,"Somalia, Fed. Rep.",SOM,..,..,..,..,..,..,..
+Income share held by lowest 20%,SI.DST.FRST.20,South Sudan,SSD,..,..,..,..,..,..,..
+Income share held by lowest 20%,SI.DST.FRST.20,Sudan,SDN,..,..,..,..,..,..,..
+Income share held by lowest 20%,SI.DST.FRST.20,Syrian Arab Republic,SYR,..,..,..,..,9.2,..,..
+Income share held by lowest 20%,SI.DST.FRST.20,Uganda,UGA,..,6.1,..,..,..,..,..
+Income share held by lowest 20%,SI.DST.FRST.20,Ukraine,UKR,9.9,9.7,10,..,..,..,..
+Income share held by lowest 20%,SI.DST.FRST.20,"Venezuela, RB",VEN,..,..,..,..,..,..,..
+Income share held by lowest 20%,SI.DST.FRST.20,"Yemen, Rep.",YEM,..,..,..,..,..,..,..
+Income share held by lowest 20%,SI.DST.FRST.20,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,Afghanistan,AFG,34.3,34.2,34.3,33.5,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,Bangladesh,BGD,16.8,16.8,16.2,16.3,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,Burkina Faso,BFA,22,21.6,21.4,21.3,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,Cameroon,CMR,23.1,22.9,23,23.4,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,Central African Republic,CAF,27.2,27.3,27.4,26.9,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,Chad,TCD,22.6,22.5,23.1,23,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,"Congo, Dem. Rep.",COD,23.5,23,23.4,23.9,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,Colombia,COL,9.5,9.2,9.4,9.1,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,Ethiopia,ETH,17,17.1,16.9,17.2,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,Haiti,HTI,34.3,34.2,34.1,33.6,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,Lebanon,LBN,9.4,9.4,9.6,9,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,Mali,MLI,26.1,25.8,25.8,25.4,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,Mozambique,MOZ,24.2,23.3,23.2,22.3,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,Myanmar,MMR,21.7,21.5,21.3,20.8,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,Niger,NER,21.3,21.3,21.2,21.6,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,Nigeria,NGA,16.1,16.2,16.9,16.9,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,Pakistan,PAK,25.3,25.1,24.9,25,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,"Somalia, Fed. Rep.",SOM,26.7,26.6,26.7,27.1,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,South Sudan,SSD,18.1,18.8,19,19.7,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,Sudan,SDN,21.9,21.7,22.1,22.4,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,Syrian Arab Republic,SYR,18.5,18.3,18.1,17.8,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,Uganda,UGA,18.3,18.6,18.3,18.6,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,Ukraine,UKR,15.9,15.6,15.6,16.5,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,"Venezuela, RB",VEN,14.3,14.5,14.4,15.2,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,"Yemen, Rep.",YEM,23.6,23.8,24.1,23.8,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, female (%)",SH.DYN.NCOM.FE.ZS,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,Afghanistan,AFG,34.6,34.4,34.8,32.7,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,Bangladesh,BGD,19.3,19.2,18.9,18.1,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,Burkina Faso,BFA,24.5,24.1,24.2,23.4,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,Cameroon,CMR,25.2,24.9,25.3,24.3,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,Central African Republic,CAF,32.8,32.5,32.7,30.8,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,Chad,TCD,24.1,24,24.5,23.4,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,"Congo, Dem. Rep.",COD,25.1,24.7,25.5,25.1,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,Colombia,COL,10.5,10.3,10.4,10.3,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,Ethiopia,ETH,17.1,17.2,17.3,16.8,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,Haiti,HTI,32.6,32.7,33.1,31.6,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,Lebanon,LBN,12.1,12.1,12.7,11.9,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,Mali,MLI,24.6,24.2,24.2,23,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,Mozambique,MOZ,29.8,28.7,28.8,26.6,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,Myanmar,MMR,25.7,25.6,25.8,24,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,Niger,NER,20.7,20.6,20.6,20.2,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,Nigeria,NGA,17.1,17.1,17.9,17.7,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,Pakistan,PAK,26.5,26.3,26.5,25.5,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,"Somalia, Fed. Rep.",SOM,29.4,29.2,29.3,27.6,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,South Sudan,SSD,21.2,22,22.6,22.4,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,Sudan,SDN,22.8,22.4,22.6,21.2,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,Syrian Arab Republic,SYR,22.4,22,22.3,21.3,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,Uganda,UGA,21.4,21.8,21.7,21.5,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,Ukraine,UKR,25.8,25.3,25.1,24.8,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,"Venezuela, RB",VEN,17.6,17.9,18.4,18.7,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,"Yemen, Rep.",YEM,26,26.3,27.2,25.8,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",SH.DYN.NCOM.ZS,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,Afghanistan,AFG,34.9,34.7,35.3,31.5,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,Bangladesh,BGD,21.7,21.6,21.5,19.8,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,Burkina Faso,BFA,27.7,27.1,27.6,25.9,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,Cameroon,CMR,27.4,27.1,27.8,25.3,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,Central African Republic,CAF,38.9,38.3,38.9,35.5,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,Chad,TCD,25.7,25.6,26,23.9,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,"Congo, Dem. Rep.",COD,26.9,26.6,27.7,26.4,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,Colombia,COL,11.5,11.4,11.6,11.5,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,Ethiopia,ETH,17.3,17.3,17.8,16.4,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,Haiti,HTI,30.7,30.9,32.2,29.2,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,Lebanon,LBN,14.8,14.9,15.9,15,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,Mali,MLI,22.9,22.6,22.5,20.4,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,Mozambique,MOZ,38.9,37.5,37.9,33.5,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,Myanmar,MMR,30,30,30.7,27.6,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,Niger,NER,20.1,19.9,20.1,18.7,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,Nigeria,NGA,18.1,18.1,19,18.5,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,Pakistan,PAK,27.8,27.5,28.2,26,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,"Somalia, Fed. Rep.",SOM,32.5,32.2,32.2,28.1,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,South Sudan,SSD,24.9,25.7,26.8,25.5,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,Sudan,SDN,23.6,23.1,23,20.1,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,Syrian Arab Republic,SYR,26.6,26,27,25.3,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,Uganda,UGA,25.1,25.6,25.8,25,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,Ukraine,UKR,37.1,36.5,36,34.5,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,"Venezuela, RB",VEN,21.2,21.6,22.7,22.5,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,"Yemen, Rep.",YEM,28.7,29.1,30.4,28,..,..,..
+"Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70, male (%)",SH.DYN.NCOM.MA.ZS,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,Afghanistan,AFG,..,16.6,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,Bangladesh,BGD,..,18.2,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,Burkina Faso,BFA,..,60.9,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,Cameroon,CMR,..,47.3,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,Central African Republic,CAF,..,97,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,Chad,TCD,..,99.2,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,"Congo, Dem. Rep.",COD,..,52.3,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,Colombia,COL,..,3.4,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,Ethiopia,ETH,..,40.7,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,Haiti,HTI,..,25.9,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,Lebanon,LBN,..,2.4,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,Mali,MLI,..,66.1,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,Mozambique,MOZ,..,45.6,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,Myanmar,MMR,..,12.9,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,Niger,NER,..,70.3,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,Nigeria,NGA,..,71.7,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,Pakistan,PAK,..,38.8,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,"Somalia, Fed. Rep.",SOM,..,99.2,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,South Sudan,SSD,..,68.1,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,Sudan,SDN,..,15.8,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,Syrian Arab Republic,SYR,..,9.1,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,Uganda,UGA,..,28.1,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,Ukraine,UKR,..,2.3,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,"Venezuela, RB",VEN,..,5.2,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,"Yemen, Rep.",YEM,..,15.6,..,..,..,..,..
+"Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (per 100,000 population)",SH.STA.WASH.P5,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,Afghanistan,AFG,330.952,315.945,344.792,388.257,233.392,224.241,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,Bangladesh,BGD,167.322,161.882,162.579,181.104,144.838,141.409,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,Burkina Faso,BFA,293.988,296.865,295.263,315.177,303.989,303.599,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,Cameroon,CMR,311.566,303.679,307.463,329.017,300.531,274.97,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,Central African Republic,CAF,490.96,881.247,539.431,761.637,985.908,393.481,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,Chad,TCD,400.954,397.412,404.973,417.525,386.516,379.573,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,"Congo, Dem. Rep.",COD,302.98,300.878,301.881,321.734,304.591,286.972,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,Colombia,COL,138.575,135.581,161.937,207.412,141.3,122.668,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,Ethiopia,ETH,262.567,258.24,257.228,280.836,251.252,246.063,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,Haiti,HTI,277.835,276.405,291.279,323.257,300.013,281.279,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,Lebanon,LBN,81.612,81.525,109.883,146.109,81.999,84.565,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,Mali,MLI,285.409,282.898,298.151,301.027,284.51,279.475,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,Mozambique,MOZ,353.41,346.482,352.355,394.745,325.235,314.917,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,Myanmar,MMR,260.153,258.485,254.63,288.982,271.743,263.186,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,Niger,NER,241.387,238.433,243.984,259.82,240.389,224.152,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,Nigeria,NGA,372.09,368.64,373.086,372.991,360.381,356.354,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,Pakistan,PAK,208.249,206.59,227.095,235.665,202.506,201.044,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,"Somalia, Fed. Rep.",SOM,351.945,324.429,330.805,378.546,359.766,325.45,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,South Sudan,SSD,421.407,336.056,352.914,370.398,368.042,356.247,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,Sudan,SDN,250.268,246.676,259.277,281.948,259.361,259.538,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,Syrian Arab Republic,SYR,295.917,208.12,178.756,161.017,160.424,167.61,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,Uganda,UGA,308.31,300.936,298.863,305.307,278.99,270.642,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,Ukraine,UKR,254.486,249.581,249.938,266.671,310.498,300.04,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,"Venezuela, RB",VEN,212.337,210.409,215.748,236.005,214.261,215.49,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,"Yemen, Rep.",YEM,288.921,267.757,265.105,279.496,223.766,192.554,..
+"Mortality rate, adult, male (per 1,000 male adults)",SP.DYN.AMRT.MA,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,Afghanistan,AFG,54.8,53.1,51.5,49.9,48.3,46.7,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,Bangladesh,BGD,24.6,23.7,23.2,22.8,22.7,22.6,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,Burkina Faso,BFA,46.5,45.1,43.8,42.6,41.4,40.2,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,Cameroon,CMR,42.9,41.8,40.4,39.1,37.9,36.7,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,Central African Republic,CAF,66.5,117,67.2,86.5,182.1,53.6,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,Chad,TCD,60.5,58.8,57.1,55.5,54.1,52.5,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,"Congo, Dem. Rep.",COD,46,44.6,43.3,42.1,40.9,39.7,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,Colombia,COL,11.3,11,10.6,10.3,10,9.7,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,Ethiopia,ETH,35.8,34.5,33.4,32.2,31.2,30.2,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,Haiti,HTI,41.3,40.2,39.1,38,37,35.9,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,Lebanon,LBN,11.5,12,12.6,13.3,14.1,14.9,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,Mali,MLI,59.8,58.3,56.7,55.3,53.8,52.4,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,Mozambique,MOZ,46.6,45.6,45.1,43.7,42.5,41.5,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,Myanmar,MMR,35.8,34.5,33.5,32.3,31.3,30.3,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,Niger,NER,64.4,64.5,64.3,63.9,63.3,62.2,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,Nigeria,NGA,61.6,60.4,59.1,57.6,56.2,54.8,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,Pakistan,PAK,52.9,51.3,49.8,48.2,46.6,45.1,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,"Somalia, Fed. Rep.",SOM,79.4,69.6,67.9,66,84.3,62.3,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,South Sudan,SSD,85.9,66.7,66.8,66.7,66.8,66.8,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,Sudan,SDN,40,38.9,37.8,36.7,35.6,34.5,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,Syrian Arab Republic,SYR,22.3,19.3,18.2,17.5,17.4,17,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,Uganda,UGA,29.3,28.2,27.2,26.2,25.4,24.5,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,Ukraine,UKR,7.6,7.4,7.3,7.2,7.1,7,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,"Venezuela, RB",VEN,19.6,19.6,19.6,19.6,19.6,19.6,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,"Yemen, Rep.",YEM,35.8,35.1,33.7,33.1,32.1,31.1,..
+"Mortality rate, infant, female (per 1,000 live births)",SP.DYN.IMRT.FE.IN,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,Afghanistan,AFG,38.7,37.8,36.9,36,35.2,34.3,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,Bangladesh,BGD,20.2,19.3,18.7,18.3,18,17.9,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,Burkina Faso,BFA,26.8,26.3,25.9,25.4,24.9,24.5,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,Cameroon,CMR,27.9,27.3,26.8,26.2,25.7,25.2,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,Central African Republic,CAF,33.4,35,32.6,33,36.2,30.7,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,Chad,TCD,34.1,33.6,33,32.5,31.9,31.4,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,"Congo, Dem. Rep.",COD,28,27.4,26.9,26.4,25.9,25.3,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,Colombia,COL,7.7,7.5,7.2,7,6.8,6.5,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,Ethiopia,ETH,31.3,30.4,29.7,28.9,28.1,27.4,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,Haiti,HTI,25.6,25.2,24.7,24.2,23.7,23.3,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,Lebanon,LBN,8.3,8.8,9.3,9.9,10.5,11.1,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,Mali,MLI,35.3,34.7,34.2,33.6,32.9,32.4,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,Mozambique,MOZ,26.5,26.4,26.3,26.1,25.8,25.4,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,Myanmar,MMR,23.2,22.6,22.1,21.6,21.1,20.6,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,Niger,NER,34.9,34.9,34.7,34.5,34.1,33.8,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,Nigeria,NGA,36.3,35.8,35.4,34.9,34.3,33.7,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,Pakistan,PAK,42.4,41.4,40.5,39.5,38.5,37.6,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,"Somalia, Fed. Rep.",SOM,38.2,37.3,36.8,36.1,36.1,34.9,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,South Sudan,SSD,41,40.4,40.3,40.3,40.3,40.2,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,Sudan,SDN,27.5,27,26.4,25.9,25.4,24.8,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,Syrian Arab Republic,SYR,11,10.9,10.7,10.5,10.3,10,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,Uganda,UGA,20.2,19.7,19.2,18.7,18.4,17.9,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,Ukraine,UKR,5.1,5,4.9,4.9,4.8,4.7,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,"Venezuela, RB",VEN,15,15,15,15,15,15,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,"Yemen, Rep.",YEM,23.3,23,22.6,22.2,21.8,21.4,..
+"Mortality rate, neonatal (per 1,000 live births)",SH.DYN.NMRT,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,Afghanistan,AFG,61.4,59.2,57.2,55.3,53.4,51.6,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,Bangladesh,BGD,31.4,30.2,29.4,28.8,28.5,28.4,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,Burkina Faso,BFA,86.3,83.3,80.4,77.7,75.1,72.7,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,Cameroon,CMR,73.6,71.2,68.8,66.5,64,61.9,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,Central African Republic,CAF,113.3,236.8,116.1,164.9,381.2,86,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,Chad,TCD,111.2,107.7,104.2,100.9,97.7,94.8,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,"Congo, Dem. Rep.",COD,80.1,77.3,74.7,72.3,70,67.6,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,Colombia,COL,12.6,12.2,11.8,11.4,11.1,10.7,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,Ethiopia,ETH,49.1,47,45.2,43.4,41.8,40.3,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,Haiti,HTI,58.5,56.8,54.9,53.3,51.7,49.8,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,Lebanon,LBN,13.1,13.7,14.4,15.2,16.1,17,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,Mali,MLI,100.9,97.8,94.7,91.7,88.8,86.1,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,Mozambique,MOZ,64.9,63.7,62.7,61.2,59.8,57.1,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,Myanmar,MMR,41.1,39.7,38.3,36.9,35.7,34.6,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,Niger,NER,119.2,118.1,116.8,115.2,113.2,110.7,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,Nigeria,NGA,114.3,111.6,108.8,105.7,102.6,99.5,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,Pakistan,PAK,63.7,61.6,59.6,57.7,55.7,53.8,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,"Somalia, Fed. Rep.",SOM,129.1,111.4,108.2,104.8,136.6,98.1,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,South Sudan,SSD,127,93.3,93.4,93.5,93.6,93.4,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,Sudan,SDN,53.1,51.4,49.8,48.2,46.5,45,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,Syrian Arab Republic,SYR,30.3,22.7,20.1,18.8,19,18.5,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,Uganda,UGA,42.4,40.5,38.8,37.2,36,34.6,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,Ukraine,UKR,7.8,7.6,7.5,7.4,7.7,7.2,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,"Venezuela, RB",VEN,22.2,22.2,22.2,22.2,22.2,22.2,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,"Yemen, Rep.",YEM,42.9,42,39.2,38.5,37,35.5,..
+"Mortality rate, under-5, female (per 1,000 live births)",SH.DYN.MORT.FE,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,Afghanistan,AFG,..,..,..,..,64.9,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,Bangladesh,BGD,..,24.6,..,..,..,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,Burkina Faso,BFA,..,..,..,64.5,..,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,Cameroon,CMR,43.6,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,Central African Republic,CAF,80.4,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,Chad,TCD,..,84.2,..,..,..,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,"Congo, Dem. Rep.",COD,..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,Colombia,COL,..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,Ethiopia,ETH,..,68.7,..,..,..,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,Haiti,HTI,..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,Lebanon,LBN,..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,Mali,MLI,68.3,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,Mozambique,MOZ,..,..,..,..,60.7,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,Myanmar,MMR,..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,Niger,NER,..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,Nigeria,NGA,..,..,..,33,..,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,Pakistan,PAK,..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,"Somalia, Fed. Rep.",SOM,..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,South Sudan,SSD,..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,Sudan,SDN,..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,Syrian Arab Republic,SYR,..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,Uganda,UGA,..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,Ukraine,UKR,..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,"Venezuela, RB",VEN,..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,"Yemen, Rep.",YEM,..,..,..,..,37.4,..,..
+Multidimensional poverty headcount ratio (UNDP) (% of population),SI.POV.MPUN,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,Afghanistan,AFG,65.4,63.3,61.3,59.3,57.4,55.5,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,Bangladesh,BGD,33.7,32.4,31.5,31,30.7,30.6,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,Burkina Faso,BFA,91.2,88.2,85.3,82.5,79.9,77.3,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,Cameroon,CMR,79.7,77.2,74.6,72.1,69.5,67.2,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,Central African Republic,CAF,119.8,243.1,122.6,171.3,387.4,92.2,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,Chad,TCD,118.3,114.6,111,107.6,104.3,101.1,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,"Congo, Dem. Rep.",COD,86.3,83.5,80.7,78.1,75.7,73.2,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,Colombia,COL,14.1,13.7,13.2,12.8,12.4,12,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,Ethiopia,ETH,56.4,54.1,52,50,48.2,46.5,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,Haiti,HTI,64.2,62.3,60.4,58.5,56.9,55.1,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,Lebanon,LBN,14,14.7,15.5,16.3,17.3,18.3,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,Mali,MLI,106.1,103.1,100,96.9,94,91.3,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,Mozambique,MOZ,69.5,68.3,67.3,65.8,64.3,61.7,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,Myanmar,MMR,46,44.4,42.9,41.4,40,38.7,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,Niger,NER,122.8,121.8,120.6,119.1,117.1,114.8,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,Nigeria,NGA,120.2,117.5,114.4,111.3,108.1,104.9,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,Pakistan,PAK,68.8,66.7,64.6,62.5,60.5,58.5,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,"Somalia, Fed. Rep.",SOM,136,118.1,114.4,110.9,142.9,104,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,South Sudan,SSD,132.4,98.7,98.7,98.7,98.7,98.7,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,Sudan,SDN,58.9,57.1,55.3,53.6,51.8,50.1,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,Syrian Arab Republic,SYR,32.6,25,22.4,21,21.1,20.6,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,Uganda,UGA,47.4,45.3,43.5,41.8,40.5,38.8,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,Ukraine,UKR,8.7,8.5,8.4,8.2,8.5,8.1,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,"Venezuela, RB",VEN,24.3,24.3,24.3,24.3,24.3,24.3,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,"Yemen, Rep.",YEM,47,45.9,43.2,42.4,40.8,39.3,..
+"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,Afghanistan,AFG,69.4,67.2,65.3,63.2,61.1,59.2,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,Bangladesh,BGD,35.8,34.5,33.6,33,32.7,32.6,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,Burkina Faso,BFA,95.9,92.9,89.9,86.9,84.2,81.6,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,Cameroon,CMR,85.5,82.8,80.1,77.4,74.7,72.3,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,Central African Republic,CAF,125.8,249.1,128.6,177.2,393.3,97.9,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,Chad,TCD,124.9,121.1,117.5,113.9,110.6,107.2,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,"Congo, Dem. Rep.",COD,92.2,89.3,86.5,83.8,81.2,78.5,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,Colombia,COL,15.6,15.1,14.6,14.1,13.7,13.3,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,Ethiopia,ETH,63.4,60.8,58.4,56.4,54.2,52.3,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,Haiti,HTI,69.6,67.6,65.7,63.7,61.7,59.9,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,Lebanon,LBN,14.9,15.6,16.5,17.4,18.5,19.6,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,Mali,MLI,111.1,108,104.9,101.8,98.9,95.9,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,Mozambique,MOZ,73.9,72.7,71.7,70.1,68.6,65.8,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,Myanmar,MMR,50.5,48.8,47.1,45.6,44.2,42.7,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,Niger,NER,126.2,125.2,124.2,122.7,120.8,118.5,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,Nigeria,NGA,125.7,122.8,119.7,116.5,113.2,110.1,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,Pakistan,PAK,73.6,71.4,69.2,67.1,65,63,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,"Somalia, Fed. Rep.",SOM,142.2,124.4,120.5,116.7,148.8,109.6,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,South Sudan,SSD,138,104.4,104.5,104.5,104.7,104.3,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,Sudan,SDN,64.4,62.4,60.7,58.6,56.8,55.2,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,Syrian Arab Republic,SYR,34.7,27.1,24.4,23.1,23.1,22.5,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,Uganda,UGA,52.2,50,47.9,46.1,44.7,42.9,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,Ukraine,UKR,9.5,9.3,9.2,9.1,9.3,8.9,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,"Venezuela, RB",VEN,26.2,26.3,26.2,26.3,26.2,26.2,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,"Yemen, Rep.",YEM,50.8,49.7,47,46.1,44.5,42.8,..
+"Mortality rate, under-5, male (per 1,000 live births)",SH.DYN.MORT.MA,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,Afghanistan,AFG,62.3,60.6,58.9,57.2,55.4,53.8,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,Bangladesh,BGD,28,27,26.4,26.1,26,26,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,Burkina Faso,BFA,56.3,54.8,53.2,51.7,50.4,49.1,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,Cameroon,CMR,52.9,51.6,49.9,48.3,46.9,45.5,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,Central African Republic,CAF,81,131.2,81.3,100.4,195.7,66.8,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,Chad,TCD,73.7,71.7,69.7,67.9,66.2,64.4,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,"Congo, Dem. Rep.",COD,56.5,54.8,53.3,51.9,50.4,49,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,Colombia,COL,14.1,13.7,13.3,12.9,12.5,12.1,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,Ethiopia,ETH,48.9,47.1,45.4,44,42.4,41,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,Haiti,HTI,50.9,49.6,48.2,46.9,45.7,44.4,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,Lebanon,LBN,13,13.6,14.4,15.2,16.1,17,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,Mali,MLI,70.3,68.7,67,65.5,63.8,62.3,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,Mozambique,MOZ,54.5,53.5,53,51.5,50.2,49.1,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,Myanmar,MMR,44.4,42.9,41.4,40.2,38.9,37.7,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,Niger,NER,74.2,74.3,74.2,73.9,73.2,72.1,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,Nigeria,NGA,72.9,71.5,69.9,68.3,66.7,65.3,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,Pakistan,PAK,63.9,62,60.2,58.4,56.6,54.9,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,"Somalia, Fed. Rep.",SOM,91.7,81.6,79.4,77.4,95.4,73.1,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,South Sudan,SSD,97.3,78.2,78.3,78.3,78.2,78.3,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,Sudan,SDN,50.3,48.9,47.6,46.2,44.9,43.6,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,Syrian Arab Republic,SYR,26.5,23.6,22.4,21.7,21.5,20.9,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,Uganda,UGA,36.4,35.1,33.8,32.6,31.7,30.5,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,Ukraine,UKR,9.3,9.1,8.9,8.8,8.8,8.6,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,"Venezuela, RB",VEN,23.3,23.3,23.3,23.3,23.3,23.3,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,"Yemen, Rep.",YEM,43.1,42.3,40.9,40.2,39.1,38,..
+"Mortality rate, infant, male (per 1,000 live births)",SP.DYN.IMRT.MA.IN,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,Afghanistan,AFG,58.6,56.9,55.3,53.6,52,50.4,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,Bangladesh,BGD,26.3,25.4,24.9,24.5,24.4,24.4,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,Burkina Faso,BFA,51.6,50.2,48.7,47.3,46.1,44.8,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,Cameroon,CMR,48.1,46.8,45.3,43.8,42.5,41.2,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,Central African Republic,CAF,74,124.3,74.5,93.6,189.1,60.4,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,Chad,TCD,67.4,65.5,63.6,61.9,60.3,58.7,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,"Congo, Dem. Rep.",COD,51.3,49.8,48.4,47.1,45.8,44.5,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,Colombia,COL,12.7,12.4,12,11.6,11.3,10.9,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,Ethiopia,ETH,42.5,41,39.6,38.3,37,35.7,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,Haiti,HTI,46.3,45,43.8,42.5,41.5,40.3,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,Lebanon,LBN,12.3,12.8,13.5,14.3,15.1,16,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,Mali,MLI,65.1,63.7,62.1,60.5,59,57.6,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,Mozambique,MOZ,50.6,49.7,49.1,47.7,46.5,45.4,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,Myanmar,MMR,40.2,38.9,37.6,36.4,35.2,34.1,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,Niger,NER,69.4,69.5,69.4,69,68.3,67.4,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,Nigeria,NGA,67.4,66.1,64.7,63.2,61.6,60.1,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,Pakistan,PAK,58.5,56.8,55.1,53.4,51.8,50.1,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,"Somalia, Fed. Rep.",SOM,85.8,75.7,73.7,71.8,89.9,67.8,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,South Sudan,SSD,91.8,72.6,72.6,72.6,72.6,72.6,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,Sudan,SDN,45.3,44,42.8,41.6,40.3,39.2,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,Syrian Arab Republic,SYR,24.5,21.5,20.4,19.7,19.5,19,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,Uganda,UGA,32.9,31.7,30.6,29.5,28.7,27.6,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,Ukraine,UKR,8.5,8.3,8.1,8,8,7.8,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,"Venezuela, RB",VEN,21.5,21.5,21.5,21.5,21.5,21.5,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,"Yemen, Rep.",YEM,39.6,38.8,37.4,36.7,35.7,34.7,..
+"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,Afghanistan,AFG,198.86,196.012,221.302,239.896,181.84,178.756,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,Bangladesh,BGD,120.44,118.025,121.394,138.106,113.419,108.97,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,Burkina Faso,BFA,226.174,223.516,220.096,237.911,225.147,214.071,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,Cameroon,CMR,235.062,228.251,227.063,249.228,221.217,195.633,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,Central African Republic,CAF,372.681,573.291,394.253,507.246,752.531,326.793,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,Chad,TCD,344.577,336.625,336.608,346.297,315.145,309.354,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,"Congo, Dem. Rep.",COD,243.646,240.741,237.159,253.324,236.693,221.242,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,Colombia,COL,73.948,72.478,87.233,111.562,75.294,66.198,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,Ethiopia,ETH,175.122,169.022,162.464,177.909,153.123,148.814,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,Haiti,HTI,181.472,178.259,183.487,210.385,185.31,167.358,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,Lebanon,LBN,57.281,57.217,69.939,84.557,57.22,57.747,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,Mali,MLI,235.787,232.883,238.681,246.178,223.604,220.406,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,Mozambique,MOZ,241.066,228.825,220.786,248.339,189.836,177.515,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,Myanmar,MMR,162.165,159.533,157.079,174.643,155.914,153.773,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,Niger,NER,202.852,199.47,199.498,215.731,200.366,186.491,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,Nigeria,NGA,358.925,356.052,356.862,358.817,345.802,342.633,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,Pakistan,PAK,138.14,136.367,148.036,157.765,131.421,129.882,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,"Somalia, Fed. Rep.",SOM,269.977,250.972,258.461,300.415,270.922,232.382,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,South Sudan,SSD,297.849,249.611,250.014,269.818,259.035,247.478,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,Sudan,SDN,168.134,165.885,173.339,192.277,173.359,158.465,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,Syrian Arab Republic,SYR,128.991,107.738,101.69,105.561,97.922,107.757,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,Uganda,UGA,227.293,217.824,211.568,219.8,197.445,190.929,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,Ukraine,UKR,93.178,90.459,96.507,110.716,93.796,87.602,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,"Venezuela, RB",VEN,108.019,106.11,107.446,119.93,108.002,108.393,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,"Yemen, Rep.",YEM,149.151,147.076,151.965,166.973,148,132.132,..
+"Mortality rate, adult, female (per 1,000 female adults)",SP.DYN.AMRT.FE,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,Afghanistan,AFG,..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,Bangladesh,BGD,..,..,..,..,7.4,..,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,Burkina Faso,BFA,66,..,..,60,..,..,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,Cameroon,CMR,..,..,..,42.7,..,..,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,Central African Republic,CAF,..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,Chad,TCD,75.8,..,..,..,82,..,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,"Congo, Dem. Rep.",COD,..,..,88,..,..,..,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,Colombia,COL,7.9,9.3,11.9,11.5,9.7,8.1,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,Ethiopia,ETH,..,..,..,67.1,..,..,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,Haiti,HTI,..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,Lebanon,LBN,..,..,..,..,6.5,..,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,Mali,MLI,49.1,..,..,56.1,..,..,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,Mozambique,MOZ,..,85.5,..,..,85,..,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,Myanmar,MMR,..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,Niger,NER,79.7,..,..,79.3,..,..,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,Nigeria,NGA,42.1,..,..,..,47,..,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,Pakistan,PAK,24.4,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,"Somalia, Fed. Rep.",SOM,..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,South Sudan,SSD,..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,Sudan,SDN,..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,Syrian Arab Republic,SYR,..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,Uganda,UGA,..,64.8,..,..,..,..,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,Ukraine,UKR,..,1.5,1.7,..,..,..,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,"Venezuela, RB",VEN,..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,"Yemen, Rep.",YEM,..,..,..,..,..,..,..
+Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+Number of infant deaths,SH.DTH.IMRT,Afghanistan,AFG,79669,78618,77662,76646,75133,73191,..
+Number of infant deaths,SH.DTH.IMRT,Bangladesh,BGD,85485,83641,82854,82914,83824,84651,..
+Number of infant deaths,SH.DTH.IMRT,Burkina Faso,BFA,38007,36181,34328,33248,32811,32235,..
+Number of infant deaths,SH.DTH.IMRT,Cameroon,CMR,43404,42687,41608,40557,39703,39004,..
+Number of infant deaths,SH.DTH.IMRT,Central African Republic,CAF,15448,26522,16113,21041,43064,13774,..
+Number of infant deaths,SH.DTH.IMRT,Chad,TCD,47258,47173,46999,46712,46925,47049,..
+Number of infant deaths,SH.DTH.IMRT,"Congo, Dem. Rep.",COD,193441,193094,192083,191653,191444,190533,..
+Number of infant deaths,SH.DTH.IMRT,Colombia,COL,8762,8677,8519,8275,8014,7724,..
+Number of infant deaths,SH.DTH.IMRT,Ethiopia,ETH,156271,155616,154134,151579,148430,145121,..
+Number of infant deaths,SH.DTH.IMRT,Haiti,HTI,12211,11834,11433,11044,10707,10367,..
+Number of infant deaths,SH.DTH.IMRT,Lebanon,LBN,1366,1347,1338,1362,1424,1494,..
+Number of infant deaths,SH.DTH.IMRT,Mali,MLI,55778,54698,53949,53944,53770,53652,..
+Number of infant deaths,SH.DTH.IMRT,Mozambique,MOZ,56829,57027,57539,57072,56726,56375,..
+Number of infant deaths,SH.DTH.IMRT,Myanmar,MMR,37831,36305,34760,33299,31964,30732,..
+Number of infant deaths,SH.DTH.IMRT,Niger,NER,66806,67912,68814,69525,70558,71882,..
+Number of infant deaths,SH.DTH.IMRT,Nigeria,NGA,488473,476500,463133,454850,449414,443714,..
+Number of infant deaths,SH.DTH.IMRT,Pakistan,PAK,385282,375684,366197,357962,350245,341323,..
+Number of infant deaths,SH.DTH.IMRT,"Somalia, Fed. Rep.",SOM,58881,53373,53363,53297,68486,52410,..
+Number of infant deaths,SH.DTH.IMRT,South Sudan,SSD,28016,21500,22307,22879,23060,23275,..
+Number of infant deaths,SH.DTH.IMRT,Sudan,SDN,68509,68674,68086,66958,65789,64922,..
+Number of infant deaths,SH.DTH.IMRT,Syrian Arab Republic,SYR,9110,8280,8514,8770,9105,9481,..
+Number of infant deaths,SH.DTH.IMRT,Uganda,UGA,50613,49940,49285,48552,48004,46730,..
+Number of infant deaths,SH.DTH.IMRT,Ukraine,UKR,3230,2970,2799,2587,2149,1729,..
+Number of infant deaths,SH.DTH.IMRT,"Venezuela, RB",VEN,11384,10563,9770,9326,9133,9105,..
+Number of infant deaths,SH.DTH.IMRT,"Yemen, Rep.",YEM,47608,47984,47516,47804,47520,47209,..
+Number of infant deaths,SH.DTH.IMRT,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+Number of neonatal deaths,SH.DTH.NMRT,Afghanistan,AFG,53521,53121,52740,52292,51406,50351,..
+Number of neonatal deaths,SH.DTH.NMRT,Bangladesh,BGD,66252,64099,62955,62431,62847,62615,..
+Number of neonatal deaths,SH.DTH.NMRT,Burkina Faso,BFA,19762,18960,18224,18114,17979,17816,..
+Number of neonatal deaths,SH.DTH.NMRT,Cameroon,CMR,25538,25216,24871,24508,24306,24122,..
+Number of neonatal deaths,SH.DTH.NMRT,Central African Republic,CAF,7135,7636,7271,7627,8390,7326,..
+Number of neonatal deaths,SH.DTH.NMRT,Chad,TCD,24426,24800,24848,25034,25465,25682,..
+Number of neonatal deaths,SH.DTH.NMRT,"Congo, Dem. Rep.",COD,107884,108219,108872,109689,110371,110646,..
+Number of neonatal deaths,SH.DTH.NMRT,Colombia,COL,5360,5292,5158,4999,4812,4615,..
+Number of neonatal deaths,SH.DTH.NMRT,Ethiopia,ETH,117599,118076,117438,115817,114175,112319,..
+Number of neonatal deaths,SH.DTH.NMRT,Haiti,HTI,6796,6641,6475,6315,6150,6027,..
+Number of neonatal deaths,SH.DTH.NMRT,Lebanon,LBN,904,897,897,936,988,1038,..
+Number of neonatal deaths,SH.DTH.NMRT,Mali,MLI,30725,30107,30343,30558,30622,30771,..
+Number of neonatal deaths,SH.DTH.NMRT,Mozambique,MOZ,30277,30863,31355,31714,31942,32015,..
+Number of neonatal deaths,SH.DTH.NMRT,Myanmar,MMR,21873,21164,20454,19830,19148,18611,..
+Number of neonatal deaths,SH.DTH.NMRT,Niger,NER,34205,34680,35077,35403,36211,36965,..
+Number of neonatal deaths,SH.DTH.NMRT,Nigeria,NGA,265589,260351,255258,255610,253883,252871,..
+Number of neonatal deaths,SH.DTH.NMRT,Pakistan,PAK,282006,276932,272185,268319,263922,258588,..
+Number of neonatal deaths,SH.DTH.NMRT,"Somalia, Fed. Rep.",SOM,26949,26934,27249,27491,28146,27511,..
+Number of neonatal deaths,SH.DTH.NMRT,South Sudan,SSD,12106,12358,12680,12993,12917,13196,..
+Number of neonatal deaths,SH.DTH.NMRT,Sudan,SDN,42561,42878,42589,42213,41963,41690,..
+Number of neonatal deaths,SH.DTH.NMRT,Syrian Arab Republic,SYR,4068,4345,4632,4797,4895,5209,..
+Number of neonatal deaths,SH.DTH.NMRT,Uganda,UGA,31538,31419,31326,31250,31064,30558,..
+Number of neonatal deaths,SH.DTH.NMRT,Ukraine,UKR,1887,1768,1669,1508,1130,1000,..
+Number of neonatal deaths,SH.DTH.NMRT,"Venezuela, RB",VEN,7761,7102,6653,6453,6358,6414,..
+Number of neonatal deaths,SH.DTH.NMRT,"Yemen, Rep.",YEM,28543,28939,29266,29389,29488,29609,..
+Number of neonatal deaths,SH.DTH.NMRT,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,Afghanistan,AFG,0.452,..,..,..,..,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,Bangladesh,BGD,0.391,0.386,0.481,0.613,..,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,Burkina Faso,BFA,..,0.899,0.914,0.916,1.026,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,Cameroon,CMR,0.365,..,0.481,0.193,0.65,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,Central African Republic,CAF,0.235,..,..,0.191,..,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,Chad,TCD,0.308,0.134,0.2,0.198,0.21,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,"Congo, Dem. Rep.",COD,1.072,1.08,..,1.083,1.191,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,Colombia,COL,1.343,1.367,1.405,1.449,..,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,Ethiopia,ETH,0.701,..,0.77,0.75,0.748,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,Haiti,HTI,0.402,..,..,..,..,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,Lebanon,LBN,1.929,..,..,..,..,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,Mali,MLI,0.422,..,..,..,0.352,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,Mozambique,MOZ,0.482,0.474,0.486,0.568,0.512,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,Myanmar,MMR,1.019,1.103,..,..,..,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,Niger,NER,0.222,..,..,..,0.202,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,Nigeria,NGA,0.914,1.483,..,1.564,1.682,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,Pakistan,PAK,0.925,0.469,..,..,..,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,"Somalia, Fed. Rep.",SOM,..,..,..,..,..,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,South Sudan,SSD,0.358,0.583,0.712,..,..,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,Sudan,SDN,1.14,..,..,..,..,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,Syrian Arab Republic,SYR,..,..,..,..,..,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,Uganda,UGA,1.274,..,1.686,..,2.268,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,Ukraine,UKR,..,..,..,..,..,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,"Venezuela, RB",VEN,2.001,..,..,..,..,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,"Yemen, Rep.",YEM,0.727,..,..,..,..,..,..
+"Nurses and midwives (per 1,000 people)",SH.MED.NUMW.P3,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,Afghanistan,AFG,..,..,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,Bangladesh,BGD,..,..,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,Burkina Faso,BFA,..,..,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,Cameroon,CMR,..,..,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,Central African Republic,CAF,..,..,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,Chad,TCD,..,..,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,"Congo, Dem. Rep.",COD,..,..,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,Colombia,COL,..,..,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,Ethiopia,ETH,..,..,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,Haiti,HTI,..,..,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,Lebanon,LBN,..,..,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,Mali,MLI,..,..,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,Mozambique,MOZ,..,..,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,Myanmar,MMR,..,..,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,Niger,NER,..,..,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,Nigeria,NGA,..,..,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,Pakistan,PAK,..,..,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,"Somalia, Fed. Rep.",SOM,..,..,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,South Sudan,SSD,..,..,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,Sudan,SDN,..,..,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,Syrian Arab Republic,SYR,..,..,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,Uganda,UGA,..,..,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,Ukraine,UKR,..,5135,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,"Venezuela, RB",VEN,..,..,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,"Yemen, Rep.",YEM,..,..,..,..,..,..,..
+"Number of surgical procedures (per 100,000 population)",SH.SGR.PROC.P5,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,Afghanistan,AFG,54.28991757,56.89493912,59.91792599,62.94576762,62.86481346,..,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,Bangladesh,BGD,31.65637831,34.47037958,37.74562899,42.71602216,44.3081066,..,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,Burkina Faso,BFA,13.94385387,14.24188887,18.80573086,19.82658128,19.64848581,..,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,Cameroon,CMR,42.14958927,40.99957399,47.56219652,51.25470629,48.72404319,..,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,Central African Republic,CAF,21.40065767,21.65622811,21.17904193,22.92857201,22.82952809,..,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,Chad,TCD,20.08815441,19.26193657,26.32153669,26.11877512,23.36914372,..,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,"Congo, Dem. Rep.",COD,7.194801,7.39455033,8.1657335,8.44729294,9.04154388,..,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,Colombia,COL,78.65296306,74.20925509,67.45099204,76.70260286,72.61495814,78.11199256,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,Ethiopia,ETH,8.34781788,9.80851022,9.35478487,9.64758979,12.07151494,..,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,Haiti,HTI,24.20666088,19.25757359,20.83762855,25.35713119,25.18633838,..,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,Lebanon,LBN,261.3905197,239.4278505,157.1075072,108.2580121,131.1451473,..,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,Mali,MLI,10.14681727,9.76166136,12.61679719,13.53485497,12.85211715,..,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,Mozambique,MOZ,3.85099172,3.9829635,3.59935021,4.16567333,4.79242742,..,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,Myanmar,MMR,46.50432625,41.13124356,47.91462993,38.49210486,37.75889513,..,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,Niger,NER,14.98880598,14.70174376,15.57096206,15.05227978,10.69304883,..,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,Nigeria,NGA,48.3033845,48.35017884,50.71519817,62.42290286,69.21851975,..,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,Pakistan,PAK,22.55033303,20.19759608,20.38823538,21.68717691,18.36161595,..,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,"Somalia, Fed. Rep.",SOM,5.52221663,5.84477786,6.02452649,6.23322272,6.46766791,..,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,South Sudan,SSD,7.99881814,14.84345233,18.71426256,10.73649364,16.99697393,..,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,Sudan,SDN,22.58873225,22.70949014,11.74333959,11.65481795,16.23670292,..,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,Syrian Arab Republic,SYR,19.09377595,21.01233741,14.63218506,12.46027941,15.71526904,..,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,Uganda,UGA,11.74029164,12.76577324,13.39258192,13.96098938,15.04972543,..,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,Ukraine,UKR,110.303702,124.1238372,126.8669037,167.5435083,..,..,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,"Venezuela, RB",VEN,60.77118282,38.47580321,44.36816782,45.59008844,51.9084851,..,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,"Yemen, Rep.",YEM,63.28932512,31.56484478,22.58536249,23.08629706,26.75801709,..,..
+Out-of-pocket expenditure per capita (current US$),SH.XPD.OOPC.PC.CD,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,Afghanistan,AFG,76.22302246,76.818367,74.81396484,77.21405029,77.94615173,..,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,Bangladesh,BGD,70.67902374,72.05020905,74.00198364,72.96946716,72.52640533,..,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,Burkina Faso,BFA,35.83074951,34.69356155,34.64081192,34.64732361,34.61856079,..,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,Cameroon,CMR,72.26169586,72.18878174,71.87678528,70.62872314,67.69355011,..,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,Central African Republic,CAF,41.67272949,60.55825424,49.67552567,49.57910919,47.64571381,..,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,Chad,TCD,64.376091,63.69689178,69.76126099,69.48040771,58.17550659,..,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,"Congo, Dem. Rep.",COD,41.61063766,38.49700546,39.71793747,39.12869644,37.07655334,..,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,Colombia,COL,15.1307478,14.73766041,14.50628376,13.66964531,14.364748,14.61574936,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,Ethiopia,ETH,35.49158096,37.81941223,33.07913589,37.00738144,44.59613419,..,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,Haiti,HTI,38.85435486,39.03829193,46.90286636,43.99997711,48.15792084,..,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,Lebanon,LBN,35.30064774,30.71131897,30.31226349,34.71579361,33.42271805,..,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,Mali,MLI,32.55354309,31.07923317,44.73706055,44.20401001,43.21066666,..,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,Mozambique,MOZ,9.32622814,9.71002865,10.32057858,9.2104044,9.68696404,..,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,Myanmar,MMR,76.44635773,76.56387329,72.57280731,54.10145569,65.13663483,..,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,Niger,NER,48.96118927,46.09529114,43.54892731,42.52769852,40.34075165,..,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,Nigeria,NGA,75.94579315,71.49702454,74.67578125,76.24337006,76.12967682,..,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,Pakistan,PAK,56.24115753,56.08301163,55.23900604,50.67523956,47.36522675,..,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,"Somalia, Fed. Rep.",SOM,43.46372223,45.40616226,48.49442291,42.59476852,42.14455032,..,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,South Sudan,SSD,25.75858116,42.32468796,39.62005615,31.08550262,34.39799881,..,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,Sudan,SDN,66.95339966,67.37359619,52.96360779,56.85788345,51.41895676,..,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,Syrian Arab Republic,SYR,43.79974365,41.80766678,47.76223755,48.29789352,45.73065948,..,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,Uganda,UGA,35.62893295,38.26028442,29.9383831,27.35579681,34.09155273,..,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,Ukraine,UKR,50.65900421,51.11891937,47.86013412,45.29367447,..,..,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,"Venezuela, RB",VEN,36.90224457,34.12151718,28.95287514,28.05523682,24.88783646,..,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,"Yemen, Rep.",YEM,75.94067383,73.29613495,69.91931152,72.10394287,70.20210266,..,..
+Out-of-pocket expenditure (% of current health expenditure),SH.XPD.OOPC.CH.ZS,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,Afghanistan,AFG,70.87994089,73.784643,76.7222554,79.69307846,82.17537112,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,Bangladesh,BGD,97.70041155,97.82513657,97.94567602,98.03301971,98.09706298,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,Burkina Faso,BFA,49.47116142,49.0028525,48.54098615,49.02263051,49.50587416,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,Cameroon,CMR,67.51535721,67.99048422,68.45069732,68.89556458,69.59255264,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,Central African Republic,CAF,39.22754773,38.21226712,37.20240255,36.19738081,36.29504358,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,Chad,TCD,49.80800666,50.49806435,51.19537781,51.89910104,51.99515252,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,"Congo, Dem. Rep.",COD,35.84708556,35.67805731,35.50023727,35.31309699,35.11656658,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,Colombia,COL,96.73950122,96.89252467,97.04102366,97.3938173,97.53776039,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,Ethiopia,ETH,45.83816087,47.25397856,48.65534768,50.04256282,51.51295966,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,Haiti,HTI,65.89944518,66.32098621,66.69531027,67.06127542,67.41888472,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,Lebanon,LBN,92.33426789,92.6,92.6,92.6,92.6,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,Mali,MLI,77.80116815,79.27971511,80.74718639,82.2039904,83.64946367,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,Mozambique,MOZ,55.4139859,57.57536808,59.76011086,61.48093159,63.19536575,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,Myanmar,MMR,77.08633594,78.90933534,80.72876332,82.33106172,82.38444021,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,Niger,NER,46.9992413,47.36668482,47.72058004,48.06025265,48.89607049,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,Nigeria,NGA,73.08745791,74.72412633,76.36179027,78.00019357,79.63940859,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,Pakistan,PAK,90.04259791,90.19065035,90.33733695,90.48246306,90.62575385,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,"Somalia, Fed. Rep.",SOM,53.3865153,54.93440825,56.47697291,58.01372821,58.25950307,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,South Sudan,SSD,40.98150673,40.84165539,40.95092729,41.06566165,41.18659285,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,Sudan,SDN,60.46708424,61.60565353,62.74411093,63.88200965,64.92007532,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,Syrian Arab Republic,SYR,93.73901986,93.87294349,94.0036368,94.05369268,94.07793298,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,Uganda,UGA,52.70309273,54.32668724,55.96110322,57.60557485,59.25960901,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,Ukraine,UKR,93.47633322,93.51157783,93.54498546,93.53463927,93.58979838,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,"Venezuela, RB",VEN,94.03999043,93.86289557,93.68580071,93.50870585,93.33161099,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,"Yemen, Rep.",YEM,58.75449438,59.71657984,60.6635718,61.59520686,61.7582437,..,..
+People using at least basic drinking water services (% of population),SH.H2O.BASW.ZS,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,Afghanistan,AFG,49.23414442,51.00348109,52.64900094,54.29858974,55.95194129,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,Bangladesh,BGD,53.37426479,54.91023996,56.43123343,57.93662462,59.29519147,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,Burkina Faso,BFA,22.30956858,22.82406925,23.32068255,24.04111945,24.75649355,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,Cameroon,CMR,42.15050117,42.40085801,42.65279948,42.90563215,43.11916534,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,Central African Republic,CAF,14.84783543,14.48198243,14.11863467,13.75750675,13.84629384,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,Chad,TCD,12.05411974,12.2940189,12.55032072,12.82351803,12.92206644,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,"Congo, Dem. Rep.",COD,16.72563449,16.41666246,16.11586476,16.14617128,16.17447255,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,Colombia,COL,91.28775148,92.15109154,93.01277004,93.87267778,94.73097844,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,Ethiopia,ETH,8.349923038,8.652039161,8.953537513,9.254780256,9.336216099,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,Haiti,HTI,35.81744607,36.93852759,37.12173543,37.30085203,37.47587886,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,Lebanon,LBN,97.87058253,99.06737938,99.2,99.2,99.2,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,Mali,MLI,43.03193857,44.79769672,46.58258955,48.38654613,50.20855112,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,Mozambique,MOZ,31.94671944,33.35031121,34.77058047,36.07188062,37.37979668,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,Myanmar,MMR,72.69104283,73.16531875,73.63687895,74.10549712,74.13015344,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,Niger,NER,14.29777602,14.79003828,15.28807749,15.88156173,16.409657,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,Nigeria,NGA,42.22626064,43.27675278,44.35114641,45.44915489,46.57067508,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,Pakistan,PAK,63.66154836,65.38993557,67.11104079,68.82426834,70.52881326,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,"Somalia, Fed. Rep.",SOM,37.16507373,38.23090616,39.30661599,40.39141264,40.57580312,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,South Sudan,SSD,14.45063574,15.74727768,15.84481737,15.94723372,16.0551794,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,Sudan,SDN,36.67269719,36.77826076,36.89208337,..,..,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,Syrian Arab Republic,SYR,93.60846332,93.95593183,94.30038024,94.64183196,94.98032512,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,Uganda,UGA,20.20394648,20.40809045,20.61082587,20.81213747,21.01213034,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,Ukraine,UKR,97.73628651,97.74159919,97.74271545,97.74395343,97.74530072,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,"Venezuela, RB",VEN,96.21441747,96.7597096,96.98606481,97.00235715,98.39558598,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,"Yemen, Rep.",YEM,53.12701834,53.62693884,54.11663797,54.59560341,54.84475849,..,..
+People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,Afghanistan,AFG,26.58131454,27.49173411,28.40250515,29.313843,30.03409813,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,Bangladesh,BGD,57.72074495,58.18021327,58.65599777,59.1298464,59.10929532,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,Burkina Faso,BFA,..,..,..,..,..,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,Cameroon,CMR,..,..,..,..,..,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,Central African Republic,CAF,6.385206969,6.283710971,6.183318163,6.083897945,6.126444639,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,Chad,TCD,6.071435842,6.113368349,6.157883138,6.204938183,6.247048605,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,"Congo, Dem. Rep.",COD,11.40437394,11.29904787,11.18566629,11.38371356,11.58433579,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,Colombia,COL,73.12643789,73.27191936,73.4132311,73.71989554,73.85604483,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,Ethiopia,ETH,11.29107585,11.80605257,12.33620328,12.88151333,13.23789824,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,Haiti,HTI,..,..,..,..,..,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,Lebanon,LBN,47.5631164,47.7,47.7,47.7,47.7,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,Mali,MLI,..,..,..,..,..,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,Mozambique,MOZ,..,..,..,..,..,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,Myanmar,MMR,54.24494059,55.68369447,56.77102584,57.32547563,57.39649937,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,Niger,NER,..,..,..,..,..,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,Nigeria,NGA,26.70781306,27.28233791,27.85349083,28.4210293,28.98488487,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,Pakistan,PAK,46.50448507,47.52388316,48.54683424,49.57296604,50.60177857,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,"Somalia, Fed. Rep.",SOM,..,..,..,..,..,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,South Sudan,SSD,..,..,..,..,..,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,Sudan,SDN,..,..,..,..,..,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,Syrian Arab Republic,SYR,..,..,..,..,..,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,Uganda,UGA,14.89523756,15.80938218,16.74508124,17.70231604,18.68142321,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,Ukraine,UKR,88.32258221,88.14986403,87.9774979,87.76939717,87.62072501,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,"Venezuela, RB",VEN,..,..,..,..,..,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,"Yemen, Rep.",YEM,..,..,..,..,..,..,..
+People using safely managed drinking water services (% of population),SH.H2O.SMDW.ZS,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,Afghanistan,AFG,39.13080861,40.46727146,41.8037343,43.14019714,44.47665998,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,Bangladesh,BGD,46.14125652,49.99071555,53.84017458,57.68963361,57.68963361,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,Burkina Faso,BFA,5.216093109,5.336346492,5.456599875,5.456599875,5.456599875,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,Cameroon,CMR,22.03013445,22.03013445,22.03013445,22.03013445,22.03013445,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,Central African Republic,CAF,12.37862795,12.29506382,12.2114997,12.12793557,12.12793557,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,Chad,TCD,19.98083784,21.22142444,22.46201104,23.70259763,23.70259763,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,"Congo, Dem. Rep.",COD,12.33362819,12.33362819,12.33362819,12.33362819,12.33362819,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,Colombia,COL,32.94573528,32.94573528,32.94573528,32.94573528,32.94573528,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,Ethiopia,ETH,4.825143381,4.825143381,4.825143381,4.825143381,4.825143381,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,Haiti,HTI,15.73057923,15.46310504,15.46310504,15.46310504,15.46310504,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,Lebanon,LBN,..,..,..,..,..,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,Mali,MLI,9.120374815,9.120374815,9.120374815,9.120374815,9.120374815,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,Mozambique,MOZ,..,..,..,..,..,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,Myanmar,MMR,70.6572313,70.6572313,70.6572313,70.6572313,70.6572313,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,Niger,NER,18.12766412,19.30535065,20.48303719,21.66072372,21.66072372,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,Nigeria,NGA,22.88348198,22.88348198,22.88348198,22.88348198,22.88348198,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,Pakistan,PAK,64.4005081,68.35216266,72.30381722,76.25547178,80.20712634,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,"Somalia, Fed. Rep.",SOM,19.00970286,19.00970286,19.00970286,19.00970286,19.00970286,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,South Sudan,SSD,..,..,..,..,..,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,Sudan,SDN,..,..,..,..,..,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,Syrian Arab Republic,SYR,80.593961,80.593961,80.593961,80.593961,80.593961,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,Uganda,UGA,20.67225466,21.77669784,22.88114102,23.9855842,25.09002738,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,Ukraine,UKR,..,..,..,..,..,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,"Venezuela, RB",VEN,..,..,..,..,..,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,"Yemen, Rep.",YEM,..,..,..,..,..,..,..
+"People with basic handwashing facilities including soap and water, rural (% of rural population)",SH.STA.HYGN.RU.ZS,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,Afghanistan,AFG,0.304,0.214,0.254,..,..,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,Bangladesh,BGD,0.573,0.627,0.656,0.67,..,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,Burkina Faso,BFA,0.083,0.091,0.096,0.101,0.147,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,Cameroon,CMR,0.13,..,0.097,0.124,0.135,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,Central African Republic,CAF,0.066,..,..,0.021,..,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,Chad,TCD,0.052,0.053,0.06,0.058,0.085,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,"Congo, Dem. Rep.",COD,0.362,0.167,..,0.177,0.187,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,Colombia,COL,2.231,2.304,2.379,2.451,..,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,Ethiopia,ETH,0.076,0.051,0.104,0.101,0.108,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,Haiti,HTI,0.237,..,..,..,..,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,Lebanon,LBN,2.425,2.617,..,..,..,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,Mali,MLI,0.123,..,..,..,0.195,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,Mozambique,MOZ,0.084,0.085,0.083,0.081,0.082,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,Myanmar,MMR,0.69,0.751,..,..,..,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,Niger,NER,0.036,0.038,0.034,..,0.023,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,Nigeria,NGA,0.376,0.367,..,0.395,0.394,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,Pakistan,PAK,0.947,1.084,..,..,..,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,"Somalia, Fed. Rep.",SOM,..,..,..,..,..,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,South Sudan,SSD,0.04,0.033,0.043,..,..,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,Sudan,SDN,..,..,..,..,..,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,Syrian Arab Republic,SYR,..,..,..,..,..,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,Uganda,UGA,0.414,..,0.158,..,0.168,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,Ukraine,UKR,..,..,..,..,..,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,"Venezuela, RB",VEN,..,..,..,..,..,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,"Yemen, Rep.",YEM,..,..,..,..,..,..,..
+"Physicians (per 1,000 people)",SH.MED.PHYS.ZS,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Population, female",SP.POP.TOTL.FE.IN,Afghanistan,AFG,18178417,18736474,19343529,19813956,20103167,20530683,21114952
+"Population, female",SP.POP.TOTL.FE.IN,Bangladesh,BGD,83091995,83750865,84419144,85086513,85985502,87109279,88218708
+"Population, female",SP.POP.TOTL.FE.IN,Burkina Faso,BFA,10267366,10528619,10785623,11041607,11297679,11557013,11818695
+"Population, female",SP.POP.TOTL.FE.IN,Cameroon,CMR,12441447,12792259,13146018,13500426,13860475,14232102,14609403
+"Population, female",SP.POP.TOTL.FE.IN,Central African Republic,CAF,2492227,2532900,2581797,2628853,2641776,2684793,2772728
+"Population, female",SP.POP.TOTL.FE.IN,Chad,TCD,8051467,8313906,8582450,8883575,9196578,9627875,10117765
+"Population, female",SP.POP.TOTL.FE.IN,"Congo, Dem. Rep.",COD,45385211,46842742,48373399,49963807,51598667,53305848,55059433
+"Population, female",SP.POP.TOTL.FE.IN,Colombia,COL,24795335,25243941,25616896,25914903,26204251,26502596,26791092
+"Population, female",SP.POP.TOTL.FE.IN,Ethiopia,ETH,56155672,57695135,59291103,60910800,62543054,64205530,65892477
+"Population, female",SP.POP.TOTL.FE.IN,Haiti,HTI,5522066,5596002,5668475,5737335,5805291,5875810,5947201
+"Population, female",SP.POP.TOTL.FE.IN,Lebanon,LBN,3051907,2971467,2932378,2940407,2953396,2966891,2982328
+"Population, female",SP.POP.TOTL.FE.IN,Mali,MLI,10121898,10432310,10752863,11088185,11428053,11774460,12127823
+"Population, female",SP.POP.TOTL.FE.IN,Mozambique,MOZ,14992896,15432082,15887255,16353471,16832437,17327861,17829684
+"Population, female",SP.POP.TOTL.FE.IN,Myanmar,MMR,26198925,26389410,26585323,26780850,26977460,27177563,27371250
+"Population, female",SP.POP.TOTL.FE.IN,Niger,NER,10923757,11297004,11675856,12062154,12460549,12877706,13307084
+"Population, female",SP.POP.TOTL.FE.IN,Nigeria,NGA,101480187,103695842,105897424,108111257,110366192,112676013,115005707
+"Population, female",SP.POP.TOTL.FE.IN,Pakistan,PAK,110970023,112921196,115047726,117358452,119632267,121773246,123835758
+"Population, female",SP.POP.TOTL.FE.IN,"Somalia, Fed. Rep.",SOM,7712226,8000369,8309044,8617767,8882342,9160786,9486361
+"Population, female",SP.POP.TOTL.FE.IN,South Sudan,SSD,5144748,5296090,5434671,5519926,5599435,5834585,6069044
+"Population, female",SP.POP.TOTL.FE.IN,Sudan,SDN,22269141,22935758,23565489,24214787,24882915,25221195,25436214
+"Population, female",SP.POP.TOTL.FE.IN,Syrian Arab Republic,SYR,9785124,10178472,10528436,10818054,11233661,11799042,12331590
+"Population, female",SP.POP.TOTL.FE.IN,Uganda,UGA,20994867,21710133,22437739,23163441,23862969,24533989,25209966
+"Population, female",SP.POP.TOTL.FE.IN,Ukraine,UKR,24138295,24004328,23859257,23654574,21931325,20188500,20262170
+"Population, female",SP.POP.TOTL.FE.IN,"Venezuela, RB",VEN,15026640,14599335,14360362,14265712,14260990,14312346,14371684
+"Population, female",SP.POP.TOTL.FE.IN,"Yemen, Rep.",YEM,16805311,17319592,17830293,18330840,18866431,19440467,20025126
+"Population, female",SP.POP.TOTL.FE.IN,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Population, male",SP.POP.TOTL.MA.IN,Afghanistan,AFG,18564622,19119647,19725450,20186456,20475675,20924078,21532540
+"Population, male",SP.POP.TOTL.MA.IN,Bangladesh,BGD,80431108,81162190,81878880,82572341,83399395,84357711,85343656
+"Population, male",SP.POP.TOTL.MA.IN,Burkina Faso,BFA,10170922,10433333,10693067,10953636,11211359,11468763,11730086
+"Population, male",SP.POP.TOTL.MA.IN,Cameroon,CMR,12364936,12713836,13064540,13415332,13772296,14140585,14514341
+"Population, male",SP.POP.TOTL.MA.IN,Central African Republic,CAF,2386430,2411803,2444831,2483247,2456263,2467628,2557962
+"Population, male",SP.POP.TOTL.MA.IN,Chad,TCD,8105064,8371317,8642229,8944698,9258738,9691189,10181358
+"Population, male",SP.POP.TOTL.MA.IN,"Congo, Dem. Rep.",COD,44662433,46104700,47616599,49185125,50798301,52483883,54216832
+"Population, male",SP.POP.TOTL.MA.IN,Colombia,COL,24229130,24664044,25013101,25273270,25533693,25818556,26095271
+"Population, male",SP.POP.TOTL.MA.IN,Ethiopia,ETH,56508480,58042248,59626568,61227788,62841233,64486162,66167290
+"Population, male",SP.POP.TOTL.MA.IN,Haiti,HTI,5440296,5509161,5575373,5637251,5698315,5761588,5825356
+"Population, male",SP.POP.TOTL.MA.IN,Lebanon,LBN,2932212,2823127,2770020,2777715,2791093,2806602,2823634
+"Population, male",SP.POP.TOTL.MA.IN,Mali,MLI,10320132,10636095,10960973,11300445,11644587,11994667,12350772
+"Population, male",SP.POP.TOTL.MA.IN,Mozambique,MOZ,14025748,14452298,14896433,15354329,15823809,16307299,16802082
+"Population, male",SP.POP.TOTL.MA.IN,Myanmar,MMR,26073322,26251303,26431199,26606252,26779327,26956235,27128841
+"Population, male",SP.POP.TOTL.MA.IN,Niger,NER,11264312,11650753,12041757,12439986,12851424,13282161,13725328
+"Population, male",SP.POP.TOTL.MA.IN,Nigeria,NGA,103458568,105789799,108098757,110418029,112784704,115206932,117673771
+"Population, male",SP.POP.TOTL.MA.IN,Pakistan,PAK,115958869,117879703,119954020,122119349,124068400,125731249,127433406
+"Population, male",SP.POP.TOTL.MA.IN,"Somalia, Fed. Rep.",SOM,7740261,8030602,8342147,8653664,8919555,9197829,9522790
+"Population, male",SP.POP.TOTL.MA.IN,South Sudan,SSD,4978229,5127294,5263796,5345854,5421742,5648789,5874364
+"Population, male",SP.POP.TOTL.MA.IN,Sudan,SDN,21961455,22612417,23223742,23852137,24500431,24821596,25012749
+"Population, male",SP.POP.TOTL.MA.IN,Syrian Arab Republic,SYR,9792721,10175062,10520993,10810785,11228512,11795581,12341170
+"Population, male",SP.POP.TOTL.MA.IN,Uganda,UGA,20570964,21289504,22019413,22747489,23449750,24122612,24805126
+"Population, male",SP.POP.TOTL.MA.IN,Ukraine,UKR,21070612,20953130,20820757,20644066,19117441,17544336,17598051
+"Population, male",SP.POP.TOTL.MA.IN,"Venezuela, RB",VEN,14780952,14338763,14083715,13972114,13952027,13988508,14033859
+"Population, male",SP.POP.TOTL.MA.IN,"Yemen, Rep.",YEM,17279871,17791816,18304570,18809390,19356445,19950332,20558038
+"Population, male",SP.POP.TOTL.MA.IN,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Population, total",SP.POP.TOTL,Afghanistan,AFG,36743039,37856121,39068979,40000412,40578842,41454761,42647492
+"Population, total",SP.POP.TOTL,Bangladesh,BGD,163523103,164913055,166298024,167658854,169384897,171466990,173562364
+"Population, total",SP.POP.TOTL,Burkina Faso,BFA,20438288,20961952,21478690,21995243,22509038,23025776,23548781
+"Population, total",SP.POP.TOTL,Cameroon,CMR,24806383,25506095,26210558,26915758,27632771,28372687,29123744
+"Population, total",SP.POP.TOTL,Central African Republic,CAF,4878657,4944703,5026628,5112100,5098039,5152421,5330690
+"Population, total",SP.POP.TOTL,Chad,TCD,16156531,16685223,17224679,17828273,18455316,19319064,20299123
+"Population, total",SP.POP.TOTL,"Congo, Dem. Rep.",COD,90047644,92947442,95989998,99148932,102396968,105789731,109276265
+"Population, total",SP.POP.TOTL,Colombia,COL,49024465,49907985,50629997,51188173,51737944,52321152,52886363
+"Population, total",SP.POP.TOTL,Ethiopia,ETH,112664152,115737383,118917671,122138588,125384287,128691692,132059767
+"Population, total",SP.POP.TOTL,Haiti,HTI,10962362,11105163,11243848,11374586,11503606,11637398,11772557
+"Population, total",SP.POP.TOTL,Lebanon,LBN,5984119,5794594,5702398,5718122,5744489,5773493,5805962
+"Population, total",SP.POP.TOTL,Mali,MLI,20442030,21068405,21713836,22388630,23072640,23769127,24478595
+"Population, total",SP.POP.TOTL,Mozambique,MOZ,29018644,29884380,30783688,31707800,32656246,33635160,34631766
+"Population, total",SP.POP.TOTL,Myanmar,MMR,52272247,52640713,53016522,53387102,53756787,54133798,54500091
+"Population, total",SP.POP.TOTL,Niger,NER,22188069,22947757,23717613,24502140,25311973,26159867,27032412
+"Population, total",SP.POP.TOTL,Nigeria,NGA,204938755,209485641,213996181,218529286,223150896,227882945,232679478
+"Population, total",SP.POP.TOTL,Pakistan,PAK,226928892,230800899,235001746,239477801,243700667,247504495,251269164
+"Population, total",SP.POP.TOTL,"Somalia, Fed. Rep.",SOM,15452487,16030971,16651191,17271431,17801897,18358615,19009151
+"Population, total",SP.POP.TOTL,South Sudan,SSD,10122977,10423384,10698467,10865780,11021177,11483374,11943408
+"Population, total",SP.POP.TOTL,Sudan,SDN,44230596,45548175,46789231,48066924,49383346,50042791,50448963
+"Population, total",SP.POP.TOTL,Syrian Arab Republic,SYR,19577845,20353534,21049429,21628839,22462173,23594623,24672760
+"Population, total",SP.POP.TOTL,Uganda,UGA,41565831,42999637,44457152,45910930,47312719,48656601,50015092
+"Population, total",SP.POP.TOTL,Ukraine,UKR,45208907,44957458,44680014,44298640,41048766,37732836,37860221
+"Population, total",SP.POP.TOTL,"Venezuela, RB",VEN,29807592,28938098,28444077,28237826,28213017,28300854,28405543
+"Population, total",SP.POP.TOTL,"Yemen, Rep.",YEM,34085182,35111408,36134863,37140230,38222876,39390799,40583164
+"Population, total",SP.POP.TOTL,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,Afghanistan,AFG,16.9,16.2,15.8,16.5,12.1,11.8,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,Bangladesh,BGD,6,5.9,5.7,5.6,5.5,5.3,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,Burkina Faso,BFA,6.7,6.5,6.3,6.1,6.6,7.1,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,Cameroon,CMR,12,11.8,11.6,11.4,11.1,10.8,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,Central African Republic,CAF,17.6,67.8,19.7,40.2,136.6,10.4,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,Chad,TCD,15.9,15.5,15.1,14.7,14.3,13.9,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,"Congo, Dem. Rep.",COD,17.6,17.2,16.8,16.3,15.9,15.6,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,Colombia,COL,4.8,4.7,4.8,4.8,4.8,4.9,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,Ethiopia,ETH,8,7.8,7.6,7.4,7.2,7,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,Haiti,HTI,6.7,6.5,6.3,6.2,6.1,6.4,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,Lebanon,LBN,3.1,3.1,3.2,3.3,3.3,3.4,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,Mali,MLI,9.8,9.6,9.4,9.2,9.8,9.5,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,Mozambique,MOZ,8.3,8.1,8,7.9,7.8,7.6,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,Myanmar,MMR,3.4,3.3,3.2,3.7,4.1,3.8,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,Niger,NER,10.8,10.4,10.1,9.8,9.5,9.3,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,Nigeria,NGA,8.2,8,7.8,7.5,7.3,7.1,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,Pakistan,PAK,4.5,4.4,4.3,4.2,4.1,4,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,"Somalia, Fed. Rep.",SOM,19.3,17.5,17.2,16.8,20.6,17.9,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,South Sudan,SSD,21.8,15.5,15.5,15.5,15.5,15.5,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,Sudan,SDN,10.8,10.6,10.4,10.1,9.9,10.7,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,Syrian Arab Republic,SYR,9.4,5.4,4.1,2.9,3.4,4.3,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,Uganda,UGA,13.4,13.2,13,12.7,12.4,12.1,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,Ukraine,UKR,2.4,2.4,2.4,2.6,6.4,5.8,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,"Venezuela, RB",VEN,9.5,9.2,9.1,8.9,8.9,8.8,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,"Yemen, Rep.",YEM,8.8,8,7,6.7,5.4,5,..
+"Probability of dying among adolescents ages 15-19 years (per 1,000)",SH.DYN.1519,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,Afghanistan,AFG,29,27.3,26.2,28.9,17,16.9,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,Bangladesh,BGD,4.5,4.5,4.5,4.5,4.5,4.4,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,Burkina Faso,BFA,8.6,8.3,8.1,7.9,9.4,11.1,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,Cameroon,CMR,17.5,17.3,17.2,17,16.8,16.6,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,Central African Republic,CAF,36.1,137.7,40.9,83.4,269.5,22.7,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,Chad,TCD,19.3,19.1,18.9,18.7,18.4,18.2,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,"Congo, Dem. Rep.",COD,19.3,19.1,18.9,18.7,18.4,18.3,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,Colombia,COL,7.3,7.4,7.6,7.7,7.8,7.9,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,Ethiopia,ETH,8.6,8.4,8.3,8.2,8.1,8.1,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,Haiti,HTI,11.3,11.1,11,10.9,10.8,12.1,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,Lebanon,LBN,3.6,3.7,3.7,3.8,3.9,4,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,Mali,MLI,11.8,11.6,11.5,11.4,13.3,13,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,Mozambique,MOZ,12.6,12.2,11.9,11.6,11.3,11.1,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,Myanmar,MMR,5.8,5.7,5.6,7.1,8.4,7.8,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,Niger,NER,16.7,16.4,16.2,16,15.8,15.6,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,Nigeria,NGA,10.6,10.4,10.2,10.1,9.9,9.8,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,Pakistan,PAK,6.6,6.6,6.5,6.4,6.3,6.3,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,"Somalia, Fed. Rep.",SOM,29,24.7,24.3,23.8,30.6,28.4,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,South Sudan,SSD,33.4,22.2,22.2,22.2,22.2,22.2,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,Sudan,SDN,16.1,15.8,15.5,15.2,14.9,17.5,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,Syrian Arab Republic,SYR,18.5,9.4,6.4,3.4,4.9,5.7,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,Uganda,UGA,14.1,13.9,13.8,13.7,13.5,13.4,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,Ukraine,UKR,3.8,3.7,3.7,3.9,13.5,13.5,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,"Venezuela, RB",VEN,16.1,15.9,16,16.1,16.2,16.3,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,"Yemen, Rep.",YEM,16.1,13.7,11.6,10.8,7.1,6.1,..
+"Probability of dying among youth ages 20-24 years (per 1,000)",SH.DYN.2024,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,Afghanistan,AFG,..,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,Bangladesh,BGD,2.91,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,Burkina Faso,BFA,..,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,Cameroon,CMR,..,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,Central African Republic,CAF,..,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,Chad,TCD,..,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,"Congo, Dem. Rep.",COD,..,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,Colombia,COL,..,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,Ethiopia,ETH,..,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,Haiti,HTI,..,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,Lebanon,LBN,..,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,Mali,MLI,..,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,Mozambique,MOZ,0.53,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,Myanmar,MMR,..,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,Niger,NER,..,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,Nigeria,NGA,..,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,Pakistan,PAK,..,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,"Somalia, Fed. Rep.",SOM,..,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,South Sudan,SSD,..,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,Sudan,SDN,..,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,Syrian Arab Republic,SYR,..,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,Uganda,UGA,..,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,Ukraine,UKR,..,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,"Venezuela, RB",VEN,..,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,"Yemen, Rep.",YEM,..,..,..,..,..,..,..
+"Specialist surgical workforce (per 100,000 population)",SH.MED.SAOP.P5,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,Afghanistan,AFG,2.3,2.37,2.39,2.36,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,Bangladesh,BGD,2.2,2.24,1.98,2,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,Burkina Faso,BFA,4.13,3.98,3.94,4.01,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,Cameroon,CMR,3.55,3.53,3.31,3.54,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,Central African Republic,CAF,3.85,3.89,3.94,3.96,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,Chad,TCD,2.88,2.87,3.01,3.03,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,"Congo, Dem. Rep.",COD,4.01,3.71,3.62,3.91,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,Colombia,COL,2.02,2.33,2.14,2.09,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,Ethiopia,ETH,2.71,2.77,2.85,3.06,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,Haiti,HTI,5.73,5.73,5.31,5.06,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,Lebanon,LBN,0.52,0.51,0.62,0.55,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,Mali,MLI,2.7,2.69,2.7,2.79,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,Mozambique,MOZ,6.66,6.36,6.16,5.96,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,Myanmar,MMR,1.11,1.11,1.04,1.02,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,Niger,NER,2.97,2.98,2.85,2.96,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,Nigeria,NGA,1.39,1.39,1.46,1.53,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,Pakistan,PAK,3.42,3.35,3.09,3.16,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,"Somalia, Fed. Rep.",SOM,5.67,5.7,5.83,6.09,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,South Sudan,SSD,3.12,3.38,3.54,3.85,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,Sudan,SDN,2.67,2.56,2.37,2.42,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,Syrian Arab Republic,SYR,0.27,0.27,0.26,0.26,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,Uganda,UGA,1.8,2.01,1.99,2.27,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,Ukraine,UKR,7.1,7.12,6.95,6.87,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,"Venezuela, RB",VEN,1.8,1.78,1.89,2.02,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,"Yemen, Rep.",YEM,3.44,3.23,2.97,2.84,..,..,..
+"Suicide mortality rate, female (per 100,000 female population)",SH.STA.SUIC.FE.P5,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,Afghanistan,AFG,3.56,3.53,3.49,3.6,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,Bangladesh,BGD,3.06,3.08,2.81,2.81,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,Burkina Faso,BFA,8.64,8.45,8.3,8.5,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,Cameroon,CMR,8.14,8.22,7.91,8.5,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,Central African Republic,CAF,10.33,9.45,9.73,9.19,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,Chad,TCD,5.21,5.26,5.23,5.21,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,"Congo, Dem. Rep.",COD,8.68,8.33,8.15,8.77,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,Colombia,COL,5.03,5.11,4.81,4.96,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,Ethiopia,ETH,5.55,5.67,5.68,6.07,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,Haiti,HTI,8.44,8.6,7.89,7.81,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,Lebanon,LBN,0.7,0.7,0.79,0.7,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,Mali,MLI,4.12,4.03,4.05,4.16,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,Mozambique,MOZ,12.46,11.59,10.79,10.61,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,Myanmar,MMR,3.05,3.06,2.89,2.89,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,Niger,NER,4.51,4.54,4.33,4.48,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,Nigeria,NGA,4.44,4.41,4.56,4.99,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,Pakistan,PAK,6.22,6.09,5.43,5.64,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,"Somalia, Fed. Rep.",SOM,7.95,7.92,8.04,7.96,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,South Sudan,SSD,6.65,7.25,7.63,7.89,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,Sudan,SDN,3.53,3.39,3.04,3.16,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,Syrian Arab Republic,SYR,0.62,0.62,0.57,0.59,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,Uganda,UGA,4.74,5.14,4.93,5.5,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,Ukraine,UKR,23.53,23.29,22.12,21.21,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,"Venezuela, RB",VEN,7.45,7.17,7.33,8.63,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,"Yemen, Rep.",YEM,4.58,4.33,3.93,4.21,..,..,..
+"Suicide mortality rate (per 100,000 population)",SH.STA.SUIC.P5,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,Afghanistan,AFG,4.79,4.66,4.57,4.81,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,Bangladesh,BGD,3.94,3.95,3.66,3.65,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,Burkina Faso,BFA,13.2,12.95,12.7,13.02,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,Cameroon,CMR,12.76,12.95,12.54,13.49,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,Central African Republic,CAF,17.1,15.3,15.84,14.72,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,Chad,TCD,7.52,7.64,7.44,7.37,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,"Congo, Dem. Rep.",COD,13.42,13.02,12.76,13.71,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,Colombia,COL,8.11,7.95,7.55,7.91,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,Ethiopia,ETH,8.38,8.56,8.49,9.06,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,Haiti,HTI,11.19,11.51,10.52,10.61,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,Lebanon,LBN,0.88,0.89,0.97,0.86,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,Mali,MLI,5.52,5.35,5.38,5.5,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,Mozambique,MOZ,18.67,17.18,15.73,15.56,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,Myanmar,MMR,5.01,5.03,4.75,4.78,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,Niger,NER,6.01,6.07,5.78,5.95,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,Nigeria,NGA,7.42,7.36,7.59,8.38,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,Pakistan,PAK,8.91,8.72,7.68,8.02,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,"Somalia, Fed. Rep.",SOM,10.21,10.13,10.24,9.82,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,South Sudan,SSD,10.31,11.24,11.84,12.06,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,Sudan,SDN,4.4,4.24,3.72,3.91,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,Syrian Arab Republic,SYR,0.97,0.97,0.88,0.91,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,Uganda,UGA,7.73,8.33,7.92,8.79,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,Ukraine,UKR,42.35,41.82,39.51,37.65,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,"Venezuela, RB",VEN,13.19,12.67,12.87,15.38,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,"Yemen, Rep.",YEM,5.69,5.4,4.87,5.55,..,..,..
+"Suicide mortality rate, male (per 100,000 male population)",SH.STA.SUIC.MA.P5,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,Afghanistan,AFG,70,73,64,68,69,66,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,Bangladesh,BGD,74,80,63,83,70,80,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,Burkina Faso,BFA,61,50,58,70,76,88,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,Cameroon,CMR,51,53,49,51,57,59,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,Central African Republic,CAF,41,45,46,48,52,53,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,Chad,TCD,57,58,53,54,57,59,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,"Congo, Dem. Rep.",COD,59,60,66,68,76,77,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,Colombia,COL,81,81,69,65,68,83,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,Ethiopia,ETH,67,69,70,72,72,72,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,Haiti,HTI,70,69,61,58,63,68,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,Lebanon,LBN,87,87,87,87,87,87,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,Mali,MLI,63,63,62,65,70,73,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,Mozambique,MOZ,88,89,87,86,93,96,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,Myanmar,MMR,78,79,63,33,46,43,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,Niger,NER,55,59,59,66,73,80,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,Nigeria,NGA,23,26,29,43,58,74,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,Pakistan,PAK,60,54,45,52,63,69,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,"Somalia, Fed. Rep.",SOM,41,41,41,40,42,42,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,South Sudan,SSD,64,69,66,71,79,92,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,Sudan,SDN,64,65,60,66,72,53,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,Syrian Arab Republic,SYR,69,67,68,85,79,85,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,Uganda,UGA,67,77,69,82,100,90,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,Ukraine,UKR,73,73,52,49,46,47,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,"Venezuela, RB",VEN,78,79,73,72,77,81,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,"Yemen, Rep.",YEM,60,61,51,53,56,58,..
+"Tuberculosis case detection rate (%, all forms)",SH.TBS.DTEC.ZS,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,Afghanistan,AFG,..,42,..,41,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,Bangladesh,BGD,..,50,..,52,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,Burkina Faso,BFA,..,38,..,40,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,Cameroon,CMR,..,43,..,44,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,Central African Republic,CAF,..,31,..,32,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,Chad,TCD,..,27,..,29,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,"Congo, Dem. Rep.",COD,..,40,..,42,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,Colombia,COL,..,80,..,80,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,Ethiopia,ETH,..,36,..,35,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,Haiti,HTI,..,53,..,54,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,Lebanon,LBN,..,74,..,73,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,Mali,MLI,..,40,..,41,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,Mozambique,MOZ,..,43,..,44,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,Myanmar,MMR,..,60,..,52,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,Niger,NER,..,34,..,35,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,Nigeria,NGA,..,43,..,38,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,Pakistan,PAK,..,44,..,45,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,"Somalia, Fed. Rep.",SOM,..,26,..,27,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,South Sudan,SSD,..,31,..,34,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,Sudan,SDN,..,45,..,44,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,Syrian Arab Republic,SYR,..,62,..,64,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,Uganda,UGA,..,48,..,49,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,Ukraine,UKR,..,77,..,76,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,"Venezuela, RB",VEN,..,74,..,75,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,"Yemen, Rep.",YEM,..,42,..,42,..,..,..
+UHC service coverage index,SH.UHC.SRVS.CV.XD,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,Afghanistan,AFG,..,..,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,Bangladesh,BGD,..,..,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,Burkina Faso,BFA,54.4,..,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,Cameroon,CMR,59.8,..,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,Central African Republic,CAF,..,50.6,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,Chad,TCD,..,54.3,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,"Congo, Dem. Rep.",COD,51,..,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,Colombia,COL,..,..,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,Ethiopia,ETH,..,..,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,Haiti,HTI,..,..,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,Lebanon,LBN,..,..,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,Mali,MLI,79.1,..,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,Mozambique,MOZ,72.7,..,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,Myanmar,MMR,..,..,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,Niger,NER,..,..,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,Nigeria,NGA,52.2,..,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,Pakistan,PAK,0.4,..,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,"Somalia, Fed. Rep.",SOM,..,..,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,South Sudan,SSD,..,..,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,Sudan,SDN,..,..,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,Syrian Arab Republic,SYR,..,..,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,Uganda,UGA,60.3,60.3,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,Ukraine,UKR,..,..,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,"Venezuela, RB",VEN,..,..,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,"Yemen, Rep.",YEM,..,..,..,..,..,..,..
+Use of insecticide-treated bed nets (% of under-5 population),SH.MLR.NETS.ZS,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,Afghanistan,AFG,91,91,95,93,95,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,Bangladesh,BGD,94,95,95,97,95,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,Burkina Faso,BFA,80,81,82,82,82,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,Cameroon,CMR,84,86,86,88,89,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,Central African Republic,CAF,79,81,79,83,90,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,Chad,TCD,78,80,81,82,83,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,"Congo, Dem. Rep.",COD,93,92,94,95,95,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,Colombia,COL,74,75,71,73,74,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,Ethiopia,ETH,88,90,86,87,86,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,Haiti,HTI,82,84,82,82,85,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,Lebanon,LBN,81,80,81,88,85,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,Mali,MLI,80,82,82,82,84,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,Mozambique,MOZ,93,94,94,94,95,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,Myanmar,MMR,88,88,87,87,88,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,Niger,NER,83,83,84,86,86,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,Nigeria,NGA,87,88,90,91,93,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,Pakistan,PAK,93,93,94,94,95,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,"Somalia, Fed. Rep.",SOM,87,92,90,93,91,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,South Sudan,SSD,81,85,82,84,82,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,Sudan,SDN,84,83,86,88,66,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,Syrian Arab Republic,SYR,89,89,91,96,93,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,Uganda,UGA,74,82,85,88,90,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,Ukraine,UKR,77,79,77,75,77,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,"Venezuela, RB",VEN,84,81,85,84,83,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,"Yemen, Rep.",YEM,88,85,88,89,90,..,..
+Tuberculosis treatment success rate (% of new cases),SH.TBS.CURE.ZS,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,Afghanistan,AFG,3.3,3.2,3.1,3.6,2.9,2.8,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,Bangladesh,BGD,3.1,2.9,2.8,2.7,2.6,2.5,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,Burkina Faso,BFA,6.9,6.4,5.9,5.5,5.2,4.9,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,Cameroon,CMR,13.6,13.2,12.9,12.5,12.1,11.8,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,Central African Republic,CAF,17.5,61,19.6,36.9,120.5,11.8,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,Chad,TCD,13.3,12.9,12.4,12,11.6,11.2,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,"Congo, Dem. Rep.",COD,11.8,11.4,11.1,10.7,10.4,10,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,Colombia,COL,1.2,1.2,1.2,1.2,1.1,1.1,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,Ethiopia,ETH,5.1,4.7,4.4,4.2,4,3.8,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,Haiti,HTI,6.3,6.1,5.9,6.7,5.5,5.3,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,Lebanon,LBN,1.5,1.6,1.6,1.7,1.8,1.9,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,Mali,MLI,13.4,13,12.6,12.3,11.9,11.6,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,Mozambique,MOZ,6.6,6.2,5.8,5.5,5.2,5,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,Myanmar,MMR,2.5,2.4,2.3,2.2,2.1,2,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,Niger,NER,20.5,20.1,19.6,19.2,18.7,18.3,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,Nigeria,NGA,13.6,13.3,13,12.6,12.3,11.9,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,Pakistan,PAK,4.5,4.4,4.3,4.1,4,3.9,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,"Somalia, Fed. Rep.",SOM,20.4,16.6,16.1,15.5,23.2,14.5,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,South Sudan,SSD,24.2,13.7,13.7,13.7,13.7,13.7,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,Sudan,SDN,5,4.8,4.7,4.5,4.4,4.2,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,Syrian Arab Republic,SYR,6,3.5,2.7,2.4,2.5,3.7,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,Uganda,UGA,8.5,8.2,7.9,7.7,7.4,7.2,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,Ukraine,UKR,0.8,0.8,0.8,0.7,1.2,0.8,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,"Venezuela, RB",VEN,1.6,1.4,1.3,1.3,1.3,1.3,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,"Yemen, Rep.",YEM,4.6,4.4,3.7,3.7,3.4,3.1,..
+"Probability of dying among children ages 5-9 years (per 1,000)",SH.DYN.0509,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,Afghanistan,AFG,2.7,2.7,2.6,2.9,2.5,2.4,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,Bangladesh,BGD,2.4,2.3,2.3,2.2,2.1,2.1,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,Burkina Faso,BFA,3.8,3.5,3.3,3.1,3,2.9,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,Cameroon,CMR,8.1,8,7.9,7.7,7.5,7.3,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,Central African Republic,CAF,12.7,34.5,13.6,22.2,65.3,9.7,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,Chad,TCD,10.7,10.5,10.4,10.2,10.1,9.8,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,"Congo, Dem. Rep.",COD,9.4,9.2,9.1,8.9,8.7,8.5,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,Colombia,COL,1.5,1.5,1.5,1.6,1.6,1.6,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,Ethiopia,ETH,3.5,3.3,3.2,3.1,3,2.9,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,Haiti,HTI,4.5,4.4,4.3,5.1,4.1,4,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,Lebanon,LBN,1.6,1.6,1.7,1.8,1.9,2,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,Mali,MLI,8.7,8.6,8.5,8.3,8.2,8,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,Mozambique,MOZ,4.5,4.2,4,3.9,3.7,3.5,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,Myanmar,MMR,2.2,2.1,2.1,2,1.9,1.9,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,Niger,NER,13.1,12.9,12.7,12.5,12.3,12.1,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,Nigeria,NGA,7.2,7,6.9,6.8,6.6,6.5,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,Pakistan,PAK,3.7,3.7,3.6,3.5,3.4,3.4,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,"Somalia, Fed. Rep.",SOM,12,9.6,9.4,9.1,14.2,8.7,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,South Sudan,SSD,14.7,8.4,8.4,8.4,8.4,8.4,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,Sudan,SDN,3.1,3,2.9,2.8,2.8,2.7,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,Syrian Arab Republic,SYR,3.8,2.6,2.2,2,2.2,3.2,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,Uganda,UGA,5.5,5.4,5.3,5.1,5,4.9,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,Ukraine,UKR,1,1,0.9,0.9,1.5,1.1,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,"Venezuela, RB",VEN,2.1,1.9,1.9,1.9,1.9,1.9,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,"Yemen, Rep.",YEM,5.1,5.3,5.2,5.3,5.3,5.2,..
+"Probability of dying among adolescents ages 10-14 years (per 1,000)",SH.DYN.1014,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,Afghanistan,AFG,..,47.1,..,..,..,..,..
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,Bangladesh,BGD,..,..,..,..,18.7,..,..
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,Burkina Faso,BFA,41.4,..,..,43.2,..,..,..
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,Cameroon,CMR,..,..,..,37.7,..,..,..
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,Central African Republic,CAF,..,..,..,68.8,..,..,..
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,Chad,TCD,42.3,..,..,..,44.8,..,..
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,"Congo, Dem. Rep.",COD,..,..,56.2,..,..,..,..
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,Colombia,COL,35.5,36.5,43.1,39.7,36.6,34.6,31.8
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,Ethiopia,ETH,..,..,..,33.1,..,..,..
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,Haiti,HTI,..,..,..,..,..,..,..
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,Lebanon,LBN,..,..,..,..,..,..,..
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,Mali,MLI,43.8,42.3,41.9,45.5,45.5,43.9,43.3
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,Mozambique,MOZ,..,68.2,..,..,65,..,..
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,Myanmar,MMR,..,..,..,..,..,..,..
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,Niger,NER,40.8,..,..,41.2,..,..,..
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,Nigeria,NGA,40.1,..,..,..,..,56.2,..
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,Pakistan,PAK,21.9,..,..,..,..,..,..
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,"Somalia, Fed. Rep.",SOM,..,..,..,..,55.4,..,..
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,South Sudan,SSD,..,..,..,..,..,..,..
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,Sudan,SDN,..,..,..,..,..,..,..
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,Syrian Arab Republic,SYR,..,..,..,..,..,..,..
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,Uganda,UGA,..,20.3,..,..,..,..,..
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,Ukraine,UKR,27.6,23.1,23.2,..,..,..,..
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,"Venezuela, RB",VEN,..,..,..,..,..,..,..
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,"Yemen, Rep.",YEM,..,..,..,..,..,..,..
+Poverty headcount ratio at national poverty lines (% of population),SI.POV.NAHC,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,Afghanistan,AFG,50.52554853,50.50609121,50.48877781,50.4656202,50.45899289,50.47448712,50.48958096
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,Bangladesh,BGD,49.18638775,49.21513946,49.23623145,49.25021169,49.23661789,49.19763915,49.17175247
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,Burkina Faso,BFA,49.76405804,49.7727144,49.78454225,49.8000204,49.80825259,49.80836694,49.81186075
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,Cameroon,CMR,49.84578364,49.84626616,49.84456837,49.84192346,49.84044308,49.83872342,49.8367964
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,Central African Republic,CAF,48.91571594,48.77547776,48.63758594,48.57585951,48.1805455,47.89259263,47.98557935
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,Chad,TCD,50.16586791,50.17204145,50.17352718,50.17142433,50.16840406,50.16386405,50.15663977
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,"Congo, Dem. Rep.",COD,49.59866967,49.60297885,49.60579226,49.607317,49.60918472,49.61150956,49.61446339
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,Colombia,COL,49.42252711,49.41903385,49.40371714,49.37325953,49.3519669,49.34630644,49.34215461
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,Ethiopia,ETH,50.15657509,50.14995674,50.14104968,50.12976611,50.11890565,50.10903268,50.1040491
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,Haiti,HTI,49.62703753,49.60900619,49.58598693,49.56005432,49.53502845,49.50924597,49.4825041
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,Lebanon,LBN,48.99989455,48.72001386,48.57640593,48.57740006,48.5873156,48.61185421,48.63336147
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,Mali,MLI,50.48486625,50.48362467,50.4792083,50.47403526,50.46924194,50.46322063,50.45539785
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,Mozambique,MOZ,48.33357479,48.36070722,48.39067041,48.42445545,48.455689,48.48289553,48.5163881
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,Myanmar,MMR,49.8798569,49.86882017,49.85464625,49.83647923,49.81571258,49.7955741,49.77760679
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,Niger,NER,50.76742599,50.77077247,50.77136978,50.77101837,50.77211484,50.77304483,50.77359909
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,Nigeria,NGA,50.48267615,50.49978533,50.51433932,50.52779493,50.54190058,50.55531119,50.57333441
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,Pakistan,PAK,51.0992093,51.07419556,51.04388458,50.99401615,50.91016021,50.79958224,50.71589505
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,"Somalia, Fed. Rep.",SOM,50.09071355,50.09429249,50.0993983,50.10392017,50.10452256,50.10088724,50.09581964
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,South Sudan,SSD,49.17751962,49.19030135,49.20140428,49.19898986,49.19385652,49.19102173,49.18498974
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,Sudan,SDN,49.65217968,49.64505603,49.63480165,49.62276554,49.61274089,49.60074269,49.58030356
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,Syrian Arab Republic,SYR,50.01939948,49.99162308,49.98232019,49.98319374,49.98853851,49.9926657,50.01941412
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,Uganda,UGA,49.49008237,49.51089238,49.52951777,49.54700112,49.56331087,49.57726496,49.59528216
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,Ukraine,UKR,46.60721496,46.60657193,46.59971011,46.60203112,46.57251085,46.49620294,46.48163711
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,"Venezuela, RB",VEN,49.58787847,49.54977691,49.51369842,49.48013524,49.45244776,49.42786707,49.40535374
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,"Yemen, Rep.",YEM,50.69613828,50.6724652,50.65625958,50.64424882,50.64099572,50.64718794,50.65656783
+"Population, male (% of total population)",SP.POP.TOTL.MA.ZS,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,Afghanistan,AFG,49.47445147,49.49390879,49.51122219,49.5343798,49.54100711,49.52551288,49.51041904
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,Bangladesh,BGD,50.81361225,50.78486054,50.76376855,50.74978831,50.76338211,50.80236085,50.82824753
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,Burkina Faso,BFA,50.23594196,50.2272856,50.21545775,50.1999796,50.19174741,50.19163306,50.18813925
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,Cameroon,CMR,50.15421636,50.15373384,50.15543163,50.15807654,50.15955692,50.16127658,50.1632036
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,Central African Republic,CAF,51.08428406,51.22452224,51.36241406,51.42414049,51.8194545,52.10740737,52.01442065
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,Chad,TCD,49.83413209,49.82795855,49.82647282,49.82857567,49.83159594,49.83613595,49.84336023
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,"Congo, Dem. Rep.",COD,50.40133033,50.39702115,50.39420774,50.392683,50.39081528,50.38849044,50.38553661
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,Colombia,COL,50.57747289,50.58096615,50.59628286,50.62674047,50.6480331,50.65369356,50.65784539
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,Ethiopia,ETH,49.84342491,49.85004326,49.85895032,49.87023389,49.88109435,49.89096732,49.8959509
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,Haiti,HTI,50.37296247,50.39099381,50.41401307,50.43994568,50.46497155,50.49075403,50.5174959
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,Lebanon,LBN,51.00010545,51.27998614,51.42359407,51.42259994,51.4126844,51.38814579,51.36663853
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,Mali,MLI,49.51513375,49.51637533,49.5207917,49.52596474,49.53075806,49.53677937,49.54460215
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,Mozambique,MOZ,51.66642521,51.63929278,51.60932959,51.57554455,51.544311,51.51710447,51.4836119
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,Myanmar,MMR,50.1201431,50.13117983,50.14535375,50.16352077,50.18428742,50.2044259,50.22239321
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,Niger,NER,49.23257401,49.22922753,49.22863022,49.22898163,49.22788516,49.22695517,49.22640091
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,Nigeria,NGA,49.51732385,49.50021467,49.48566068,49.47220507,49.45809942,49.44468881,49.42666559
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,Pakistan,PAK,48.9007907,48.92580444,48.95611542,49.00598385,49.08983979,49.20041776,49.28410495
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,"Somalia, Fed. Rep.",SOM,49.90928645,49.90570751,49.9006017,49.89607983,49.89547744,49.89911276,49.90418036
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,South Sudan,SSD,50.82248038,50.80969865,50.79859572,50.80101014,50.80614348,50.80897827,50.81501026
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,Sudan,SDN,50.34782032,50.35494397,50.36519835,50.37723446,50.38725911,50.39925731,50.41969644
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,Syrian Arab Republic,SYR,49.98060052,50.00837692,50.01767981,50.01680626,50.01146149,50.0073343,49.98058588
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,Uganda,UGA,50.50991763,50.48910762,50.47048223,50.45299888,50.43668913,50.42273504,50.40471784
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,Ukraine,UKR,53.39278504,53.39342807,53.40028989,53.39796888,53.42748915,53.50379706,53.51836289
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,"Venezuela, RB",VEN,50.41212153,50.45022309,50.48630158,50.51986476,50.54755224,50.57213293,50.59464626
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,"Yemen, Rep.",YEM,49.30386172,49.3275348,49.34374042,49.35575118,49.35900428,49.35281206,49.34343217
+"Population, female (% of total population)",SP.POP.TOTL.FE.ZS,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+Population growth (annual %),SP.POP.GROW,Afghanistan,AFG,2.910809599,2.984389136,3.153609203,2.356097792,1.43570437,2.13559385,2.836573172
+Population growth (annual %),SP.POP.GROW,Bangladesh,BGD,0.820955198,0.846411252,0.836310836,0.814977994,1.024233847,1.221714755,1.214621154
+Population growth (annual %),SP.POP.GROW,Burkina Faso,BFA,2.697136754,2.52989804,2.435229593,2.376492189,2.309071474,2.269736663,2.245977284
+Population growth (annual %),SP.POP.GROW,Cameroon,CMR,2.770309875,2.781644412,2.724486348,2.654960766,2.62905091,2.642453361,2.612682943
+Population growth (annual %),SP.POP.GROW,Central African Republic,CAF,1.760684876,1.344692553,1.643247897,1.686089712,-0.275432272,1.061074532,3.401398441
+Population growth (annual %),SP.POP.GROW,Chad,TCD,3.359560287,3.21991132,3.181970361,3.444238694,3.456689111,4.573992134,4.948530274
+Population growth (annual %),SP.POP.GROW,"Congo, Dem. Rep.",COD,3.347265084,3.169528558,3.220980492,3.237908481,3.223401944,3.259635143,3.242576276
+Population growth (annual %),SP.POP.GROW,Colombia,COL,1.839137849,1.786155077,1.436321673,1.096428254,1.068292955,1.120928643,1.07447921
+Population growth (annual %),SP.POP.GROW,Ethiopia,ETH,2.696751795,2.691239783,2.710772848,2.672495388,2.622695009,2.603624198,2.583504112
+Population growth (annual %),SP.POP.GROW,Haiti,HTI,1.327909594,1.294236606,1.241099932,1.156043394,1.127898287,1.156332636,1.154726712
+Population growth (annual %),SP.POP.GROW,Lebanon,LBN,-2.898842971,-3.21837129,-1.603862582,0.275364168,0.460053063,0.503630954,0.560805065
+Population growth (annual %),SP.POP.GROW,Mali,MLI,3.125423237,3.018144943,3.017513615,3.060357966,3.009425926,2.974005376,2.941150848
+Population growth (annual %),SP.POP.GROW,Mozambique,MOZ,2.98089903,2.93974159,2.964900343,2.95777681,2.947343171,2.95358093,2.919940494
+Population growth (annual %),SP.POP.GROW,Myanmar,MMR,0.724432843,0.702425163,0.711376906,0.696558039,0.690074759,0.698879396,0.674364863
+Population growth (annual %),SP.POP.GROW,Niger,NER,3.450880505,3.366548555,3.299773916,3.254252399,3.251706422,3.294891758,3.281014801
+Population growth (annual %),SP.POP.GROW,Nigeria,NGA,2.31217263,2.194401923,2.130297143,2.096186852,2.092816871,2.098389169,2.082977762
+Population growth (annual %),SP.POP.GROW,Pakistan,PAK,1.623714833,1.691871247,1.803751413,1.886777972,1.747997398,1.548804586,1.509598763
+Population growth (annual %),SP.POP.GROW,"Somalia, Fed. Rep.",SOM,3.529333035,3.675257745,3.795920669,3.657200378,3.025127548,3.079392196,3.482154818
+Population growth (annual %),SP.POP.GROW,South Sudan,SSD,-1.336258964,2.924395312,2.60487165,1.551794111,1.420020255,4.108164632,3.927924422
+Population growth (annual %),SP.POP.GROW,Sudan,SDN,3.488286755,2.935379024,2.688251257,2.694122024,2.7018952,1.326521757,0.808373216
+Population growth (annual %),SP.POP.GROW,Syrian Arab Republic,SYR,1.82043237,3.885598799,3.361887612,2.71541292,3.780513133,4.918615268,4.468095397
+Population growth (annual %),SP.POP.GROW,Uganda,UGA,3.397410976,3.391321423,3.333417511,3.217736618,3.00759449,2.80083229,2.7537317
+Population growth (annual %),SP.POP.GROW,Ukraine,UKR,-0.501151979,-0.557746011,-0.61903773,-0.857231073,-7.619320226,-8.423007774,0.337028626
+Population growth (annual %),SP.POP.GROW,"Venezuela, RB",VEN,-2.51030049,-2.960412931,-1.721904777,-0.727752243,-0.087895947,0.310851369,0.369232131
+Population growth (annual %),SP.POP.GROW,"Yemen, Rep.",YEM,2.960378966,2.966334752,2.873204148,2.74426153,2.873343585,3.009807657,2.982103969
+Population growth (annual %),SP.POP.GROW,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,Afghanistan,AFG,44.77753641,45.64958362,46.51349024,47.36894465,48.21469648,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,Bangladesh,BGD,51.82702067,55.12933244,58.40395244,61.65072984,61.72853743,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,Burkina Faso,BFA,8.946726184,8.980982019,9.008969234,9.082437627,9.156370104,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,Cameroon,CMR,36.12214563,36.27062904,36.41861468,36.56559909,36.7118343,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,Central African Republic,CAF,20.43582662,20.96387887,21.50712995,22.06642138,22.17641403,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,Chad,TCD,23.55393521,24.43171395,25.3045276,26.17119939,26.2004732,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,"Congo, Dem. Rep.",COD,18.9962604,19.08407744,19.17279288,19.26225806,19.35247042,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,Colombia,COL,69.57677777,69.72460811,69.87017904,70.01302136,70.1535998,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,Ethiopia,ETH,8.028883864,8.100170795,8.172692067,8.246602022,8.321746212,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,Haiti,HTI,22.56721578,22.2645912,22.37304405,22.47907502,22.58268497,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,Lebanon,LBN,..,..,..,..,..,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,Mali,MLI,16.74616437,16.88659587,17.02576725,17.16403804,17.30086899,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,Mozambique,MOZ,..,..,..,..,..,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,Myanmar,MMR,74.43820085,74.47195493,74.50769075,74.54565074,74.58558431,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,Niger,NER,21.27915026,22.38148194,23.48584636,24.5917837,24.6168063,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,Nigeria,NGA,30.59235318,30.71684341,30.83949633,30.96015682,31.07882869,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,Pakistan,PAK,73.06168679,75.98731104,78.90180155,81.80367951,84.69131223,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,"Somalia, Fed. Rep.",SOM,24.79494189,24.86994171,24.945455,25.02135525,25.09764012,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,South Sudan,SSD,5.6,5.6,5.6,5.6,5.6,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,Sudan,SDN,16.00870901,14.26,12.51129099,10.76258198,10.76258198,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,Syrian Arab Republic,SYR,84.24062408,84.2849941,84.32902626,84.3727243,84.41615089,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,Uganda,UGA,25.23865212,26.63969207,28.05083558,29.47221871,30.90419968,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,Ukraine,UKR,..,..,..,..,..,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,"Venezuela, RB",VEN,..,..,..,..,..,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,"Yemen, Rep.",YEM,..,..,..,..,..,..,..
+People with basic handwashing facilities including soap and water (% of population),SH.STA.HYGN.ZS,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,Afghanistan,AFG,61.27918688,60.58963484,59.9000828,59.21053076,58.52097872,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,Bangladesh,BGD,61.66255758,63.72849645,65.79443533,67.86037421,67.86037421,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,Burkina Faso,BFA,17.92347519,17.49323488,17.06299456,17.06299456,17.06299456,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,Cameroon,CMR,47.02749289,47.02749289,47.02749289,47.02749289,47.02749289,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,Central African Republic,CAF,31.85739851,33.04875155,34.2401046,35.43145765,35.43145765,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,Chad,TCD,35.47629471,35.01191779,34.54754088,34.08316396,34.08316396,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,"Congo, Dem. Rep.",COD,27.31930788,27.31930788,27.31930788,27.31930788,27.31930788,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,Colombia,COL,78.29352913,78.29352913,78.29352913,78.29352913,78.29352913,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,Ethiopia,ETH,20.25518999,20.25518999,20.25518999,20.25518999,20.25518999,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,Haiti,HTI,28.09831505,27.56711732,27.56711732,27.56711732,27.56711732,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,Lebanon,LBN,..,..,..,..,..,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,Mali,MLI,27.12441149,27.12441149,27.12441149,27.12441149,27.12441149,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,Mozambique,MOZ,..,..,..,..,..,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,Myanmar,MMR,83.021823,83.021823,83.021823,83.021823,83.021823,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,Niger,NER,37.3147988,37.92938041,38.54396202,39.15854362,39.15854362,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,Nigeria,NGA,38.19587634,38.19587634,38.19587634,38.19587634,38.19587634,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,Pakistan,PAK,88.02233652,89.03968953,90.05704254,91.07439556,92.09174857,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,"Somalia, Fed. Rep.",SOM,31.87407999,31.87407999,31.87407999,31.87407999,31.87407999,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,South Sudan,SSD,..,..,..,..,..,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,Sudan,SDN,..,..,..,..,..,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,Syrian Arab Republic,SYR,87.32684272,87.32684272,87.32684272,87.32684272,87.32684272,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,Uganda,UGA,39.87978034,41.73891109,43.59804183,45.45717258,47.31630332,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,Ukraine,UKR,..,..,..,..,..,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,"Venezuela, RB",VEN,..,..,..,..,..,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,"Yemen, Rep.",YEM,..,..,..,..,..,..,..
+"People with basic handwashing facilities including soap and water, urban (% of urban population)",SH.STA.HYGN.UR.ZS,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,Afghanistan,AFG,..,..,..,-23.452276,-8.232371925,3.603687628,..
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,Bangladesh,BGD,6.983463418,7.105286412,2.618150587,7.220049701,4.70732756,4.515141923,3.301219554
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,Burkina Faso,BFA,4.905407143,5.117272637,2.718519757,1.990524047,-0.485193597,-0.308556075,9.271892693
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,Cameroon,CMR,1.681327834,0.03705536,-3.363904771,2.648338128,1.767362628,0.029892524,-0.507093805
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,Central African Republic,CAF,24.55576582,1.938344456,-2.375060681,0.448847199,-0.411472579,0.103949459,-1.858569712
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,Chad,TCD,2.769069883,-5.709501581,-3.618914171,9.582867467,9.167506099,-4.111635278,-2.826280465
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,"Congo, Dem. Rep.",COD,5.764612956,-8.022921675,6.634816901,19.50788062,6.367139309,61.31324887,8.889976679
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,Colombia,COL,1.07502931,1.4752108,-8.975038054,11.39080388,6.321005481,0.392553364,1.504539699
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,Ethiopia,ETH,2.227593549,5.244602631,5.769100054,3.986237296,2.252509847,5.270025087,8.220367927
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,Haiti,HTI,-1.54702772,-1.015001813,-6.954807023,-2.473671382,-0.459509019,-0.740426041,-3.725310608
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,Lebanon,LBN,-0.137801944,-2.978615738,-23.11121595,-23.92810609,-6.917967408,4.173124751,..
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,Mali,MLI,2.148542522,1.980596447,1.677879997,-0.279266194,1.440424555,1.466702134,2.86264563
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,Mozambique,MOZ,1.619712135,-4.97768186,-4.222807594,1.729772535,-0.156734738,1.468509714,0.346674138
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,Myanmar,MMR,..,..,..,..,..,..,..
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,Niger,NER,4.727194119,2.580445407,-8.181361108,4.61444159,12.13828484,5.103767434,9.804187919
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,Nigeria,NGA,..,..,..,..,..,..,..
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,Pakistan,PAK,4.283772375,0.918805463,-2.267336145,5.755233863,1.093303501,2.135015305,2.455149406
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,"Somalia, Fed. Rep.",SOM,-1.79130575,-0.732868263,-6.614229437,0.508568892,-0.620078096,3.505219676,2.360033401
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,South Sudan,SSD,..,..,..,..,..,..,..
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,Sudan,SDN,..,-5.981188548,1.883133796,-2.865469192,-1.20161022,-29.88903419,-15.31330139
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,Syrian Arab Republic,SYR,..,..,..,..,..,..,..
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,Uganda,UGA,-1.07635601,4.963934477,-0.696854326,-0.630557714,2.108446168,1.01415379,0.912130005
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,Ukraine,UKR,4.473814034,4.476007206,3.496846561,10.07830251,-15.99727029,13.46490106,2.767109195
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,"Venezuela, RB",VEN,..,..,..,..,..,..,..
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,"Yemen, Rep.",YEM,..,..,..,..,..,..,..
+GNI per capita growth (annual %),NY.GNP.PCAP.KD.ZG,IFRC 25,(IFRC 25),..,..,..,..,..,..,..
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+Data from database: World Development Indicators,,,,,,,,,,
+Last Updated: 10/07/2025,,,,,,,,,,
