@@ -71,10 +71,12 @@ function setupEventListeners() {
     const indicatorSelect = document.getElementById('indicator-select');
     const yearSelect = document.getElementById('year-select');
     const loadDataBtn = document.getElementById('load-data-btn');
+    const closeProfileBtn = document.getElementById('close-profile-btn');
 
     categorySelect.addEventListener('change', onCategoryChange);
     indicatorSelect.addEventListener('change', onIndicatorChange);
     loadDataBtn.addEventListener('click', loadIndicatorData);
+    closeProfileBtn.addEventListener('click', closeCountryProfile);
 }
 
 // Handle category selection
@@ -118,6 +120,9 @@ function onCategoryChange(event) {
 function onIndicatorChange(event) {
     const indicatorId = event.target.value;
     const yearSelect = document.getElementById('year-select');
+    const yearSection = document.getElementById('year-section');
+    const countrySection = document.getElementById('country-section');
+    const countrySelect = document.getElementById('country-select');
     const loadDataBtn = document.getElementById('load-data-btn');
 
     yearSelect.innerHTML = '<option value="">Select a year...</option>';
@@ -125,8 +130,33 @@ function onIndicatorChange(event) {
     if (!indicatorId) {
         yearSelect.disabled = true;
         loadDataBtn.disabled = true;
+        countrySection.style.display = 'none';
+        yearSection.style.display = 'block';
         return;
     }
+
+    // Check if this is Country Profile view
+    if (indicatorId === 'COUNTRY_PROFILE') {
+        yearSection.style.display = 'none';
+        countrySection.style.display = 'block';
+
+        // Populate country selector
+        if (countrySelect.children.length === 1) {
+            categoriesData.countries.forEach(country => {
+                const option = document.createElement('option');
+                option.value = country.code;
+                option.textContent = country.name;
+                countrySelect.appendChild(option);
+            });
+        }
+
+        loadDataBtn.disabled = false;
+        return;
+    }
+
+    // Show year section, hide country section
+    yearSection.style.display = 'block';
+    countrySection.style.display = 'none';
 
     // Check if this is DREF data (doesn't need year selection)
     if (indicatorId === 'ACTIVE_DREFS' || indicatorId === 'PAST_DREFS') {
@@ -178,6 +208,21 @@ async function loadIndicatorData() {
     try {
         // Clear existing markers/overlays
         clearMapData();
+
+        // Check if this is Country Profile view
+        if (indicatorId === 'COUNTRY_PROFILE') {
+            const countrySelect = document.getElementById('country-select');
+            const countryCode = countrySelect.value;
+            const countryName = countrySelect.options[countrySelect.selectedIndex].text;
+
+            if (!countryCode) {
+                alert('Please select a country.');
+                return;
+            }
+
+            await loadCountryProfile(countryName, countryCode);
+            return;
+        }
 
         // Check if this is DREF data
         if (indicatorId === 'ACTIVE_DREFS') {
@@ -739,4 +784,127 @@ function showPastDREFLegend(drefs) {
     `;
 
     legend.classList.remove('hidden');
+}
+
+// Load country profile - aggregate all indicators for a country
+async function loadCountryProfile(countryName, countryCode) {
+    const profilePanel = document.getElementById('country-profile-panel');
+    const profileTitle = document.getElementById('country-profile-title');
+    const profileContent = document.getElementById('country-profile-content');
+
+    profileTitle.textContent = `${countryName} - Country Profile`;
+    profileContent.innerHTML = '<p>Loading all indicators...</p>';
+    profilePanel.classList.remove('hidden');
+
+    // Highlight country on map
+    const coords = getCountryCoordinates()[countryName];
+    if (coords) {
+        map.setView(coords, 5);
+        const marker = L.circleMarker(coords, {
+            radius: 15,
+            fillColor: '#8B0000',
+            color: '#fff',
+            weight: 3,
+            opacity: 1,
+            fillOpacity: 0.8
+        }).addTo(map);
+        currentMarkers.push(marker);
+    }
+
+    try {
+        const years = [2023, 2022, 2021, 2020, 2019];
+        const indicatorsByCategory = {};
+
+        // Iterate through all categories and indicators
+        for (const category of categoriesData.categories) {
+            if (category.id === 'country_view' || category.id === 'dref') continue;
+
+            indicatorsByCategory[category.name] = [];
+
+            for (const indicator of category.indicators) {
+                // Try to get data for most recent available year
+                let foundData = null;
+
+                for (const year of years) {
+                    try {
+                        const data = await loadDataFile(indicator.file, indicator.id, year);
+                        const countryData = data.find(d => d.country === countryName);
+
+                        if (countryData && countryData.value !== null) {
+                            foundData = {
+                                name: indicator.name,
+                                value: countryData.value,
+                                unit: indicator.unit,
+                                year: year
+                            };
+                            break;
+                        }
+                    } catch (e) {
+                        // Skip if error
+                        continue;
+                    }
+                }
+
+                if (foundData) {
+                    indicatorsByCategory[category.name].push(foundData);
+                }
+            }
+        }
+
+        // Display the profile
+        displayCountryProfile(countryName, indicatorsByCategory);
+
+    } catch (error) {
+        console.error('Error loading country profile:', error);
+        profileContent.innerHTML = '<p style="color: red;">Error loading country profile. Please try again.</p>';
+    }
+}
+
+// Display country profile in panel
+function displayCountryProfile(countryName, indicatorsByCategory) {
+    const profileContent = document.getElementById('country-profile-content');
+
+    let html = '';
+    let totalIndicators = 0;
+
+    for (const [categoryName, indicators] of Object.entries(indicatorsByCategory)) {
+        if (indicators.length === 0) continue;
+
+        totalIndicators += indicators.length;
+
+        html += `
+            <div class="indicator-category-section">
+                <h4>${categoryName}</h4>
+        `;
+
+        indicators.forEach(indicator => {
+            const displayValue = typeof indicator.value === 'number' ?
+                indicator.value.toFixed(2) : indicator.value;
+
+            html += `
+                <div class="indicator-item">
+                    <span class="indicator-name">${indicator.name}</span>
+                    <span class="indicator-value">${displayValue} ${indicator.unit} (${indicator.year})</span>
+                </div>
+            `;
+        });
+
+        html += '</div>';
+    }
+
+    if (totalIndicators === 0) {
+        html = `<p class="no-data">No indicator data available for ${countryName}</p>`;
+    } else {
+        html = `<p style="margin-bottom: 20px; font-weight: 600; color: #8B0000;">
+            Found ${totalIndicators} indicators with data
+        </p>` + html;
+    }
+
+    profileContent.innerHTML = html;
+}
+
+// Close country profile panel
+function closeCountryProfile() {
+    const profilePanel = document.getElementById('country-profile-panel');
+    profilePanel.classList.add('hidden');
 }

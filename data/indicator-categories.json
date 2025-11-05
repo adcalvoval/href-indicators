@@ -1,6 +1,20 @@
 {
   "categories": [
     {
+      "id": "country_view",
+      "name": "Country Profile View",
+      "color": "#8B0000",
+      "indicators": [
+        {
+          "id": "COUNTRY_PROFILE",
+          "name": "View All Indicators by Country",
+          "file": "AGGREGATE",
+          "unit": "multiple",
+          "description": "Select a country to see all available indicators"
+        }
+      ]
+    },
+    {
       "id": "dref",
       "name": "DREF - Disaster Response Emergency Fund",
       "color": "#DC2626",

@@ -38,7 +38,13 @@
                     <option value="">Select an indicator...</option>
                 </select>
             </div>
-            <div class="control-section">
+            <div class="control-section" id="country-section" style="display: none;">
+                <label for="country-select">Country:</label>
+                <select id="country-select">
+                    <option value="">Select a country...</option>
+                </select>
+            </div>
+            <div class="control-section" id="year-section">
                 <label for="year-select">Year:</label>
                 <select id="year-select" disabled>
                     <option value="">Select a year...</option>
@@ -46,6 +52,17 @@
             </div>
             <div class="control-section">
                 <button id="load-data-btn" disabled>Load Data</button>
+            </div>
+        </div>
+
+        <!-- Country Profile Panel -->
+        <div id="country-profile-panel" class="hidden">
+            <div id="country-profile-header">
+                <h3 id="country-profile-title">Country Profile</h3>
+                <button id="close-profile-btn">×</button>
+            </div>
+            <div id="country-profile-content">
+                <p>Loading...</p>
             </div>
         </div>
 

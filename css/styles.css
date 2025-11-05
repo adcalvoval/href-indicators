@@ -151,6 +151,106 @@ main {
     color: #555;
 }
 
+/* Country Profile Panel */
+#country-profile-panel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    width: 450px;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#country-profile-panel.hidden {
+    display: none;
+}
+
+#country-profile-header {
+    background-color: #8B0000;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#country-profile-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#close-profile-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 1;
+    transition: opacity 0.3s;
+}
+
+#close-profile-btn:hover {
+    opacity: 0.7;
+}
+
+#country-profile-content {
+    padding: 20px;
+    overflow-y: auto;
+    max-height: calc(80vh - 60px);
+}
+
+.indicator-category-section {
+    margin-bottom: 20px;
+}
+
+.indicator-category-section h4 {
+    color: #8B0000;
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #8B0000;
+}
+
+.indicator-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 13px;
+}
+
+.indicator-item:last-child {
+    border-bottom: none;
+}
+
+.indicator-name {
+    flex: 1;
+    color: #333;
+    font-weight: 500;
+}
+
+.indicator-value {
+    color: #666;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.no-data {
+    color: #999;
+    font-style: italic;
+}
+
 /* Map Container */
 #map {
     flex: 1;
