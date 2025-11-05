@@ -500,12 +500,15 @@ function displayDataOnMap(data, indicatorName, unit) {
             // fillOpacity: 0.5 = 50% transparent fill
             // White border for clear separation between countries
             const polygon = L.geoJSON(feature, {
-                style: {
-                    fillColor: '#DC2626',
-                    fillOpacity: 0.5,
-                    color: '#FFFFFF',
-                    weight: 2,
-                    opacity: 1
+                style: function(feature) {
+                    return {
+                        fillColor: '#DC2626',
+                        fillOpacity: 0.5,
+                        color: '#FFFFFF',
+                        weight: 2,
+                        opacity: 1,
+                        fill: true
+                    };
                 }
             }).addTo(map);
 
@@ -855,12 +858,15 @@ async function loadCountryProfile(countryName, countryCode) {
     const feature = getCountryPolygon(countryName);
     if (feature) {
         const polygon = L.geoJSON(feature, {
-            style: {
-                fillColor: '#DC2626',
-                fillOpacity: 0.5,
-                color: '#FFFFFF',
-                weight: 2,
-                opacity: 1
+            style: function(feature) {
+                return {
+                    fillColor: '#DC2626',
+                    fillOpacity: 0.5,
+                    color: '#FFFFFF',
+                    weight: 2,
+                    opacity: 1,
+                    fill: true
+                };
             }
         }).addTo(map);
 
