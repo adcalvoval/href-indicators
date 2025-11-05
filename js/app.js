@@ -1,6 +1,7 @@
 // Global variables
 let map;
 let categoriesData = null;
+let countriesGeoJSON = null;
 let currentMarkers = [];
 let currentOverlays = [];
 const IFRC_API_TOKEN = '3f891db59f4e9fd16ba4f8be803d368a469a1276';
@@ -11,6 +12,7 @@ const PAST_DREF_API_URL = 'https://goadmin.ifrc.org/api/v2/appeal/?atype=0';
 document.addEventListener('DOMContentLoaded', function() {
     initMap();
     loadCategories();
+    loadCountriesGeoJSON();
     setupEventListeners();
 });
 
@@ -50,6 +52,34 @@ async function loadCategories() {
     } catch (error) {
         console.error('Error loading categories:', error);
         alert('Failed to load indicator categories. Please check the data files.');
+    }
+}
+
+// Load countries GeoJSON for polygon display
+async function loadCountriesGeoJSON() {
+    try {
+        const response = await fetch('data/countries.geojson');
+        const data = await response.json();
+
+        // Filter for target countries
+        const targetCountryNames = ['Afghanistan', 'Bangladesh', 'Burkina Faso', 'Cameroon',
+            'Central African Republic', 'Chad', 'Colombia', 'Democratic Republic of the Congo',
+            'Ethiopia', 'Haiti', 'Lebanon', 'Mali', 'Mozambique', 'Myanmar', 'Niger', 'Nigeria',
+            'Pakistan', 'Somalia', 'South Sudan', 'Sudan', 'Syria', 'Uganda', 'Ukraine',
+            'Venezuela', 'Yemen'];
+
+        countriesGeoJSON = {
+            type: 'FeatureCollection',
+            features: data.features.filter(feature => {
+                const name = feature.properties.ADMIN || feature.properties.NAME;
+                return targetCountryNames.includes(name) ||
+                       (name === 'Dem. Rep. Congo' || name === 'Congo (Kinshasa)' || name === 'Congo DRC');
+            })
+        };
+
+        console.log(`Loaded ${countriesGeoJSON.features.length} country polygons`);
+    } catch (error) {
+        console.error('Error loading GeoJSON:', error);
     }
 }
 
@@ -376,10 +406,12 @@ function clearMapData() {
     currentOverlays = [];
 }
 
-// Display data on map
+// Display data on map using polygons
 function displayDataOnMap(data, indicatorName, unit) {
-    // Get country coordinates (placeholder - you'll need a proper geocoding solution)
-    const countryCoordinates = getCountryCoordinates();
+    if (!countriesGeoJSON) {
+        console.error('Countries GeoJSON not loaded yet');
+        return;
+    }
 
     // Calculate value ranges for color coding
     const values = data.map(d => d.value).filter(v => !isNaN(v));
@@ -387,25 +419,28 @@ function displayDataOnMap(data, indicatorName, unit) {
     const maxValue = Math.max(...values);
 
     data.forEach(item => {
-        const coords = countryCoordinates[item.country];
-        if (coords && !isNaN(item.value)) {
+        const feature = getCountryPolygon(item.country);
+
+        if (feature && !isNaN(item.value)) {
             const color = getColorForValue(item.value, minValue, maxValue);
 
-            const marker = L.circleMarker(coords, {
-                radius: 8,
-                fillColor: color,
-                color: '#fff',
-                weight: 2,
-                opacity: 1,
-                fillOpacity: 0.8
+            // Create polygon layer with red styling
+            const polygon = L.geoJSON(feature, {
+                style: {
+                    fillColor: '#DC2626',
+                    fillOpacity: 0.5,
+                    color: '#DC2626',
+                    weight: 3,
+                    opacity: 1
+                }
             }).addTo(map);
 
-            marker.bindPopup(`
+            polygon.bindPopup(`
                 <strong>${item.country}</strong><br>
                 ${indicatorName}: <strong>${item.value.toFixed(2)} ${unit}</strong>
             `);
 
-            currentMarkers.push(marker);
+            currentOverlays.push(polygon);
         }
     });
 }
@@ -796,19 +831,22 @@ async function loadCountryProfile(countryName, countryCode) {
     profileContent.innerHTML = '<p>Loading all indicators...</p>';
     profilePanel.classList.remove('hidden');
 
-    // Highlight country on map
-    const coords = getCountryCoordinates()[countryName];
-    if (coords) {
-        map.setView(coords, 5);
-        const marker = L.circleMarker(coords, {
-            radius: 15,
-            fillColor: '#8B0000',
-            color: '#fff',
-            weight: 3,
-            opacity: 1,
-            fillOpacity: 0.8
+    // Highlight country on map with polygon
+    const feature = getCountryPolygon(countryName);
+    if (feature) {
+        const polygon = L.geoJSON(feature, {
+            style: {
+                fillColor: '#DC2626',
+                fillOpacity: 0.5,
+                color: '#DC2626',
+                weight: 3,
+                opacity: 1
+            }
         }).addTo(map);
-        currentMarkers.push(marker);
+
+        // Zoom to country bounds
+        map.fitBounds(polygon.getBounds());
+        currentOverlays.push(polygon);
     }
 
     try {
@@ -907,4 +945,27 @@ function displayCountryProfile(countryName, indicatorsByCategory) {
 function closeCountryProfile() {
     const profilePanel = document.getElementById('country-profile-panel');
     profilePanel.classList.add('hidden');
+}
+
+// Get country polygon from GeoJSON
+function getCountryPolygon(countryName) {
+    if (!countriesGeoJSON) return null;
+
+    // Name mappings for matching
+    const nameMap = {
+        'Congo DR': 'Democratic Republic of the Congo',
+        'Central Africa Republic': 'Central African Republic',
+        'Syrian Arab Republic': 'Syria'
+    };
+
+    const searchName = nameMap[countryName] || countryName;
+
+    const feature = countriesGeoJSON.features.find(f => {
+        const name = f.properties.ADMIN || f.properties.NAME;
+        return name === searchName ||
+               (countryName === 'Congo DR' && (name === 'Dem. Rep. Congo' || name.includes('Congo') && name.includes('Democratic'))) ||
+               (countryName === 'Syria' && (name === 'Syria' || name === 'Syrian Arab Republic'));
+    });
+
+    return feature;
 }
