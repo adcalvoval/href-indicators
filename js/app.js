@@ -134,12 +134,14 @@ function setupEventListeners() {
     const loadDataBtn = document.getElementById('load-data-btn');
     const closeProfileBtn = document.getElementById('close-profile-btn');
     const countryProfileSelect = document.getElementById('country-profile-select');
+    const clearMapBtn = document.getElementById('clear-map-btn');
 
     categorySelect.addEventListener('change', onCategoryChange);
     indicatorSelect.addEventListener('change', onIndicatorChange);
     loadDataBtn.addEventListener('click', loadIndicatorData);
     closeProfileBtn.addEventListener('click', closeCountryProfile);
     countryProfileSelect.addEventListener('change', onCountryProfileChange);
+    clearMapBtn.addEventListener('click', clearAllMapData);
 }
 
 // Handle country profile selection
@@ -467,6 +469,13 @@ function clearMapData() {
     currentOverlays.forEach(overlay => map.removeLayer(overlay));
     currentMarkers = [];
     currentOverlays = [];
+}
+
+// Clear all map data and close country profile panel
+function clearAllMapData() {
+    clearMapData();
+    closeCountryProfile();
+    console.log('Map cleared');
 }
 
 // Display data on map using polygons

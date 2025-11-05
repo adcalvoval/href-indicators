@@ -17,14 +17,14 @@ body {
 header {
     background-color: #8B0000;
     color: white;
-    padding: 20px;
+    padding: 12px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
 
 header h1 {
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 600;
     letter-spacing: 0.5px;
 }
