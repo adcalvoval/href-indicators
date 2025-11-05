@@ -498,13 +498,13 @@ function displayDataOnMap(data, indicatorName, unit) {
 
             // Create polygon layer with red styling
             // fillOpacity: 0.5 = 50% transparent fill
-            // opacity: 1 = 100% solid outline
+            // White border for clear separation between countries
             const polygon = L.geoJSON(feature, {
                 style: {
                     fillColor: '#DC2626',
                     fillOpacity: 0.5,
-                    color: '#DC2626',
-                    weight: 3,
+                    color: '#FFFFFF',
+                    weight: 2,
                     opacity: 1
                 }
             }).addTo(map);
@@ -851,15 +851,15 @@ async function loadCountryProfile(countryName, countryCode) {
 
     // Highlight country on map with polygon
     // fillOpacity: 0.5 = 50% transparent fill
-    // opacity: 1 = 100% solid outline
+    // White border for clear separation
     const feature = getCountryPolygon(countryName);
     if (feature) {
         const polygon = L.geoJSON(feature, {
             style: {
                 fillColor: '#DC2626',
                 fillOpacity: 0.5,
-                color: '#DC2626',
-                weight: 3,
+                color: '#FFFFFF',
+                weight: 2,
                 opacity: 1
             }
         }).addTo(map);
