@@ -497,6 +497,8 @@ function displayDataOnMap(data, indicatorName, unit) {
             const color = getColorForValue(item.value, minValue, maxValue);
 
             // Create polygon layer with red styling
+            // fillOpacity: 0.5 = 50% transparent fill
+            // opacity: 1 = 100% solid outline
             const polygon = L.geoJSON(feature, {
                 style: {
                     fillColor: '#DC2626',
@@ -848,6 +850,8 @@ async function loadCountryProfile(countryName, countryCode) {
     profilePanel.classList.remove('hidden');
 
     // Highlight country on map with polygon
+    // fillOpacity: 0.5 = 50% transparent fill
+    // opacity: 1 = 100% solid outline
     const feature = getCountryPolygon(countryName);
     if (feature) {
         const polygon = L.geoJSON(feature, {
