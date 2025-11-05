@@ -332,8 +332,8 @@ async function loadDataFile(fileName, indicatorId, year) {
         if (compiledData && compiledData[fileName]) {
             console.log(`Loading ${fileName} from compiled data`);
             const rows = compiledData[fileName];
+            console.log(`Compiled data has ${rows.length} rows for ${fileName}`);
             const data = [];
-            const targetCountries = categoriesData.countries.map(c => c.name);
 
             // Determine data type from first row
             const firstRow = rows[0];
@@ -341,10 +341,11 @@ async function loadDataFile(fileName, indicatorId, year) {
             const isWorldBank = firstRow.hasOwnProperty('Country Name') &&
                               Object.keys(firstRow).some(k => k.includes('[YR'));
 
+            console.log(`Data type: ${isWHO ? 'WHO' : isWorldBank ? 'World Bank' : 'Unknown'}`);
+
             for (let rowData of rows) {
                 // Get country name
                 const countryName = rowData['Country Name'] || rowData['GEO_NAME_SHORT'];
-                if (!countryName || !targetCountries.includes(countryName)) continue;
 
                 // Extract value based on data type
                 let value = null;
