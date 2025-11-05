@@ -5,6 +5,7 @@ let currentMarkers = [];
 let currentOverlays = [];
 const IFRC_API_TOKEN = '3f891db59f4e9fd16ba4f8be803d368a469a1276';
 const DREF_API_URL = 'https://goadmin.ifrc.org/api/v2/appeal/?atype=0&status=0';
+const PAST_DREF_API_URL = 'https://goadmin.ifrc.org/api/v2/appeal/?atype=0';
 
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
@@ -128,10 +129,14 @@ function onIndicatorChange(event) {
     }
 
     // Check if this is DREF data (doesn't need year selection)
-    if (indicatorId === 'ACTIVE_DREFS') {
+    if (indicatorId === 'ACTIVE_DREFS' || indicatorId === 'PAST_DREFS') {
         yearSelect.disabled = true;
-        yearSelect.innerHTML = '<option value="current">Current (Live Data)</option>';
-        yearSelect.value = 'current';
+        if (indicatorId === 'ACTIVE_DREFS') {
+            yearSelect.innerHTML = '<option value="current">Current (Live Data)</option>';
+        } else {
+            yearSelect.innerHTML = '<option value="past5years">Last 5 Years</option>';
+        }
+        yearSelect.value = yearSelect.options[0].value;
         loadDataBtn.disabled = false;
     } else {
         // Populate years for regular indicators
@@ -182,6 +187,14 @@ async function loadIndicatorData() {
                 showDREFLegend(drefData.length);
             } else {
                 alert('No active DREF operations found.');
+            }
+        } else if (indicatorId === 'PAST_DREFS') {
+            const pastDrefData = await loadPastDREFData();
+            if (pastDrefData && pastDrefData.length > 0) {
+                displayPastDREFOnMap(pastDrefData);
+                showPastDREFLegend(pastDrefData);
+            } else {
+                alert('No past DREF operations found in the last 5 years.');
             }
         } else {
             // Regular CSV data
@@ -503,6 +516,181 @@ function showDREFLegend(count) {
         <div style="margin-top: 10px; font-size: 12px; color: #666;">
             DREF: Disaster Response Emergency Fund<br>
             Click markers for details
+        </div>
+    `;
+
+    legend.classList.remove('hidden');
+}
+
+// Load past DREF data from IFRC API (last 5 years)
+async function loadPastDREFData() {
+    try {
+        const response = await fetch(PAST_DREF_API_URL, {
+            headers: {
+                'Authorization': `Token ${IFRC_API_TOKEN}`
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error(`API request failed: ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log('Past DREF API Response:', data);
+
+        // Calculate date 5 years ago
+        const fiveYearsAgo = new Date();
+        fiveYearsAgo.setFullYear(fiveYearsAgo.getFullYear() - 5);
+
+        // Filter for the 25 target countries and last 5 years
+        const targetCountries = categoriesData.countries.map(c => c.name);
+        const targetISO3Codes = ['AFG', 'BGD', 'BFA', 'CMR', 'CAF', 'TCD', 'COL', 'COD',
+                                 'ETH', 'HTI', 'LBN', 'MLI', 'MOZ', 'MMR', 'NER', 'NGA',
+                                 'PAK', 'SOM', 'SSD', 'SDN', 'SYR', 'UGA', 'UKR', 'VEN', 'YEM'];
+
+        const drefs = data.results || [];
+        const filteredDrefs = drefs.filter(dref => {
+            const countryName = dref.country?.name || dref.country_details?.name;
+            const countryISO3 = dref.country?.iso3 || dref.country_details?.iso3;
+            const startDate = dref.start_date ? new Date(dref.start_date) : null;
+
+            // Check if in target countries and within last 5 years
+            const isTargetCountry = targetCountries.includes(countryName) || targetISO3Codes.includes(countryISO3);
+            const isWithinLastFiveYears = startDate && startDate >= fiveYearsAgo;
+
+            return isTargetCountry && isWithinLastFiveYears;
+        });
+
+        console.log(`Found ${filteredDrefs.length} past DREFs in target countries (last 5 years)`);
+        return filteredDrefs;
+
+    } catch (error) {
+        console.error('Error loading past DREF data:', error);
+        throw error;
+    }
+}
+
+// Display past DREF data on map grouped by country
+function displayPastDREFOnMap(drefs) {
+    const countryCoordinates = getCountryCoordinates();
+
+    // Group DREFs by country
+    const drefsByCountry = {};
+    drefs.forEach(dref => {
+        const countryName = dref.country?.name || dref.country_details?.name;
+        if (!drefsByCountry[countryName]) {
+            drefsByCountry[countryName] = [];
+        }
+        drefsByCountry[countryName].push(dref);
+    });
+
+    // Display markers with count
+    Object.keys(drefsByCountry).forEach(countryName => {
+        const coords = countryCoordinates[countryName];
+        const countryDrefs = drefsByCountry[countryName];
+
+        if (coords) {
+            // Create badge icon with count
+            const count = countryDrefs.length;
+            const badgeIcon = L.divIcon({
+                html: `<div style="
+                    background-color: #dc2626;
+                    color: white;
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 14px;
+                    font-weight: bold;
+                    border: 3px solid white;
+                    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+                ">${count}</div>`,
+                className: 'past-dref-marker',
+                iconSize: [32, 32],
+                iconAnchor: [16, 16]
+            });
+
+            // Create popup content with list of all DREFs
+            let popupContent = `
+                <div style="min-width: 250px; max-height: 400px; overflow-y: auto;">
+                    <strong style="color: #dc2626; font-size: 15px;">${countryName}</strong><br>
+                    <strong>Past DREFs (Last 5 Years): ${count}</strong><br><br>
+            `;
+
+            // Sort by start date (most recent first)
+            countryDrefs.sort((a, b) => {
+                const dateA = new Date(a.start_date || 0);
+                const dateB = new Date(b.start_date || 0);
+                return dateB - dateA;
+            });
+
+            countryDrefs.forEach((dref, index) => {
+                const startDate = dref.start_date ? new Date(dref.start_date).toLocaleDateString() : 'N/A';
+                const endDate = dref.end_date ? new Date(dref.end_date).toLocaleDateString() : 'Ongoing';
+                const amount = dref.amount_requested ?
+                    new Intl.NumberFormat('en-US', { style: 'currency', currency: 'CHF' }).format(dref.amount_requested) :
+                    'N/A';
+                const status = dref.status_display || 'N/A';
+
+                popupContent += `
+                    <div style="border-left: 3px solid #dc2626; padding-left: 8px; margin-bottom: 12px;">
+                        <strong>${index + 1}. ${dref.name || 'DREF Operation'}</strong><br>
+                        <span style="font-size: 12px;">
+                        <strong>Type:</strong> ${dref.dtype?.name || 'N/A'}<br>
+                        <strong>Status:</strong> ${status}<br>
+                        <strong>Amount:</strong> ${amount}<br>
+                        <strong>Period:</strong> ${startDate} - ${endDate}<br>
+                        ${dref.code ? `<strong>Code:</strong> ${dref.code}<br>` : ''}
+                        </span>
+                    </div>
+                `;
+            });
+
+            popupContent += '</div>';
+
+            const marker = L.marker(coords, { icon: badgeIcon })
+                .bindPopup(popupContent, {
+                    maxWidth: 300,
+                    maxHeight: 400
+                })
+                .addTo(map);
+
+            currentMarkers.push(marker);
+        } else {
+            console.warn(`No coordinates found for country: ${countryName}`);
+        }
+    });
+
+    console.log(`Displayed ${currentMarkers.length} country markers for past DREFs`);
+}
+
+// Show past DREF legend
+function showPastDREFLegend(drefs) {
+    const legend = document.getElementById('legend');
+    const legendTitle = document.getElementById('legend-title');
+    const legendContent = document.getElementById('legend-content');
+
+    // Count unique countries
+    const countries = new Set();
+    drefs.forEach(dref => {
+        const countryName = dref.country?.name || dref.country_details?.name;
+        if (countryName) countries.add(countryName);
+    });
+
+    legendTitle.textContent = 'Past DREFs (Last 5 Years)';
+
+    legendContent.innerHTML = `
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #dc2626; border: 3px solid white; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 11px;">#</div>
+            <div class="legend-label">Number shows DREF count per country</div>
+        </div>
+        <div style="margin-top: 10px; font-size: 12px; color: #666;">
+            <strong>Total DREFs:</strong> ${drefs.length}<br>
+            <strong>Countries:</strong> ${countries.size}<br>
+            <strong>Period:</strong> Last 5 years<br><br>
+            Click markers to see all DREFs for each country
         </div>
     `;
 

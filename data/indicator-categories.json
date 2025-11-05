@@ -11,6 +11,13 @@
           "file": "API",
           "unit": "count",
           "description": "Currently active DREF operations"
+        },
+        {
+          "id": "PAST_DREFS",
+          "name": "Past DREFs (Last 5 Years)",
+          "file": "API",
+          "unit": "count",
+          "description": "All DREF operations in the last 5 years per country"
         }
       ]
     },
