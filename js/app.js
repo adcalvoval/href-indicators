@@ -2,6 +2,7 @@
 let map;
 let categoriesData = null;
 let countriesGeoJSON = null;
+let compiledData = null; // Compiled indicators data
 let currentMarkers = [];
 let currentOverlays = [];
 const IFRC_API_TOKEN = '3f891db59f4e9fd16ba4f8be803d368a469a1276';
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initMap();
     loadCategories();
     loadCountriesGeoJSON();
+    loadCompiledData();
     setupEventListeners();
 });
 
@@ -23,8 +25,14 @@ function initMap() {
         zoom: 2,
         minZoom: 2,
         maxZoom: 18,
-        worldCopyJump: true
+        worldCopyJump: true,
+        zoomControl: false // Disable default zoom control
     });
+
+    // Add zoom control to top right
+    L.control.zoom({
+        position: 'topright'
+    }).addTo(map);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -83,15 +91,38 @@ async function loadCountriesGeoJSON() {
     }
 }
 
+// Load compiled indicator data
+async function loadCompiledData() {
+    try {
+        const response = await fetch('data/compiled-indicators.json');
+        compiledData = await response.json();
+        console.log('Compiled data loaded successfully');
+    } catch (error) {
+        console.error('Error loading compiled data:', error);
+    }
+}
+
 // Populate category dropdown
 function populateCategorySelect() {
     const categorySelect = document.getElementById('category-select');
 
     categoriesData.categories.forEach(category => {
+        // Skip the country_view category as it's now in a separate dropdown
+        if (category.id === 'country_view') return;
+
         const option = document.createElement('option');
         option.value = category.id;
         option.textContent = category.name;
         categorySelect.appendChild(option);
+    });
+
+    // Populate country profile dropdown
+    const countryProfileSelect = document.getElementById('country-profile-select');
+    categoriesData.countries.forEach(country => {
+        const option = document.createElement('option');
+        option.value = country.code;
+        option.textContent = country.name;
+        countryProfileSelect.appendChild(option);
     });
 }
 
@@ -102,11 +133,33 @@ function setupEventListeners() {
     const yearSelect = document.getElementById('year-select');
     const loadDataBtn = document.getElementById('load-data-btn');
     const closeProfileBtn = document.getElementById('close-profile-btn');
+    const countryProfileSelect = document.getElementById('country-profile-select');
 
     categorySelect.addEventListener('change', onCategoryChange);
     indicatorSelect.addEventListener('change', onIndicatorChange);
     loadDataBtn.addEventListener('click', loadIndicatorData);
     closeProfileBtn.addEventListener('click', closeCountryProfile);
+    countryProfileSelect.addEventListener('change', onCountryProfileChange);
+}
+
+// Handle country profile selection
+function onCountryProfileChange(event) {
+    const countryCode = event.target.value;
+
+    if (!countryCode) {
+        return;
+    }
+
+    const countrySelect = event.target;
+    const countryName = countrySelect.options[countrySelect.selectedIndex].text;
+
+    // Load country profile
+    loadCountryProfile(countryName, countryCode);
+
+    // Reset the dropdown after loading
+    setTimeout(() => {
+        countrySelect.value = '';
+    }, 100);
 }
 
 // Handle category selection
@@ -150,9 +203,6 @@ function onCategoryChange(event) {
 function onIndicatorChange(event) {
     const indicatorId = event.target.value;
     const yearSelect = document.getElementById('year-select');
-    const yearSection = document.getElementById('year-section');
-    const countrySection = document.getElementById('country-section');
-    const countrySelect = document.getElementById('country-select');
     const loadDataBtn = document.getElementById('load-data-btn');
 
     yearSelect.innerHTML = '<option value="">Select a year...</option>';
@@ -160,33 +210,8 @@ function onIndicatorChange(event) {
     if (!indicatorId) {
         yearSelect.disabled = true;
         loadDataBtn.disabled = true;
-        countrySection.style.display = 'none';
-        yearSection.style.display = 'block';
         return;
     }
-
-    // Check if this is Country Profile view
-    if (indicatorId === 'COUNTRY_PROFILE') {
-        yearSection.style.display = 'none';
-        countrySection.style.display = 'block';
-
-        // Populate country selector
-        if (countrySelect.children.length === 1) {
-            categoriesData.countries.forEach(country => {
-                const option = document.createElement('option');
-                option.value = country.code;
-                option.textContent = country.name;
-                countrySelect.appendChild(option);
-            });
-        }
-
-        loadDataBtn.disabled = false;
-        return;
-    }
-
-    // Show year section, hide country section
-    yearSection.style.display = 'block';
-    countrySection.style.display = 'none';
 
     // Check if this is DREF data (doesn't need year selection)
     if (indicatorId === 'ACTIVE_DREFS' || indicatorId === 'PAST_DREFS') {
@@ -238,21 +263,6 @@ async function loadIndicatorData() {
     try {
         // Clear existing markers/overlays
         clearMapData();
-
-        // Check if this is Country Profile view
-        if (indicatorId === 'COUNTRY_PROFILE') {
-            const countrySelect = document.getElementById('country-select');
-            const countryCode = countrySelect.value;
-            const countryName = countrySelect.options[countrySelect.selectedIndex].text;
-
-            if (!countryCode) {
-                alert('Please select a country.');
-                return;
-            }
-
-            await loadCountryProfile(countryName, countryCode);
-            return;
-        }
 
         // Check if this is DREF data
         if (indicatorId === 'ACTIVE_DREFS') {
@@ -315,9 +325,61 @@ function parseCSVLine(line) {
     return result;
 }
 
-// Load data from CSV file
+// Load data from compiled JSON or fallback to CSV file
 async function loadDataFile(fileName, indicatorId, year) {
     try {
+        // Try to use compiled data first
+        if (compiledData && compiledData[fileName]) {
+            console.log(`Loading ${fileName} from compiled data`);
+            const rows = compiledData[fileName];
+            const data = [];
+            const targetCountries = categoriesData.countries.map(c => c.name);
+
+            // Determine data type from first row
+            const firstRow = rows[0];
+            const isWHO = firstRow.hasOwnProperty('GEO_NAME_SHORT') || firstRow.hasOwnProperty('DIM_TIME');
+            const isWorldBank = firstRow.hasOwnProperty('Country Name') &&
+                              Object.keys(firstRow).some(k => k.includes('[YR'));
+
+            for (let rowData of rows) {
+                // Get country name
+                const countryName = rowData['Country Name'] || rowData['GEO_NAME_SHORT'];
+                if (!countryName || !targetCountries.includes(countryName)) continue;
+
+                // Extract value based on data type
+                let value = null;
+
+                if (isWHO) {
+                    // WHO format: check if row matches the year in DIM_TIME
+                    const rowYear = rowData['DIM_TIME'];
+                    if (rowYear == year) {
+                        // Try different value columns
+                        value = extractValueFromRow(rowData, [
+                            'PERCENT_POP_N', 'Value', 'Numeric', 'VALUE',
+                            'Rate', 'RATE', 'Prevalence', 'Incidence'
+                        ]);
+                    }
+                } else if (isWorldBank) {
+                    // World Bank format: year is in column header
+                    const yearColumn = `${year} [YR${year}]`;
+                    value = parseFloat(rowData[yearColumn]);
+                }
+
+                if (value !== null && !isNaN(value)) {
+                    data.push({
+                        country: countryName,
+                        value: value,
+                        rowData: rowData
+                    });
+                }
+            }
+
+            console.log(`Found ${data.length} data points for year ${year}`);
+            return data;
+        }
+
+        // Fallback to loading CSV directly
+        console.log(`Compiled data not available for ${fileName}, falling back to CSV loading`);
         const response = await fetch(`Portfolios/${fileName}`);
         const csvText = await response.text();
 
@@ -379,7 +441,7 @@ async function loadDataFile(fileName, indicatorId, year) {
         return data;
 
     } catch (error) {
-        console.error('Error parsing CSV:', error);
+        console.error('Error parsing data:', error);
         throw error;
     }
 }
@@ -461,32 +523,9 @@ function getColorForValue(value, min, max) {
 
 // Show legend
 function showLegend(indicatorName, unit, data) {
-    const legend = document.getElementById('legend');
-    const legendTitle = document.getElementById('legend-title');
-    const legendContent = document.getElementById('legend-content');
-
-    legendTitle.textContent = indicatorName;
-
-    const values = data.map(d => d.value).filter(v => !isNaN(v));
-    const minValue = Math.min(...values);
-    const maxValue = Math.max(...values);
-
-    legendContent.innerHTML = `
-        <div class="legend-item">
-            <div class="legend-color" style="background-color: rgb(0, 255, 0);"></div>
-            <div class="legend-label">Low: ${minValue.toFixed(2)} ${unit}</div>
-        </div>
-        <div class="legend-item">
-            <div class="legend-color" style="background-color: rgb(255, 255, 0);"></div>
-            <div class="legend-label">Medium</div>
-        </div>
-        <div class="legend-item">
-            <div class="legend-color" style="background-color: rgb(255, 0, 0);"></div>
-            <div class="legend-label">High: ${maxValue.toFixed(2)} ${unit}</div>
-        </div>
-    `;
-
-    legend.classList.remove('hidden');
+    // Legend disabled per user request
+    // const legend = document.getElementById('legend');
+    // legend.classList.add('hidden');
 }
 
 // Country coordinates (approximate center points)
@@ -626,24 +665,7 @@ function displayDREFOnMap(drefs) {
 
 // Show DREF legend
 function showDREFLegend(count) {
-    const legend = document.getElementById('legend');
-    const legendTitle = document.getElementById('legend-title');
-    const legendContent = document.getElementById('legend-content');
-
-    legendTitle.textContent = 'Active DREF Operations';
-
-    legendContent.innerHTML = `
-        <div class="legend-item">
-            <div class="legend-color" style="background-color: white; border: 2px solid #dc2626; display: flex; align-items: center; justify-content: center; color: #dc2626; font-weight: bold; font-size: 12px;">✚</div>
-            <div class="legend-label">Active DREF: ${count} operation${count !== 1 ? 's' : ''}</div>
-        </div>
-        <div style="margin-top: 10px; font-size: 12px; color: #666;">
-            DREF: Disaster Response Emergency Fund<br>
-            Click markers for details
-        </div>
-    `;
-
-    legend.classList.remove('hidden');
+    // Legend disabled per user request
 }
 
 // Load past DREF data from IFRC API (last 5 years)
@@ -673,16 +695,26 @@ async function loadPastDREFData() {
                                  'PAK', 'SOM', 'SSD', 'SDN', 'SYR', 'UGA', 'UKR', 'VEN', 'YEM'];
 
         const drefs = data.results || [];
+        const now = new Date();
+
         const filteredDrefs = drefs.filter(dref => {
             const countryName = dref.country?.name || dref.country_details?.name;
             const countryISO3 = dref.country?.iso3 || dref.country_details?.iso3;
             const startDate = dref.start_date ? new Date(dref.start_date) : null;
+            const endDate = dref.end_date ? new Date(dref.end_date) : null;
 
-            // Check if in target countries and within last 5 years
+            // Check if in target countries
             const isTargetCountry = targetCountries.includes(countryName) || targetISO3Codes.includes(countryISO3);
+
+            // Check if started within last 5 years
             const isWithinLastFiveYears = startDate && startDate >= fiveYearsAgo;
 
-            return isTargetCountry && isWithinLastFiveYears;
+            // Check if operation is actually past (ended in the past, not still active or future)
+            // Status 0 means active, so we want to exclude those
+            // Also check that end_date is in the past if available
+            const isPast = dref.status !== 0 || (endDate && endDate < now);
+
+            return isTargetCountry && isWithinLastFiveYears && isPast;
         });
 
         console.log(`Found ${filteredDrefs.length} past DREFs in target countries (last 5 years)`);
@@ -792,33 +824,7 @@ function displayPastDREFOnMap(drefs) {
 
 // Show past DREF legend
 function showPastDREFLegend(drefs) {
-    const legend = document.getElementById('legend');
-    const legendTitle = document.getElementById('legend-title');
-    const legendContent = document.getElementById('legend-content');
-
-    // Count unique countries
-    const countries = new Set();
-    drefs.forEach(dref => {
-        const countryName = dref.country?.name || dref.country_details?.name;
-        if (countryName) countries.add(countryName);
-    });
-
-    legendTitle.textContent = 'Past DREFs (Last 5 Years)';
-
-    legendContent.innerHTML = `
-        <div class="legend-item">
-            <div class="legend-color" style="background-color: #dc2626; border: 3px solid white; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 11px;">#</div>
-            <div class="legend-label">Number shows DREF count per country</div>
-        </div>
-        <div style="margin-top: 10px; font-size: 12px; color: #666;">
-            <strong>Total DREFs:</strong> ${drefs.length}<br>
-            <strong>Countries:</strong> ${countries.size}<br>
-            <strong>Period:</strong> Last 5 years<br><br>
-            Click markers to see all DREFs for each country
-        </div>
-    `;
-
-    legend.classList.remove('hidden');
+    // Legend disabled per user request
 }
 
 // Load country profile - aggregate all indicators for a country
