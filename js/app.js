@@ -349,6 +349,15 @@ async function loadDataFile(fileName, indicatorId, year) {
                 // Get country name
                 const countryName = rowData['Country Name'] || rowData['GEO_NAME_SHORT'];
 
+                // For World Bank data, check if this row matches the requested indicator
+                if (isWorldBank) {
+                    const seriesCode = rowData['Series Code'];
+                    // indicatorId contains the Series Code (e.g., 'NY.GNP.PCAP.CD')
+                    if (seriesCode !== indicatorId) {
+                        continue; // Skip rows that don't match the requested indicator
+                    }
+                }
+
                 // Extract value based on data type
                 let value = null;
 
@@ -365,7 +374,11 @@ async function loadDataFile(fileName, indicatorId, year) {
                 } else if (isWorldBank) {
                     // World Bank format: year is in column header
                     const yearColumn = `${year} [YR${year}]`;
-                    value = parseFloat(rowData[yearColumn]);
+                    const rawValue = rowData[yearColumn];
+                    // Handle ".." as missing data
+                    if (rawValue && rawValue !== '..' && rawValue !== '') {
+                        value = parseFloat(rawValue);
+                    }
                 }
 
                 if (value !== null && !isNaN(value)) {
@@ -412,6 +425,15 @@ async function loadDataFile(fileName, indicatorId, year) {
             const countryName = rowData['Country Name'] || rowData['GEO_NAME_SHORT'];
             if (!countryName || !targetCountries.includes(countryName)) continue;
 
+            // For World Bank data, check if this row matches the requested indicator
+            if (isWorldBank) {
+                const seriesCode = rowData['Series Code'];
+                // indicatorId contains the Series Code (e.g., 'NY.GNP.PCAP.CD')
+                if (seriesCode !== indicatorId) {
+                    continue; // Skip rows that don't match the requested indicator
+                }
+            }
+
             // Extract value based on CSV type
             let value = null;
 
@@ -428,7 +450,11 @@ async function loadDataFile(fileName, indicatorId, year) {
             } else if (isWorldBank) {
                 // World Bank format: year is in column header
                 const yearColumn = `${year} [YR${year}]`;
-                value = parseFloat(rowData[yearColumn]);
+                const rawValue = rowData[yearColumn];
+                // Handle ".." as missing data
+                if (rawValue && rawValue !== '..' && rawValue !== '') {
+                    value = parseFloat(rawValue);
+                }
             }
 
             if (value !== null && !isNaN(value)) {
