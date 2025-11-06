@@ -1078,10 +1078,31 @@ async function loadTimeSeriesData() {
 async function showTimeSeriesChart() {
     const chartPanel = document.getElementById('chart-panel');
     const chartTitle = document.getElementById('chart-title');
+    const categorySelect = document.getElementById('category-select');
+    const indicatorSelect = document.getElementById('indicator-select');
 
+    // If no indicator data stored yet, get it from the UI
     if (!currentIndicatorData) {
-        alert('Please load an indicator first.');
-        return;
+        const categoryId = categorySelect.value;
+        const indicatorId = indicatorSelect.value;
+
+        if (!categoryId || !indicatorId) {
+            alert('Please select a category and indicator first.');
+            return;
+        }
+
+        const selectedOption = indicatorSelect.options[indicatorSelect.selectedIndex];
+        const dataFile = selectedOption.dataset.file;
+        const indicatorName = selectedOption.textContent;
+        const unit = selectedOption.dataset.unit;
+
+        // Store current indicator data
+        currentIndicatorData = {
+            indicatorId: indicatorId,
+            indicatorName: indicatorName,
+            dataFile: dataFile,
+            unit: unit
+        };
     }
 
     chartTitle.textContent = `${currentIndicatorData.indicatorName} - Time Trend`;
