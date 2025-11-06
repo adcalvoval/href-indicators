@@ -143,6 +143,7 @@ function setupEventListeners() {
     const countryFilter = document.getElementById('country-filter');
     const selectAllBtn = document.getElementById('select-all-btn');
     const deselectAllBtn = document.getElementById('deselect-all-btn');
+    const closeDataListBtn = document.getElementById('close-data-list-btn');
 
     categorySelect.addEventListener('change', onCategoryChange);
     indicatorSelect.addEventListener('change', onIndicatorChange);
@@ -156,6 +157,7 @@ function setupEventListeners() {
     countryFilter.addEventListener('change', updateChartWithFilter);
     selectAllBtn.addEventListener('click', selectAllCountries);
     deselectAllBtn.addEventListener('click', deselectAllCountries);
+    closeDataListBtn.addEventListener('click', closeDataList);
 }
 
 // Handle country profile selection change (enable/disable button)
@@ -376,6 +378,7 @@ async function loadIndicatorData() {
                 console.log(`Displaying ${data.length} countries on map`);
                 displayDataOnMap(data, indicatorName, unit);
                 showLegend(indicatorName, unit, data);
+                showDataList(data, indicatorName, unit);
             } else {
                 console.log('No data found - showing alert');
                 alert('No data found for the selected criteria.');
@@ -585,6 +588,7 @@ function clearMapData() {
 function clearAllMapData() {
     clearMapData();
     closeCountryProfile();
+    closeDataList();
     console.log('Map cleared');
 }
 
@@ -1371,4 +1375,37 @@ function closeChart() {
         timeSeriesChart.destroy();
         timeSeriesChart = null;
     }
+}
+
+// Show data list panel
+function showDataList(data, indicatorName, unit) {
+    const dataListPanel = document.getElementById('data-list-panel');
+    const dataListTitle = document.getElementById('data-list-title');
+    const dataListContent = document.getElementById('data-list-content');
+
+    // Sort data alphabetically by country name
+    const sortedData = [...data].sort((a, b) => a.country.localeCompare(b.country));
+
+    // Update title
+    dataListTitle.textContent = indicatorName;
+
+    // Build the list HTML
+    let html = '';
+    sortedData.forEach(item => {
+        html += `
+            <div class="data-list-item">
+                <span class="data-country-name">${item.country}</span>
+                <span class="data-country-value">${item.value.toFixed(2)} ${unit}</span>
+            </div>
+        `;
+    });
+
+    dataListContent.innerHTML = html;
+    dataListPanel.classList.remove('hidden');
+}
+
+// Close data list panel
+function closeDataList() {
+    const dataListPanel = document.getElementById('data-list-panel');
+    dataListPanel.classList.add('hidden');
 }

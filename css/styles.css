@@ -137,6 +137,90 @@ main {
     cursor: not-allowed;
 }
 
+/* Data List Panel */
+#data-list-panel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    width: 350px;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#data-list-panel.hidden {
+    display: none;
+}
+
+#data-list-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#data-list-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#close-data-list-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 1;
+    transition: opacity 0.3s;
+}
+
+#close-data-list-btn:hover {
+    opacity: 0.7;
+}
+
+#data-list-content {
+    padding: 20px;
+    overflow-y: auto;
+    max-height: calc(80vh - 60px);
+}
+
+.data-list-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.data-list-item:last-child {
+    border-bottom: none;
+}
+
+.data-country-name {
+    flex: 1;
+    color: #333;
+    font-weight: 500;
+}
+
+.data-country-value {
+    color: #666;
+    font-weight: 600;
+    margin-left: 10px;
+    text-align: right;
+}
+
 /* Legend */
 #legend {
     position: absolute;
