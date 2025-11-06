@@ -370,11 +370,14 @@ async function loadIndicatorData() {
             }
 
             const data = await loadDataFile(dataFile, indicatorId, year);
+            console.log(`loadDataFile returned ${data ? data.length : 0} data points`);
 
             if (data && data.length > 0) {
+                console.log(`Displaying ${data.length} countries on map`);
                 displayDataOnMap(data, indicatorName, unit);
                 showLegend(indicatorName, unit, data);
             } else {
+                console.log('No data found - showing alert');
                 alert('No data found for the selected criteria.');
             }
         }
