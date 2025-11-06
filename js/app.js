@@ -595,10 +595,17 @@ function displayDataOnMap(data, indicatorName, unit) {
         return;
     }
 
+    console.log(`displayDataOnMap called with ${data.length} items`);
+
     // Calculate value ranges for color coding
     const values = data.map(d => d.value).filter(v => !isNaN(v));
     const minValue = Math.min(...values);
     const maxValue = Math.max(...values);
+
+    console.log(`Value range: ${minValue} to ${maxValue}`);
+
+    let displayedCount = 0;
+    let notFoundCount = 0;
 
     data.forEach(item => {
         const feature = getCountryPolygon(item.country);
@@ -628,8 +635,14 @@ function displayDataOnMap(data, indicatorName, unit) {
             `);
 
             currentOverlays.push(polygon);
+            displayedCount++;
+        } else if (!feature) {
+            notFoundCount++;
+            console.log(`Country not found in GeoJSON: ${item.country}`);
         }
     });
+
+    console.log(`Displayed ${displayedCount} polygons, ${notFoundCount} countries not found`);
 }
 
 // Get color based on value (gradient from green to red)
