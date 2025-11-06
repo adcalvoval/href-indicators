@@ -419,14 +419,14 @@
       "color": "#9E9E9E",
       "indicators": [
         {
-          "id": "POVERTY_HEADCOUNT_NATIONAL",
+          "id": "SI.POV.NAHC",
           "name": "National Poverty Headcount",
           "file": "WB Data 25b.csv",
           "unit": "%",
           "description": "Population below national poverty line"
         },
         {
-          "id": "MULTIDIM_POVERTY_UNDP",
+          "id": "SI.POV.MPUN",
           "name": "Multidimensional Poverty (UNDP)",
           "file": "WB Data 25b.csv",
           "unit": "%",
