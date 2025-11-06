@@ -5,6 +5,8 @@ let countriesGeoJSON = null;
 let compiledData = null; // Compiled indicators data
 let currentMarkers = [];
 let currentOverlays = [];
+let timeSeriesChart = null; // Chart.js instance
+let currentIndicatorData = null; // Store current indicator info for time series
 const IFRC_API_TOKEN = '3f891db59f4e9fd16ba4f8be803d368a469a1276';
 const DREF_API_URL = 'https://goadmin.ifrc.org/api/v2/appeal/?atype=0&status=0';
 const PAST_DREF_API_URL = 'https://goadmin.ifrc.org/api/v2/appeal/?atype=0';
@@ -135,6 +137,8 @@ function setupEventListeners() {
     const closeProfileBtn = document.getElementById('close-profile-btn');
     const countryProfileSelect = document.getElementById('country-profile-select');
     const clearMapBtn = document.getElementById('clear-map-btn');
+    const showTrendBtn = document.getElementById('show-trend-btn');
+    const closeChartBtn = document.getElementById('close-chart-btn');
 
     categorySelect.addEventListener('change', onCategoryChange);
     indicatorSelect.addEventListener('change', onIndicatorChange);
@@ -142,6 +146,8 @@ function setupEventListeners() {
     closeProfileBtn.addEventListener('click', closeCountryProfile);
     countryProfileSelect.addEventListener('change', onCountryProfileChange);
     clearMapBtn.addEventListener('click', clearAllMapData);
+    showTrendBtn.addEventListener('click', showTimeSeriesChart);
+    closeChartBtn.addEventListener('click', closeChart);
 }
 
 // Handle country profile selection
@@ -206,16 +212,18 @@ function onIndicatorChange(event) {
     const indicatorId = event.target.value;
     const yearSelect = document.getElementById('year-select');
     const loadDataBtn = document.getElementById('load-data-btn');
+    const showTrendBtn = document.getElementById('show-trend-btn');
 
     yearSelect.innerHTML = '<option value="">Select a year...</option>';
 
     if (!indicatorId) {
         yearSelect.disabled = true;
         loadDataBtn.disabled = true;
+        showTrendBtn.disabled = true;
         return;
     }
 
-    // Check if this is DREF data (doesn't need year selection)
+    // Check if this is DREF data (doesn't need year selection or time series)
     if (indicatorId === 'ACTIVE_DREFS' || indicatorId === 'PAST_DREFS') {
         yearSelect.disabled = true;
         if (indicatorId === 'ACTIVE_DREFS') {
@@ -225,6 +233,7 @@ function onIndicatorChange(event) {
         }
         yearSelect.value = yearSelect.options[0].value;
         loadDataBtn.disabled = false;
+        showTrendBtn.disabled = true; // No time series for DREF data
     } else {
         // Populate years for regular indicators
         const years = [2024, 2023, 2022, 2021, 2020, 2019, 2018];
@@ -237,6 +246,7 @@ function onIndicatorChange(event) {
 
         yearSelect.disabled = false;
         loadDataBtn.disabled = false;
+        showTrendBtn.disabled = false; // Enable time series for regular indicators
     }
 }
 
@@ -259,6 +269,14 @@ async function loadIndicatorData() {
     const dataFile = selectedOption.dataset.file;
     const indicatorName = selectedOption.textContent;
     const unit = selectedOption.dataset.unit;
+
+    // Store current indicator data for time series
+    currentIndicatorData = {
+        indicatorId: indicatorId,
+        indicatorName: indicatorName,
+        dataFile: dataFile,
+        unit: unit
+    };
 
     console.log(`Loading data for: ${indicatorName} from ${dataFile}`);
 
@@ -1020,4 +1038,167 @@ function getCountryPolygon(countryName) {
     });
 
     return feature;
+}
+
+// Load time series data for all years
+async function loadTimeSeriesData() {
+    if (!currentIndicatorData) {
+        alert('Please load an indicator first.');
+        return null;
+    }
+
+    const { indicatorId, dataFile, unit } = currentIndicatorData;
+    const years = [2018, 2019, 2020, 2021, 2022, 2023, 2024];
+    const timeSeriesData = {};
+
+    console.log('Loading time series data...');
+
+    // Load data for each year
+    for (const year of years) {
+        try {
+            const data = await loadDataFile(dataFile, indicatorId, year);
+
+            if (data && data.length > 0) {
+                data.forEach(item => {
+                    if (!timeSeriesData[item.country]) {
+                        timeSeriesData[item.country] = {};
+                    }
+                    timeSeriesData[item.country][year] = item.value;
+                });
+            }
+        } catch (e) {
+            console.log(`No data for year ${year}`);
+        }
+    }
+
+    return { years, timeSeriesData, unit };
+}
+
+// Show time series chart
+async function showTimeSeriesChart() {
+    const chartPanel = document.getElementById('chart-panel');
+    const chartTitle = document.getElementById('chart-title');
+
+    if (!currentIndicatorData) {
+        alert('Please load an indicator first.');
+        return;
+    }
+
+    chartTitle.textContent = `${currentIndicatorData.indicatorName} - Time Trend`;
+    chartPanel.classList.remove('hidden');
+
+    // Load time series data
+    const result = await loadTimeSeriesData();
+
+    if (!result) {
+        return;
+    }
+
+    const { years, timeSeriesData, unit } = result;
+
+    // Prepare data for Chart.js
+    const datasets = [];
+    const colors = [
+        '#DC2626', '#2196F3', '#4CAF50', '#FF9800', '#9C27B0',
+        '#00BCD4', '#FFEB3B', '#795548', '#607D8B', '#E91E63',
+        '#3F51B5', '#8BC34A', '#FF5722', '#009688', '#FFC107',
+        '#673AB7', '#CDDC39', '#F44336', '#03A9F4', '#8E24AA',
+        '#00897B', '#FFA726', '#5C6BC0', '#7CB342', '#D32F2F'
+    ];
+
+    let colorIndex = 0;
+    for (const [country, yearData] of Object.entries(timeSeriesData)) {
+        const dataPoints = years.map(year => yearData[year] || null);
+
+        // Only add countries that have at least one data point
+        if (dataPoints.some(val => val !== null)) {
+            datasets.push({
+                label: country,
+                data: dataPoints,
+                borderColor: colors[colorIndex % colors.length],
+                backgroundColor: colors[colorIndex % colors.length],
+                borderWidth: 2,
+                tension: 0.1,
+                spanGaps: true // Connect lines even if there are gaps
+            });
+            colorIndex++;
+        }
+    }
+
+    // Destroy existing chart if it exists
+    if (timeSeriesChart) {
+        timeSeriesChart.destroy();
+    }
+
+    // Create new chart
+    const ctx = document.getElementById('time-series-chart').getContext('2d');
+    timeSeriesChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: years,
+            datasets: datasets
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                title: {
+                    display: false
+                },
+                legend: {
+                    display: true,
+                    position: 'right',
+                    labels: {
+                        boxWidth: 12,
+                        padding: 8,
+                        font: {
+                            size: 11
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            let label = context.dataset.label || '';
+                            if (label) {
+                                label += ': ';
+                            }
+                            if (context.parsed.y !== null) {
+                                label += context.parsed.y.toFixed(2) + ' ' + unit;
+                            }
+                            return label;
+                        }
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Year'
+                    }
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: `${currentIndicatorData.indicatorName} (${unit})`
+                    },
+                    beginAtZero: false
+                }
+            }
+        }
+    });
+
+    console.log(`Time series chart created with ${datasets.length} countries`);
+}
+
+// Close chart panel
+function closeChart() {
+    const chartPanel = document.getElementById('chart-panel');
+    chartPanel.classList.add('hidden');
+
+    if (timeSeriesChart) {
+        timeSeriesChart.destroy();
+        timeSeriesChart = null;
+    }
 }

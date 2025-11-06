@@ -171,6 +171,73 @@ main {
     display: none;
 }
 
+/* Time Series Chart Panel */
+#chart-panel {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: white;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+#chart-panel.hidden {
+    display: none;
+}
+
+#chart-header {
+    background-color: #2196F3;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chart-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#close-chart-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 1;
+    transition: opacity 0.3s;
+}
+
+#close-chart-btn:hover {
+    opacity: 0.7;
+}
+
+#chart-content {
+    padding: 20px;
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#time-series-chart {
+    max-height: 100%;
+    max-width: 100%;
+}
+
 #country-profile-header {
     background-color: #8B0000;
     color: white;

@@ -54,6 +54,9 @@
                 <button id="load-data-btn" disabled>Load Data</button>
             </div>
             <div class="control-section">
+                <button id="show-trend-btn" disabled style="background-color: #2196F3;">Show Time Trend</button>
+            </div>
+            <div class="control-section">
                 <button id="clear-map-btn" style="background-color: #666;">Clear Map</button>
             </div>
         </div>
@@ -66,6 +69,17 @@
             </div>
             <div id="country-profile-content">
                 <p>Loading...</p>
+            </div>
+        </div>
+
+        <!-- Time Series Chart Panel -->
+        <div id="chart-panel" class="hidden">
+            <div id="chart-header">
+                <h3 id="chart-title">Time Series</h3>
+                <button id="close-chart-btn">×</button>
+            </div>
+            <div id="chart-content">
+                <canvas id="time-series-chart"></canvas>
             </div>
         </div>
 
@@ -88,6 +102,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
             integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
             crossorigin=""></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
 
     <!-- Custom JS -->
     <script src="js/app.js"></script>
