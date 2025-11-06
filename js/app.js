@@ -66,7 +66,7 @@ async function loadCategories() {
 // Load countries GeoJSON for polygon display
 async function loadCountriesGeoJSON() {
     try {
-        const response = await fetch('data/countries.geojson');
+        const response = await fetch('data/countries-10m.geojson');
         const data = await response.json();
 
         // Filter for target countries
