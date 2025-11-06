@@ -42,13 +42,13 @@ main {
 #country-profile-section {
     position: absolute;
     top: 20px;
-    left: 70px;
+    left: 20px;
     background: white;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    width: 280px;
+    width: 300px;
 }
 
 #country-profile-section h3 {
@@ -62,17 +62,14 @@ main {
 /* Indicator Analysis Panel */
 #indicator-panel {
     position: absolute;
-    top: 210px;
-    left: 70px;
-    bottom: 100px;
+    top: 240px;
+    left: 20px;
     background: white;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    width: 280px;
-    max-height: calc(100vh - 330px);
-    overflow-y: auto;
+    width: 300px;
 }
 
 #indicator-panel h3 {
@@ -206,7 +203,7 @@ main {
 #chart-panel {
     position: absolute;
     top: 20px;
-    left: 380px;
+    left: 360px;
     right: 20px;
     bottom: 80px;
     background: white;
