@@ -136,6 +136,7 @@ function setupEventListeners() {
     const loadDataBtn = document.getElementById('load-data-btn');
     const closeProfileBtn = document.getElementById('close-profile-btn');
     const countryProfileSelect = document.getElementById('country-profile-select');
+    const viewProfileBtn = document.getElementById('view-profile-btn');
     const clearMapBtn = document.getElementById('clear-map-btn');
     const showTrendBtn = document.getElementById('show-trend-btn');
     const closeChartBtn = document.getElementById('close-chart-btn');
@@ -147,7 +148,8 @@ function setupEventListeners() {
     indicatorSelect.addEventListener('change', onIndicatorChange);
     loadDataBtn.addEventListener('click', loadIndicatorData);
     closeProfileBtn.addEventListener('click', closeCountryProfile);
-    countryProfileSelect.addEventListener('change', onCountryProfileChange);
+    countryProfileSelect.addEventListener('change', onCountryProfileSelectChange);
+    viewProfileBtn.addEventListener('click', onViewProfileClick);
     clearMapBtn.addEventListener('click', clearAllMapData);
     showTrendBtn.addEventListener('click', showTimeSeriesChart);
     closeChartBtn.addEventListener('click', closeChart);
@@ -156,21 +158,31 @@ function setupEventListeners() {
     deselectAllBtn.addEventListener('click', deselectAllCountries);
 }
 
-// Handle country profile selection
-function onCountryProfileChange(event) {
+// Handle country profile selection change (enable/disable button)
+function onCountryProfileSelectChange(event) {
     const countryCode = event.target.value;
+    const viewProfileBtn = document.getElementById('view-profile-btn');
+
+    if (countryCode) {
+        viewProfileBtn.disabled = false;
+    } else {
+        viewProfileBtn.disabled = true;
+    }
+}
+
+// Handle View Profile button click
+function onViewProfileClick() {
+    const countrySelect = document.getElementById('country-profile-select');
+    const countryCode = countrySelect.value;
 
     if (!countryCode) {
         return;
     }
 
-    const countrySelect = event.target;
     const countryName = countrySelect.options[countrySelect.selectedIndex].text;
 
     // Load country profile
     loadCountryProfile(countryName, countryCode);
-
-    // Don't reset the dropdown - let user see their selection
 }
 
 // Handle category selection

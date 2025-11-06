@@ -38,18 +38,48 @@ main {
     position: relative;
 }
 
-/* Control Panel */
-#control-panel {
+/* Country Profile Section */
+#country-profile-section {
     position: absolute;
     top: 20px;
     left: 20px;
     background: white;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    min-width: 320px;
-    max-width: 400px;
+    min-width: 280px;
+    max-width: 320px;
+}
+
+#country-profile-section h3 {
+    margin: 0 0 12px 0;
+    font-size: 16px;
+    color: #8B0000;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #8B0000;
+}
+
+/* Indicator Analysis Panel */
+#indicator-panel {
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 280px;
+    max-width: 320px;
+}
+
+#indicator-panel h3 {
+    margin: 0 0 12px 0;
+    font-size: 16px;
+    color: #2196F3;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #2196F3;
 }
 
 .control-section {
@@ -174,15 +204,15 @@ main {
 /* Time Series Chart Panel */
 #chart-panel {
     position: absolute;
-    bottom: 80px;
+    top: 20px;
     left: 360px;
     right: 20px;
+    bottom: 80px;
     background: white;
     padding: 0;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    z-index: 1001;
-    height: 300px;
+    z-index: 1002;
     display: flex;
     flex-direction: column;
 }
