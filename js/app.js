@@ -229,6 +229,9 @@ function onIndicatorChange(event) {
         return;
     }
 
+    // Reset current indicator data when changing indicator
+    currentIndicatorData = null;
+
     // Check if this is DREF data (doesn't need year selection or time series)
     if (indicatorId === 'ACTIVE_DREFS' || indicatorId === 'PAST_DREFS') {
         yearSelect.disabled = true;
@@ -253,6 +256,12 @@ function onIndicatorChange(event) {
         yearSelect.disabled = false;
         loadDataBtn.disabled = false;
         showTrendBtn.disabled = false; // Enable time series for regular indicators
+
+        // If chart is open, auto-update it with new indicator
+        const chartPanel = document.getElementById('chart-panel');
+        if (!chartPanel.classList.contains('hidden')) {
+            showTimeSeriesChart();
+        }
     }
 }
 
