@@ -447,7 +447,8 @@ async function loadDataFile(fileName, indicatorId, year) {
                         // Try different value columns
                         value = extractValueFromRow(rowData, [
                             'PERCENT_POP_N', 'Value', 'Numeric', 'VALUE',
-                            'Rate', 'RATE', 'Prevalence', 'Incidence'
+                            'Rate', 'RATE', 'Prevalence', 'Incidence',
+                            'RATE_PER_100000_N'
                         ]);
                     }
                 } else if (isWorldBank) {
@@ -523,7 +524,8 @@ async function loadDataFile(fileName, indicatorId, year) {
                     // Try different value columns
                     value = extractValueFromRow(rowData, [
                         'PERCENT_POP_N', 'Value', 'Numeric', 'VALUE',
-                        'Rate', 'RATE', 'Prevalence', 'Incidence'
+                        'Rate', 'RATE', 'Prevalence', 'Incidence',
+                        'RATE_PER_100000_N'
                     ]);
                 }
             } else if (isWorldBank) {
