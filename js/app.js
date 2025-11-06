@@ -223,11 +223,12 @@ function onCategoryChange(event) {
 }
 
 // Handle indicator selection
-function onIndicatorChange(event) {
+async function onIndicatorChange(event) {
     const indicatorId = event.target.value;
     const yearSelect = document.getElementById('year-select');
     const loadDataBtn = document.getElementById('load-data-btn');
     const showTrendBtn = document.getElementById('show-trend-btn');
+    const indicatorSelect = document.getElementById('indicator-select');
 
     yearSelect.innerHTML = '<option value="">Select a year...</option>';
 
@@ -253,18 +254,34 @@ function onIndicatorChange(event) {
         loadDataBtn.disabled = false;
         showTrendBtn.disabled = true; // No time series for DREF data
     } else {
-        // Populate years for regular indicators
-        const years = [2024, 2023, 2022, 2021, 2020, 2019, 2018];
-        years.forEach(year => {
-            const option = document.createElement('option');
-            option.value = year;
-            option.textContent = year;
-            yearSelect.appendChild(option);
-        });
+        // Get the data file for this indicator
+        const selectedOption = indicatorSelect.options[indicatorSelect.selectedIndex];
+        const dataFile = selectedOption.dataset.file;
 
-        yearSelect.disabled = false;
-        loadDataBtn.disabled = false;
-        showTrendBtn.disabled = false; // Enable time series for regular indicators
+        // Check which years have data
+        yearSelect.disabled = true;
+        yearSelect.innerHTML = '<option value="">Checking available years...</option>';
+
+        const availableYears = await getAvailableYears(dataFile, indicatorId);
+
+        yearSelect.innerHTML = '<option value="">Select a year...</option>';
+
+        if (availableYears.length > 0) {
+            availableYears.forEach(year => {
+                const option = document.createElement('option');
+                option.value = year;
+                option.textContent = year;
+                yearSelect.appendChild(option);
+            });
+            yearSelect.disabled = false;
+            loadDataBtn.disabled = false;
+            showTrendBtn.disabled = false;
+        } else {
+            yearSelect.innerHTML = '<option value="">No data available</option>';
+            yearSelect.disabled = true;
+            loadDataBtn.disabled = true;
+            showTrendBtn.disabled = true;
+        }
 
         // If chart is open, auto-update it with new indicator
         const chartPanel = document.getElementById('chart-panel');
@@ -272,6 +289,26 @@ function onIndicatorChange(event) {
             showTimeSeriesChart();
         }
     }
+}
+
+// Get available years for a specific indicator
+async function getAvailableYears(dataFile, indicatorId) {
+    const allYears = [2024, 2023, 2022, 2021, 2020, 2019, 2018];
+    const availableYears = [];
+
+    // Try to load data from compiled JSON or CSV for each year
+    for (const year of allYears) {
+        try {
+            const data = await loadDataFile(dataFile, indicatorId, year);
+            if (data && data.length > 0) {
+                availableYears.push(year);
+            }
+        } catch (e) {
+            // Year not available, skip
+        }
+    }
+
+    return availableYears;
 }
 
 // Load and display indicator data
