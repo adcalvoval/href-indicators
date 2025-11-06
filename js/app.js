@@ -170,10 +170,7 @@ function onCountryProfileChange(event) {
     // Load country profile
     loadCountryProfile(countryName, countryCode);
 
-    // Reset the dropdown after loading
-    setTimeout(() => {
-        countrySelect.value = '';
-    }, 100);
+    // Don't reset the dropdown - let user see their selection
 }
 
 // Handle category selection
