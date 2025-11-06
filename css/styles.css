@@ -64,12 +64,14 @@ main {
     position: absolute;
     top: 240px;
     left: 20px;
+    bottom: 38px;
     background: white;
-    padding: 15px;
+    padding: 12px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     width: 300px;
+    overflow-y: auto;
 }
 
 #indicator-panel h3 {
@@ -81,7 +83,7 @@ main {
 }
 
 .control-section {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .control-section:last-child {
@@ -99,10 +101,10 @@ main {
 .control-section select,
 .control-section button {
     width: 100%;
-    padding: 10px;
+    padding: 8px;
     border: 2px solid #ddd;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 13px;
     font-family: inherit;
     transition: border-color 0.3s;
 }
