@@ -76,6 +76,16 @@
         <div id="chart-panel" class="hidden">
             <div id="chart-header">
                 <h3 id="chart-title">Time Series</h3>
+                <div id="chart-controls">
+                    <label for="country-filter">Filter by country:</label>
+                    <select id="country-filter" multiple size="5">
+                        <option value="all" selected>All Countries</option>
+                    </select>
+                    <div id="filter-buttons">
+                        <button id="select-all-btn">Select All</button>
+                        <button id="deselect-all-btn">Clear</button>
+                    </div>
+                </div>
                 <button id="close-chart-btn">×</button>
             </div>
             <div id="chart-content">

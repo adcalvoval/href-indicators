@@ -199,6 +199,54 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
+}
+
+#chart-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#chart-controls label {
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+#country-filter {
+    background: white;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 12px;
+    min-width: 150px;
+    max-width: 200px;
+}
+
+#country-filter option {
+    padding: 2px 4px;
+}
+
+#filter-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+#filter-buttons button {
+    background: white;
+    color: #2196F3;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 11px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+#filter-buttons button:hover {
+    background-color: #f0f0f0;
 }
 
 #chart-title {

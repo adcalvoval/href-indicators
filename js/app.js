@@ -139,6 +139,9 @@ function setupEventListeners() {
     const clearMapBtn = document.getElementById('clear-map-btn');
     const showTrendBtn = document.getElementById('show-trend-btn');
     const closeChartBtn = document.getElementById('close-chart-btn');
+    const countryFilter = document.getElementById('country-filter');
+    const selectAllBtn = document.getElementById('select-all-btn');
+    const deselectAllBtn = document.getElementById('deselect-all-btn');
 
     categorySelect.addEventListener('change', onCategoryChange);
     indicatorSelect.addEventListener('change', onIndicatorChange);
@@ -148,6 +151,9 @@ function setupEventListeners() {
     clearMapBtn.addEventListener('click', clearAllMapData);
     showTrendBtn.addEventListener('click', showTimeSeriesChart);
     closeChartBtn.addEventListener('click', closeChart);
+    countryFilter.addEventListener('change', updateChartWithFilter);
+    selectAllBtn.addEventListener('click', selectAllCountries);
+    deselectAllBtn.addEventListener('click', deselectAllCountries);
 }
 
 // Handle country profile selection
@@ -1117,6 +1123,30 @@ async function showTimeSeriesChart() {
 
     const { years, timeSeriesData, unit } = result;
 
+    // Populate country filter dropdown
+    const countryFilter = document.getElementById('country-filter');
+    countryFilter.innerHTML = '<option value="all">All Countries</option>';
+
+    const countriesWithData = Object.keys(timeSeriesData).sort();
+    countriesWithData.forEach(country => {
+        const option = document.createElement('option');
+        option.value = country;
+        option.textContent = country;
+        option.selected = true; // Select all by default
+        countryFilter.appendChild(option);
+    });
+
+    // Store time series data globally for filtering
+    window.currentTimeSeriesData = { years, timeSeriesData, unit };
+
+    // Create the chart with all countries
+    createTimeSeriesChart(years, timeSeriesData, unit, countriesWithData);
+
+    console.log(`Time series chart created with ${countriesWithData.length} countries`);
+}
+
+// Create or update the time series chart
+function createTimeSeriesChart(years, timeSeriesData, unit, selectedCountries) {
     // Prepare data for Chart.js
     const datasets = [];
     const colors = [
@@ -1128,7 +1158,15 @@ async function showTimeSeriesChart() {
     ];
 
     let colorIndex = 0;
-    for (const [country, yearData] of Object.entries(timeSeriesData)) {
+    const allCountries = Object.keys(timeSeriesData).sort();
+
+    for (const country of allCountries) {
+        // Skip countries not in selected list
+        if (!selectedCountries.includes(country)) {
+            continue;
+        }
+
+        const yearData = timeSeriesData[country];
         const dataPoints = years.map(year => yearData[year] || null);
 
         // Only add countries that have at least one data point
@@ -1209,8 +1247,46 @@ async function showTimeSeriesChart() {
             }
         }
     });
+}
 
-    console.log(`Time series chart created with ${datasets.length} countries`);
+// Update chart when country filter changes
+function updateChartWithFilter() {
+    if (!window.currentTimeSeriesData) {
+        return;
+    }
+
+    const countryFilter = document.getElementById('country-filter');
+    const selectedOptions = Array.from(countryFilter.selectedOptions);
+    const selectedValues = selectedOptions.map(opt => opt.value);
+
+    // If "All Countries" is selected, show all
+    let selectedCountries;
+    if (selectedValues.includes('all')) {
+        selectedCountries = Object.keys(window.currentTimeSeriesData.timeSeriesData);
+    } else {
+        selectedCountries = selectedValues;
+    }
+
+    const { years, timeSeriesData, unit } = window.currentTimeSeriesData;
+    createTimeSeriesChart(years, timeSeriesData, unit, selectedCountries);
+}
+
+// Select all countries
+function selectAllCountries() {
+    const countryFilter = document.getElementById('country-filter');
+    for (let i = 0; i < countryFilter.options.length; i++) {
+        countryFilter.options[i].selected = true;
+    }
+    updateChartWithFilter();
+}
+
+// Deselect all countries
+function deselectAllCountries() {
+    const countryFilter = document.getElementById('country-filter');
+    for (let i = 0; i < countryFilter.options.length; i++) {
+        countryFilter.options[i].selected = false;
+    }
+    updateChartWithFilter();
 }
 
 // Close chart panel
