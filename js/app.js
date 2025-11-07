@@ -1340,6 +1340,11 @@ function createTimeSeriesChart(years, timeSeriesData, unit, selectedCountries) {
         options: {
             responsive: true,
             maintainAspectRatio: false,
+            layout: {
+                padding: {
+                    right: 20
+                }
+            },
             plugins: {
                 title: {
                     display: false
@@ -1347,6 +1352,7 @@ function createTimeSeriesChart(years, timeSeriesData, unit, selectedCountries) {
                 legend: {
                     display: true,
                     position: 'right',
+                    align: 'start',
                     labels: {
                         boxWidth: 12,
                         padding: 8,
