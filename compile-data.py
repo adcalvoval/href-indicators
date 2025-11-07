@@ -50,6 +50,7 @@ def compile_data():
     # Get all CSV files
     csv_files = list(portfolios_dir.glob('*_ALL_LATEST.csv'))
     csv_files.append(portfolios_dir / 'WB Data 25b.csv')
+    csv_files.append(portfolios_dir / 'IHME_GBD_2021_CONSOLIDATED.csv')
 
     print(f"Found {len(csv_files)} CSV files to compile...")
 
@@ -65,18 +66,55 @@ def compile_data():
 
         # Filter for target countries
         filtered_rows = []
+        is_ihme = 'IHME' in filename
+
         for row in rows:
-            country = row.get('Country Name') or row.get('GEO_NAME_SHORT')
+            # Get country name based on data type
+            if is_ihme:
+                country = row.get('location_name')
+            else:
+                country = row.get('Country Name') or row.get('GEO_NAME_SHORT')
 
             # Normalize country name using mapping
             normalized_country = COUNTRY_NAME_MAPPING.get(country, country)
 
             if normalized_country in TARGET_COUNTRIES:
+                # For IHME data, filter for aggregate indicators only
+                if is_ihme:
+                    age_name = row.get('age_name', '')
+                    sex_name = row.get('sex_name', '')
+                    metric_name = row.get('metric_name', '')
+                    cause_name = row.get('cause_name', '')
+                    rei_name = row.get('rei_name', '')
+                    measure_name = row.get('measure_name', '')
+
+                    # For life expectancy and HALE: use "0-6 days" age (at birth), "Years" metric
+                    # These measures don't have cause_name or rei_name populated
+                    if measure_name in ['Life expectancy', 'HALE (Healthy life expectancy)']:
+                        if age_name != '0-6 days' or sex_name != 'Both' or metric_name != 'Years':
+                            continue
+                        # Skip rows with any cause or risk factor
+                        if cause_name or rei_name:
+                            continue
+                    # For all other measures: "All ages", "Both sexes", "All causes", no risk factor, "Rate" metric
+                    else:
+                        # Only include "All causes" and no specific risk factor (empty rei_name = total)
+                        if cause_name != 'All causes':
+                            continue
+                        if rei_name:  # Skip any row with a risk factor (we want total only)
+                            continue
+                        # Must be "All ages", "Both sexes", "Rate" metric
+                        if age_name != 'All ages' or sex_name != 'Both' or metric_name != 'Rate':
+                            continue
+
                 # Update the row with normalized country name
                 if 'Country Name' in row:
                     row['Country Name'] = normalized_country
                 if 'GEO_NAME_SHORT' in row:
                     row['GEO_NAME_SHORT'] = normalized_country
+                if 'location_name' in row:
+                    row['location_name'] = normalized_country
+
                 filtered_rows.append(row)
 
         if filtered_rows:

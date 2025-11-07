@@ -11,6 +11,14 @@ const IFRC_API_TOKEN = '3f891db59f4e9fd16ba4f8be803d368a469a1276';
 const DREF_API_URL = 'https://goadmin.ifrc.org/api/v2/appeal/?atype=0&status=0';
 const PAST_DREF_API_URL = 'https://goadmin.ifrc.org/api/v2/appeal/?atype=0';
 
+// Helper function to format numbers with commas
+function formatNumber(value, decimals = 2) {
+    if (typeof value !== 'number' || isNaN(value)) {
+        return value;
+    }
+    return value.toFixed(decimals).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     initMap();
@@ -427,12 +435,13 @@ async function loadDataFile(fileName, indicatorId, year) {
             const isWHO = firstRow.hasOwnProperty('GEO_NAME_SHORT') || firstRow.hasOwnProperty('DIM_TIME');
             const isWorldBank = firstRow.hasOwnProperty('Country Name') &&
                               Object.keys(firstRow).some(k => k.includes('[YR'));
+            const isIHME = firstRow.hasOwnProperty('location_name') && firstRow.hasOwnProperty('measure_name');
 
-            console.log(`Data type: ${isWHO ? 'WHO' : isWorldBank ? 'World Bank' : 'Unknown'}`);
+            console.log(`Data type: ${isWHO ? 'WHO' : isWorldBank ? 'World Bank' : isIHME ? 'IHME' : 'Unknown'}`);
 
             for (let rowData of rows) {
-                // Get country name
-                const countryName = rowData['Country Name'] || rowData['GEO_NAME_SHORT'];
+                // Get country name based on data type
+                const countryName = rowData['Country Name'] || rowData['GEO_NAME_SHORT'] || rowData['location_name'];
 
                 // For World Bank data, check if this row matches the requested indicator
                 if (isWorldBank) {
@@ -440,6 +449,51 @@ async function loadDataFile(fileName, indicatorId, year) {
                     // indicatorId contains the Series Code (e.g., 'NY.GNP.PCAP.CD')
                     if (seriesCode !== indicatorId) {
                         continue; // Skip rows that don't match the requested indicator
+                    }
+                }
+
+                // For IHME data, check if this row matches the requested measure
+                if (isIHME) {
+                    const measureName = rowData['measure_name'];
+                    const ageName = rowData['age_name'];
+                    const sexName = rowData['sex_name'];
+                    const metricName = rowData['metric_name'];
+                    const causeName = rowData['cause_name'];
+                    const reiName = rowData['rei_name'];
+
+                    // indicatorId contains the measure name (e.g., 'Deaths', 'DALYs (Disability-Adjusted Life Years)')
+                    if (measureName !== indicatorId) {
+                        continue; // Skip rows that don't match the requested measure
+                    }
+
+                    // For life expectancy and HALE: use "0-6 days" age (at birth), "Years" metric
+                    // These measures don't have cause_name or rei_name populated
+                    if (measureName === 'Life expectancy' || measureName === 'HALE (Healthy life expectancy)') {
+                        if (ageName !== '0-6 days' || sexName !== 'Both' || metricName !== 'Years') {
+                            continue;
+                        }
+                        // Skip rows with any cause or risk factor
+                        if (causeName || reiName) {
+                            continue;
+                        }
+                    }
+                    // For all other measures: "All ages", "Both sexes", "All causes", no risk factor, "Rate" metric
+                    else {
+                        // Only include "All causes" and no specific risk factor (empty reiName = total)
+                        if (causeName !== 'All causes') {
+                            continue;
+                        }
+                        if (reiName) {  // Skip any row with a risk factor (we want total only)
+                            continue;
+                        }
+                        // Only include aggregate data: All ages, Both sexes
+                        if (ageName !== 'All ages' || sexName !== 'Both') {
+                            continue;
+                        }
+                        // Must use "Rate" metric
+                        if (metricName !== 'Rate') {
+                            continue;
+                        }
                     }
                 }
 
@@ -464,6 +518,15 @@ async function loadDataFile(fileName, indicatorId, year) {
                     // Handle ".." as missing data
                     if (rawValue && rawValue !== '..' && rawValue !== '') {
                         value = parseFloat(rawValue);
+                    }
+                } else if (isIHME) {
+                    // IHME format: year is in 'year' column, value in 'val' column
+                    const rowYear = rowData['year'];
+                    if (rowYear == year) {
+                        const rawValue = rowData['val'];
+                        if (rawValue && rawValue !== '' && rawValue !== 'N/A') {
+                            value = parseFloat(rawValue);
+                        }
                     }
                 }
 
@@ -635,7 +698,7 @@ function displayDataOnMap(data, indicatorName, unit) {
 
             polygon.bindPopup(`
                 <strong>${item.country}</strong><br>
-                ${indicatorName}: <strong>${item.value.toFixed(2)} ${unit}</strong>
+                ${indicatorName}: <strong>${formatNumber(item.value)} ${unit}</strong>
             `);
 
             currentOverlays.push(polygon);
@@ -1070,7 +1133,7 @@ function displayCountryProfile(countryName, indicatorsByCategory) {
 
         indicators.forEach(indicator => {
             const displayValue = typeof indicator.value === 'number' ?
-                indicator.value.toFixed(2) : indicator.value;
+                formatNumber(indicator.value) : indicator.value;
 
             html += `
                 <div class="indicator-item">
@@ -1300,7 +1363,7 @@ function createTimeSeriesChart(years, timeSeriesData, unit, selectedCountries) {
                                 label += ': ';
                             }
                             if (context.parsed.y !== null) {
-                                label += context.parsed.y.toFixed(2) + ' ' + unit;
+                                label += formatNumber(context.parsed.y) + ' ' + unit;
                             }
                             return label;
                         }
@@ -1395,7 +1458,7 @@ function showDataList(data, indicatorName, unit) {
         html += `
             <div class="data-list-item">
                 <span class="data-country-name">${item.country}</span>
-                <span class="data-country-value">${item.value.toFixed(2)} ${unit}</span>
+                <span class="data-country-value">${formatNumber(item.value)} ${unit}</span>
             </div>
         `;
     });
