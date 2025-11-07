@@ -454,7 +454,7 @@
           "description": "Per capita health expenditure in PPP dollars"
         },
         {
-          "id": "OUT_OF_POCKET_HEALTH",
+          "id": "SH.XPD.OOPC.CH.ZS",
           "name": "Out-of-pocket Health Spending",
           "file": "WB Data 25b.csv",
           "unit": "% of health expenditure",
@@ -468,14 +468,14 @@
       "color": "#009688",
       "indicators": [
         {
-          "id": "POPULATION_TOTAL",
+          "id": "SP.POP.TOTL",
           "name": "Total Population",
           "file": "WB Data 25b.csv",
           "unit": "count",
           "description": "Total population"
         },
         {
-          "id": "POPULATION_GROWTH",
+          "id": "SP.POP.GROW",
           "name": "Population Growth",
           "file": "WB Data 25b.csv",
           "unit": "annual %",
