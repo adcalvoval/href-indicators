@@ -1,0 +1,26 @@
+measure_id,measure_name,location_id,location_name,sex_id,sex_name,age_id,age_name,metric_id,metric_name,year,val,upper,lower
+28,HALE (Healthy life expectancy),114,Haiti,3,Both,2,0-6 days,5,Years,2023,52.34199325355856,54.384886021563176,50.025044662757765
+28,HALE (Healthy life expectancy),125,Colombia,3,Both,2,0-6 days,5,Years,2023,67.87848187067935,70.66480372190567,64.69782127342691
+28,HALE (Healthy life expectancy),190,Uganda,3,Both,2,0-6 days,5,Years,2023,56.90912883439934,59.09028168076233,54.20489291438055
+28,HALE (Healthy life expectancy),202,Cameroon,3,Both,2,0-6 days,5,Years,2023,53.63464748928272,55.677051539767646,51.52410559242161
+28,HALE (Healthy life expectancy),184,Mozambique,3,Both,2,0-6 days,5,Years,2023,55.08586149761622,57.65169606844876,51.88819878651586
+28,HALE (Healthy life expectancy),204,Chad,3,Both,2,0-6 days,5,Years,2023,50.23943288592986,52.29879379281088,47.91059590319549
+28,HALE (Healthy life expectancy),201,Burkina Faso,3,Both,2,0-6 days,5,Years,2023,58.24322079610945,60.66673570299662,55.48913653992672
+28,HALE (Healthy life expectancy),213,Niger,3,Both,2,0-6 days,5,Years,2023,51.43821994537832,53.60899546898258,49.18438428717809
+28,HALE (Healthy life expectancy),214,Nigeria,3,Both,2,0-6 days,5,Years,2023,55.23713388276263,57.62052084749678,52.49576059888615
+28,HALE (Healthy life expectancy),169,Central African Republic,3,Both,2,0-6 days,5,Years,2023,46.31654234369591,48.50529827972747,44.143417083391455
+28,HALE (Healthy life expectancy),157,Yemen,3,Both,2,0-6 days,5,Years,2023,60.27042610819413,63.11313318160334,57.05519628983422
+28,HALE (Healthy life expectancy),160,Afghanistan,3,Both,2,0-6 days,5,Years,2023,56.23678724388829,59.123277468730834,52.92145162627763
+28,HALE (Healthy life expectancy),171,Democratic Republic of the Congo,3,Both,2,0-6 days,5,Years,2023,52.4614018633992,54.85863169777591,50.0365230921294
+28,HALE (Healthy life expectancy),187,Somalia,3,Both,2,0-6 days,5,Years,2023,55.700765411621184,58.030974759482426,52.95647335022033
+28,HALE (Healthy life expectancy),211,Mali,3,Both,2,0-6 days,5,Years,2023,54.246453297236044,56.57964299712373,51.45153019723635
+28,HALE (Healthy life expectancy),63,Ukraine,3,Both,2,0-6 days,5,Years,2023,62.24607076175644,64.67948976717958,59.30292411174703
+28,HALE (Healthy life expectancy),153,Syrian Arab Republic,3,Both,2,0-6 days,5,Years,2023,62.8427423564233,65.78176627392304,59.29897466805504
+28,HALE (Healthy life expectancy),165,Pakistan,3,Both,2,0-6 days,5,Years,2023,59.61707404271475,62.19394627983048,56.196411626995385
+28,HALE (Healthy life expectancy),179,Ethiopia,3,Both,2,0-6 days,5,Years,2023,56.29391057963394,58.33821974120392,53.96117372228589
+28,HALE (Healthy life expectancy),15,Myanmar,3,Both,2,0-6 days,5,Years,2023,57.44812668643782,59.64673235524432,54.95943647695144
+28,HALE (Healthy life expectancy),435,South Sudan,3,Both,2,0-6 days,5,Years,2023,48.43548238832781,50.4708604934125,45.85803651582982
+28,HALE (Healthy life expectancy),522,Sudan,3,Both,2,0-6 days,5,Years,2023,59.22078698759405,61.50086261968294,56.27780774401729
+28,HALE (Healthy life expectancy),133,Venezuela (Bolivarian Republic of),3,Both,2,0-6 days,5,Years,2023,61.29566522795197,63.90991408443232,58.42867750075317
+28,HALE (Healthy life expectancy),146,Lebanon,3,Both,2,0-6 days,5,Years,2023,66.16528571634223,69.25194017491458,62.62566251809588
+28,HALE (Healthy life expectancy),161,Bangladesh,3,Both,2,0-6 days,5,Years,2023,61.25294411900602,63.59383309079205,58.59434787786354
