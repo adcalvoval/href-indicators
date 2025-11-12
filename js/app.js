@@ -423,7 +423,86 @@ function parseCSVLine(line) {
 // Load data from compiled JSON or fallback to CSV file
 async function loadDataFile(fileName, indicatorId, year) {
     try {
-        // Try to use compiled data first
+        // For IHME data, check all IHME files in compiled data (not just the specified one)
+        // This allows us to get data from multiple IHME files (e.g., 2021 and 2023 data)
+        if (compiledData && fileName.includes('IHME')) {
+            console.log(`Loading IHME indicator ${indicatorId} for year ${year} from all IHME files`);
+            const data = [];
+
+            // Check all files in compiled data that are IHME files
+            for (const [dataFileName, rows] of Object.entries(compiledData)) {
+                if (!dataFileName.includes('IHME') || !rows || rows.length === 0) {
+                    continue;
+                }
+
+                const firstRow = rows[0];
+                const isIHME = firstRow.hasOwnProperty('location_name') && firstRow.hasOwnProperty('measure_name');
+
+                if (!isIHME) {
+                    continue;
+                }
+
+                // Process this IHME file
+                for (let rowData of rows) {
+                    const countryName = rowData['location_name'];
+                    const measureName = rowData['measure_name'];
+                    const ageName = rowData['age_name'];
+                    const sexName = rowData['sex_name'];
+                    const metricName = rowData['metric_name'];
+                    const causeName = rowData['cause_name'];
+                    const reiName = rowData['rei_name'];
+
+                    // Check if this row matches the requested measure
+                    if (measureName !== indicatorId) {
+                        continue;
+                    }
+
+                    // Apply filtering rules
+                    if (measureName === 'Life expectancy' || measureName === 'HALE (Healthy life expectancy)') {
+                        if (ageName !== '0-6 days' || sexName !== 'Both' || metricName !== 'Years') {
+                            continue;
+                        }
+                        if (causeName || reiName) {
+                            continue;
+                        }
+                    } else {
+                        if (causeName !== 'All causes') {
+                            continue;
+                        }
+                        if (reiName) {
+                            continue;
+                        }
+                        if (ageName !== 'All ages' || sexName !== 'Both') {
+                            continue;
+                        }
+                        if (metricName !== 'Rate') {
+                            continue;
+                        }
+                    }
+
+                    // Check year and extract value
+                    const rowYear = rowData['year'];
+                    if (rowYear == year) {
+                        const rawValue = rowData['val'];
+                        if (rawValue && rawValue !== '' && rawValue !== 'N/A') {
+                            const value = parseFloat(rawValue);
+                            if (!isNaN(value)) {
+                                data.push({
+                                    country: countryName,
+                                    value: value,
+                                    rowData: rowData
+                                });
+                            }
+                        }
+                    }
+                }
+            }
+
+            console.log(`Found ${data.length} data points for ${indicatorId} in year ${year} across all IHME files`);
+            return data;
+        }
+
+        // Try to use compiled data first (for non-IHME data)
         if (compiledData && compiledData[fileName]) {
             console.log(`Loading ${fileName} from compiled data`);
             const rows = compiledData[fileName];
