@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test HALE 2023 Data Loading</title>
+</head>
+<body>
+    <h1>Testing HALE 2023 Data Loading</h1>
+    <div id="output"></div>
+
+    <script>
+        async function testHALE() {
+            const output = document.getElementById('output');
+            output.innerHTML = '<p>Loading compiled data...</p>';
+
+            try {
+                // Load compiled data
+                const response = await fetch('data/compiled-indicators.json');
+                const compiledData = await response.json();
+
+                output.innerHTML += '<p>✓ Compiled data loaded</p>';
+
+                // Check all IHME files for HALE
+                let haleData = [];
+                const indicatorId = 'HALE (Healthy life expectancy)';
+                const year = '2023';
+
+                for (const [fileName, rows] of Object.entries(compiledData)) {
+                    if (!fileName.includes('IHME')) continue;
+
+                    for (let rowData of rows) {
+                        const measureName = rowData['measure_name'];
+                        const ageName = rowData['age_name'];
+                        const sexName = rowData['sex_name'];
+                        const metricName = rowData['metric_name'];
+                        const causeName = rowData['cause_name'];
+                        const reiName = rowData['rei_name'];
+                        const rowYear = rowData['year'];
+
+                        // Check if matches HALE
+                        if (measureName !== indicatorId) continue;
+
+                        // Apply filtering
+                        if (ageName !== '0-6 days' || sexName !== 'Both' || metricName !== 'Years') {
+                            continue;
+                        }
+                        if (causeName || reiName) {
+                            continue;
+                        }
+
+                        // Check year
+                        if (rowYear == year) {
+                            const countryName = rowData['location_name'];
+                            const value = parseFloat(rowData['val']);
+
+                            if (!isNaN(value)) {
+                                haleData.push({
+                                    country: countryName,
+                                    value: value
+                                });
+                            }
+                        }
+                    }
+                }
+
+                output.innerHTML += `<p>✓ Found ${haleData.length} countries with HALE 2023 data</p>`;
+
+                if (haleData.length > 0) {
+                    output.innerHTML += '<h2>Sample HALE 2023 Data:</h2><ul>';
+                    haleData.slice(0, 10).forEach(item => {
+                        output.innerHTML += `<li>${item.country}: ${item.value.toFixed(2)} years</li>`;
+                    });
+                    output.innerHTML += '</ul>';
+
+                    output.innerHTML += '<h2 style="color: green;">✓ SUCCESS: HALE 2023 data is loading correctly!</h2>';
+                    output.innerHTML += '<p>If you\'re not seeing this in the main app, try:</p>';
+                    output.innerHTML += '<ol>';
+                    output.innerHTML += '<li>Hard refresh: Ctrl+Shift+R (Windows) or Cmd+Shift+R (Mac)</li>';
+                    output.innerHTML += '<li>Clear browser cache</li>';
+                    output.innerHTML += '<li>Open in private/incognito window</li>';
+                    output.innerHTML += '</ol>';
+                } else {
+                    output.innerHTML += '<h2 style="color: red;">✗ NO DATA FOUND</h2>';
+                }
+
+            } catch (error) {
+                output.innerHTML += `<p style="color: red;">Error: ${error.message}</p>`;
+                console.error(error);
+            }
+        }
+
+        // Run test on load
+        testHALE();
+    </script>
+</body>
+</html>
