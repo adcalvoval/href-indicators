@@ -1,0 +1,101 @@
+measure_id,measure_name,location_id,location_name,sex_id,sex_name,age_id,age_name,rei_id,rei_name,metric_id,metric_name,year,val,upper,lower
+29,Summary exposure value,171,Democratic Republic of the Congo,3,Both,22,All ages,169,All risk factors,3,Rate,2020,28.6578034294188,31.451887332849683,26.03991462661726
+29,Summary exposure value,179,Ethiopia,3,Both,22,All ages,169,All risk factors,3,Rate,2020,27.929840931304827,30.013733915527407,26.00927869452445
+29,Summary exposure value,146,Lebanon,3,Both,22,All ages,169,All risk factors,3,Rate,2021,27.83425618219388,30.955283040405927,24.763129901148
+29,Summary exposure value,187,Somalia,3,Both,22,All ages,169,All risk factors,3,Rate,2020,28.829830726252382,30.91274154680992,27.13763454675231
+29,Summary exposure value,146,Lebanon,3,Both,22,All ages,169,All risk factors,3,Rate,2018,27.48659425216858,30.375769770466032,24.64538558715833
+29,Summary exposure value,15,Myanmar,3,Both,22,All ages,169,All risk factors,3,Rate,2020,25.12575146915914,28.34881004360935,22.02662262711764
+29,Summary exposure value,171,Democratic Republic of the Congo,3,Both,22,All ages,169,All risk factors,3,Rate,2021,28.8441885311799,31.6816514809519,26.22826555353414
+29,Summary exposure value,171,Democratic Republic of the Congo,3,Both,22,All ages,169,All risk factors,3,Rate,2018,28.82560373861623,31.56684827019358,26.19463603108157
+29,Summary exposure value,213,Niger,3,Both,22,All ages,169,All risk factors,3,Rate,2020,28.78491122588322,30.441079919804547,27.3572871812503
+29,Summary exposure value,179,Ethiopia,3,Both,22,All ages,169,All risk factors,3,Rate,2021,28.01556136925688,30.09176535452836,26.080874484723072
+29,Summary exposure value,15,Myanmar,3,Both,22,All ages,169,All risk factors,3,Rate,2018,24.72216514538454,27.98859942129005,21.72675830641353
+29,Summary exposure value,146,Lebanon,3,Both,22,All ages,169,All risk factors,3,Rate,2019,27.58206007656266,30.57150076015736,24.62624512965353
+29,Summary exposure value,179,Ethiopia,3,Both,22,All ages,169,All risk factors,3,Rate,2018,27.95816459182036,29.97176859696452,26.02560045305521
+29,Summary exposure value,187,Somalia,3,Both,22,All ages,169,All risk factors,3,Rate,2021,28.730480580988697,30.77663046025492,27.114343098826133
+29,Summary exposure value,187,Somalia,3,Both,22,All ages,169,All risk factors,3,Rate,2018,28.60831913087074,30.69117482901087,26.96689651190382
+29,Summary exposure value,171,Democratic Republic of the Congo,3,Both,22,All ages,169,All risk factors,3,Rate,2019,28.857812469310453,31.70485128894288,26.24293447527526
+29,Summary exposure value,15,Myanmar,3,Both,22,All ages,169,All risk factors,3,Rate,2021,25.084202357501777,28.33811880510715,21.95797640619159
+29,Summary exposure value,213,Niger,3,Both,22,All ages,169,All risk factors,3,Rate,2021,28.959099254009068,30.65580646426831,27.49511232423242
+29,Summary exposure value,179,Ethiopia,3,Both,22,All ages,169,All risk factors,3,Rate,2019,28.00547142482712,30.09924163865828,26.052236037996767
+29,Summary exposure value,213,Niger,3,Both,22,All ages,169,All risk factors,3,Rate,2018,28.79430168634698,30.43728218702136,27.345076870369887
+29,Summary exposure value,187,Somalia,3,Both,22,All ages,169,All risk factors,3,Rate,2019,28.82593503217241,30.91291828628427,27.19054033581626
+29,Summary exposure value,15,Myanmar,3,Both,22,All ages,169,All risk factors,3,Rate,2019,25.17260811219717,28.407947588257333,22.092188048926488
+29,Summary exposure value,146,Lebanon,3,Both,22,All ages,169,All risk factors,3,Rate,2020,26.6943299564534,29.802698535355947,23.66477093442841
+29,Summary exposure value,213,Niger,3,Both,22,All ages,169,All risk factors,3,Rate,2019,28.83652303660666,30.477064480473192,27.36562197175792
+29,Summary exposure value,201,Burkina Faso,3,Both,22,All ages,169,All risk factors,3,Rate,2018,28.495591325484597,31.39302332726168,25.92083556457136
+29,Summary exposure value,202,Cameroon,3,Both,22,All ages,169,All risk factors,3,Rate,2018,27.16900557254201,31.069360695062283,23.980997608662292
+29,Summary exposure value,184,Mozambique,3,Both,22,All ages,169,All risk factors,3,Rate,2021,29.2970222918647,31.796979784352292,27.273139153871988
+29,Summary exposure value,435,South Sudan,3,Both,22,All ages,169,All risk factors,3,Rate,2019,29.122059530849718,31.659982631198304,27.16023525168823
+29,Summary exposure value,63,Ukraine,3,Both,22,All ages,169,All risk factors,3,Rate,2019,27.37618581821968,30.630079774361405,24.519589817244068
+29,Summary exposure value,153,Syrian Arab Republic,3,Both,22,All ages,169,All risk factors,3,Rate,2020,26.76811952191953,29.8342921649921,23.58291652747205
+29,Summary exposure value,214,Nigeria,3,Both,22,All ages,169,All risk factors,3,Rate,2018,25.46645475221454,28.46776759236488,22.73289357995239
+29,Summary exposure value,522,Sudan,3,Both,22,All ages,169,All risk factors,3,Rate,2020,26.98743147109523,30.304354675377336,23.71521349084229
+29,Summary exposure value,201,Burkina Faso,3,Both,22,All ages,169,All risk factors,3,Rate,2021,28.765255962542508,31.65971723200836,26.034260719549728
+29,Summary exposure value,125,Colombia,3,Both,22,All ages,169,All risk factors,3,Rate,2018,21.177868507386368,24.16465230770775,18.66634162727227
+29,Summary exposure value,157,Yemen,3,Both,22,All ages,169,All risk factors,3,Rate,2020,24.59471184478273,27.78375822340496,21.656928569659918
+29,Summary exposure value,160,Afghanistan,3,Both,22,All ages,169,All risk factors,3,Rate,2019,27.9862224717683,30.43352198383344,25.979729693697163
+29,Summary exposure value,125,Colombia,3,Both,22,All ages,169,All risk factors,3,Rate,2021,21.16086616105772,24.39678990619511,18.31037884033023
+29,Summary exposure value,161,Bangladesh,3,Both,22,All ages,169,All risk factors,3,Rate,2020,31.74945405025157,33.575378113920166,30.10568229686892
+29,Summary exposure value,114,Haiti,3,Both,22,All ages,169,All risk factors,3,Rate,2020,28.44320633625374,31.268696752442388,25.34687924335619
+29,Summary exposure value,202,Cameroon,3,Both,22,All ages,169,All risk factors,3,Rate,2021,27.42268217440263,31.39098998183435,24.10546060767783
+29,Summary exposure value,133,Venezuela (Bolivarian Republic of),3,Both,22,All ages,169,All risk factors,3,Rate,2018,29.21268827102535,31.844724331702253,26.80919541757214
+29,Summary exposure value,161,Bangladesh,3,Both,22,All ages,169,All risk factors,3,Rate,2018,32.19738736938944,34.04070872132057,30.41499247949898
+29,Summary exposure value,184,Mozambique,3,Both,22,All ages,169,All risk factors,3,Rate,2019,29.31096388048333,31.79913319608073,27.29464520105902
+29,Summary exposure value,165,Pakistan,3,Both,22,All ages,169,All risk factors,3,Rate,2020,29.55205335640201,31.837920027923623,27.38112713905993
+29,Summary exposure value,133,Venezuela (Bolivarian Republic of),3,Both,22,All ages,169,All risk factors,3,Rate,2021,29.34514010770057,31.72988658932973,26.98826394849312
+29,Summary exposure value,165,Pakistan,3,Both,22,All ages,169,All risk factors,3,Rate,2018,30.32531842302499,32.55964880980816,28.15891916353403
+29,Summary exposure value,114,Haiti,3,Both,22,All ages,169,All risk factors,3,Rate,2018,28.122919025840858,30.93727022637746,25.07351418849872
+29,Summary exposure value,204,Chad,3,Both,22,All ages,169,All risk factors,3,Rate,2020,28.40045855768208,31.077667866639903,25.96934255127063
+29,Summary exposure value,214,Nigeria,3,Both,22,All ages,169,All risk factors,3,Rate,2021,25.96486510944407,28.95385440293682,23.11424644116348
+29,Summary exposure value,63,Ukraine,3,Both,22,All ages,169,All risk factors,3,Rate,2020,27.36938215256754,30.5518574433006,24.293995573239368
+29,Summary exposure value,522,Sudan,3,Both,22,All ages,169,All risk factors,3,Rate,2018,27.352826985098222,30.564350464758377,24.02122233932017
+29,Summary exposure value,153,Syrian Arab Republic,3,Both,22,All ages,169,All risk factors,3,Rate,2018,26.49357519531258,29.491218141070007,23.51354013267306
+29,Summary exposure value,169,Central African Republic,3,Both,22,All ages,169,All risk factors,3,Rate,2020,29.33317795006965,31.9753825652207,27.016841671358772
+29,Summary exposure value,125,Colombia,3,Both,22,All ages,169,All risk factors,3,Rate,2019,21.34792848651517,24.38672799375291,18.833150413996748
+29,Summary exposure value,114,Haiti,3,Both,22,All ages,169,All risk factors,3,Rate,2021,28.21036704877472,31.1400801120921,25.10566875407216
+29,Summary exposure value,153,Syrian Arab Republic,3,Both,22,All ages,169,All risk factors,3,Rate,2021,27.000831316231622,29.89013975555012,23.70799752652172
+29,Summary exposure value,157,Yemen,3,Both,22,All ages,169,All risk factors,3,Rate,2018,25.273285735285327,28.23803400074788,22.44218855569176
+29,Summary exposure value,169,Central African Republic,3,Both,22,All ages,169,All risk factors,3,Rate,2018,29.24984451073691,31.81689749926329,26.973867569057468
+29,Summary exposure value,160,Afghanistan,3,Both,22,All ages,169,All risk factors,3,Rate,2020,27.72457349640242,30.249882469293944,25.69367290055668
+29,Summary exposure value,201,Burkina Faso,3,Both,22,All ages,169,All risk factors,3,Rate,2019,28.51708065310763,31.427134934352807,25.795896350650022
+29,Summary exposure value,63,Ukraine,3,Both,22,All ages,169,All risk factors,3,Rate,2018,27.406169480229696,30.61540460682753,24.4765612389909
+29,Summary exposure value,133,Venezuela (Bolivarian Republic of),3,Both,22,All ages,169,All risk factors,3,Rate,2019,29.40964236594632,31.889035365389066,26.90798329875306
+29,Summary exposure value,157,Yemen,3,Both,22,All ages,169,All risk factors,3,Rate,2021,24.95078779449309,28.24503557162362,21.91006039711242
+29,Summary exposure value,190,Uganda,3,Both,22,All ages,169,All risk factors,3,Rate,2020,29.72381233936485,32.76349580575085,27.48978610412135
+29,Summary exposure value,161,Bangladesh,3,Both,22,All ages,169,All risk factors,3,Rate,2021,31.873308784339933,33.6735795667075,30.15596099227565
+29,Summary exposure value,202,Cameroon,3,Both,22,All ages,169,All risk factors,3,Rate,2019,27.23611335495018,31.20688151562826,24.05522309722419
+29,Summary exposure value,160,Afghanistan,3,Both,22,All ages,169,All risk factors,3,Rate,2018,28.13421501228938,30.62562147821588,26.14859088954423
+29,Summary exposure value,153,Syrian Arab Republic,3,Both,22,All ages,169,All risk factors,3,Rate,2019,26.74222713174676,29.843540827324478,23.64785808434399
+29,Summary exposure value,114,Haiti,3,Both,22,All ages,169,All risk factors,3,Rate,2019,28.33237692711569,31.25176332292004,25.211439079264046
+29,Summary exposure value,211,Mali,3,Both,22,All ages,169,All risk factors,3,Rate,2020,28.79794691867644,30.69254951299294,26.946418928206988
+29,Summary exposure value,435,South Sudan,3,Both,22,All ages,169,All risk factors,3,Rate,2020,28.936515893677978,31.53606455900535,27.0532523282368
+29,Summary exposure value,125,Colombia,3,Both,22,All ages,169,All risk factors,3,Rate,2020,21.30781698085451,24.514191043775117,18.69431801288178
+29,Summary exposure value,184,Mozambique,3,Both,22,All ages,169,All risk factors,3,Rate,2020,29.305796133685156,31.81405339232934,27.29626913785882
+29,Summary exposure value,190,Uganda,3,Both,22,All ages,169,All risk factors,3,Rate,2018,29.7363573496293,32.62351667453617,27.545553293975022
+29,Summary exposure value,161,Bangladesh,3,Both,22,All ages,169,All risk factors,3,Rate,2019,32.22932091054019,34.13169010007857,30.456925358889247
+29,Summary exposure value,160,Afghanistan,3,Both,22,All ages,169,All risk factors,3,Rate,2021,27.91301997803894,30.561339883096327,25.78709375875205
+29,Summary exposure value,157,Yemen,3,Both,22,All ages,169,All risk factors,3,Rate,2019,24.965219119565422,28.0519212000089,22.160666877083777
+29,Summary exposure value,214,Nigeria,3,Both,22,All ages,169,All risk factors,3,Rate,2019,25.58341773272322,28.65300561376406,22.82067985080877
+29,Summary exposure value,165,Pakistan,3,Both,22,All ages,169,All risk factors,3,Rate,2021,29.752009141798393,32.03414799212387,27.35191035774074
+29,Summary exposure value,204,Chad,3,Both,22,All ages,169,All risk factors,3,Rate,2018,28.58140273297602,31.28209649892384,26.25776024554621
+29,Summary exposure value,204,Chad,3,Both,22,All ages,169,All risk factors,3,Rate,2021,28.637345229733967,31.38615907919144,26.24042410769643
+29,Summary exposure value,63,Ukraine,3,Both,22,All ages,169,All risk factors,3,Rate,2021,26.93292927914267,30.169191962467938,23.58681003098492
+29,Summary exposure value,522,Sudan,3,Both,22,All ages,169,All risk factors,3,Rate,2021,27.68711506067605,30.87847237704276,24.44625719289324
+29,Summary exposure value,201,Burkina Faso,3,Both,22,All ages,169,All risk factors,3,Rate,2020,28.48531337772931,31.400597284518287,25.847659558530978
+29,Summary exposure value,169,Central African Republic,3,Both,22,All ages,169,All risk factors,3,Rate,2021,29.576448728547426,32.30082241141261,27.224635728459717
+29,Summary exposure value,184,Mozambique,3,Both,22,All ages,169,All risk factors,3,Rate,2018,29.16991194655883,31.54229248366649,27.19429584412404
+29,Summary exposure value,165,Pakistan,3,Both,22,All ages,169,All risk factors,3,Rate,2019,30.17140337642155,32.52475597468012,27.942677818088157
+29,Summary exposure value,133,Venezuela (Bolivarian Republic of),3,Both,22,All ages,169,All risk factors,3,Rate,2020,29.60663159691121,32.05803298910719,27.224563467701767
+29,Summary exposure value,202,Cameroon,3,Both,22,All ages,169,All risk factors,3,Rate,2020,27.25689490810407,31.303360465704426,24.04006847901176
+29,Summary exposure value,211,Mali,3,Both,22,All ages,169,All risk factors,3,Rate,2018,28.990662365683477,30.895057642735768,27.210310659774027
+29,Summary exposure value,169,Central African Republic,3,Both,22,All ages,169,All risk factors,3,Rate,2019,29.441646782817273,32.05410537493522,27.18334114839997
+29,Summary exposure value,435,South Sudan,3,Both,22,All ages,169,All risk factors,3,Rate,2021,29.09159675173674,31.71789265103903,27.137929814348283
+29,Summary exposure value,204,Chad,3,Both,22,All ages,169,All risk factors,3,Rate,2019,28.50948445114181,31.192544017750517,26.047917894211547
+29,Summary exposure value,190,Uganda,3,Both,22,All ages,169,All risk factors,3,Rate,2021,29.764421657819902,32.69002792192013,27.58852555992949
+29,Summary exposure value,214,Nigeria,3,Both,22,All ages,169,All risk factors,3,Rate,2020,25.666152424870443,28.65590550379092,22.74915511255776
+29,Summary exposure value,522,Sudan,3,Both,22,All ages,169,All risk factors,3,Rate,2019,27.20004696752227,30.425156585143643,23.77523400877152
+29,Summary exposure value,435,South Sudan,3,Both,22,All ages,169,All risk factors,3,Rate,2018,28.919990108205162,31.468162548430367,27.015320256121463
+29,Summary exposure value,190,Uganda,3,Both,22,All ages,169,All risk factors,3,Rate,2019,29.8421378607333,32.78342483275329,27.650638117420552
+29,Summary exposure value,211,Mali,3,Both,22,All ages,169,All risk factors,3,Rate,2021,29.06389479231319,30.98568512986637,27.12108930273185
+29,Summary exposure value,211,Mali,3,Both,22,All ages,169,All risk factors,3,Rate,2019,28.92648577829592,30.85474893753571,27.043138886045693

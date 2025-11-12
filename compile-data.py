@@ -52,6 +52,12 @@ def compile_data():
     csv_files.append(portfolios_dir / 'WB Data 25b.csv')
     csv_files.append(portfolios_dir / 'IHME_GBD_2021_CONSOLIDATED.csv')
 
+    # Add new IHME-GBD 2021 data files
+    csv_files.extend(list(portfolios_dir.glob('IHME-GBD_2021_DATA-*.csv')))
+
+    # Add new IHME-GBD 2023 data files
+    csv_files.extend(list(portfolios_dir.glob('IHME-GBD_2023_DATA-*.csv')))
+
     print(f"Found {len(csv_files)} CSV files to compile...")
 
     for csv_file in csv_files:
