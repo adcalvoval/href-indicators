@@ -1632,28 +1632,38 @@ function getEventTypeLabel(eventType) {
 
 // Load EM-DAT data for a specific country
 async function loadEmdatData(iso3) {
+    console.log(`Fetching EM-DAT data for country ISO3: ${iso3}`);
     try {
-        const response = await fetch(`https://www.gdacs.org/gdacsapi/api/Emdat/getemdatbyiso3?iso3=${iso3}`);
+        const url = `https://www.gdacs.org/gdacsapi/api/Emdat/getemdatbyiso3?iso3=${iso3}`;
+        console.log(`EM-DAT API URL: ${url}`);
+
+        const response = await fetch(url);
 
         if (!response.ok) {
+            console.error(`EM-DAT API request failed with status: ${response.status}`);
             throw new Error(`EM-DAT API request failed: ${response.status}`);
         }
 
         const data = await response.json();
+        console.log(`EM-DAT API raw response for ${iso3}:`, data);
         console.log(`EM-DAT API returned ${data.length || 0} events for ${iso3}`);
 
         // Filter events from 2018 onwards to match our timeline
         const startDate = new Date('2018-01-01');
         const filteredEvents = (data || []).filter(event => {
             const eventDate = event.start_date ? new Date(event.start_date) : null;
-            return eventDate && eventDate >= startDate;
+            const isValid = eventDate && eventDate >= startDate;
+            if (eventDate) {
+                console.log(`EM-DAT event: ${event.disaster_type}, Date: ${event.start_date}, Valid: ${isValid}`);
+            }
+            return isValid;
         });
 
-        console.log(`Filtered to ${filteredEvents.length} EM-DAT events from 2018 onwards`);
+        console.log(`Filtered to ${filteredEvents.length} EM-DAT events from 2018 onwards for ${iso3}`);
         return filteredEvents;
 
     } catch (error) {
-        console.error('Error loading EM-DAT data:', error);
+        console.error(`Error loading EM-DAT data for ${iso3}:`, error);
         return [];
     }
 }
