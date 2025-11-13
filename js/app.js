@@ -31,6 +31,14 @@ function formatNumber(value, decimals = 2) {
 
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
+    // Register Chart.js annotation plugin
+    if (typeof Chart !== 'undefined' && typeof chartjs_plugin_annotation !== 'undefined') {
+        Chart.register(chartjs_plugin_annotation);
+        console.log('Chart.js annotation plugin registered');
+    } else {
+        console.error('Chart.js or annotation plugin not loaded!');
+    }
+
     initMap();
     loadCategories();
     loadCountriesGeoJSON();
@@ -1682,18 +1690,26 @@ async function toggleDisasterEvents() {
     const checkbox = document.getElementById('show-disasters-checkbox');
     const isChecked = checkbox.checked;
 
+    console.log('toggleDisasterEvents called, checked:', isChecked);
+
     if (!window.currentTimeSeriesData) {
+        console.log('No time series data available');
         return;
     }
 
     if (isChecked) {
         // Load disaster events for countries in chart
         showLoading('Loading disaster events...');
+        console.log('Loading disaster events for chart...');
         await loadDisasterEventsForChart();
+        console.log('Disaster events loaded, cache:', chartDisasterEvents);
         hideLoading();
+    } else {
+        console.log('Disaster events unchecked, clearing annotations');
     }
 
     // Redraw chart with or without disaster events
+    console.log('Redrawing chart with filter...');
     updateChartWithFilter();
 }
 
@@ -1773,6 +1789,10 @@ function getDisasterEventAnnotations() {
     const minYear = Math.min(...years);
     const maxYear = Math.max(...years);
 
+    console.log('Creating disaster event annotations...');
+    console.log('Year range:', minYear, 'to', maxYear);
+    console.log('Disaster events cache:', chartDisasterEvents);
+
     // Create annotations for each disaster event
     Object.keys(chartDisasterEvents).forEach(iso3 => {
         const events = chartDisasterEvents[iso3];
@@ -1782,28 +1802,31 @@ function getDisasterEventAnnotations() {
         events.gdacs.forEach((event, idx) => {
             const eventDate = new Date(event.properties.fromdate);
             const eventYear = eventDate.getFullYear();
-            const eventMonth = eventDate.getMonth() + 1; // 0-indexed
-            const yearFraction = eventYear + (eventMonth - 1) / 12;
 
             // Only show events within the year range
-            if (yearFraction >= minYear && yearFraction <= maxYear) {
-                annotations[`gdacs_${iso3}_${idx}`] = {
+            if (eventYear >= minYear && eventYear <= maxYear) {
+                const annotationKey = `gdacs_${iso3}_${idx}`;
+                annotations[annotationKey] = {
                     type: 'line',
-                    xMin: yearFraction,
-                    xMax: yearFraction,
-                    borderColor: 'rgba(249, 115, 22, 0.5)', // Orange
+                    scaleID: 'x',
+                    value: eventYear,
+                    borderColor: 'rgba(249, 115, 22, 0.8)', // Orange
                     borderWidth: 2,
                     borderDash: [5, 5],
                     label: {
                         display: true,
                         content: '▼',
                         position: 'start',
-                        color: '#f97316',
+                        backgroundColor: 'rgba(249, 115, 22, 0.8)',
+                        color: 'white',
                         font: {
-                            size: 12
-                        }
+                            size: 10,
+                            weight: 'bold'
+                        },
+                        padding: 2
                     }
                 };
+                console.log(`Added GDACS annotation: ${annotationKey} at year ${eventYear}`);
             }
         });
 
@@ -1814,32 +1837,36 @@ function getDisasterEventAnnotations() {
 
             const eventDate = new Date(dateStr);
             const eventYear = eventDate.getFullYear();
-            const eventMonth = eventDate.getMonth() + 1;
-            const yearFraction = eventYear + (eventMonth - 1) / 12;
 
             // Only show events within the year range
-            if (yearFraction >= minYear && yearFraction <= maxYear) {
-                annotations[`emdat_${iso3}_${idx}`] = {
+            if (eventYear >= minYear && eventYear <= maxYear) {
+                const annotationKey = `emdat_${iso3}_${idx}`;
+                annotations[annotationKey] = {
                     type: 'line',
-                    xMin: yearFraction,
-                    xMax: yearFraction,
-                    borderColor: 'rgba(249, 115, 22, 0.5)', // Orange
+                    scaleID: 'x',
+                    value: eventYear,
+                    borderColor: 'rgba(249, 115, 22, 0.8)', // Orange
                     borderWidth: 2,
                     borderDash: [5, 5],
                     label: {
                         display: true,
                         content: '▼',
                         position: 'start',
-                        color: '#f97316',
+                        backgroundColor: 'rgba(249, 115, 22, 0.8)',
+                        color: 'white',
                         font: {
-                            size: 12
-                        }
+                            size: 10,
+                            weight: 'bold'
+                        },
+                        padding: 2
                     }
                 };
+                console.log(`Added EM-DAT annotation: ${annotationKey} at year ${eventYear}`);
             }
         });
     });
 
+    console.log(`Total annotations created: ${Object.keys(annotations).length}`);
     return annotations;
 }
 
