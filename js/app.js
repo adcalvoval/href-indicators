@@ -1741,11 +1741,11 @@ function displayDisastersOnMap(events) {
             popupContent += `<p style="margin: 0 0 12px 0; font-size: 14px;"><strong>Total: ${count} disaster event${count > 1 ? 's' : ''}</strong></p>`;
             popupContent += `<div style="max-height: 350px; overflow-y: auto;">`;
 
-            // Sort by date chronologically (oldest first)
+            // Sort by date reverse chronologically (most recent first)
             countryEvents.sort((a, b) => {
                 const dateA = new Date(a.properties.fromdate || 0);
                 const dateB = new Date(b.properties.fromdate || 0);
-                return dateA - dateB; // Ascending order (oldest first)
+                return dateB - dateA; // Descending order (most recent first)
             });
 
             countryEvents.forEach((event, idx) => {
@@ -1802,16 +1802,17 @@ function showDisasterLegend(events) {
     });
 
     let legendContent = `
-        <div style="background: white; padding: 10px; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
-            <h4 style="margin: 0 0 10px 0;">Disaster Events (Last 5 Years)</h4>
-            <div style="font-size: 14px;">
-                <div style="margin-bottom: 5px;"><strong>Total Events:</strong> ${events.length}</div>
+        <div style="background: white; padding: 12px; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.3);">
+            <h4 style="margin: 0 0 10px 0; color: #f97316; border-bottom: 2px solid #f97316; padding-bottom: 5px;">Recent Disaster Events</h4>
+            <div style="font-size: 13px;">
+                <div style="margin-bottom: 8px; font-weight: bold;">Total Events: ${events.length}</div>
     `;
 
-    // Add event types
+    // Add event types with readable labels
     const sortedTypes = Object.entries(eventTypes).sort((a, b) => b[1] - a[1]);
     sortedTypes.forEach(([type, count]) => {
-        legendContent += `<div style="margin: 3px 0;">${type}: ${count}</div>`;
+        const typeLabel = getEventTypeLabel(type);
+        legendContent += `<div style="margin: 4px 0; padding-left: 5px;">${typeLabel}: <strong>${count}</strong></div>`;
     });
 
     legendContent += `
@@ -1821,7 +1822,7 @@ function showDisasterLegend(events) {
 
     const legend = L.control({ position: 'bottomright' });
     legend.onAdd = function() {
-        const div = L.DomUtil.create('div', 'legend');
+        const div = L.DomUtil.create('div', 'legend disaster-legend');
         div.innerHTML = legendContent;
         return div;
     };
