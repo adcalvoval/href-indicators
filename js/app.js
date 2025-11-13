@@ -1975,26 +1975,29 @@ function drawTimeline(disasters, drefs) {
         svg.appendChild(label);
     }
 
-    // Fixed Y position for all markers (well above the axis)
-    const markerY = 25;
+    // Y positions for different marker types (DREFs higher, disasters lower)
+    const drefY = 20;
+    const disasterY = 40;
 
     // Get tooltip element
     const tooltip = document.getElementById('timeline-tooltip');
 
-    // Draw disaster events (orange)
+    // Draw disaster events (orange triangles)
     disasters.forEach(event => {
         const eventDate = new Date(event.properties.fromdate);
         if (eventDate >= startDate && eventDate <= endDate) {
             const x = 40 + ((eventDate - startDate) / timeRange) * (width - 80);
 
-            const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-            circle.setAttribute('cx', x);
-            circle.setAttribute('cy', markerY);
-            circle.setAttribute('r', '8');
-            circle.setAttribute('fill', '#f97316');
-            circle.setAttribute('stroke', 'white');
-            circle.setAttribute('stroke-width', '2');
-            circle.style.cursor = 'pointer';
+            // Create triangle (polygon)
+            const triangle = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+            const size = 9;
+            // Points for upward-pointing triangle
+            const points = `${x},${disasterY - size} ${x - size},${disasterY + size} ${x + size},${disasterY + size}`;
+            triangle.setAttribute('points', points);
+            triangle.setAttribute('fill', '#f97316');
+            triangle.setAttribute('stroke', 'white');
+            triangle.setAttribute('stroke-width', '2');
+            triangle.style.cursor = 'pointer';
 
             // Prepare tooltip data
             const eventName = event.properties.name || event.properties.eventtype;
@@ -2003,7 +2006,7 @@ function drawTimeline(disasters, drefs) {
             const severity = event.properties.severity || 'N/A';
 
             // Add click event for tooltip
-            circle.addEventListener('click', (e) => {
+            triangle.addEventListener('click', (e) => {
                 const tooltipContent = `<strong>DISASTER EVENT</strong>
                     <div><b>Name:</b> ${eventName}</div>
                     <div><b>Type:</b> ${eventType}</div>
@@ -2014,11 +2017,11 @@ function drawTimeline(disasters, drefs) {
                 showTimelineTooltip(e, tooltipContent, x);
             });
 
-            svg.appendChild(circle);
+            svg.appendChild(triangle);
         }
     });
 
-    // Draw DREF operations (red)
+    // Draw DREF operations (red circles)
     drefs.forEach(dref => {
         const startDateStr = dref.start_date;
         if (startDateStr) {
@@ -2028,7 +2031,7 @@ function drawTimeline(disasters, drefs) {
 
                 const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
                 circle.setAttribute('cx', x);
-                circle.setAttribute('cy', markerY);
+                circle.setAttribute('cy', drefY);
                 circle.setAttribute('r', '8');
                 circle.setAttribute('fill', '#dc2626');
                 circle.setAttribute('stroke', 'white');

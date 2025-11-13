@@ -609,6 +609,16 @@ footer p {
     display: inline-block;
 }
 
+.timeline-triangle {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 10px solid #f97316;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 /* Loading Popup */
 #loading-popup {
     position: fixed;
