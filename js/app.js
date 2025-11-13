@@ -265,7 +265,7 @@ async function onIndicatorChange(event) {
         } else if (indicatorId === 'PAST_DREFS') {
             yearSelect.innerHTML = '<option value="past5years">Last 5 Years</option>';
         } else if (indicatorId === 'PAST_DISASTERS') {
-            yearSelect.innerHTML = '<option value="past5years">Last 5 Years</option>';
+            yearSelect.innerHTML = '<option value="recent">Recent Events (~3 years)</option>';
         }
         yearSelect.value = yearSelect.options[0].value;
         loadDataBtn.disabled = false;
@@ -1610,7 +1610,9 @@ function getEventTypeLabel(eventType) {
     return eventTypeLabels[eventType] || eventType;
 }
 
-// Load GDACS disaster data from the last 5 years
+// Load GDACS disaster data
+// Note: GDACS API returns the 100 most recent events (~3 years of data)
+// No pagination is available, and date parameters are not supported
 async function loadGDACSDisasterData() {
     try {
         const response = await fetch(GDACS_API_URL);
@@ -1621,8 +1623,9 @@ async function loadGDACSDisasterData() {
 
         const data = await response.json();
         console.log('GDACS API Response:', data);
+        console.log(`API returned ${data.features?.length || 0} events (API limit: 100 most recent)`);
 
-        // Calculate date 5 years ago
+        // Calculate date 5 years ago for filtering
         const fiveYearsAgo = new Date();
         fiveYearsAgo.setFullYear(fiveYearsAgo.getFullYear() - 5);
 
@@ -1647,8 +1650,20 @@ async function loadGDACSDisasterData() {
             return isTargetCountry && isWithinLastFiveYears;
         });
 
-        console.log(`Found ${filteredEvents.length} disaster events in target countries from last 5 years`);
-        console.log(`Date range: ${fiveYearsAgo.toISOString().split('T')[0]} to ${new Date().toISOString().split('T')[0]}`);
+        // Find actual date range in the data
+        const eventDates = filteredEvents
+            .map(e => e.properties.fromdate ? new Date(e.properties.fromdate) : null)
+            .filter(d => d !== null)
+            .sort((a, b) => a - b);
+
+        const oldestEvent = eventDates[0];
+        const newestEvent = eventDates[eventDates.length - 1];
+
+        console.log(`Found ${filteredEvents.length} disaster events in target countries`);
+        if (oldestEvent && newestEvent) {
+            console.log(`Actual date range in data: ${oldestEvent.toISOString().split('T')[0]} to ${newestEvent.toISOString().split('T')[0]}`);
+            console.log(`Coverage: ~${Math.round((newestEvent - oldestEvent) / (365 * 24 * 60 * 60 * 1000) * 10) / 10} years`);
+        }
 
         return filteredEvents;
 

@@ -42,10 +42,10 @@
       "indicators": [
         {
           "id": "PAST_DISASTERS",
-          "name": "Disaster Events (Last 5 Years)",
+          "name": "Recent Disaster Events",
           "file": "API",
           "unit": "count",
-          "description": "All disaster events from GDACS in the last 5 years"
+          "description": "Recent disaster events from GDACS (last ~3 years, limited to 100 most recent events)"
         }
       ]
     },
