@@ -83,20 +83,6 @@
       "color": "#E91E63",
       "indicators": [
         {
-          "id": "WHOSIS_000001",
-          "name": "Life Expectancy at Birth",
-          "file": "90E2E48_ALL_LATEST.csv",
-          "unit": "years",
-          "description": "Life expectancy at birth"
-        },
-        {
-          "id": "WHOSIS_000002",
-          "name": "Healthy Life Expectancy",
-          "file": "C64284D_ALL_LATEST.csv",
-          "unit": "years",
-          "description": "Healthy life expectancy (HALE) at birth"
-        },
-        {
           "id": "MDG_0000000007",
           "name": "Under-5 Mortality Rate",
           "file": "2322814_ALL_LATEST.csv",

@@ -1,0 +1,223 @@
+{
+  "duplicates": [
+    {
+      "name": "life expectancy at birth",
+      "indicators": [
+        {
+          "category": "Mortality & Life Expectancy",
+          "name": "Life Expectancy at Birth",
+          "id": "WHOSIS_000001",
+          "file": "90E2E48_ALL_LATEST.csv",
+          "unit": "years",
+          "min_year": 2000,
+          "max_year": 2021
+        },
+        {
+          "category": "Global Burden of Disease",
+          "name": "Life Expectancy at Birth",
+          "id": "Life expectancy",
+          "file": "IHME_GBD_ALL_YEARS_CONSOLIDATED.csv",
+          "unit": "years",
+          "min_year": 2018,
+          "max_year": 2023
+        }
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "action": "remove",
+      "indicators_to_remove": [
+        {
+          "category": "Mortality & Life Expectancy",
+          "name": "Life Expectancy at Birth",
+          "id": "WHOSIS_000001",
+          "file": "90E2E48_ALL_LATEST.csv",
+          "unit": "years",
+          "min_year": 2000,
+          "max_year": 2021
+        }
+      ],
+      "keep": {
+        "category": "Global Burden of Disease",
+        "name": "Life Expectancy at Birth",
+        "id": "Life expectancy",
+        "file": "IHME_GBD_ALL_YEARS_CONSOLIDATED.csv",
+        "unit": "years",
+        "min_year": 2018,
+        "max_year": 2023
+      },
+      "reason": "Source 'Global Burden of Disease' has more recent data (2023 vs 2021)"
+    }
+  ],
+  "file_year_ranges": {
+    "12EE54A_ALL_LATEST.csv": {
+      "min": 2000,
+      "max": 2022
+    },
+    "1548EA3_ALL_LATEST.csv": {
+      "min": 2000,
+      "max": 2022
+    },
+    "D1223E8_ALL_LATEST.csv": {
+      "min": 2000,
+      "max": 2022
+    },
+    "A37BDD6_ALL_LATEST.csv": {
+      "min": 2020,
+      "max": 2024
+    },
+    "ED50112_ALL_LATEST.csv": {
+      "min": 2019,
+      "max": 2019
+    },
+    "90E2E48_ALL_LATEST.csv": {
+      "min": 2000,
+      "max": 2021
+    },
+    "C64284D_ALL_LATEST.csv": {
+      "min": 2000,
+      "max": 2021
+    },
+    "2322814_ALL_LATEST.csv": {
+      "min": 1944,
+      "max": 2023
+    },
+    "A4C49D3_ALL_LATEST.csv": {
+      "min": 1952,
+      "max": 2023
+    },
+    "AC597B1_ALL_LATEST.csv": {
+      "min": 1985,
+      "max": 2023
+    },
+    "16BBF41_ALL_LATEST.csv": {
+      "min": 2000,
+      "max": 2021
+    },
+    "1F96863_ALL_LATEST.csv": {
+      "min": 2000,
+      "max": 2021
+    },
+    "D6176E2_ALL_LATEST.csv": {
+      "min": 2021,
+      "max": 2021
+    },
+    "442CEA8_ALL_LATEST.csv": {
+      "min": 2000,
+      "max": 2023
+    },
+    "C288D13_ALL_LATEST.csv": {
+      "min": 2000,
+      "max": 2023
+    },
+    "77D059C_ALL_LATEST.csv": {
+      "min": 1990,
+      "max": 2024
+    },
+    "7B2BFA6_ALL_LATEST.csv": {
+      "min": 2016,
+      "max": 2023
+    },
+    "2D6FBE4_ALL_LATEST.csv": {
+      "min": 2010,
+      "max": 2023
+    },
+    "F513188_ALL_LATEST.csv": {
+      "min": 2015,
+      "max": 2020
+    },
+    "5F8A486_ALL_LATEST.csv": {
+      "min": 2000,
+      "max": 2024
+    },
+    "64E2430_ALL_LATEST.csv": {
+      "min": 2000,
+      "max": 2024
+    },
+    "BEFA58B_ALL_LATEST.csv": {
+      "min": 1990,
+      "max": 2022
+    },
+    "EF93DDB_ALL_LATEST.csv": {
+      "min": 1990,
+      "max": 2022
+    },
+    "8D58801_ALL_LATEST.csv": {
+      "min": 2000,
+      "max": 2023
+    },
+    "F8E084C_ALL_LATEST.csv": {
+      "min": 2000,
+      "max": 2024
+    },
+    "BB4567B_ALL_LATEST.csv": {
+      "min": 2000,
+      "max": 2024
+    },
+    "D45F91C_ALL_LATEST.csv": {
+      "min": 2008,
+      "max": 2024
+    },
+    "287D1D2_ALL_LATEST.csv": {
+      "min": 2012,
+      "max": 2024
+    },
+    "217795A_ALL_LATEST.csv": {
+      "min": 1990,
+      "max": 2023
+    },
+    "5C8435F_ALL_LATEST.csv": {
+      "min": 1990,
+      "max": 2023
+    },
+    "45CA7C8_ALL_LATEST.csv": {
+      "min": 1997,
+      "max": 2023
+    },
+    "9F88C44_ALL_LATEST.csv": {
+      "min": 1990,
+      "max": 2023
+    },
+    "9A706FD_ALL_LATEST.csv": {
+      "min": 2000,
+      "max": 2021
+    },
+    "D2A45A5_ALL_LATEST.csv": {
+      "min": 2004,
+      "max": 2016
+    },
+    "FDBB8E8_ALL_LATEST.csv": {
+      "min": 2021,
+      "max": 2024
+    },
+    "608DE39_ALL_LATEST.csv": {
+      "min": 1990,
+      "max": 2019
+    },
+    "75DDA77_ALL_LATEST.csv": {
+      "min": 2000,
+      "max": 2030
+    },
+    "EE6F72A_ALL_LATEST.csv": {
+      "min": 2000,
+      "max": 2022
+    },
+    "8074BD9_ALL_LATEST.csv": {
+      "min": 2000,
+      "max": 2022
+    },
+    "F810947_ALL_LATEST.csv": {
+      "min": 2010,
+      "max": 2019
+    },
+    "WB Data 25b.csv": {
+      "min": null,
+      "max": null
+    },
+    "IHME_GBD_ALL_YEARS_CONSOLIDATED.csv": {
+      "min": 2018,
+      "max": 2023
+    }
+  }
+}
