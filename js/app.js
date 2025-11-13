@@ -157,6 +157,7 @@ function setupEventListeners() {
     const selectAllBtn = document.getElementById('select-all-btn');
     const deselectAllBtn = document.getElementById('deselect-all-btn');
     const closeDataListBtn = document.getElementById('close-data-list-btn');
+    const closeTimelineBtn = document.getElementById('close-timeline-btn');
 
     categorySelect.addEventListener('change', onCategoryChange);
     indicatorSelect.addEventListener('change', onIndicatorChange);
@@ -171,6 +172,7 @@ function setupEventListeners() {
     selectAllBtn.addEventListener('click', selectAllCountries);
     deselectAllBtn.addEventListener('click', deselectAllCountries);
     closeDataListBtn.addEventListener('click', closeDataList);
+    closeTimelineBtn.addEventListener('click', closeTimeline);
 }
 
 // Handle country profile selection change (enable/disable button)
@@ -198,6 +200,9 @@ function onViewProfileClick() {
 
     // Load country profile
     loadCountryProfile(countryName, countryCode);
+
+    // Show timeline for this country
+    showCountryTimeline(countryName, countryCode);
 }
 
 // Handle category selection
@@ -1828,4 +1833,160 @@ function showDisasterLegend(events) {
     };
     legend.addTo(map);
     currentOverlays.push(legend);
+}
+
+// Close timeline
+function closeTimeline() {
+    const timelineContainer = document.getElementById('timeline-container');
+    timelineContainer.classList.add('hidden');
+}
+
+// Show timeline for a country
+async function showCountryTimeline(countryName, countryISO3) {
+    const timelineContainer = document.getElementById('timeline-container');
+    const timelineTitle = document.getElementById('timeline-title');
+    const timelineSvg = document.getElementById('timeline-svg');
+
+    timelineTitle.textContent = `Event Timeline - ${countryName}`;
+
+    // Show timeline
+    timelineContainer.classList.remove('hidden');
+
+    // Fetch disaster events and DREFs for this country
+    try {
+        const [disasters, drefs] = await Promise.all([
+            loadGDACSDisasterData(),
+            loadPastDREFData()
+        ]);
+
+        // Filter for this country
+        const countryDisasters = disasters.filter(event => {
+            const props = event.properties;
+            return props.iso3 === countryISO3;
+        });
+
+        const countryDrefs = drefs.filter(dref => {
+            const drefISO3 = dref.country?.iso3 || dref.country_details?.iso3;
+            return drefISO3 === countryISO3;
+        });
+
+        console.log(`Timeline for ${countryName}: ${countryDisasters.length} disasters, ${countryDrefs.length} DREFs`);
+
+        // Draw timeline
+        drawTimeline(countryDisasters, countryDrefs);
+
+    } catch (error) {
+        console.error('Error loading timeline data:', error);
+    }
+}
+
+// Draw timeline with events
+function drawTimeline(disasters, drefs) {
+    const svg = document.getElementById('timeline-svg');
+    const container = document.getElementById('timeline-content');
+    const width = container.clientWidth;
+    const height = container.clientHeight - 30;
+
+    // Clear existing content
+    svg.innerHTML = '';
+    svg.setAttribute('width', width);
+    svg.setAttribute('height', height);
+
+    // Timeline dates: Jan 2018 to Dec 2025
+    const startDate = new Date('2018-01-01');
+    const endDate = new Date('2025-12-31');
+    const timeRange = endDate - startDate;
+
+    // Draw main timeline axis
+    const axisY = height - 30;
+    const axisLine = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    axisLine.setAttribute('x1', 40);
+    axisLine.setAttribute('y1', axisY);
+    axisLine.setAttribute('x2', width - 40);
+    axisLine.setAttribute('y2', axisY);
+    axisLine.setAttribute('stroke', '#666');
+    axisLine.setAttribute('stroke-width', '2');
+    svg.appendChild(axisLine);
+
+    // Draw year markers
+    for (let year = 2018; year <= 2025; year++) {
+        const yearDate = new Date(`${year}-01-01`);
+        const x = 40 + ((yearDate - startDate) / timeRange) * (width - 80);
+
+        // Year tick
+        const tick = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+        tick.setAttribute('x1', x);
+        tick.setAttribute('y1', axisY);
+        tick.setAttribute('x2', x);
+        tick.setAttribute('y2', axisY + 5);
+        tick.setAttribute('stroke', '#666');
+        tick.setAttribute('stroke-width', '2');
+        svg.appendChild(tick);
+
+        // Year label
+        const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        label.setAttribute('x', x);
+        label.setAttribute('y', axisY + 20);
+        label.setAttribute('text-anchor', 'middle');
+        label.setAttribute('font-size', '12');
+        label.setAttribute('fill', '#333');
+        label.textContent = year;
+        svg.appendChild(label);
+    }
+
+    // Draw disaster events (orange)
+    disasters.forEach(event => {
+        const eventDate = new Date(event.properties.fromdate);
+        if (eventDate >= startDate && eventDate <= endDate) {
+            const x = 40 + ((eventDate - startDate) / timeRange) * (width - 80);
+            const y = axisY - 20 - Math.random() * 30; // Vary y position slightly
+
+            const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+            circle.setAttribute('cx', x);
+            circle.setAttribute('cy', y);
+            circle.setAttribute('r', '6');
+            circle.setAttribute('fill', '#f97316');
+            circle.setAttribute('stroke', 'white');
+            circle.setAttribute('stroke-width', '2');
+            circle.style.cursor = 'pointer';
+
+            // Add tooltip
+            const title = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+            const eventName = event.properties.name || event.properties.eventtype;
+            const eventType = getEventTypeLabel(event.properties.eventtype);
+            title.textContent = `${eventName}\nType: ${eventType}\nDate: ${eventDate.toLocaleDateString()}`;
+            circle.appendChild(title);
+
+            svg.appendChild(circle);
+        }
+    });
+
+    // Draw DREF operations (red)
+    drefs.forEach(dref => {
+        const startDateStr = dref.start_date;
+        if (startDateStr) {
+            const drefDate = new Date(startDateStr);
+            if (drefDate >= startDate && drefDate <= endDate) {
+                const x = 40 + ((drefDate - startDate) / timeRange) * (width - 80);
+                const y = axisY - 20 - Math.random() * 30; // Vary y position slightly
+
+                const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                circle.setAttribute('cx', x);
+                circle.setAttribute('cy', y);
+                circle.setAttribute('r', '6');
+                circle.setAttribute('fill', '#dc2626');
+                circle.setAttribute('stroke', 'white');
+                circle.setAttribute('stroke-width', '2');
+                circle.style.cursor = 'pointer';
+
+                // Add tooltip
+                const title = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+                const drefName = dref.name || dref.dtype?.name || 'DREF Operation';
+                title.textContent = `${drefName}\nStart: ${drefDate.toLocaleDateString()}\nAmount: ${dref.amount_funded || 'N/A'}`;
+                circle.appendChild(title);
+
+                svg.appendChild(circle);
+            }
+        }
+    });
 }
