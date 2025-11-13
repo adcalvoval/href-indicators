@@ -1864,7 +1864,11 @@ function hideLoading() {
 }
 
 // Close timeline
-function closeTimeline() {
+function closeTimeline(event) {
+    if (event) {
+        event.stopPropagation();
+    }
+
     const timelineContainer = document.getElementById('timeline-container');
     const tooltip = document.getElementById('timeline-tooltip');
 
@@ -1872,6 +1876,8 @@ function closeTimeline() {
     if (tooltip) {
         tooltip.classList.add('hidden');
     }
+
+    console.log('Timeline closed');
 }
 
 // Show timeline for a country
@@ -2086,7 +2092,9 @@ function showTimelineTooltip(event, content, markerX) {
 // Hide tooltip when clicking outside
 document.addEventListener('click', (e) => {
     const tooltip = document.getElementById('timeline-tooltip');
-    if (tooltip && !e.target.closest('circle') && !tooltip.contains(e.target)) {
+    // Check if click is on a marker (circle or polygon/triangle) or the tooltip itself
+    const isMarker = e.target.tagName === 'circle' || e.target.tagName === 'polygon';
+    if (tooltip && !isMarker && !tooltip.contains(e.target)) {
         tooltip.classList.add('hidden');
     }
 });
