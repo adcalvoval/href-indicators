@@ -8,9 +8,15 @@ let currentOverlays = [];
 let timeSeriesChart = null; // Chart.js instance
 let currentIndicatorData = null; // Store current indicator info for time series
 const IFRC_API_TOKEN = '3f891db59f4e9fd16ba4f8be803d368a469a1276';
-const DREF_API_URL = 'https://goadmin.ifrc.org/api/v2/appeal/?atype=0&status=0';
-const PAST_DREF_API_URL = 'https://goadmin.ifrc.org/api/v2/appeal/?atype=0';
+const DREF_API_URL = 'https://goadmin.ifrc.org/api/v2/appeal/?atype=0&status=0&limit=500';
+const PAST_DREF_API_URL = 'https://goadmin.ifrc.org/api/v2/appeal/?atype=0&limit=500';
 const GDACS_API_URL = 'https://www.gdacs.org/gdacsapi/api/events/geteventlist/SEARCH';
+
+// Cache for IFRC API data to avoid repeated fetches
+let cachedDrefData = null;
+let cachedPastDrefData = null;
+let cacheTimestamp = null;
+const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
 
 // Helper function to format numbers with commas
 function formatNumber(value, decimals = 2) {
@@ -891,6 +897,14 @@ function getCountryCoordinates() {
 // Load DREF data from IFRC API
 async function loadDREFData() {
     try {
+        // Check cache first
+        const now = Date.now();
+        if (cachedDrefData && cacheTimestamp && (now - cacheTimestamp < CACHE_DURATION)) {
+            console.log('Using cached DREF data');
+            return cachedDrefData;
+        }
+
+        console.log('Fetching fresh DREF data from API...');
         const response = await fetch(DREF_API_URL, {
             headers: {
                 'Authorization': `Token ${IFRC_API_TOKEN}`
@@ -902,7 +916,7 @@ async function loadDREFData() {
         }
 
         const data = await response.json();
-        console.log('DREF API Response:', data);
+        console.log(`DREF API Response: ${data.results?.length || 0} active DREFs loaded`);
 
         // Filter for the 25 target countries
         const targetCountries = categoriesData.countries.map(c => c.name);
@@ -918,6 +932,11 @@ async function loadDREFData() {
         });
 
         console.log(`Found ${filteredDrefs.length} active DREFs in target countries`);
+
+        // Cache the results
+        cachedDrefData = filteredDrefs;
+        cacheTimestamp = now;
+
         return filteredDrefs;
 
     } catch (error) {
@@ -1000,37 +1019,64 @@ function showDREFLegend(count) {
 // Load past DREF data from IFRC API (last 5 years)
 async function loadPastDREFData() {
     try {
-        // Fetch all pages of results
-        let allDrefs = [];
-        let nextUrl = PAST_DREF_API_URL;
-        let pageCount = 0;
-
-        while (nextUrl && pageCount < 50) { // Limit to 50 pages as safety
-            pageCount++;
-            console.log(`Fetching DREF page ${pageCount}: ${nextUrl}`);
-
-            const response = await fetch(nextUrl, {
-                headers: {
-                    'Authorization': `Token ${IFRC_API_TOKEN}`
-                }
-            });
-
-            if (!response.ok) {
-                throw new Error(`API request failed: ${response.status}`);
-            }
-
-            const data = await response.json();
-            console.log(`Page ${pageCount}: ${data.results?.length || 0} results, Total count: ${data.count}`);
-
-            if (data.results) {
-                allDrefs = allDrefs.concat(data.results);
-            }
-
-            // Get next page URL
-            nextUrl = data.next;
+        // Check cache first
+        const now = Date.now();
+        if (cachedPastDrefData && cacheTimestamp && (now - cacheTimestamp < CACHE_DURATION)) {
+            console.log('Using cached past DREF data');
+            return cachedPastDrefData;
         }
 
-        console.log(`Fetched total of ${allDrefs.length} DREFs from ${pageCount} pages`);
+        console.log('Fetching fresh past DREF data from API...');
+
+        // First request to get total count and determine number of pages
+        const firstResponse = await fetch(PAST_DREF_API_URL, {
+            headers: {
+                'Authorization': `Token ${IFRC_API_TOKEN}`
+            }
+        });
+
+        if (!firstResponse.ok) {
+            throw new Error(`API request failed: ${firstResponse.status}`);
+        }
+
+        const firstData = await firstResponse.json();
+        const totalCount = firstData.count;
+        const pageSize = 500;
+        const totalPages = Math.ceil(totalCount / pageSize);
+
+        console.log(`Total DREFs: ${totalCount}, Pages needed: ${totalPages}`);
+
+        // Build array of all page URLs
+        const pageUrls = [];
+        for (let i = 0; i < Math.min(totalPages, 10); i++) { // Limit to 10 pages (5000 records) for safety
+            const offset = i * pageSize;
+            pageUrls.push(`${PAST_DREF_API_URL}&offset=${offset}`);
+        }
+
+        // Fetch all pages in parallel (batches of 3 to avoid overwhelming the server)
+        const batchSize = 3;
+        let allDrefs = firstData.results || [];
+
+        for (let i = 1; i < pageUrls.length; i += batchSize) {
+            const batch = pageUrls.slice(i, i + batchSize);
+            console.log(`Fetching pages ${i + 1}-${Math.min(i + batchSize, pageUrls.length)} in parallel...`);
+
+            const batchResults = await Promise.all(
+                batch.map(url =>
+                    fetch(url, {
+                        headers: { 'Authorization': `Token ${IFRC_API_TOKEN}` }
+                    }).then(r => r.json())
+                )
+            );
+
+            batchResults.forEach(data => {
+                if (data.results) {
+                    allDrefs = allDrefs.concat(data.results);
+                }
+            });
+        }
+
+        console.log(`Fetched total of ${allDrefs.length} DREFs`);
 
         // Calculate date 5 years ago
         const fiveYearsAgo = new Date();
@@ -1060,6 +1106,10 @@ async function loadPastDREFData() {
 
         console.log(`Found ${filteredDrefs.length} DREFs in target countries from last 5 years`);
         console.log(`Date range: ${fiveYearsAgo.toISOString().split('T')[0]} to ${new Date().toISOString().split('T')[0]}`);
+
+        // Cache the results
+        cachedPastDrefData = filteredDrefs;
+        cacheTimestamp = now;
 
         return filteredDrefs;
 
