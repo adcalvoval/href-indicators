@@ -968,18 +968,37 @@ function showDREFLegend(count) {
 // Load past DREF data from IFRC API (last 5 years)
 async function loadPastDREFData() {
     try {
-        const response = await fetch(PAST_DREF_API_URL, {
-            headers: {
-                'Authorization': `Token ${IFRC_API_TOKEN}`
-            }
-        });
+        // Fetch all pages of results
+        let allDrefs = [];
+        let nextUrl = PAST_DREF_API_URL;
+        let pageCount = 0;
 
-        if (!response.ok) {
-            throw new Error(`API request failed: ${response.status}`);
+        while (nextUrl && pageCount < 50) { // Limit to 50 pages as safety
+            pageCount++;
+            console.log(`Fetching DREF page ${pageCount}: ${nextUrl}`);
+
+            const response = await fetch(nextUrl, {
+                headers: {
+                    'Authorization': `Token ${IFRC_API_TOKEN}`
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error(`API request failed: ${response.status}`);
+            }
+
+            const data = await response.json();
+            console.log(`Page ${pageCount}: ${data.results?.length || 0} results, Total count: ${data.count}`);
+
+            if (data.results) {
+                allDrefs = allDrefs.concat(data.results);
+            }
+
+            // Get next page URL
+            nextUrl = data.next;
         }
 
-        const data = await response.json();
-        console.log('Past DREF API Response:', data);
+        console.log(`Fetched total of ${allDrefs.length} DREFs from ${pageCount} pages`);
 
         // Calculate date 5 years ago
         const fiveYearsAgo = new Date();
@@ -991,14 +1010,10 @@ async function loadPastDREFData() {
                                  'ETH', 'HTI', 'LBN', 'MLI', 'MOZ', 'MMR', 'NER', 'NGA',
                                  'PAK', 'SOM', 'SSD', 'SDN', 'SYR', 'UGA', 'UKR', 'VEN', 'YEM'];
 
-        const drefs = data.results || [];
-        const now = new Date();
-
-        const filteredDrefs = drefs.filter(dref => {
+        const filteredDrefs = allDrefs.filter(dref => {
             const countryName = dref.country?.name || dref.country_details?.name;
             const countryISO3 = dref.country?.iso3 || dref.country_details?.iso3;
             const startDate = dref.start_date ? new Date(dref.start_date) : null;
-            const endDate = dref.end_date ? new Date(dref.end_date) : null;
 
             // Check if in target countries
             const isTargetCountry = targetCountries.includes(countryName) || targetISO3Codes.includes(countryISO3);
@@ -1006,15 +1021,14 @@ async function loadPastDREFData() {
             // Check if started within last 5 years
             const isWithinLastFiveYears = startDate && startDate >= fiveYearsAgo;
 
-            // Check if operation is actually past (ended in the past, not still active or future)
-            // Status 0 means active, so we want to exclude those
-            // Also check that end_date is in the past if available
-            const isPast = dref.status !== 0 || (endDate && endDate < now);
-
-            return isTargetCountry && isWithinLastFiveYears && isPast;
+            // Include ALL DREFs from last 5 years (both active and past)
+            // We want to show all DREFs that started in the last 5 years
+            return isTargetCountry && isWithinLastFiveYears;
         });
 
-        console.log(`Found ${filteredDrefs.length} past DREFs in target countries (last 5 years)`);
+        console.log(`Found ${filteredDrefs.length} DREFs in target countries from last 5 years`);
+        console.log(`Date range: ${fiveYearsAgo.toISOString().split('T')[0]} to ${new Date().toISOString().split('T')[0]}`);
+
         return filteredDrefs;
 
     } catch (error) {
