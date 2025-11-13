@@ -1815,15 +1815,16 @@ function getDisasterEventAnnotations() {
                     borderDash: [5, 5],
                     label: {
                         display: true,
-                        content: '▼',
-                        position: 'start',
-                        backgroundColor: 'rgba(249, 115, 22, 0.8)',
+                        content: '▲',
+                        position: 'end',
+                        backgroundColor: 'rgba(249, 115, 22, 0.9)',
                         color: 'white',
                         font: {
-                            size: 10,
+                            size: 12,
                             weight: 'bold'
                         },
-                        padding: 2
+                        padding: 4,
+                        yAdjust: 10
                     }
                 };
                 console.log(`Added GDACS annotation: ${annotationKey} at year ${eventYear}`);
@@ -1850,15 +1851,16 @@ function getDisasterEventAnnotations() {
                     borderDash: [5, 5],
                     label: {
                         display: true,
-                        content: '▼',
-                        position: 'start',
-                        backgroundColor: 'rgba(249, 115, 22, 0.8)',
+                        content: '▲',
+                        position: 'end',
+                        backgroundColor: 'rgba(249, 115, 22, 0.9)',
                         color: 'white',
                         font: {
-                            size: 10,
+                            size: 12,
                             weight: 'bold'
                         },
-                        padding: 2
+                        padding: 4,
+                        yAdjust: 10
                     }
                 };
                 console.log(`Added EM-DAT annotation: ${annotationKey} at year ${eventYear}`);
