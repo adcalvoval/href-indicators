@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HALE 2023 Direct Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .success { color: green; font-weight: bold; }
+        .error { color: red; font-weight: bold; }
+        .info { background: #f0f0f0; padding: 10px; margin: 10px 0; }
+        ul { line-height: 1.8; }
+    </style>
+</head>
+<body>
+    <h1>HALE 2023 Data Test</h1>
+    <div id="output">Loading...</div>
+
+    <script>
+        async function testHALE2023() {
+            const output = document.getElementById('output');
+            output.innerHTML = '<p>Testing HALE 2023 data availability...</p>';
+
+            try {
+                // Load compiled data with cache-busting
+                const timestamp = new Date().getTime();
+                const response = await fetch(`data/compiled-indicators.json?t=${timestamp}`);
+                const compiledData = await response.json();
+
+                output.innerHTML += '<p class="success">✓ Compiled data loaded</p>';
+
+                // Check for consolidated file
+                const fileName = 'IHME_GBD_ALL_YEARS_CONSOLIDATED.csv';
+                if (!compiledData[fileName]) {
+                    output.innerHTML += '<p class="error">✗ Consolidated file not found in compiled data</p>';
+                    output.innerHTML += '<p>Files available:</p><ul>';
+                    Object.keys(compiledData).forEach(key => {
+                        if (key.includes('IHME')) {
+                            output.innerHTML += `<li>${key}</li>`;
+                        }
+                    });
+                    output.innerHTML += '</ul>';
+                    return;
+                }
+
+                output.innerHTML += `<p class="success">✓ Found ${fileName}</p>`;
+
+                const rows = compiledData[fileName];
+                output.innerHTML += `<p>Total rows in file: ${rows.length}</p>`;
+
+                // Check HALE data
+                const haleRows = rows.filter(r => r.measure_name === 'HALE (Healthy life expectancy)');
+                output.innerHTML += `<p>Total HALE rows: ${haleRows.length}</p>`;
+
+                // Check years
+                const years = {};
+                haleRows.forEach(r => {
+                    const year = r.year;
+                    years[year] = (years[year] || 0) + 1;
+                });
+
+                output.innerHTML += '<div class="info"><strong>HALE data by year:</strong><ul>';
+                Object.keys(years).sort().forEach(year => {
+                    const cssClass = year === '2023' ? 'success' : '';
+                    output.innerHTML += `<li class="${cssClass}">${year}: ${years[year]} countries</li>`;
+                });
+                output.innerHTML += '</ul></div>';
+
+                // Check 2023 specifically
+                const hale2023 = haleRows.filter(r => r.year === '2023');
+
+                if (hale2023.length > 0) {
+                    output.innerHTML += `<h2 class="success">✓ SUCCESS: Found ${hale2023.length} countries with HALE 2023 data!</h2>`;
+                    output.innerHTML += '<p><strong>Countries with 2023 data:</strong></p><ul>';
+                    hale2023.slice(0, 10).forEach(r => {
+                        output.innerHTML += `<li>${r.location_name}: ${parseFloat(r.val).toFixed(2)} years</li>`;
+                    });
+                    if (hale2023.length > 10) {
+                        output.innerHTML += `<li><em>...and ${hale2023.length - 10} more</em></li>`;
+                    }
+                    output.innerHTML += '</ul>';
+
+                    output.innerHTML += '<div class="info">';
+                    output.innerHTML += '<h3>If 2023 is NOT showing in the main app:</h3>';
+                    output.innerHTML += '<ol>';
+                    output.innerHTML += '<li><strong>Hard Refresh:</strong> Press Ctrl+Shift+R (Windows) or Cmd+Shift+R (Mac)</li>';
+                    output.innerHTML += '<li><strong>Clear Cache:</strong> Clear browser cache completely</li>';
+                    output.innerHTML += '<li><strong>Incognito Mode:</strong> Open in private/incognito window</li>';
+                    output.innerHTML += '<li><strong>Check Console:</strong> Open DevTools (F12), check for errors</li>';
+                    output.innerHTML += '</ol>';
+                    output.innerHTML += '</div>';
+                } else {
+                    output.innerHTML += '<h2 class="error">✗ NO HALE 2023 data found</h2>';
+                }
+
+            } catch (error) {
+                output.innerHTML += `<p class="error">Error: ${error.message}</p>`;
+                console.error(error);
+            }
+        }
+
+        // Run test
+        testHALE2023();
+    </script>
+</body>
+</html>
