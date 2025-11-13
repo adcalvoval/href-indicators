@@ -369,12 +369,16 @@ async function loadIndicatorData() {
     console.log(`Loading data for: ${indicatorName} from ${dataFile}`);
 
     try {
+        // Show loading popup
+        showLoading('Loading data...');
+
         // Clear existing markers/overlays
         clearMapData();
 
         // Check if this is API data (DREF or GDACS)
         if (indicatorId === 'ACTIVE_DREFS') {
             const drefData = await loadDREFData();
+            hideLoading();
             if (drefData && drefData.length > 0) {
                 displayDREFOnMap(drefData);
                 showDREFLegend(drefData.length);
@@ -383,6 +387,7 @@ async function loadIndicatorData() {
             }
         } else if (indicatorId === 'PAST_DREFS') {
             const pastDrefData = await loadPastDREFData();
+            hideLoading();
             if (pastDrefData && pastDrefData.length > 0) {
                 displayPastDREFOnMap(pastDrefData);
                 showPastDREFLegend(pastDrefData);
@@ -391,6 +396,7 @@ async function loadIndicatorData() {
             }
         } else if (indicatorId === 'PAST_DISASTERS') {
             const disasterData = await loadGDACSDisasterData();
+            hideLoading();
             if (disasterData && disasterData.length > 0) {
                 displayDisastersOnMap(disasterData);
                 showDisasterLegend(disasterData);
@@ -400,12 +406,15 @@ async function loadIndicatorData() {
         } else {
             // Regular CSV data
             if (!year) {
+                hideLoading();
                 alert('Please select a year.');
                 return;
             }
 
             const data = await loadDataFile(dataFile, indicatorId, year);
             console.log(`loadDataFile returned ${data ? data.length : 0} data points`);
+
+            hideLoading();
 
             if (data && data.length > 0) {
                 console.log(`Displaying ${data.length} countries on map`);
@@ -419,6 +428,7 @@ async function loadIndicatorData() {
         }
     } catch (error) {
         console.error('Error loading data:', error);
+        hideLoading();
         alert('Failed to load indicator data. Please check the console for details.');
     }
 }
@@ -1835,6 +1845,19 @@ function showDisasterLegend(events) {
     currentOverlays.push(legend);
 }
 
+// Loading popup functions
+function showLoading(message = 'Loading data...') {
+    const loadingPopup = document.getElementById('loading-popup');
+    const loadingMessage = document.getElementById('loading-message');
+    loadingMessage.textContent = message;
+    loadingPopup.classList.remove('hidden');
+}
+
+function hideLoading() {
+    const loadingPopup = document.getElementById('loading-popup');
+    loadingPopup.classList.add('hidden');
+}
+
 // Close timeline
 function closeTimeline() {
     const timelineContainer = document.getElementById('timeline-container');
@@ -1851,6 +1874,9 @@ async function showCountryTimeline(countryName, countryISO3) {
 
     // Show timeline
     timelineContainer.classList.remove('hidden');
+
+    // Show loading popup
+    showLoading('Loading timeline data...');
 
     // Fetch disaster events and DREFs for this country
     try {
@@ -1875,8 +1901,12 @@ async function showCountryTimeline(countryName, countryISO3) {
         // Draw timeline
         drawTimeline(countryDisasters, countryDrefs);
 
+        // Hide loading popup
+        hideLoading();
+
     } catch (error) {
         console.error('Error loading timeline data:', error);
+        hideLoading();
     }
 }
 
@@ -1934,28 +1964,33 @@ function drawTimeline(disasters, drefs) {
         svg.appendChild(label);
     }
 
+    // Fixed Y position for all markers (same level)
+    const markerY = axisY - 30;
+
     // Draw disaster events (orange)
     disasters.forEach(event => {
         const eventDate = new Date(event.properties.fromdate);
         if (eventDate >= startDate && eventDate <= endDate) {
             const x = 40 + ((eventDate - startDate) / timeRange) * (width - 80);
-            const y = axisY - 20 - Math.random() * 30; // Vary y position slightly
 
             const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
             circle.setAttribute('cx', x);
-            circle.setAttribute('cy', y);
-            circle.setAttribute('r', '6');
+            circle.setAttribute('cy', markerY);
+            circle.setAttribute('r', '7');
             circle.setAttribute('fill', '#f97316');
             circle.setAttribute('stroke', 'white');
             circle.setAttribute('stroke-width', '2');
             circle.style.cursor = 'pointer';
 
-            // Add tooltip
-            const title = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+            // Add click event for tooltip
             const eventName = event.properties.name || event.properties.eventtype;
             const eventType = getEventTypeLabel(event.properties.eventtype);
-            title.textContent = `${eventName}\nType: ${eventType}\nDate: ${eventDate.toLocaleDateString()}`;
-            circle.appendChild(title);
+            const alertLevel = event.properties.alertlevel || 'N/A';
+            const severity = event.properties.severity || 'N/A';
+
+            circle.addEventListener('click', () => {
+                alert(`DISASTER EVENT\n\nName: ${eventName}\nType: ${eventType}\nDate: ${eventDate.toLocaleDateString()}\nAlert Level: ${alertLevel}\nSeverity: ${severity}`);
+            });
 
             svg.appendChild(circle);
         }
@@ -1968,22 +2003,24 @@ function drawTimeline(disasters, drefs) {
             const drefDate = new Date(startDateStr);
             if (drefDate >= startDate && drefDate <= endDate) {
                 const x = 40 + ((drefDate - startDate) / timeRange) * (width - 80);
-                const y = axisY - 20 - Math.random() * 30; // Vary y position slightly
 
                 const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
                 circle.setAttribute('cx', x);
-                circle.setAttribute('cy', y);
-                circle.setAttribute('r', '6');
+                circle.setAttribute('cy', markerY);
+                circle.setAttribute('r', '7');
                 circle.setAttribute('fill', '#dc2626');
                 circle.setAttribute('stroke', 'white');
                 circle.setAttribute('stroke-width', '2');
                 circle.style.cursor = 'pointer';
 
-                // Add tooltip
-                const title = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+                // Add click event for tooltip
                 const drefName = dref.name || dref.dtype?.name || 'DREF Operation';
-                title.textContent = `${drefName}\nStart: ${drefDate.toLocaleDateString()}\nAmount: ${dref.amount_funded || 'N/A'}`;
-                circle.appendChild(title);
+                const amount = dref.amount_funded ? `CHF ${dref.amount_funded.toLocaleString()}` : 'N/A';
+                const disasterType = dref.dtype?.name || 'N/A';
+
+                circle.addEventListener('click', () => {
+                    alert(`DREF OPERATION\n\nName: ${drefName}\nDisaster Type: ${disasterType}\nStart Date: ${drefDate.toLocaleDateString()}\nAmount Funded: ${amount}`);
+                });
 
                 svg.appendChild(circle);
             }
