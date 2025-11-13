@@ -1482,6 +1482,12 @@ async function showTimeSeriesChart() {
     // Store time series data globally for filtering
     window.currentTimeSeriesData = { years, timeSeriesData, unit };
 
+    // Hide disaster events toggle initially (since "All Countries" is selected by default)
+    const disasterToggle = document.getElementById('disaster-events-toggle');
+    const showDisastersCheckbox = document.getElementById('show-disasters-checkbox');
+    disasterToggle.style.display = 'none';
+    showDisastersCheckbox.checked = false;
+
     // Create the chart with all countries
     createTimeSeriesChart(years, timeSeriesData, unit, countriesWithData);
 
@@ -1611,12 +1617,28 @@ function updateChartWithFilter() {
     const selectedOptions = Array.from(countryFilter.selectedOptions);
     const selectedValues = selectedOptions.map(opt => opt.value);
 
+    // Show/hide disaster events toggle based on selection
+    const disasterToggle = document.getElementById('disaster-events-toggle');
+    const showDisastersCheckbox = document.getElementById('show-disasters-checkbox');
+
     // If "All Countries" is selected, show all
     let selectedCountries;
     if (selectedValues.includes('all')) {
         selectedCountries = Object.keys(window.currentTimeSeriesData.timeSeriesData);
+        // Hide disaster events option for "All Countries"
+        disasterToggle.style.display = 'none';
+        showDisastersCheckbox.checked = false;
+        chartDisasterEvents = {}; // Clear cache
     } else {
         selectedCountries = selectedValues;
+        // Show disaster events option for specific countries
+        if (selectedCountries.length > 0) {
+            disasterToggle.style.display = 'block';
+        } else {
+            disasterToggle.style.display = 'none';
+            showDisastersCheckbox.checked = false;
+            chartDisasterEvents = {};
+        }
     }
 
     const { years, timeSeriesData, unit } = window.currentTimeSeriesData;
