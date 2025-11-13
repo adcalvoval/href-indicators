@@ -1596,6 +1596,20 @@ function closeDataList() {
     dataListPanel.classList.add('hidden');
 }
 
+// Helper function to get human-readable event type labels
+function getEventTypeLabel(eventType) {
+    const eventTypeLabels = {
+        'EQ': 'Earthquake',
+        'TC': 'Tropical Cyclone',
+        'FL': 'Flood',
+        'DR': 'Drought',
+        'VO': 'Volcano',
+        'WF': 'Wildfire',
+        'TS': 'Tsunami'
+    };
+    return eventTypeLabels[eventType] || eventType;
+}
+
 // Load GDACS disaster data from the last 5 years
 async function loadGDACSDisasterData() {
     try {
@@ -1706,32 +1720,46 @@ function displayDisastersOnMap(events) {
             });
 
             // Create popup content with list of all events
-            let popupContent = `<div style="min-width: 250px;">`;
-            popupContent += `<h3 style="margin: 0 0 10px 0; color: #f97316;">${countryName}</h3>`;
-            popupContent += `<p style="margin: 0 0 10px 0;"><strong>${count} disaster event${count > 1 ? 's' : ''}</strong></p>`;
-            popupContent += `<div style="max-height: 300px; overflow-y: auto;">`;
+            let popupContent = `<div style="min-width: 300px; max-width: 400px;">`;
+            popupContent += `<h3 style="margin: 0 0 10px 0; color: #f97316; border-bottom: 2px solid #f97316; padding-bottom: 8px;">${countryName}</h3>`;
+            popupContent += `<p style="margin: 0 0 12px 0; font-size: 14px;"><strong>Total: ${count} disaster event${count > 1 ? 's' : ''}</strong></p>`;
+            popupContent += `<div style="max-height: 350px; overflow-y: auto;">`;
 
-            // Sort by date (most recent first)
+            // Sort by date chronologically (oldest first)
             countryEvents.sort((a, b) => {
                 const dateA = new Date(a.properties.fromdate || 0);
                 const dateB = new Date(b.properties.fromdate || 0);
-                return dateB - dateA;
+                return dateA - dateB; // Ascending order (oldest first)
             });
 
             countryEvents.forEach((event, idx) => {
                 const props = event.properties;
                 const eventName = props.name || props.eventtype;
                 const eventType = props.eventtype || 'Unknown';
-                const severity = props.severity || props.alertlevel || 'N/A';
-                const date = props.fromdate ? new Date(props.fromdate).toLocaleDateString() : 'N/A';
+                const alertLevel = props.alertlevel || 'Unknown';
+                const fromDate = props.fromdate ? new Date(props.fromdate) : null;
+                const toDate = props.todate ? new Date(props.todate) : null;
+
+                // Format dates
+                const dateStr = fromDate ? fromDate.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) : 'N/A';
+                const toDateStr = toDate ? toDate.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) : null;
+                const dateRange = toDateStr && toDateStr !== dateStr ? `${dateStr} - ${toDateStr}` : dateStr;
+
+                // Color code alert levels
+                const alertColors = {
+                    'Red': '#DC2626',
+                    'Orange': '#F97316',
+                    'Green': '#10B981'
+                };
+                const alertColor = alertColors[alertLevel] || '#666';
 
                 popupContent += `
-                    <div style="padding: 8px 0; ${idx > 0 ? 'border-top: 1px solid #eee;' : ''}">
-                        <div style="font-weight: bold; color: #333;">${eventName}</div>
-                        <div style="font-size: 12px; color: #666; margin-top: 4px;">
-                            <div>Type: ${eventType}</div>
-                            <div>Severity: ${severity}</div>
-                            <div>Date: ${date}</div>
+                    <div style="padding: 10px; margin-bottom: 8px; ${idx > 0 ? 'border-top: 2px solid #eee;' : ''} background: #f9f9f9; border-radius: 4px;">
+                        <div style="font-weight: bold; color: #333; font-size: 13px; margin-bottom: 6px;">${eventName}</div>
+                        <div style="font-size: 12px; color: #666;">
+                            <div style="margin-bottom: 3px;"><strong>Type:</strong> ${getEventTypeLabel(eventType)}</div>
+                            <div style="margin-bottom: 3px;"><strong>Alert Level:</strong> <span style="color: ${alertColor}; font-weight: bold;">${alertLevel}</span></div>
+                            <div><strong>Date:</strong> ${dateRange}</div>
                         </div>
                     </div>
                 `;
