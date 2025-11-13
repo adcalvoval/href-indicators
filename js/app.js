@@ -31,13 +31,10 @@ function formatNumber(value, decimals = 2) {
 
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // Register Chart.js annotation plugin
-    if (typeof Chart !== 'undefined' && typeof chartjs_plugin_annotation !== 'undefined') {
-        Chart.register(chartjs_plugin_annotation);
-        console.log('Chart.js annotation plugin registered');
-    } else {
-        console.error('Chart.js or annotation plugin not loaded!');
-    }
+    // The annotation plugin should auto-register with Chart.js v4
+    console.log('Chart.js loaded:', typeof Chart !== 'undefined');
+    console.log('Chart version:', typeof Chart !== 'undefined' ? Chart.version : 'N/A');
+    console.log('Available plugins:', typeof Chart !== 'undefined' && Chart.registry ? Object.keys(Chart.registry.plugins.items).join(', ') : 'N/A');
 
     initMap();
     loadCategories();
@@ -1546,6 +1543,11 @@ function createTimeSeriesChart(years, timeSeriesData, unit, selectedCountries) {
         timeSeriesChart.destroy();
     }
 
+    // Get disaster event annotations
+    const annotations = getDisasterEventAnnotations();
+    console.log('Creating chart with annotations:', annotations);
+    console.log('Number of annotations:', Object.keys(annotations).length);
+
     // Create new chart
     const ctx = document.getElementById('time-series-chart').getContext('2d');
     timeSeriesChart = new Chart(ctx, {
@@ -1593,7 +1595,7 @@ function createTimeSeriesChart(years, timeSeriesData, unit, selectedCountries) {
                     }
                 },
                 annotation: {
-                    annotations: getDisasterEventAnnotations()
+                    annotations: annotations
                 }
             },
             scales: {
@@ -1613,6 +1615,10 @@ function createTimeSeriesChart(years, timeSeriesData, unit, selectedCountries) {
             }
         }
     });
+
+    console.log('Chart created successfully');
+    console.log('Chart plugins config:', timeSeriesChart.options.plugins);
+    console.log('Chart annotation config:', timeSeriesChart.options.plugins.annotation);
 }
 
 // Update chart when country filter changes

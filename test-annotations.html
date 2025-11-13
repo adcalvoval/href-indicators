@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Chart.js Annotations</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js"></script>
+</head>
+<body>
+    <h1>Test Chart with Annotations</h1>
+    <canvas id="testChart" width="800" height="400"></canvas>
+
+    <script>
+        console.log('Chart.js version:', Chart.version);
+        console.log('Window keys with "chart":', Object.keys(window).filter(k => k.toLowerCase().includes('chart')));
+
+        const ctx = document.getElementById('testChart').getContext('2d');
+        const chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: [2018, 2019, 2020, 2021, 2022, 2023, 2024],
+                datasets: [{
+                    label: 'Test Data',
+                    data: [10, 15, 13, 18, 20, 17, 22],
+                    borderColor: 'blue',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    annotation: {
+                        annotations: {
+                            test1: {
+                                type: 'line',
+                                scaleID: 'x',
+                                value: 2020,
+                                borderColor: 'orange',
+                                borderWidth: 2,
+                                borderDash: [5, 5],
+                                label: {
+                                    display: true,
+                                    content: '▲',
+                                    position: 'end',
+                                    backgroundColor: 'orange',
+                                    color: 'white',
+                                    font: {
+                                        size: 12,
+                                        weight: 'bold'
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        console.log('Chart created successfully');
+        console.log('Chart plugins:', chart.config.options.plugins);
+    </script>
+</body>
+</html>
