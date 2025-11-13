@@ -1915,7 +1915,7 @@ function drawTimeline(disasters, drefs) {
     const svg = document.getElementById('timeline-svg');
     const container = document.getElementById('timeline-content');
     const width = container.clientWidth;
-    const height = container.clientHeight - 30;
+    const height = 100; // Fixed height for consistent marker positioning
 
     // Clear existing content
     svg.innerHTML = '';
@@ -1928,7 +1928,7 @@ function drawTimeline(disasters, drefs) {
     const timeRange = endDate - startDate;
 
     // Draw main timeline axis
-    const axisY = height - 30;
+    const axisY = 65; // Position axis to leave room for markers above
     const axisLine = document.createElementNS('http://www.w3.org/2000/svg', 'line');
     axisLine.setAttribute('x1', 40);
     axisLine.setAttribute('y1', axisY);
@@ -1964,8 +1964,11 @@ function drawTimeline(disasters, drefs) {
         svg.appendChild(label);
     }
 
-    // Fixed Y position for all markers (same level)
-    const markerY = axisY - 30;
+    // Fixed Y position for all markers (well above the axis)
+    const markerY = 30;
+
+    // Get tooltip element
+    const tooltip = document.getElementById('timeline-tooltip');
 
     // Draw disaster events (orange)
     disasters.forEach(event => {
@@ -1976,20 +1979,28 @@ function drawTimeline(disasters, drefs) {
             const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
             circle.setAttribute('cx', x);
             circle.setAttribute('cy', markerY);
-            circle.setAttribute('r', '7');
+            circle.setAttribute('r', '8');
             circle.setAttribute('fill', '#f97316');
             circle.setAttribute('stroke', 'white');
             circle.setAttribute('stroke-width', '2');
             circle.style.cursor = 'pointer';
 
-            // Add click event for tooltip
+            // Prepare tooltip data
             const eventName = event.properties.name || event.properties.eventtype;
             const eventType = getEventTypeLabel(event.properties.eventtype);
             const alertLevel = event.properties.alertlevel || 'N/A';
             const severity = event.properties.severity || 'N/A';
 
-            circle.addEventListener('click', () => {
-                alert(`DISASTER EVENT\n\nName: ${eventName}\nType: ${eventType}\nDate: ${eventDate.toLocaleDateString()}\nAlert Level: ${alertLevel}\nSeverity: ${severity}`);
+            // Add click event for tooltip
+            circle.addEventListener('click', (e) => {
+                const tooltipContent = `<strong>DISASTER EVENT</strong>
+                    <div><b>Name:</b> ${eventName}</div>
+                    <div><b>Type:</b> ${eventType}</div>
+                    <div><b>Date:</b> ${eventDate.toLocaleDateString()}</div>
+                    <div><b>Alert Level:</b> ${alertLevel}</div>
+                    <div><b>Severity:</b> ${severity}</div>`;
+
+                showTimelineTooltip(e, tooltipContent, x);
             });
 
             svg.appendChild(circle);
@@ -2007,19 +2018,26 @@ function drawTimeline(disasters, drefs) {
                 const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
                 circle.setAttribute('cx', x);
                 circle.setAttribute('cy', markerY);
-                circle.setAttribute('r', '7');
+                circle.setAttribute('r', '8');
                 circle.setAttribute('fill', '#dc2626');
                 circle.setAttribute('stroke', 'white');
                 circle.setAttribute('stroke-width', '2');
                 circle.style.cursor = 'pointer';
 
-                // Add click event for tooltip
+                // Prepare tooltip data
                 const drefName = dref.name || dref.dtype?.name || 'DREF Operation';
                 const amount = dref.amount_funded ? `CHF ${dref.amount_funded.toLocaleString()}` : 'N/A';
                 const disasterType = dref.dtype?.name || 'N/A';
 
-                circle.addEventListener('click', () => {
-                    alert(`DREF OPERATION\n\nName: ${drefName}\nDisaster Type: ${disasterType}\nStart Date: ${drefDate.toLocaleDateString()}\nAmount Funded: ${amount}`);
+                // Add click event for tooltip
+                circle.addEventListener('click', (e) => {
+                    const tooltipContent = `<strong>DREF OPERATION</strong>
+                        <div><b>Name:</b> ${drefName}</div>
+                        <div><b>Type:</b> ${disasterType}</div>
+                        <div><b>Start Date:</b> ${drefDate.toLocaleDateString()}</div>
+                        <div><b>Amount:</b> ${amount}</div>`;
+
+                    showTimelineTooltip(e, tooltipContent, x);
                 });
 
                 svg.appendChild(circle);
@@ -2027,3 +2045,32 @@ function drawTimeline(disasters, drefs) {
         }
     });
 }
+
+// Show timeline tooltip above marker
+function showTimelineTooltip(event, content, markerX) {
+    const tooltip = document.getElementById('timeline-tooltip');
+    const timelineContainer = document.getElementById('timeline-container');
+    const containerRect = timelineContainer.getBoundingClientRect();
+
+    tooltip.innerHTML = content;
+    tooltip.classList.remove('hidden');
+
+    // Position tooltip above the marker
+    const tooltipWidth = 220;
+    const tooltipHeight = tooltip.offsetHeight;
+
+    // Calculate position relative to viewport
+    const left = containerRect.left + markerX - (tooltipWidth / 2);
+    const top = containerRect.top + 20; // 20px from top of timeline container
+
+    tooltip.style.left = `${left}px`;
+    tooltip.style.top = `${top}px`;
+}
+
+// Hide tooltip when clicking outside
+document.addEventListener('click', (e) => {
+    const tooltip = document.getElementById('timeline-tooltip');
+    if (tooltip && !e.target.closest('circle') && !tooltip.contains(e.target)) {
+        tooltip.classList.add('hidden');
+    }
+});
