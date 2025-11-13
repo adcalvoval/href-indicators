@@ -92,7 +92,8 @@ async function loadCountriesGeoJSON() {
             features: data.features.filter(feature => {
                 const name = feature.properties.ADMIN || feature.properties.NAME;
                 return targetCountryNames.includes(name) ||
-                       (name === 'Dem. Rep. Congo' || name === 'Congo (Kinshasa)' || name === 'Congo DRC');
+                       (name === 'Dem. Rep. Congo' || name === 'Congo (Kinshasa)' || name === 'Congo DRC') ||
+                       (name === 'Somaliland'); // Include Somaliland region as part of Somalia
             })
         };
 
@@ -1301,6 +1302,7 @@ function closeCountryProfile() {
 }
 
 // Get country polygon from GeoJSON
+// Returns a FeatureCollection containing all matching features (e.g., Somalia + Somaliland)
 function getCountryPolygon(countryName) {
     if (!countriesGeoJSON) return null;
 
@@ -1313,14 +1315,23 @@ function getCountryPolygon(countryName) {
 
     const searchName = nameMap[countryName] || countryName;
 
-    const feature = countriesGeoJSON.features.find(f => {
+    // Collect all matching features
+    const matchingFeatures = countriesGeoJSON.features.filter(f => {
         const name = f.properties.ADMIN || f.properties.NAME;
         return name === searchName ||
                (countryName === 'Congo DR' && (name === 'Dem. Rep. Congo' || name.includes('Congo') && name.includes('Democratic'))) ||
-               (countryName === 'Syria' && (name === 'Syria' || name === 'Syrian Arab Republic'));
+               (countryName === 'Syria' && (name === 'Syria' || name === 'Syrian Arab Republic')) ||
+               (countryName === 'Somalia' && name === 'Somaliland'); // Include Somaliland as part of Somalia
     });
 
-    return feature;
+    // Return null if no matches found
+    if (matchingFeatures.length === 0) return null;
+
+    // Return as FeatureCollection to support multiple polygons (e.g., Somalia + Somaliland)
+    return {
+        type: 'FeatureCollection',
+        features: matchingFeatures
+    };
 }
 
 // Load time series data for all years
