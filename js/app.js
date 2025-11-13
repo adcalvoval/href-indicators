@@ -172,7 +172,12 @@ function setupEventListeners() {
     selectAllBtn.addEventListener('click', selectAllCountries);
     deselectAllBtn.addEventListener('click', deselectAllCountries);
     closeDataListBtn.addEventListener('click', closeDataList);
-    closeTimelineBtn.addEventListener('click', closeTimeline);
+
+    if (closeTimelineBtn) {
+        closeTimelineBtn.addEventListener('click', closeTimeline);
+    } else {
+        console.error('Close timeline button not found!');
+    }
 }
 
 // Handle country profile selection change (enable/disable button)
@@ -1861,7 +1866,12 @@ function hideLoading() {
 // Close timeline
 function closeTimeline() {
     const timelineContainer = document.getElementById('timeline-container');
+    const tooltip = document.getElementById('timeline-tooltip');
+
     timelineContainer.classList.add('hidden');
+    if (tooltip) {
+        tooltip.classList.add('hidden');
+    }
 }
 
 // Show timeline for a country
