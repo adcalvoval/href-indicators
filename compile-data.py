@@ -50,13 +50,9 @@ def compile_data():
     # Get all CSV files
     csv_files = list(portfolios_dir.glob('*_ALL_LATEST.csv'))
     csv_files.append(portfolios_dir / 'WB Data 25b.csv')
-    csv_files.append(portfolios_dir / 'IHME_GBD_2021_CONSOLIDATED.csv')
 
-    # Add new IHME-GBD 2021 data files
-    csv_files.extend(list(portfolios_dir.glob('IHME-GBD_2021_DATA-*.csv')))
-
-    # Add new IHME-GBD 2023 data files
-    csv_files.extend(list(portfolios_dir.glob('IHME-GBD_2023_DATA-*.csv')))
+    # Use single consolidated IHME file (contains all years: 2018-2023)
+    csv_files.append(portfolios_dir / 'IHME_GBD_ALL_YEARS_CONSOLIDATED.csv')
 
     print(f"Found {len(csv_files)} CSV files to compile...")
 

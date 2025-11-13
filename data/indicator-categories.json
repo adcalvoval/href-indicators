@@ -491,42 +491,42 @@
         {
           "id": "DALYs (Disability-Adjusted Life Years)",
           "name": "DALYs (Disease Burden)",
-          "file": "IHME_GBD_2021_CONSOLIDATED.csv",
+          "file": "IHME_GBD_ALL_YEARS_CONSOLIDATED.csv",
           "unit": "per 100,000",
           "description": "Disability-Adjusted Life Years - combined measure of death and disability"
         },
         {
           "id": "Deaths",
           "name": "Deaths from All Causes",
-          "file": "IHME_GBD_2021_CONSOLIDATED.csv",
+          "file": "IHME_GBD_ALL_YEARS_CONSOLIDATED.csv",
           "unit": "per 100,000",
           "description": "Total mortality rate from all causes"
         },
         {
           "id": "YLDs (Years Lived with Disability)",
           "name": "Years Lived with Disability",
-          "file": "IHME_GBD_2021_CONSOLIDATED.csv",
+          "file": "IHME_GBD_ALL_YEARS_CONSOLIDATED.csv",
           "unit": "per 100,000",
           "description": "Years lived with non-fatal health conditions"
         },
         {
           "id": "YLLs (Years of Life Lost)",
           "name": "Years of Life Lost",
-          "file": "IHME_GBD_2021_CONSOLIDATED.csv",
+          "file": "IHME_GBD_ALL_YEARS_CONSOLIDATED.csv",
           "unit": "per 100,000",
           "description": "Years lost due to premature death"
         },
         {
           "id": "Life expectancy",
           "name": "Life Expectancy at Birth",
-          "file": "IHME_GBD_2021_CONSOLIDATED.csv",
+          "file": "IHME_GBD_ALL_YEARS_CONSOLIDATED.csv",
           "unit": "years",
           "description": "Expected years of life at birth"
         },
         {
           "id": "HALE (Healthy life expectancy)",
           "name": "Healthy Life Expectancy (HALE)",
-          "file": "IHME_GBD_2021_CONSOLIDATED.csv",
+          "file": "IHME_GBD_ALL_YEARS_CONSOLIDATED.csv",
           "unit": "years",
           "description": "Expected years of life in full health"
         }

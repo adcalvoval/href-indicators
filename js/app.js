@@ -105,7 +105,7 @@ async function loadCountriesGeoJSON() {
 async function loadCompiledData() {
     try {
         // Add cache-busting parameter to ensure latest data is loaded
-        const response = await fetch('data/compiled-indicators.json?v=2023data');
+        const response = await fetch('data/compiled-indicators.json?v=consolidated');
         compiledData = await response.json();
         console.log('Compiled data loaded successfully');
     } catch (error) {
