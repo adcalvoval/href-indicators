@@ -18,6 +18,9 @@ let cachedPastDrefData = null;
 let cacheTimestamp = null;
 const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
 
+// Cache for disaster events on time series chart
+let chartDisasterEvents = {}; // { countryISO3: [events] }
+
 // Helper function to format numbers with commas
 function formatNumber(value, decimals = 2) {
     if (typeof value !== 'number' || isNaN(value)) {
@@ -165,6 +168,7 @@ function setupEventListeners() {
     const deselectAllBtn = document.getElementById('deselect-all-btn');
     const closeDataListBtn = document.getElementById('close-data-list-btn');
     const closeTimelineBtn = document.getElementById('close-timeline-btn');
+    const showDisastersCheckbox = document.getElementById('show-disasters-checkbox');
 
     categorySelect.addEventListener('change', onCategoryChange);
     indicatorSelect.addEventListener('change', onIndicatorChange);
@@ -179,6 +183,7 @@ function setupEventListeners() {
     selectAllBtn.addEventListener('click', selectAllCountries);
     deselectAllBtn.addEventListener('click', deselectAllCountries);
     closeDataListBtn.addEventListener('click', closeDataList);
+    showDisastersCheckbox.addEventListener('change', toggleDisasterEvents);
 
     if (closeTimelineBtn) {
         closeTimelineBtn.addEventListener('click', closeTimeline);
@@ -1572,6 +1577,9 @@ function createTimeSeriesChart(years, timeSeriesData, unit, selectedCountries) {
                             return label;
                         }
                     }
+                },
+                annotation: {
+                    annotations: getDisasterEventAnnotations()
                 }
             },
             scales: {
@@ -1642,6 +1650,175 @@ function closeChart() {
         timeSeriesChart.destroy();
         timeSeriesChart = null;
     }
+
+    // Clear disaster events cache when closing chart
+    chartDisasterEvents = {};
+}
+
+// Toggle disaster events on time series chart
+async function toggleDisasterEvents() {
+    const checkbox = document.getElementById('show-disasters-checkbox');
+    const isChecked = checkbox.checked;
+
+    if (!window.currentTimeSeriesData) {
+        return;
+    }
+
+    if (isChecked) {
+        // Load disaster events for countries in chart
+        showLoading('Loading disaster events...');
+        await loadDisasterEventsForChart();
+        hideLoading();
+    }
+
+    // Redraw chart with or without disaster events
+    updateChartWithFilter();
+}
+
+// Load disaster events for countries shown in the chart
+async function loadDisasterEventsForChart() {
+    if (!window.currentTimeSeriesData) return;
+
+    const countryFilter = document.getElementById('country-filter');
+    const selectedOptions = Array.from(countryFilter.selectedOptions);
+    const selectedValues = selectedOptions.map(opt => opt.value);
+
+    // Get list of countries to load events for
+    let selectedCountries;
+    if (selectedValues.includes('all')) {
+        selectedCountries = Object.keys(window.currentTimeSeriesData.timeSeriesData);
+    } else {
+        selectedCountries = selectedValues;
+    }
+
+    // Map country names to ISO3 codes
+    const countryToISO3 = {
+        'Afghanistan': 'AFG', 'Bangladesh': 'BGD', 'Burkina Faso': 'BFA',
+        'Cameroon': 'CMR', 'Central African Republic': 'CAF', 'Chad': 'TCD',
+        'Colombia': 'COL', 'Congo DR': 'COD', 'Ethiopia': 'ETH',
+        'Haiti': 'HTI', 'Lebanon': 'LBN', 'Mali': 'MLI',
+        'Mozambique': 'MOZ', 'Myanmar': 'MMR', 'Niger': 'NER',
+        'Nigeria': 'NGA', 'Pakistan': 'PAK', 'Somalia': 'SOM',
+        'South Sudan': 'SSD', 'Sudan': 'SDN', 'Syria': 'SYR',
+        'Uganda': 'UGA', 'Ukraine': 'UKR', 'Venezuela': 'VEN', 'Yemen': 'YEM'
+    };
+
+    // Load events for each country in parallel
+    const loadPromises = selectedCountries.map(async (countryName) => {
+        const iso3 = countryToISO3[countryName];
+        if (!iso3) return;
+
+        // Check if already loaded
+        if (chartDisasterEvents[iso3]) return;
+
+        try {
+            // Load GDACS and EM-DAT events
+            const [gdacsEvents, emdatEvents] = await Promise.all([
+                loadGDACSDisasterData(),
+                loadEmdatData(iso3)
+            ]);
+
+            // Filter GDACS events for this country
+            const countryGdacsEvents = gdacsEvents.filter(event => {
+                return event.properties.iso3 === iso3;
+            });
+
+            // Combine both sources
+            chartDisasterEvents[iso3] = {
+                gdacs: countryGdacsEvents,
+                emdat: emdatEvents
+            };
+
+            console.log(`Loaded ${countryGdacsEvents.length} GDACS + ${emdatEvents.length} EM-DAT events for ${countryName}`);
+        } catch (error) {
+            console.error(`Error loading disaster events for ${countryName}:`, error);
+            chartDisasterEvents[iso3] = { gdacs: [], emdat: [] };
+        }
+    });
+
+    await Promise.all(loadPromises);
+}
+
+// Get disaster event annotations for Chart.js
+function getDisasterEventAnnotations() {
+    const checkbox = document.getElementById('show-disasters-checkbox');
+    if (!checkbox.checked || !window.currentTimeSeriesData) {
+        return {};
+    }
+
+    const annotations = {};
+    const { years } = window.currentTimeSeriesData;
+    const minYear = Math.min(...years);
+    const maxYear = Math.max(...years);
+
+    // Create annotations for each disaster event
+    Object.keys(chartDisasterEvents).forEach(iso3 => {
+        const events = chartDisasterEvents[iso3];
+        if (!events) return;
+
+        // Process GDACS events
+        events.gdacs.forEach((event, idx) => {
+            const eventDate = new Date(event.properties.fromdate);
+            const eventYear = eventDate.getFullYear();
+            const eventMonth = eventDate.getMonth() + 1; // 0-indexed
+            const yearFraction = eventYear + (eventMonth - 1) / 12;
+
+            // Only show events within the year range
+            if (yearFraction >= minYear && yearFraction <= maxYear) {
+                annotations[`gdacs_${iso3}_${idx}`] = {
+                    type: 'line',
+                    xMin: yearFraction,
+                    xMax: yearFraction,
+                    borderColor: 'rgba(249, 115, 22, 0.5)', // Orange
+                    borderWidth: 2,
+                    borderDash: [5, 5],
+                    label: {
+                        display: true,
+                        content: '▼',
+                        position: 'start',
+                        color: '#f97316',
+                        font: {
+                            size: 12
+                        }
+                    }
+                };
+            }
+        });
+
+        // Process EM-DAT events
+        events.emdat.forEach((event, idx) => {
+            const dateStr = event.fromDate || (event.startyear ? `${event.startyear}-01-01` : null);
+            if (!dateStr) return;
+
+            const eventDate = new Date(dateStr);
+            const eventYear = eventDate.getFullYear();
+            const eventMonth = eventDate.getMonth() + 1;
+            const yearFraction = eventYear + (eventMonth - 1) / 12;
+
+            // Only show events within the year range
+            if (yearFraction >= minYear && yearFraction <= maxYear) {
+                annotations[`emdat_${iso3}_${idx}`] = {
+                    type: 'line',
+                    xMin: yearFraction,
+                    xMax: yearFraction,
+                    borderColor: 'rgba(249, 115, 22, 0.5)', // Orange
+                    borderWidth: 2,
+                    borderDash: [5, 5],
+                    label: {
+                        display: true,
+                        content: '▼',
+                        position: 'start',
+                        color: '#f97316',
+                        font: {
+                            size: 12
+                        }
+                    }
+                };
+            }
+        });
+    });
+
+    return annotations;
 }
 
 // Show data list panel

@@ -1,0 +1,401 @@
+measure_id,measure_name,location_id,location_name,sex_id,sex_name,age_id,age_name,rei_id,rei_name,metric_id,metric_name,year,val,upper,lower
+29,Summary exposure value,184,Mozambique,3,Both,22,All ages,110,Dietary risks,3,Rate,2023,41.45427478208265,48.56655003804774,29.80641076135043
+29,Summary exposure value,184,Mozambique,3,Both,22,All ages,125,Low physical activity,3,Rate,2023,5.76530524571667,7.933938633496799,3.71714768358768
+29,Summary exposure value,184,Mozambique,3,Both,22,All ages,126,Occupational risks,3,Rate,2023,5.4950510882386405,10.686806724612879,3.85803916281681
+29,Summary exposure value,184,Mozambique,3,Both,22,All ages,135,Intimate partner violence,3,Rate,2023,19.96574986366212,27.135288375139172,10.96889356491797
+29,Summary exposure value,190,Uganda,3,Both,22,All ages,135,Intimate partner violence,3,Rate,2023,29.27504922190856,36.44912921339497,16.620770724705892
+29,Summary exposure value,179,Ethiopia,3,Both,22,All ages,85,Air pollution,3,Rate,2023,58.83475496378197,63.71343801057668,54.154826357581406
+29,Summary exposure value,179,Ethiopia,3,Both,22,All ages,89,Other environmental risks,3,Rate,2023,37.32587828064936,52.9048729766039,15.438727892905572
+29,Summary exposure value,179,Ethiopia,3,Both,22,All ages,92,Child and maternal malnutrition,3,Rate,2023,8.76484674107713,13.514901114625111,4.9363949730472
+29,Summary exposure value,179,Ethiopia,3,Both,22,All ages,98,Tobacco,3,Rate,2023,6.4960325718122105,7.69262365669858,5.52200337243123
+29,Summary exposure value,179,Ethiopia,3,Both,22,All ages,102,High alcohol use,3,Rate,2023,4.23414647807685,6.0302872316206795,2.68398246793582
+29,Summary exposure value,179,Ethiopia,3,Both,22,All ages,103,Drug use,3,Rate,2023,0.19219483033499,0.31170629311578,0.11916749764108
+29,Summary exposure value,179,Ethiopia,3,Both,22,All ages,104,Metabolic risks,3,Rate,2023,7.2816383917161,8.652741396275509,6.21195980657404
+29,Summary exposure value,179,Ethiopia,3,Both,22,All ages,110,Dietary risks,3,Rate,2023,44.92253030685112,51.59051379662125,27.91469876827138
+29,Summary exposure value,179,Ethiopia,3,Both,22,All ages,125,Low physical activity,3,Rate,2023,8.354476823001141,11.430461917184891,5.70841015140461
+29,Summary exposure value,179,Ethiopia,3,Both,22,All ages,126,Occupational risks,3,Rate,2023,3.5974061192091495,8.52883422169164,2.13198647070644
+29,Summary exposure value,179,Ethiopia,3,Both,22,All ages,135,Intimate partner violence,3,Rate,2023,18.24026610064093,24.86670780390329,10.84480085371922
+29,Summary exposure value,190,Uganda,3,Both,22,All ages,202,Environmental/occupational risks,3,Rate,2023,63.74409548346043,66.09360628492102,59.596166287202365
+29,Summary exposure value,190,Uganda,3,Both,22,All ages,203,Behavioral risks,3,Rate,2023,12.77544977508408,14.27322503391008,8.76937822580718
+29,Summary exposure value,190,Uganda,3,Both,22,All ages,331,Non-optimal temperature,3,Rate,2023,11.07830890937476,17.92725469123252,6.9719095353510605
+29,Summary exposure value,190,Uganda,3,Both,22,All ages,381,Childhood sexual abuse and bullying,3,Rate,2023,12.65600009209078,20.08215304279428,6.41560756579769
+29,Summary exposure value,179,Ethiopia,3,Both,22,All ages,202,Environmental/occupational risks,3,Rate,2023,61.11598766773205,63.04500704141801,57.56896033671097
+29,Summary exposure value,179,Ethiopia,3,Both,22,All ages,203,Behavioral risks,3,Rate,2023,12.68517088242103,14.44068787095438,8.78072297448776
+29,Summary exposure value,179,Ethiopia,3,Both,22,All ages,331,Non-optimal temperature,3,Rate,2023,15.79917562620165,20.38750556502713,13.46770924802421
+29,Summary exposure value,179,Ethiopia,3,Both,22,All ages,381,Childhood sexual abuse and bullying,3,Rate,2023,10.70257975896795,17.16861532660057,5.70163537269419
+29,Summary exposure value,184,Mozambique,3,Both,22,All ages,202,Environmental/occupational risks,3,Rate,2023,64.56237205155358,66.74922962128636,61.25750869314071
+29,Summary exposure value,184,Mozambique,3,Both,22,All ages,203,Behavioral risks,3,Rate,2023,13.10622992227766,14.834471395534198,9.55036073457474
+29,Summary exposure value,184,Mozambique,3,Both,22,All ages,331,Non-optimal temperature,3,Rate,2023,18.928565552674932,26.47658516285214,15.27372780965344
+29,Summary exposure value,184,Mozambique,3,Both,22,All ages,381,Childhood sexual abuse and bullying,3,Rate,2023,8.67073662578862,15.5323324573735,3.98121628610551
+29,Summary exposure value,15,Myanmar,3,Both,22,All ages,202,Environmental/occupational risks,3,Rate,2023,45.69725086318904,54.54585067215714,37.25040852248888
+29,Summary exposure value,15,Myanmar,3,Both,22,All ages,203,Behavioral risks,3,Rate,2023,16.46595638591537,18.61987238237035,13.30207474086407
+29,Summary exposure value,15,Myanmar,3,Both,22,All ages,331,Non-optimal temperature,3,Rate,2023,28.73934080370018,31.05749010576569,26.23624430373338
+29,Summary exposure value,184,Mozambique,3,Both,22,All ages,82,"Unsafe water, sanitation, and handwashing",3,Rate,2023,88.16071426969893,95.91540458487522,50.0
+29,Summary exposure value,184,Mozambique,3,Both,22,All ages,85,Air pollution,3,Rate,2023,57.48852593764441,62.87441281497147,52.31319287263156
+29,Summary exposure value,184,Mozambique,3,Both,22,All ages,89,Other environmental risks,3,Rate,2023,36.14722153294131,64.19105134922087,9.15376450022614
+29,Summary exposure value,184,Mozambique,3,Both,22,All ages,92,Child and maternal malnutrition,3,Rate,2023,7.78295332881806,12.45127220245982,4.33657055863715
+29,Summary exposure value,184,Mozambique,3,Both,22,All ages,98,Tobacco,3,Rate,2023,12.87212059277318,15.107851856890811,11.095299179845231
+29,Summary exposure value,184,Mozambique,3,Both,22,All ages,102,High alcohol use,3,Rate,2023,2.03990354524267,2.8978070699163703,1.28623180050395
+29,Summary exposure value,184,Mozambique,3,Both,22,All ages,103,Drug use,3,Rate,2023,0.22835068806490003,0.40262739081831,0.13054589117043
+29,Summary exposure value,184,Mozambique,3,Both,22,All ages,104,Metabolic risks,3,Rate,2023,11.79891416733928,13.57305327690309,10.22397386838573
+29,Summary exposure value,187,Somalia,3,Both,22,All ages,125,Low physical activity,3,Rate,2023,5.66570544652368,7.86220017745491,3.9001122748536003
+29,Summary exposure value,187,Somalia,3,Both,22,All ages,126,Occupational risks,3,Rate,2023,4.61256309901489,9.342396285501641,3.04094577366524
+29,Summary exposure value,187,Somalia,3,Both,22,All ages,135,Intimate partner violence,3,Rate,2023,8.77741522358585,20.16249880642744,3.3439392089772
+29,Summary exposure value,15,Myanmar,3,Both,22,All ages,381,Childhood sexual abuse and bullying,3,Rate,2023,9.59628578003333,20.41145191833746,3.92393146799652
+29,Summary exposure value,204,Chad,3,Both,22,All ages,82,"Unsafe water, sanitation, and handwashing",3,Rate,2023,90.8942992415998,97.79716629303525,50.0
+29,Summary exposure value,204,Chad,3,Both,22,All ages,85,Air pollution,3,Rate,2023,57.16972110473416,61.88153643491536,52.45282351437732
+29,Summary exposure value,204,Chad,3,Both,22,All ages,89,Other environmental risks,3,Rate,2023,43.239269717998305,76.80946509090835,15.43380687661981
+29,Summary exposure value,187,Somalia,3,Both,22,All ages,202,Environmental/occupational risks,3,Rate,2023,65.04459517184941,67.28758639917335,61.81275109237625
+29,Summary exposure value,187,Somalia,3,Both,22,All ages,203,Behavioral risks,3,Rate,2023,11.42497708153259,13.93906854621628,8.010188155555099
+29,Summary exposure value,187,Somalia,3,Both,22,All ages,331,Non-optimal temperature,3,Rate,2023,33.71357332443607,47.12397901439118,22.14236439281052
+29,Summary exposure value,187,Somalia,3,Both,22,All ages,381,Childhood sexual abuse and bullying,3,Rate,2023,10.199429777616729,20.34732531603131,4.52031566272601
+29,Summary exposure value,190,Uganda,3,Both,22,All ages,82,"Unsafe water, sanitation, and handwashing",3,Rate,2023,87.79319309873603,96.1941957454123,50.0
+29,Summary exposure value,190,Uganda,3,Both,22,All ages,85,Air pollution,3,Rate,2023,57.405200600029616,62.51199211341554,52.48242648392516
+29,Summary exposure value,190,Uganda,3,Both,22,All ages,89,Other environmental risks,3,Rate,2023,41.17911321698607,68.31044964174349,10.75946508386047
+29,Summary exposure value,190,Uganda,3,Both,22,All ages,92,Child and maternal malnutrition,3,Rate,2023,7.79598796866441,12.521889269241829,4.32186109407292
+29,Summary exposure value,190,Uganda,3,Both,22,All ages,98,Tobacco,3,Rate,2023,10.323642572535439,11.85772964513753,8.97119259601547
+29,Summary exposure value,190,Uganda,3,Both,22,All ages,102,High alcohol use,3,Rate,2023,3.65410964563032,4.96541494683247,2.47789119503713
+29,Summary exposure value,190,Uganda,3,Both,22,All ages,103,Drug use,3,Rate,2023,0.21566642547781997,0.37052472143407,0.12442910211892
+29,Summary exposure value,190,Uganda,3,Both,22,All ages,104,Metabolic risks,3,Rate,2023,10.54880750995385,12.07574879462263,9.01852801952271
+29,Summary exposure value,190,Uganda,3,Both,22,All ages,110,Dietary risks,3,Rate,2023,33.87886028266391,42.54641282327304,20.14222411101535
+29,Summary exposure value,190,Uganda,3,Both,22,All ages,125,Low physical activity,3,Rate,2023,5.8316881306596,8.36470167623027,3.93669953151566
+29,Summary exposure value,190,Uganda,3,Both,22,All ages,126,Occupational risks,3,Rate,2023,5.3005851785493805,10.377493127026579,3.63937272727203
+29,Summary exposure value,211,Mali,3,Both,22,All ages,126,Occupational risks,3,Rate,2023,4.11961765419292,9.0274336609393,2.68782271112112
+29,Summary exposure value,211,Mali,3,Both,22,All ages,135,Intimate partner violence,3,Rate,2023,24.94368949221866,39.56353231765999,11.98740535604562
+29,Summary exposure value,201,Burkina Faso,3,Both,22,All ages,82,"Unsafe water, sanitation, and handwashing",3,Rate,2023,90.19683920987312,97.37014857381072,49.999999999999986
+29,Summary exposure value,201,Burkina Faso,3,Both,22,All ages,85,Air pollution,3,Rate,2023,59.3480001205725,64.44471404091684,54.25039205068867
+29,Summary exposure value,201,Burkina Faso,3,Both,22,All ages,89,Other environmental risks,3,Rate,2023,45.26710736640865,77.2227745066983,13.143875380926731
+29,Summary exposure value,201,Burkina Faso,3,Both,22,All ages,92,Child and maternal malnutrition,3,Rate,2023,8.39529241642685,13.177438434039452,5.0643614365132
+29,Summary exposure value,201,Burkina Faso,3,Both,22,All ages,98,Tobacco,3,Rate,2023,13.56884211578614,15.81008853923148,11.72791195691077
+29,Summary exposure value,201,Burkina Faso,3,Both,22,All ages,102,High alcohol use,3,Rate,2023,2.00941986770487,2.87310332646237,1.31978990204121
+29,Summary exposure value,201,Burkina Faso,3,Both,22,All ages,103,Drug use,3,Rate,2023,0.22504914501637,0.3905916993326,0.12699671735895002
+29,Summary exposure value,201,Burkina Faso,3,Both,22,All ages,104,Metabolic risks,3,Rate,2023,9.82303141361291,11.51785051192779,8.35630733251437
+29,Summary exposure value,201,Burkina Faso,3,Both,22,All ages,110,Dietary risks,3,Rate,2023,45.71511151288759,52.47917468727847,29.65773750081098
+29,Summary exposure value,201,Burkina Faso,3,Both,22,All ages,125,Low physical activity,3,Rate,2023,6.63457578418815,8.98620327464961,4.46944472695611
+29,Summary exposure value,201,Burkina Faso,3,Both,22,All ages,126,Occupational risks,3,Rate,2023,4.30464258083647,8.89145937897358,2.79820892573506
+29,Summary exposure value,211,Mali,3,Both,22,All ages,202,Environmental/occupational risks,3,Rate,2023,66.81972951709373,68.79898967108981,63.01232254583668
+29,Summary exposure value,211,Mali,3,Both,22,All ages,203,Behavioral risks,3,Rate,2023,12.09922593617081,14.12696441790554,8.629880278775449
+29,Summary exposure value,211,Mali,3,Both,22,All ages,331,Non-optimal temperature,3,Rate,2023,64.71506825005126,71.05630681976156,57.57059550308824
+29,Summary exposure value,211,Mali,3,Both,22,All ages,381,Childhood sexual abuse and bullying,3,Rate,2023,12.15897150613188,23.36529715598828,5.415331059414339
+29,Summary exposure value,201,Burkina Faso,3,Both,22,All ages,135,Intimate partner violence,3,Rate,2023,10.58070172359324,15.52484104880048,5.745683353013209
+29,Summary exposure value,201,Burkina Faso,3,Both,22,All ages,202,Environmental/occupational risks,3,Rate,2023,65.74674836682873,67.68715454158304,61.84263536780288
+29,Summary exposure value,201,Burkina Faso,3,Both,22,All ages,203,Behavioral risks,3,Rate,2023,12.41719346153306,14.368868694030201,9.140947690382161
+29,Summary exposure value,201,Burkina Faso,3,Both,22,All ages,331,Non-optimal temperature,3,Rate,2023,55.7915379467205,61.728934821740125,49.77076070710582
+29,Summary exposure value,201,Burkina Faso,3,Both,22,All ages,381,Childhood sexual abuse and bullying,3,Rate,2023,11.29445771141033,20.27954260020324,5.61245604142845
+29,Summary exposure value,202,Cameroon,3,Both,22,All ages,82,"Unsafe water, sanitation, and handwashing",3,Rate,2023,80.76916965752102,92.12121232733604,47.28413646191465
+29,Summary exposure value,202,Cameroon,3,Both,22,All ages,85,Air pollution,3,Rate,2023,56.35600017733356,62.230565269420346,50.92467016278537
+29,Summary exposure value,202,Cameroon,3,Both,22,All ages,89,Other environmental risks,3,Rate,2023,52.9803848261359,89.73119585934599,13.67809660518183
+29,Summary exposure value,202,Cameroon,3,Both,22,All ages,92,Child and maternal malnutrition,3,Rate,2023,8.19048631099932,12.877719796755049,4.67457248117098
+29,Summary exposure value,202,Cameroon,3,Both,22,All ages,98,Tobacco,3,Rate,2023,8.8571335547737,10.37980836110779,7.642152845802171
+29,Summary exposure value,202,Cameroon,3,Both,22,All ages,102,High alcohol use,3,Rate,2023,4.31982226667237,5.72277957862069,2.94729079957806
+29,Summary exposure value,202,Cameroon,3,Both,22,All ages,103,Drug use,3,Rate,2023,0.26683916727889,0.46328230438558005,0.14356003567021
+29,Summary exposure value,202,Cameroon,3,Both,22,All ages,104,Metabolic risks,3,Rate,2023,21.74697719197527,24.21632989686513,19.40281156534406
+29,Summary exposure value,202,Cameroon,3,Both,22,All ages,110,Dietary risks,3,Rate,2023,28.640384719728512,36.45277859245958,18.93856906815119
+29,Summary exposure value,202,Cameroon,3,Both,22,All ages,125,Low physical activity,3,Rate,2023,12.48883397955997,16.90295006940073,8.85063259487643
+29,Summary exposure value,202,Cameroon,3,Both,22,All ages,126,Occupational risks,3,Rate,2023,5.3702882777627305,10.13200816804015,3.80136517460187
+29,Summary exposure value,202,Cameroon,3,Both,22,All ages,135,Intimate partner violence,3,Rate,2023,23.54206763974672,30.528224421069527,13.660206202749839
+29,Summary exposure value,202,Cameroon,3,Both,22,All ages,202,Environmental/occupational risks,3,Rate,2023,62.47667314885496,65.67651828324348,56.35872434014622
+29,Summary exposure value,202,Cameroon,3,Both,22,All ages,203,Behavioral risks,3,Rate,2023,12.52587598632578,14.08624594433238,9.025172496537651
+29,Summary exposure value,202,Cameroon,3,Both,22,All ages,331,Non-optimal temperature,3,Rate,2023,24.19041116373239,32.49772681001838,19.64099208077137
+29,Summary exposure value,202,Cameroon,3,Both,22,All ages,381,Childhood sexual abuse and bullying,3,Rate,2023,11.506107093476679,18.66696528919838,5.9892789501885
+29,Summary exposure value,213,Niger,3,Both,22,All ages,202,Environmental/occupational risks,3,Rate,2023,68.75395121415106,70.58560647737208,65.37294945799772
+29,Summary exposure value,213,Niger,3,Both,22,All ages,203,Behavioral risks,3,Rate,2023,11.1332304619107,13.46176645168901,7.753064353607391
+29,Summary exposure value,213,Niger,3,Both,22,All ages,331,Non-optimal temperature,3,Rate,2023,73.3589430296629,80.60599482408495,63.26743262371455
+29,Summary exposure value,213,Niger,3,Both,22,All ages,381,Childhood sexual abuse and bullying,3,Rate,2023,10.696748001813331,18.53935206188041,5.23067937892045
+29,Summary exposure value,214,Nigeria,3,Both,22,All ages,82,"Unsafe water, sanitation, and handwashing",3,Rate,2023,79.27964227541148,90.34277122620036,45.760398174590726
+29,Summary exposure value,214,Nigeria,3,Both,22,All ages,85,Air pollution,3,Rate,2023,51.788805813075264,57.92826448516648,46.37160372583291
+29,Summary exposure value,214,Nigeria,3,Both,22,All ages,89,Other environmental risks,3,Rate,2023,39.18245629083871,49.61047721665704,15.342076034191651
+29,Summary exposure value,214,Nigeria,3,Both,22,All ages,92,Child and maternal malnutrition,3,Rate,2023,9.12269622676144,14.41958252016676,5.21074156256409
+29,Summary exposure value,214,Nigeria,3,Both,22,All ages,98,Tobacco,3,Rate,2023,5.04656039380877,6.05863680641665,4.32919410563656
+29,Summary exposure value,214,Nigeria,3,Both,22,All ages,102,High alcohol use,3,Rate,2023,1.90858289565012,2.54012617228402,1.3078515862548599
+29,Summary exposure value,214,Nigeria,3,Both,22,All ages,103,Drug use,3,Rate,2023,0.18820282937934,0.31296012373558,0.11351814074475
+29,Summary exposure value,214,Nigeria,3,Both,22,All ages,104,Metabolic risks,3,Rate,2023,15.37793041530593,17.31397038811251,13.35800192284842
+29,Summary exposure value,214,Nigeria,3,Both,22,All ages,110,Dietary risks,3,Rate,2023,32.75672914208962,41.695102498406825,22.692829490033052
+29,Summary exposure value,214,Nigeria,3,Both,22,All ages,125,Low physical activity,3,Rate,2023,14.28959922389666,18.33735885432938,10.24335354829247
+29,Summary exposure value,214,Nigeria,3,Both,22,All ages,126,Occupational risks,3,Rate,2023,3.58436702864644,7.283984496010911,2.3698110087625404
+29,Summary exposure value,214,Nigeria,3,Both,22,All ages,135,Intimate partner violence,3,Rate,2023,13.60069604464978,19.04700449760517,7.39123525893233
+29,Summary exposure value,211,Mali,3,Both,22,All ages,82,"Unsafe water, sanitation, and handwashing",3,Rate,2023,88.2954671666359,96.1108733517824,49.999999999999986
+29,Summary exposure value,211,Mali,3,Both,22,All ages,85,Air pollution,3,Rate,2023,60.69661225815679,66.54939188978213,54.43007383564877
+29,Summary exposure value,211,Mali,3,Both,22,All ages,89,Other environmental risks,3,Rate,2023,45.47267217588139,74.76200358072025,14.02211215216273
+29,Summary exposure value,211,Mali,3,Both,22,All ages,92,Child and maternal malnutrition,3,Rate,2023,8.33181370944615,13.33321392604149,4.6658841873923
+29,Summary exposure value,211,Mali,3,Both,22,All ages,98,Tobacco,3,Rate,2023,15.741921415181901,18.18323082089008,13.74456326000011
+29,Summary exposure value,211,Mali,3,Both,22,All ages,102,High alcohol use,3,Rate,2023,0.35046879960714,0.57982145414777,0.17893490092279002
+29,Summary exposure value,211,Mali,3,Both,22,All ages,103,Drug use,3,Rate,2023,0.21182821147638,0.36355539581077,0.119917343671
+29,Summary exposure value,211,Mali,3,Both,22,All ages,104,Metabolic risks,3,Rate,2023,13.71978786122812,16.226905194822038,11.59734098142736
+29,Summary exposure value,211,Mali,3,Both,22,All ages,110,Dietary risks,3,Rate,2023,29.327851148790778,37.29065149412783,19.59979043815357
+29,Summary exposure value,211,Mali,3,Both,22,All ages,125,Low physical activity,3,Rate,2023,15.02023022405157,20.2538642255836,11.12472042940203
+29,Summary exposure value,214,Nigeria,3,Both,22,All ages,202,Environmental/occupational risks,3,Rate,2023,59.66928774372198,62.837897485603214,55.19274946284989
+29,Summary exposure value,214,Nigeria,3,Both,22,All ages,203,Behavioral risks,3,Rate,2023,11.4366741324036,13.469550332644731,7.449995311206389
+29,Summary exposure value,214,Nigeria,3,Both,22,All ages,331,Non-optimal temperature,3,Rate,2023,30.53692121199661,36.372512073581994,26.21639972135964
+29,Summary exposure value,214,Nigeria,3,Both,22,All ages,381,Childhood sexual abuse and bullying,3,Rate,2023,15.142635947078888,22.71533292017977,8.00607791305679
+29,Summary exposure value,435,South Sudan,3,Both,22,All ages,82,"Unsafe water, sanitation, and handwashing",3,Rate,2023,90.1792718232056,97.32263836596242,49.999999999999986
+29,Summary exposure value,435,South Sudan,3,Both,22,All ages,85,Air pollution,3,Rate,2023,61.08498813568802,66.21430450953915,56.16667527092366
+29,Summary exposure value,435,South Sudan,3,Both,22,All ages,89,Other environmental risks,3,Rate,2023,27.78325707066232,55.427466936642645,6.07813521828973
+29,Summary exposure value,63,Ukraine,3,Both,22,All ages,203,Behavioral risks,3,Rate,2023,21.15999924901421,23.7869138717763,17.72153347865699
+29,Summary exposure value,63,Ukraine,3,Both,22,All ages,331,Non-optimal temperature,3,Rate,2023,31.149168238063762,41.31934347880255,25.67647203682703
+29,Summary exposure value,63,Ukraine,3,Both,22,All ages,381,Childhood sexual abuse and bullying,3,Rate,2023,11.104304047247,23.74765794442478,4.39140064436744
+29,Summary exposure value,435,South Sudan,3,Both,22,All ages,92,Child and maternal malnutrition,3,Rate,2023,9.408101494455739,15.15040801273707,5.17918591535321
+29,Summary exposure value,435,South Sudan,3,Both,22,All ages,98,Tobacco,3,Rate,2023,9.649874370365739,11.47654702291079,8.15523091435233
+29,Summary exposure value,435,South Sudan,3,Both,22,All ages,102,High alcohol use,3,Rate,2023,2.3812325791646898,3.45461419247678,1.5019688253567098
+29,Summary exposure value,435,South Sudan,3,Both,22,All ages,103,Drug use,3,Rate,2023,0.18220507640591,0.30076122550551,0.10770330750272
+29,Summary exposure value,435,South Sudan,3,Both,22,All ages,104,Metabolic risks,3,Rate,2023,9.86938610999404,12.31449092798781,7.81771758770197
+29,Summary exposure value,435,South Sudan,3,Both,22,All ages,110,Dietary risks,3,Rate,2023,38.30584069205431,46.27061268368266,25.25061393201502
+29,Summary exposure value,125,Colombia,3,Both,22,All ages,82,"Unsafe water, sanitation, and handwashing",3,Rate,2023,8.11751202772524,11.58446562002922,4.8953855351051
+29,Summary exposure value,125,Colombia,3,Both,22,All ages,85,Air pollution,3,Rate,2023,21.99607343759305,27.60214656645625,16.37220021557134
+29,Summary exposure value,125,Colombia,3,Both,22,All ages,89,Other environmental risks,3,Rate,2023,35.69952391575702,57.38919926512358,9.64694512455595
+29,Summary exposure value,125,Colombia,3,Both,22,All ages,92,Child and maternal malnutrition,3,Rate,2023,7.205551326050109,13.012828777215772,2.70992220328244
+29,Summary exposure value,125,Colombia,3,Both,22,All ages,98,Tobacco,3,Rate,2023,10.83991400260646,12.69304950605544,9.34715474885218
+29,Summary exposure value,125,Colombia,3,Both,22,All ages,102,High alcohol use,3,Rate,2023,6.2595589221426495,8.351255214685779,4.1878156230670305
+29,Summary exposure value,125,Colombia,3,Both,22,All ages,103,Drug use,3,Rate,2023,0.39873677263081,0.55489683459461,0.30846620823148
+29,Summary exposure value,125,Colombia,3,Both,22,All ages,104,Metabolic risks,3,Rate,2023,27.19882385955017,29.24837069715946,25.30744247746373
+29,Summary exposure value,125,Colombia,3,Both,22,All ages,110,Dietary risks,3,Rate,2023,37.73697777737296,46.51338776102798,25.62227653494102
+29,Summary exposure value,125,Colombia,3,Both,22,All ages,125,Low physical activity,3,Rate,2023,31.61343975538563,38.56677671982075,25.994569113305747
+29,Summary exposure value,125,Colombia,3,Both,22,All ages,126,Occupational risks,3,Rate,2023,3.9041803649538,8.13952868578231,2.74752597397786
+29,Summary exposure value,125,Colombia,3,Both,22,All ages,135,Intimate partner violence,3,Rate,2023,20.53424426210316,33.19509407317509,10.67590877839061
+29,Summary exposure value,133,Venezuela (Bolivarian Republic of),3,Both,22,All ages,82,"Unsafe water, sanitation, and handwashing",3,Rate,2023,13.083276536130588,18.29765637031279,7.90558469588697
+29,Summary exposure value,133,Venezuela (Bolivarian Republic of),3,Both,22,All ages,85,Air pollution,3,Rate,2023,20.934092968031308,25.935828161080682,16.56494052233346
+29,Summary exposure value,63,Ukraine,3,Both,22,All ages,82,"Unsafe water, sanitation, and handwashing",3,Rate,2023,8.01600053793675,11.796212556410431,4.98829851869372
+29,Summary exposure value,63,Ukraine,3,Both,22,All ages,85,Air pollution,3,Rate,2023,18.50259627899769,23.565819111003318,14.21110048580376
+29,Summary exposure value,63,Ukraine,3,Both,22,All ages,89,Other environmental risks,3,Rate,2023,32.83146636470746,49.83930202991969,9.63545433532427
+29,Summary exposure value,63,Ukraine,3,Both,22,All ages,92,Child and maternal malnutrition,3,Rate,2023,7.709288953924109,13.676116135702209,3.10766257744771
+29,Summary exposure value,63,Ukraine,3,Both,22,All ages,98,Tobacco,3,Rate,2023,23.43188565000318,26.17219014095041,21.06817132937662
+29,Summary exposure value,63,Ukraine,3,Both,22,All ages,102,High alcohol use,3,Rate,2023,10.262833625342251,13.52221907925372,7.11124755697362
+29,Summary exposure value,63,Ukraine,3,Both,22,All ages,103,Drug use,3,Rate,2023,1.01238115416508,1.9257714416758598,0.45818132682856
+29,Summary exposure value,63,Ukraine,3,Both,22,All ages,104,Metabolic risks,3,Rate,2023,27.58789311025676,30.46999534653313,24.66902767397875
+29,Summary exposure value,63,Ukraine,3,Both,22,All ages,110,Dietary risks,3,Rate,2023,28.67612409201336,39.07618208196184,18.09583229779257
+29,Summary exposure value,63,Ukraine,3,Both,22,All ages,125,Low physical activity,3,Rate,2023,12.594399215678731,15.98167615744783,9.491479564055199
+29,Summary exposure value,63,Ukraine,3,Both,22,All ages,126,Occupational risks,3,Rate,2023,2.81660750910646,7.976816544607809,1.62992274994577
+29,Summary exposure value,153,Syrian Arab Republic,3,Both,22,All ages,82,"Unsafe water, sanitation, and handwashing",3,Rate,2023,10.057514060038319,14.511680530231269,5.95925719231385
+29,Summary exposure value,153,Syrian Arab Republic,3,Both,22,All ages,85,Air pollution,3,Rate,2023,31.66786874422393,39.26202028369582,25.63491093851201
+29,Summary exposure value,133,Venezuela (Bolivarian Republic of),3,Both,22,All ages,89,Other environmental risks,3,Rate,2023,55.93239610375447,80.9992062616506,12.47201708248389
+29,Summary exposure value,133,Venezuela (Bolivarian Republic of),3,Both,22,All ages,92,Child and maternal malnutrition,3,Rate,2023,8.14268567603523,14.77183246764655,3.30101458364807
+29,Summary exposure value,133,Venezuela (Bolivarian Republic of),3,Both,22,All ages,98,Tobacco,3,Rate,2023,13.31592194086081,16.41342753828123,11.142310144442751
+29,Summary exposure value,133,Venezuela (Bolivarian Republic of),3,Both,22,All ages,102,High alcohol use,3,Rate,2023,4.8564334020533995,6.93477702502453,2.92088477194978
+29,Summary exposure value,133,Venezuela (Bolivarian Republic of),3,Both,22,All ages,103,Drug use,3,Rate,2023,0.302096703139,0.54027758343944,0.15050290064915
+29,Summary exposure value,133,Venezuela (Bolivarian Republic of),3,Both,22,All ages,104,Metabolic risks,3,Rate,2023,34.71195860870681,39.66959703805101,29.739669531614787
+29,Summary exposure value,133,Venezuela (Bolivarian Republic of),3,Both,22,All ages,110,Dietary risks,3,Rate,2023,40.25797051120985,49.04370365556519,27.42081334748516
+29,Summary exposure value,133,Venezuela (Bolivarian Republic of),3,Both,22,All ages,125,Low physical activity,3,Rate,2023,14.18185251638468,18.972267107333497,9.97351916472798
+29,Summary exposure value,133,Venezuela (Bolivarian Republic of),3,Both,22,All ages,126,Occupational risks,3,Rate,2023,3.78392232549858,7.5697988920376105,2.61059019010592
+29,Summary exposure value,133,Venezuela (Bolivarian Republic of),3,Both,22,All ages,135,Intimate partner violence,3,Rate,2023,12.4740859034076,18.60803084041163,6.4106869119026
+29,Summary exposure value,133,Venezuela (Bolivarian Republic of),3,Both,22,All ages,202,Environmental/occupational risks,3,Rate,2023,23.8184477626304,28.813718679579903,15.40479316566718
+29,Summary exposure value,133,Venezuela (Bolivarian Republic of),3,Both,22,All ages,203,Behavioral risks,3,Rate,2023,15.06328867405794,17.60516280135531,11.273824662868979
+29,Summary exposure value,133,Venezuela (Bolivarian Republic of),3,Both,22,All ages,331,Non-optimal temperature,3,Rate,2023,15.912214180442719,20.74622780692268,12.88899294077169
+29,Summary exposure value,435,South Sudan,3,Both,22,All ages,125,Low physical activity,3,Rate,2023,6.1051457780827505,8.93523659051282,4.03080375083117
+29,Summary exposure value,435,South Sudan,3,Both,22,All ages,126,Occupational risks,3,Rate,2023,4.1917987151064295,9.34695603682112,2.55786814055544
+29,Summary exposure value,435,South Sudan,3,Both,22,All ages,135,Intimate partner violence,3,Rate,2023,23.4805857609104,51.38611751857079,6.9482100038561105
+29,Summary exposure value,435,South Sudan,3,Both,22,All ages,202,Environmental/occupational risks,3,Rate,2023,61.50478468734363,63.47504297719422,58.16966109087991
+29,Summary exposure value,435,South Sudan,3,Both,22,All ages,203,Behavioral risks,3,Rate,2023,12.750339059204721,14.728857464420301,8.8050620138702
+29,Summary exposure value,435,South Sudan,3,Both,22,All ages,331,Non-optimal temperature,3,Rate,2023,51.887895867243905,57.488924231219805,46.14079595478207
+29,Summary exposure value,435,South Sudan,3,Both,22,All ages,381,Childhood sexual abuse and bullying,3,Rate,2023,11.3336075708248,22.53420666889022,4.9562047813183305
+29,Summary exposure value,63,Ukraine,3,Both,22,All ages,135,Intimate partner violence,3,Rate,2023,12.01376720531141,18.19884467296859,6.09781253325466
+29,Summary exposure value,63,Ukraine,3,Both,22,All ages,202,Environmental/occupational risks,3,Rate,2023,24.50734895469318,30.57563349123441,16.82243302267009
+29,Summary exposure value,153,Syrian Arab Republic,3,Both,22,All ages,89,Other environmental risks,3,Rate,2023,34.28802741787241,51.68236832773704,12.02572750944495
+29,Summary exposure value,153,Syrian Arab Republic,3,Both,22,All ages,92,Child and maternal malnutrition,3,Rate,2023,8.270425821081389,15.2156160325773,3.27382982670231
+29,Summary exposure value,153,Syrian Arab Republic,3,Both,22,All ages,98,Tobacco,3,Rate,2023,25.72427891967272,29.40048065916594,22.75602497917181
+29,Summary exposure value,153,Syrian Arab Republic,3,Both,22,All ages,102,High alcohol use,3,Rate,2023,0.11800103756229,0.21881203238212,0.03486331751756
+29,Summary exposure value,153,Syrian Arab Republic,3,Both,22,All ages,103,Drug use,3,Rate,2023,0.57336932543655,1.15519835495136,0.20653907423189002
+29,Summary exposure value,153,Syrian Arab Republic,3,Both,22,All ages,104,Metabolic risks,3,Rate,2023,37.76206546600645,41.88983249658619,33.58263847585238
+29,Summary exposure value,153,Syrian Arab Republic,3,Both,22,All ages,110,Dietary risks,3,Rate,2023,28.93653894329402,37.02277691429247,17.23814851142374
+29,Summary exposure value,153,Syrian Arab Republic,3,Both,22,All ages,125,Low physical activity,3,Rate,2023,30.72690129890306,36.990033619033255,24.69708846699083
+29,Summary exposure value,153,Syrian Arab Republic,3,Both,22,All ages,126,Occupational risks,3,Rate,2023,2.5521000346688303,5.36758294178009,1.75278515002504
+29,Summary exposure value,153,Syrian Arab Republic,3,Both,22,All ages,135,Intimate partner violence,3,Rate,2023,15.34944912816883,38.7601202310339,4.10999134007099
+29,Summary exposure value,153,Syrian Arab Republic,3,Both,22,All ages,202,Environmental/occupational risks,3,Rate,2023,29.11709672274539,37.54476371268866,23.0886155163792
+29,Summary exposure value,153,Syrian Arab Republic,3,Both,22,All ages,203,Behavioral risks,3,Rate,2023,15.99308210242619,18.67085244808689,11.89967935466964
+29,Summary exposure value,153,Syrian Arab Republic,3,Both,22,All ages,331,Non-optimal temperature,3,Rate,2023,39.05315767411241,43.6990159503363,34.55529137550571
+29,Summary exposure value,157,Yemen,3,Both,22,All ages,85,Air pollution,3,Rate,2023,53.279567281138775,60.119229693494226,47.50821253373477
+29,Summary exposure value,146,Lebanon,3,Both,22,All ages,82,"Unsafe water, sanitation, and handwashing",3,Rate,2023,7.4662309757394505,11.241732884286321,4.343864652274751
+29,Summary exposure value,146,Lebanon,3,Both,22,All ages,85,Air pollution,3,Rate,2023,30.75020373323976,39.37895326403795,23.02131227668916
+29,Summary exposure value,146,Lebanon,3,Both,22,All ages,89,Other environmental risks,3,Rate,2023,34.64203378198155,53.8659959170799,7.269628519365059
+29,Summary exposure value,146,Lebanon,3,Both,22,All ages,92,Child and maternal malnutrition,3,Rate,2023,7.85827879462093,13.565369022341889,3.37993826840305
+29,Summary exposure value,146,Lebanon,3,Both,22,All ages,98,Tobacco,3,Rate,2023,33.48020103963401,37.08837269435223,30.18874645890106
+29,Summary exposure value,146,Lebanon,3,Both,22,All ages,102,High alcohol use,3,Rate,2023,2.27747210157474,3.19873410298349,1.5745781124255902
+29,Summary exposure value,146,Lebanon,3,Both,22,All ages,103,Drug use,3,Rate,2023,0.89803884613287,1.7672782450487101,0.32171838375538
+29,Summary exposure value,146,Lebanon,3,Both,22,All ages,104,Metabolic risks,3,Rate,2023,35.18287496571011,39.64587814752219,30.947446479522476
+29,Summary exposure value,146,Lebanon,3,Both,22,All ages,110,Dietary risks,3,Rate,2023,26.25268930646475,33.822858435022056,16.97083623189904
+29,Summary exposure value,146,Lebanon,3,Both,22,All ages,125,Low physical activity,3,Rate,2023,33.89840559210993,40.82276297535593,26.570967431413113
+29,Summary exposure value,146,Lebanon,3,Both,22,All ages,126,Occupational risks,3,Rate,2023,2.97035500790475,6.139298791517049,2.08612139953699
+29,Summary exposure value,157,Yemen,3,Both,22,All ages,89,Other environmental risks,3,Rate,2023,44.65572383859046,71.97180953071177,14.207613877551209
+29,Summary exposure value,157,Yemen,3,Both,22,All ages,92,Child and maternal malnutrition,3,Rate,2023,8.73068159762213,14.836261323378691,4.693030103261131
+29,Summary exposure value,157,Yemen,3,Both,22,All ages,98,Tobacco,3,Rate,2023,25.88949024408197,29.79892819081369,22.64424659543276
+29,Summary exposure value,157,Yemen,3,Both,22,All ages,102,High alcohol use,3,Rate,2023,0.03408514296447,0.059940469386920006,0.008910424218282306
+29,Summary exposure value,157,Yemen,3,Both,22,All ages,103,Drug use,3,Rate,2023,0.53936510955588,1.1205283525874399,0.20460469814327
+29,Summary exposure value,157,Yemen,3,Both,22,All ages,104,Metabolic risks,3,Rate,2023,13.74651260032265,15.74611663400996,11.80049087561344
+29,Summary exposure value,157,Yemen,3,Both,22,All ages,110,Dietary risks,3,Rate,2023,40.47044490858839,48.31002305834886,25.621560376081497
+29,Summary exposure value,157,Yemen,3,Both,22,All ages,125,Low physical activity,3,Rate,2023,23.04491602698833,28.759625151264228,17.505687366382368
+29,Summary exposure value,157,Yemen,3,Both,22,All ages,126,Occupational risks,3,Rate,2023,2.31201438335343,4.60761429193057,1.59288328741207
+29,Summary exposure value,157,Yemen,3,Both,22,All ages,135,Intimate partner violence,3,Rate,2023,16.21542120334409,40.39509649177532,4.02490507027028
+29,Summary exposure value,157,Yemen,3,Both,22,All ages,202,Environmental/occupational risks,3,Rate,2023,54.63015550544438,61.32480176725669,47.10980576382476
+29,Summary exposure value,157,Yemen,3,Both,22,All ages,203,Behavioral risks,3,Rate,2023,15.30736092126751,17.53067684381912,12.18448935067832
+29,Summary exposure value,157,Yemen,3,Both,22,All ages,331,Non-optimal temperature,3,Rate,2023,33.53718371055433,37.36296127514619,29.048623871956192
+29,Summary exposure value,153,Syrian Arab Republic,3,Both,22,All ages,381,Childhood sexual abuse and bullying,3,Rate,2023,10.33106425571787,21.911671719913038,4.17345222609665
+29,Summary exposure value,157,Yemen,3,Both,22,All ages,381,Childhood sexual abuse and bullying,3,Rate,2023,9.7583669521719,19.854690608817098,4.21666894569893
+29,Summary exposure value,161,Bangladesh,3,Both,22,All ages,102,High alcohol use,3,Rate,2023,0.11875539332187,0.17416322704476,0.06662765224742
+29,Summary exposure value,161,Bangladesh,3,Both,22,All ages,103,Drug use,3,Rate,2023,0.31301805666579996,0.64254354144523,0.09464320610864001
+29,Summary exposure value,161,Bangladesh,3,Both,22,All ages,104,Metabolic risks,3,Rate,2023,12.66307144448953,14.45703527552473,10.91196331764588
+29,Summary exposure value,161,Bangladesh,3,Both,22,All ages,110,Dietary risks,3,Rate,2023,43.108890909518784,52.11866806890579,25.3489179997682
+29,Summary exposure value,161,Bangladesh,3,Both,22,All ages,125,Low physical activity,3,Rate,2023,15.1342338848788,19.69249818851285,11.1702432343028
+29,Summary exposure value,161,Bangladesh,3,Both,22,All ages,126,Occupational risks,3,Rate,2023,3.82826328445069,7.751557403606971,2.57733346074824
+29,Summary exposure value,161,Bangladesh,3,Both,22,All ages,135,Intimate partner violence,3,Rate,2023,30.004447068391173,44.93948814484996,15.15994146369388
+29,Summary exposure value,161,Bangladesh,3,Both,22,All ages,202,Environmental/occupational risks,3,Rate,2023,53.3470654718746,58.51773052344809,45.60122174303437
+29,Summary exposure value,161,Bangladesh,3,Both,22,All ages,203,Behavioral risks,3,Rate,2023,16.222780198384832,18.036478109359138,12.436578247637641
+29,Summary exposure value,161,Bangladesh,3,Both,22,All ages,331,Non-optimal temperature,3,Rate,2023,33.04316968495865,35.9351529838763,29.35881552696759
+29,Summary exposure value,114,Haiti,3,Both,22,All ages,89,Other environmental risks,3,Rate,2023,44.21532218633645,69.25244628674785,11.49594804412403
+29,Summary exposure value,114,Haiti,3,Both,22,All ages,92,Child and maternal malnutrition,3,Rate,2023,7.83312449659424,13.34598667495905,3.77082163316813
+29,Summary exposure value,114,Haiti,3,Both,22,All ages,98,Tobacco,3,Rate,2023,10.09630026961037,11.865331276080319,8.67347088471926
+29,Summary exposure value,114,Haiti,3,Both,22,All ages,102,High alcohol use,3,Rate,2023,7.059568641165869,9.8429484198307,4.977714023861219
+29,Summary exposure value,114,Haiti,3,Both,22,All ages,103,Drug use,3,Rate,2023,0.32977269724892,0.44317990100558996,0.24344154177493002
+29,Summary exposure value,114,Haiti,3,Both,22,All ages,104,Metabolic risks,3,Rate,2023,14.03937360342025,16.607134537026642,11.6355251121892
+29,Summary exposure value,171,Democratic Republic of the Congo,3,Both,22,All ages,82,"Unsafe water, sanitation, and handwashing",3,Rate,2023,80.29297984293959,92.16902920678697,45.248382596374185
+29,Summary exposure value,171,Democratic Republic of the Congo,3,Both,22,All ages,85,Air pollution,3,Rate,2023,61.1423879123992,66.57634311267142,55.65864468125059
+29,Summary exposure value,171,Democratic Republic of the Congo,3,Both,22,All ages,89,Other environmental risks,3,Rate,2023,50.122871955100365,76.57077605032964,15.23159080941382
+29,Summary exposure value,171,Democratic Republic of the Congo,3,Both,22,All ages,92,Child and maternal malnutrition,3,Rate,2023,8.900968330988709,13.915365818487471,5.50689546392439
+29,Summary exposure value,171,Democratic Republic of the Congo,3,Both,22,All ages,98,Tobacco,3,Rate,2023,12.40881124269811,14.592323247824298,10.66816655703248
+29,Summary exposure value,171,Democratic Republic of the Congo,3,Both,22,All ages,102,High alcohol use,3,Rate,2023,2.6151827997879797,3.6768192629291603,1.68494658649798
+29,Summary exposure value,171,Democratic Republic of the Congo,3,Both,22,All ages,103,Drug use,3,Rate,2023,0.23773499926778002,0.40640491388634004,0.14020668798633001
+29,Summary exposure value,171,Democratic Republic of the Congo,3,Both,22,All ages,104,Metabolic risks,3,Rate,2023,16.5416905049753,19.48066045433628,13.92870429832336
+29,Summary exposure value,171,Democratic Republic of the Congo,3,Both,22,All ages,110,Dietary risks,3,Rate,2023,38.72896058117223,46.3876316402459,25.07319447938905
+29,Summary exposure value,171,Democratic Republic of the Congo,3,Both,22,All ages,125,Low physical activity,3,Rate,2023,14.884129342394559,19.76247428883082,10.71162707917658
+29,Summary exposure value,171,Democratic Republic of the Congo,3,Both,22,All ages,126,Occupational risks,3,Rate,2023,3.60126952943765,8.018161588160599,2.32355716536365
+29,Summary exposure value,171,Democratic Republic of the Congo,3,Both,22,All ages,135,Intimate partner violence,3,Rate,2023,29.9186892605115,38.48672649098427,18.67372691884873
+29,Summary exposure value,522,Sudan,3,Both,22,All ages,110,Dietary risks,3,Rate,2023,28.52232205400529,35.39250005802005,19.67078624873362
+29,Summary exposure value,522,Sudan,3,Both,22,All ages,125,Low physical activity,3,Rate,2023,59.78207004870802,64.34736373893357,54.91457954483797
+29,Summary exposure value,522,Sudan,3,Both,22,All ages,126,Occupational risks,3,Rate,2023,2.92903698277131,6.4802585008480795,1.9991007962822298
+29,Summary exposure value,522,Sudan,3,Both,22,All ages,135,Intimate partner violence,3,Rate,2023,27.16148113975212,45.79615199969722,12.15028152837546
+29,Summary exposure value,522,Sudan,3,Both,22,All ages,202,Environmental/occupational risks,3,Rate,2023,45.44679374231297,53.88894493620803,36.19106136142245
+29,Summary exposure value,522,Sudan,3,Both,22,All ages,203,Behavioral risks,3,Rate,2023,12.17786924558276,14.3324246401382,8.30656560446195
+29,Summary exposure value,522,Sudan,3,Both,22,All ages,331,Non-optimal temperature,3,Rate,2023,77.98473448974875,89.50640546800597,63.52293617762217
+29,Summary exposure value,522,Sudan,3,Both,22,All ages,381,Childhood sexual abuse and bullying,3,Rate,2023,9.67015036379386,20.26045287844109,3.96330516787431
+29,Summary exposure value,161,Bangladesh,3,Both,22,All ages,381,Childhood sexual abuse and bullying,3,Rate,2023,11.670916472310399,18.24095412828484,6.702599507377551
+29,Summary exposure value,165,Pakistan,3,Both,22,All ages,125,Low physical activity,3,Rate,2023,16.12909737278605,20.6011142656516,12.25721554372861
+29,Summary exposure value,165,Pakistan,3,Both,22,All ages,126,Occupational risks,3,Rate,2023,3.51597190680654,7.15899444041187,2.43615677367859
+29,Summary exposure value,165,Pakistan,3,Both,22,All ages,135,Intimate partner violence,3,Rate,2023,14.2723549626013,19.45683762293638,7.57357564886184
+29,Summary exposure value,165,Pakistan,3,Both,22,All ages,202,Environmental/occupational risks,3,Rate,2023,52.336153481421356,58.660142814724956,44.78468441549605
+29,Summary exposure value,165,Pakistan,3,Both,22,All ages,203,Behavioral risks,3,Rate,2023,14.20572575588466,16.971589555372173,11.22986988365739
+29,Summary exposure value,165,Pakistan,3,Both,22,All ages,331,Non-optimal temperature,3,Rate,2023,64.33067504067319,70.41316127372288,56.450759038789236
+29,Summary exposure value,114,Haiti,3,Both,22,All ages,110,Dietary risks,3,Rate,2023,39.2724460744929,47.46758436248579,27.89771140365668
+29,Summary exposure value,114,Haiti,3,Both,22,All ages,125,Low physical activity,3,Rate,2023,14.99058161186338,20.384855747909842,10.581909396659
+29,Summary exposure value,114,Haiti,3,Both,22,All ages,126,Occupational risks,3,Rate,2023,3.6757118079844995,7.56032559671206,2.4270751636967103
+29,Summary exposure value,114,Haiti,3,Both,22,All ages,135,Intimate partner violence,3,Rate,2023,14.29190937020423,19.695255349109768,8.28118349436569
+29,Summary exposure value,114,Haiti,3,Both,22,All ages,202,Environmental/occupational risks,3,Rate,2023,57.60283260433772,60.88028780508873,52.549312847567684
+29,Summary exposure value,114,Haiti,3,Both,22,All ages,203,Behavioral risks,3,Rate,2023,15.337001894866232,18.552217456643742,12.40635900567015
+29,Summary exposure value,114,Haiti,3,Both,22,All ages,331,Non-optimal temperature,3,Rate,2023,13.85214925865203,19.406921214998878,10.201482617784501
+29,Summary exposure value,114,Haiti,3,Both,22,All ages,381,Childhood sexual abuse and bullying,3,Rate,2023,16.88138117506493,25.69738615606217,9.919758141080411
+29,Summary exposure value,165,Pakistan,3,Both,22,All ages,381,Childhood sexual abuse and bullying,3,Rate,2023,10.7742563300919,21.68552283549942,4.55552231286831
+29,Summary exposure value,169,Central African Republic,3,Both,22,All ages,202,Environmental/occupational risks,3,Rate,2023,65.13115346050662,67.21216607387623,61.239313403213536
+29,Summary exposure value,169,Central African Republic,3,Both,22,All ages,203,Behavioral risks,3,Rate,2023,12.67546638397962,14.422431919131121,9.03150503676369
+29,Summary exposure value,169,Central African Republic,3,Both,22,All ages,331,Non-optimal temperature,3,Rate,2023,26.892317873301767,43.84197414658279,16.547910833387718
+29,Summary exposure value,169,Central African Republic,3,Both,22,All ages,381,Childhood sexual abuse and bullying,3,Rate,2023,9.81133955547298,18.71611473506614,4.53073607851564
+29,Summary exposure value,114,Haiti,3,Both,22,All ages,82,"Unsafe water, sanitation, and handwashing",3,Rate,2023,81.00490230103027,91.44653939792532,50.0
+29,Summary exposure value,114,Haiti,3,Both,22,All ages,85,Air pollution,3,Rate,2023,59.75160091989969,65.59396934953593,53.76484081143013
+29,Summary exposure value,522,Sudan,3,Both,22,All ages,82,"Unsafe water, sanitation, and handwashing",3,Rate,2023,32.97320891133576,45.32371007344867,22.52883322204883
+29,Summary exposure value,522,Sudan,3,Both,22,All ages,85,Air pollution,3,Rate,2023,37.9005490898231,42.56491629662822,33.01427323615331
+29,Summary exposure value,522,Sudan,3,Both,22,All ages,89,Other environmental risks,3,Rate,2023,43.86856285037622,67.20526803105112,10.28243946560556
+29,Summary exposure value,522,Sudan,3,Both,22,All ages,92,Child and maternal malnutrition,3,Rate,2023,9.09296572758685,15.45429703862273,4.42897304205779
+29,Summary exposure value,522,Sudan,3,Both,22,All ages,98,Tobacco,3,Rate,2023,12.46979559883015,14.56524629233191,10.919142305251329
+29,Summary exposure value,522,Sudan,3,Both,22,All ages,102,High alcohol use,3,Rate,2023,0.09209034985193,0.16236097447371,0.0424983843977
+29,Summary exposure value,522,Sudan,3,Both,22,All ages,103,Drug use,3,Rate,2023,0.62654415282862,1.2986662879451298,0.22674160035473
+29,Summary exposure value,522,Sudan,3,Both,22,All ages,104,Metabolic risks,3,Rate,2023,18.898039193780498,21.05100966024829,16.58211070009708
+29,Summary exposure value,179,Ethiopia,3,Both,22,All ages,82,"Unsafe water, sanitation, and handwashing",3,Rate,2023,90.00297907305624,96.96568310716228,48.8235179171279
+29,Summary exposure value,15,Myanmar,3,Both,22,All ages,82,"Unsafe water, sanitation, and handwashing",3,Rate,2023,40.66768780658731,55.477336355086784,26.53112091876591
+29,Summary exposure value,15,Myanmar,3,Both,22,All ages,85,Air pollution,3,Rate,2023,57.39331706223435,64.04598589551317,50.41121754295401
+29,Summary exposure value,15,Myanmar,3,Both,22,All ages,89,Other environmental risks,3,Rate,2023,41.68846090923551,59.420241802815646,8.08946707845436
+29,Summary exposure value,15,Myanmar,3,Both,22,All ages,92,Child and maternal malnutrition,3,Rate,2023,8.46899265823203,14.333774075920719,4.05272004531353
+29,Summary exposure value,15,Myanmar,3,Both,22,All ages,98,Tobacco,3,Rate,2023,23.69465562096868,26.793112858181217,21.1839094961658
+29,Summary exposure value,15,Myanmar,3,Both,22,All ages,102,High alcohol use,3,Rate,2023,1.5801530479919699,2.26863005306009,1.0378283176896799
+29,Summary exposure value,15,Myanmar,3,Both,22,All ages,103,Drug use,3,Rate,2023,0.23812817967522998,0.39431186671273,0.13196759319176
+29,Summary exposure value,15,Myanmar,3,Both,22,All ages,104,Metabolic risks,3,Rate,2023,11.585021306636701,13.59962950164496,9.917873102405709
+29,Summary exposure value,15,Myanmar,3,Both,22,All ages,110,Dietary risks,3,Rate,2023,39.96841923523886,48.02564981023859,27.6940852505846
+29,Summary exposure value,15,Myanmar,3,Both,22,All ages,125,Low physical activity,3,Rate,2023,5.390584453624999,7.48620337260313,3.57987897828231
+29,Summary exposure value,15,Myanmar,3,Both,22,All ages,126,Occupational risks,3,Rate,2023,3.98713270785002,8.64777449508463,2.57103726466977
+29,Summary exposure value,15,Myanmar,3,Both,22,All ages,135,Intimate partner violence,3,Rate,2023,13.98936163160319,27.84529473097288,6.65175982603642
+29,Summary exposure value,125,Colombia,3,Both,22,All ages,202,Environmental/occupational risks,3,Rate,2023,21.81027434655124,26.69564814688965,16.2073789306037
+29,Summary exposure value,125,Colombia,3,Both,22,All ages,203,Behavioral risks,3,Rate,2023,15.00504951373349,17.18422265480053,11.70695042396063
+29,Summary exposure value,125,Colombia,3,Both,22,All ages,331,Non-optimal temperature,3,Rate,2023,16.11216393368029,20.64856501939017,13.78443319725388
+29,Summary exposure value,125,Colombia,3,Both,22,All ages,381,Childhood sexual abuse and bullying,3,Rate,2023,13.63668926995075,24.89929347584373,6.34334006477609
+29,Summary exposure value,187,Somalia,3,Both,22,All ages,82,"Unsafe water, sanitation, and handwashing",3,Rate,2023,86.56540541380416,94.79552614482401,49.999999999999986
+29,Summary exposure value,187,Somalia,3,Both,22,All ages,85,Air pollution,3,Rate,2023,58.998258705663595,63.9939162664303,53.742190552466404
+29,Summary exposure value,187,Somalia,3,Both,22,All ages,89,Other environmental risks,3,Rate,2023,41.68313233411211,74.1907677583489,9.309778617081859
+29,Summary exposure value,187,Somalia,3,Both,22,All ages,92,Child and maternal malnutrition,3,Rate,2023,8.53465468171431,13.89990416828237,4.56007745376559
+29,Summary exposure value,187,Somalia,3,Both,22,All ages,98,Tobacco,3,Rate,2023,12.98669812458092,15.279354082457012,11.15574898604288
+29,Summary exposure value,187,Somalia,3,Both,22,All ages,102,High alcohol use,3,Rate,2023,0.12427493806036001,0.19689528519222,0.06725291242891
+29,Summary exposure value,187,Somalia,3,Both,22,All ages,103,Drug use,3,Rate,2023,0.18319436058558,0.30128840865348,0.11495519095979
+29,Summary exposure value,187,Somalia,3,Both,22,All ages,104,Metabolic risks,3,Rate,2023,9.07650624558477,10.926007064949921,7.497860671832971
+29,Summary exposure value,187,Somalia,3,Both,22,All ages,110,Dietary risks,3,Rate,2023,44.22959669099675,51.523190677148165,28.68470634279899
+29,Summary exposure value,133,Venezuela (Bolivarian Republic of),3,Both,22,All ages,381,Childhood sexual abuse and bullying,3,Rate,2023,12.962702604072609,26.16514131662435,5.84806528276952
+29,Summary exposure value,204,Chad,3,Both,22,All ages,92,Child and maternal malnutrition,3,Rate,2023,10.06132151312013,15.583802876880021,6.003699676797581
+29,Summary exposure value,204,Chad,3,Both,22,All ages,98,Tobacco,3,Rate,2023,12.302037990132519,14.57649005904348,10.4637132139935
+29,Summary exposure value,204,Chad,3,Both,22,All ages,102,High alcohol use,3,Rate,2023,2.73713215631136,3.8750557449160796,1.78295372827579
+29,Summary exposure value,204,Chad,3,Both,22,All ages,103,Drug use,3,Rate,2023,0.20825492150165,0.34711874057852,0.11721640996853999
+29,Summary exposure value,204,Chad,3,Both,22,All ages,104,Metabolic risks,3,Rate,2023,11.49709213216261,13.37351983501341,9.6511972936313
+29,Summary exposure value,204,Chad,3,Both,22,All ages,110,Dietary risks,3,Rate,2023,49.96090424170483,56.894248975015536,37.38747480027324
+29,Summary exposure value,204,Chad,3,Both,22,All ages,125,Low physical activity,3,Rate,2023,9.248164220304309,13.13509382134955,6.51327760896003
+29,Summary exposure value,204,Chad,3,Both,22,All ages,126,Occupational risks,3,Rate,2023,3.6965508483746,7.804992729399141,2.43935441797006
+29,Summary exposure value,204,Chad,3,Both,22,All ages,135,Intimate partner violence,3,Rate,2023,19.59124309351529,26.37380740646742,11.18911532622454
+29,Summary exposure value,157,Yemen,3,Both,22,All ages,82,"Unsafe water, sanitation, and handwashing",3,Rate,2023,53.58351764773302,68.97892754798175,35.02359107089976
+29,Summary exposure value,160,Afghanistan,3,Both,22,All ages,98,Tobacco,3,Rate,2023,15.51981801475463,17.85333502123574,13.600263348462269
+29,Summary exposure value,160,Afghanistan,3,Both,22,All ages,102,High alcohol use,3,Rate,2023,0.010988004984209999,0.01811684903487,0.005361870312801478
+29,Summary exposure value,160,Afghanistan,3,Both,22,All ages,103,Drug use,3,Rate,2023,0.87319666001077,1.8380535179574002,0.28525793549853
+29,Summary exposure value,160,Afghanistan,3,Both,22,All ages,104,Metabolic risks,3,Rate,2023,18.10411600448119,20.32228866222016,15.6068624492082
+29,Summary exposure value,160,Afghanistan,3,Both,22,All ages,110,Dietary risks,3,Rate,2023,38.34386878468492,46.95515120346389,21.68832387566669
+29,Summary exposure value,160,Afghanistan,3,Both,22,All ages,125,Low physical activity,3,Rate,2023,25.75938550989883,33.04679069693411,19.214113177007892
+29,Summary exposure value,160,Afghanistan,3,Both,22,All ages,126,Occupational risks,3,Rate,2023,2.8268611810752997,6.06124944189526,1.8128762847192
+29,Summary exposure value,160,Afghanistan,3,Both,22,All ages,135,Intimate partner violence,3,Rate,2023,26.41341976023119,32.464706118743706,15.840662201173389
+29,Summary exposure value,160,Afghanistan,3,Both,22,All ages,202,Environmental/occupational risks,3,Rate,2023,63.55917083371262,66.6168772015444,57.61283733211038
+29,Summary exposure value,160,Afghanistan,3,Both,22,All ages,203,Behavioral risks,3,Rate,2023,11.82353312591509,13.896327684669979,8.447653459634159
+29,Summary exposure value,160,Afghanistan,3,Both,22,All ages,331,Non-optimal temperature,3,Rate,2023,38.22082288258875,43.03172872550987,34.571688567837725
+29,Summary exposure value,146,Lebanon,3,Both,22,All ages,135,Intimate partner violence,3,Rate,2023,5.54046099148479,14.09720797334692,1.54501667715172
+29,Summary exposure value,146,Lebanon,3,Both,22,All ages,202,Environmental/occupational risks,3,Rate,2023,26.98640370946126,34.86685071620994,21.47325319544255
+29,Summary exposure value,146,Lebanon,3,Both,22,All ages,203,Behavioral risks,3,Rate,2023,19.297015541829428,22.03418643898248,16.67173222002436
+29,Summary exposure value,146,Lebanon,3,Both,22,All ages,331,Non-optimal temperature,3,Rate,2023,21.96447827946425,23.71354450419953,19.87897356888643
+29,Summary exposure value,146,Lebanon,3,Both,22,All ages,381,Childhood sexual abuse and bullying,3,Rate,2023,9.86256247174256,21.383511535118473,3.96972764381128
+29,Summary exposure value,204,Chad,3,Both,22,All ages,202,Environmental/occupational risks,3,Rate,2023,68.49108860032506,70.20655037802153,65.26507234902064
+29,Summary exposure value,204,Chad,3,Both,22,All ages,203,Behavioral risks,3,Rate,2023,12.61067253969483,14.6328599656325,9.11596638734879
+29,Summary exposure value,204,Chad,3,Both,22,All ages,331,Non-optimal temperature,3,Rate,2023,59.739150556701446,64.49250184211849,51.88395618099162
+29,Summary exposure value,204,Chad,3,Both,22,All ages,381,Childhood sexual abuse and bullying,3,Rate,2023,11.84310513385065,22.39644625297685,5.56369189214481
+29,Summary exposure value,160,Afghanistan,3,Both,22,All ages,381,Childhood sexual abuse and bullying,3,Rate,2023,8.436692176044879,17.189472555760478,3.4134515818182103
+29,Summary exposure value,161,Bangladesh,3,Both,22,All ages,82,"Unsafe water, sanitation, and handwashing",3,Rate,2023,58.65078381158537,74.85336511980793,38.06690161445016
+29,Summary exposure value,161,Bangladesh,3,Both,22,All ages,85,Air pollution,3,Rate,2023,66.9663309242475,76.3260412604387,60.25300530229016
+29,Summary exposure value,161,Bangladesh,3,Both,22,All ages,89,Other environmental risks,3,Rate,2023,50.2895026048645,68.88452081063531,12.798206112250499
+29,Summary exposure value,161,Bangladesh,3,Both,22,All ages,92,Child and maternal malnutrition,3,Rate,2023,8.655001840834691,15.11311305342882,3.9798992563032702
+29,Summary exposure value,161,Bangladesh,3,Both,22,All ages,98,Tobacco,3,Rate,2023,28.07467401437585,30.43192540857979,26.162922218271078
+29,Summary exposure value,165,Pakistan,3,Both,22,All ages,82,"Unsafe water, sanitation, and handwashing",3,Rate,2023,41.35753420326185,55.119755994774934,27.583159821047808
+29,Summary exposure value,165,Pakistan,3,Both,22,All ages,85,Air pollution,3,Rate,2023,52.72002236958081,61.98845034307541,46.44789752454738
+29,Summary exposure value,165,Pakistan,3,Both,22,All ages,89,Other environmental risks,3,Rate,2023,53.521052123420134,72.33876718137256,17.433874546168628
+29,Summary exposure value,165,Pakistan,3,Both,22,All ages,92,Child and maternal malnutrition,3,Rate,2023,7.68558044936681,13.34571038940305,4.09048407740491
+29,Summary exposure value,165,Pakistan,3,Both,22,All ages,98,Tobacco,3,Rate,2023,23.56602406802721,26.8760419782544,20.8560144167921
+29,Summary exposure value,165,Pakistan,3,Both,22,All ages,102,High alcohol use,3,Rate,2023,0.17506215875698,0.27365126567364,0.101520386996
+29,Summary exposure value,165,Pakistan,3,Both,22,All ages,103,Drug use,3,Rate,2023,0.31243033244067,0.62832078958982,0.09640469538882
+29,Summary exposure value,165,Pakistan,3,Both,22,All ages,104,Metabolic risks,3,Rate,2023,15.60975079459514,17.77799988311163,13.59979674525173
+29,Summary exposure value,165,Pakistan,3,Both,22,All ages,110,Dietary risks,3,Rate,2023,42.263532803958185,51.46522412542501,25.720110309559878
+29,Summary exposure value,213,Niger,3,Both,22,All ages,82,"Unsafe water, sanitation, and handwashing",3,Rate,2023,90.76039659138974,97.7070252199781,50.0
+29,Summary exposure value,213,Niger,3,Both,22,All ages,85,Air pollution,3,Rate,2023,61.75465555147366,66.13948487499147,57.08600745151995
+29,Summary exposure value,213,Niger,3,Both,22,All ages,89,Other environmental risks,3,Rate,2023,45.15371494436517,79.82232046298668,18.71519666376691
+29,Summary exposure value,213,Niger,3,Both,22,All ages,92,Child and maternal malnutrition,3,Rate,2023,10.85884087983796,15.9169974703878,7.14158551791849
+29,Summary exposure value,213,Niger,3,Both,22,All ages,98,Tobacco,3,Rate,2023,10.03438154385636,11.79253455784345,8.54529921750393
+29,Summary exposure value,213,Niger,3,Both,22,All ages,102,High alcohol use,3,Rate,2023,0.14671262193165002,0.19533444734826,0.09770932189143999
+29,Summary exposure value,213,Niger,3,Both,22,All ages,103,Drug use,3,Rate,2023,0.22280927907188,0.38241820197916,0.12607919542786
+29,Summary exposure value,213,Niger,3,Both,22,All ages,104,Metabolic risks,3,Rate,2023,7.82589839935697,9.5318897114894,6.24002344568633
+29,Summary exposure value,213,Niger,3,Both,22,All ages,110,Dietary risks,3,Rate,2023,37.05533562185327,45.72023858069204,24.670802950433092
+29,Summary exposure value,213,Niger,3,Both,22,All ages,125,Low physical activity,3,Rate,2023,13.21189252371911,18.20009484248956,8.926036040242561
+29,Summary exposure value,213,Niger,3,Both,22,All ages,126,Occupational risks,3,Rate,2023,4.5624098999187,9.72693516461984,3.0707126010187697
+29,Summary exposure value,169,Central African Republic,3,Both,22,All ages,82,"Unsafe water, sanitation, and handwashing",3,Rate,2023,86.13161212275705,94.41795365389984,50.0
+29,Summary exposure value,169,Central African Republic,3,Both,22,All ages,85,Air pollution,3,Rate,2023,63.15718773046821,68.10678021422038,57.73313557757539
+29,Summary exposure value,169,Central African Republic,3,Both,22,All ages,89,Other environmental risks,3,Rate,2023,49.55745259577229,81.57827127684338,14.236034231358111
+29,Summary exposure value,169,Central African Republic,3,Both,22,All ages,92,Child and maternal malnutrition,3,Rate,2023,9.13692821979597,13.466326433057398,6.13124626118602
+29,Summary exposure value,169,Central African Republic,3,Both,22,All ages,98,Tobacco,3,Rate,2023,9.987478553362621,11.91521888571504,8.43377787307144
+29,Summary exposure value,169,Central African Republic,3,Both,22,All ages,102,High alcohol use,3,Rate,2023,4.3828953010535905,6.16755652608769,2.94629061038277
+29,Summary exposure value,169,Central African Republic,3,Both,22,All ages,103,Drug use,3,Rate,2023,0.22078724350659001,0.37904566455850996,0.12935238514895
+29,Summary exposure value,169,Central African Republic,3,Both,22,All ages,104,Metabolic risks,3,Rate,2023,12.97441361583544,15.133814210101201,11.19978670789737
+29,Summary exposure value,169,Central African Republic,3,Both,22,All ages,110,Dietary risks,3,Rate,2023,44.51724936551617,52.948129698096636,32.057202933330096
+29,Summary exposure value,169,Central African Republic,3,Both,22,All ages,125,Low physical activity,3,Rate,2023,13.13161636067976,17.3367998855854,9.2977974001628
+29,Summary exposure value,169,Central African Republic,3,Both,22,All ages,126,Occupational risks,3,Rate,2023,3.3316421261443,7.5663749808139,2.0724903255117
+29,Summary exposure value,169,Central African Republic,3,Both,22,All ages,135,Intimate partner violence,3,Rate,2023,21.78089511332907,30.42906439448097,12.44467439977536
+29,Summary exposure value,213,Niger,3,Both,22,All ages,135,Intimate partner violence,3,Rate,2023,6.70484551380204,16.30206689864912,2.19634107062198
+29,Summary exposure value,160,Afghanistan,3,Both,22,All ages,82,"Unsafe water, sanitation, and handwashing",3,Rate,2023,69.40201108480922,81.84655780391506,50.0
+29,Summary exposure value,160,Afghanistan,3,Both,22,All ages,85,Air pollution,3,Rate,2023,50.78647860602321,59.52089145897613,44.880326900668635
+29,Summary exposure value,160,Afghanistan,3,Both,22,All ages,89,Other environmental risks,3,Rate,2023,49.763070297749415,86.9493375473632,19.061614507791898
+29,Summary exposure value,160,Afghanistan,3,Both,22,All ages,92,Child and maternal malnutrition,3,Rate,2023,8.33048146927599,14.303897353010289,4.27728964736563
+29,Summary exposure value,171,Democratic Republic of the Congo,3,Both,22,All ages,202,Environmental/occupational risks,3,Rate,2023,61.46820688834623,65.02963353711236,54.67803123101267
+29,Summary exposure value,171,Democratic Republic of the Congo,3,Both,22,All ages,203,Behavioral risks,3,Rate,2023,13.01316768902678,14.77141260824163,9.0271928658087
+29,Summary exposure value,171,Democratic Republic of the Congo,3,Both,22,All ages,331,Non-optimal temperature,3,Rate,2023,17.868506209940872,33.67240084669145,10.36421241087922
+29,Summary exposure value,171,Democratic Republic of the Congo,3,Both,22,All ages,381,Childhood sexual abuse and bullying,3,Rate,2023,11.92574116538207,23.000792970147778,5.6129768949967

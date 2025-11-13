@@ -1,0 +1,265 @@
+================================================================================
+INDICATOR DUPLICATE & RECENCY ANALYSIS
+================================================================================
+
+DUPLICATE INDICATORS:
+--------------------------------------------------------------------------------
+
+LIFE EXPECTANCY AT BIRTH
+  Found in 2 categories:
+    1. Global Burden of Disease
+       Years: 2018-2023
+       File: IHME_GBD_ALL_YEARS_CONSOLIDATED.csv
+       [KEEP - MOST RECENT]
+    2. Mortality & Life Expectancy
+       Years: 2000-2021
+       File: 90E2E48_ALL_LATEST.csv
+       [REMOVE - OLDER]
+
+
+================================================================================
+SUMMARY OF ALL INDICATORS BY DATA RECENCY
+================================================================================
+
+
+75DDA77_ALL_LATEST.csv
+  Years: 2000-2030
+  Indicators (1):
+    - Tobacco Use (NCD Risk Factors)
+
+A37BDD6_ALL_LATEST.csv
+  Years: 2020-2024
+  Indicators (1):
+    - Treated Domestic Wastewater (Water, Sanitation & Hygiene)
+
+77D059C_ALL_LATEST.csv
+  Years: 1990-2024
+  Indicators (1):
+    - HIV Infections (Infectious Diseases)
+
+5F8A486_ALL_LATEST.csv
+  Years: 2000-2024
+  Indicators (1):
+    - Child Stunting (Nutrition)
+
+64E2430_ALL_LATEST.csv
+  Years: 2000-2024
+  Indicators (1):
+    - Child Overweight (Nutrition)
+
+F8E084C_ALL_LATEST.csv
+  Years: 2000-2024
+  Indicators (1):
+    - DTP3 Coverage (Immunization)
+
+BB4567B_ALL_LATEST.csv
+  Years: 2000-2024
+  Indicators (1):
+    - Measles MCV2 Coverage (Immunization)
+
+D45F91C_ALL_LATEST.csv
+  Years: 2008-2024
+  Indicators (1):
+    - PCV3 Coverage (Immunization)
+
+287D1D2_ALL_LATEST.csv
+  Years: 2012-2024
+  Indicators (1):
+    - HPV Coverage (Immunization)
+
+FDBB8E8_ALL_LATEST.csv
+  Years: 2021-2024
+  Indicators (1):
+    - IHR Core Capacity (Health Systems & Access)
+
+2322814_ALL_LATEST.csv
+  Years: 1944-2023
+  Indicators (1):
+    - Under-5 Mortality Rate (Mortality & Life Expectancy)
+
+A4C49D3_ALL_LATEST.csv
+  Years: 1952-2023
+  Indicators (1):
+    - Neonatal Mortality Rate (Mortality & Life Expectancy)
+
+AC597B1_ALL_LATEST.csv
+  Years: 1985-2023
+  Indicators (1):
+    - Maternal Mortality Ratio (Mortality & Life Expectancy)
+
+442CEA8_ALL_LATEST.csv
+  Years: 2000-2023
+  Indicators (1):
+    - Malaria Cases (Infectious Diseases)
+
+C288D13_ALL_LATEST.csv
+  Years: 2000-2023
+  Indicators (1):
+    - Tuberculosis Cases (Infectious Diseases)
+
+7B2BFA6_ALL_LATEST.csv
+  Years: 2016-2023
+  Indicators (1):
+    - Wild Polio Cases (Infectious Diseases)
+
+2D6FBE4_ALL_LATEST.csv
+  Years: 2010-2023
+  Indicators (1):
+    - Neglected Tropical Diseases (Infectious Diseases)
+
+8D58801_ALL_LATEST.csv
+  Years: 2000-2023
+  Indicators (1):
+    - Anaemia in Women (Nutrition)
+
+217795A_ALL_LATEST.csv
+  Years: 1990-2023
+  Indicators (1):
+    - Doctors Density (Health Workforce)
+
+5C8435F_ALL_LATEST.csv
+  Years: 1990-2023
+  Indicators (1):
+    - Nurses & Midwives Density (Health Workforce)
+
+45CA7C8_ALL_LATEST.csv
+  Years: 1997-2023
+  Indicators (1):
+    - Pharmacists Density (Health Workforce)
+
+9F88C44_ALL_LATEST.csv
+  Years: 1990-2023
+  Indicators (1):
+    - Dentists Density (Health Workforce)
+
+IHME_GBD_ALL_YEARS_CONSOLIDATED.csv
+  Years: 2018-2023
+  Indicators (6):
+    - DALYs (Disease Burden) (Global Burden of Disease)
+    - Deaths from All Causes (Global Burden of Disease)
+    - Years Lived with Disability (Global Burden of Disease)
+    - Years of Life Lost (Global Burden of Disease)
+    - Life Expectancy at Birth (Global Burden of Disease)
+    - Healthy Life Expectancy (HALE) (Global Burden of Disease)
+
+12EE54A_ALL_LATEST.csv
+  Years: 2000-2022
+  Indicators (1):
+    - Safely Managed Sanitation Services (Water, Sanitation & Hygiene)
+
+1548EA3_ALL_LATEST.csv
+  Years: 2000-2022
+  Indicators (1):
+    - Safely Managed Drinking Water (Water, Sanitation & Hygiene)
+
+D1223E8_ALL_LATEST.csv
+  Years: 2000-2022
+  Indicators (1):
+    - Hand-washing Facilities (Water, Sanitation & Hygiene)
+
+BEFA58B_ALL_LATEST.csv
+  Years: 1990-2022
+  Indicators (1):
+    - Adult Obesity (Nutrition)
+
+EF93DDB_ALL_LATEST.csv
+  Years: 1990-2022
+  Indicators (1):
+    - Child & Adolescent Obesity (Nutrition)
+
+EE6F72A_ALL_LATEST.csv
+  Years: 2000-2022
+  Indicators (1):
+    - Alcohol Consumption (NCD Risk Factors)
+
+8074BD9_ALL_LATEST.csv
+  Years: 2000-2022
+  Indicators (1):
+    - Family Planning Coverage (Reproductive Health)
+
+90E2E48_ALL_LATEST.csv
+  Years: 2000-2021
+  Indicators (1):
+    - Life Expectancy at Birth (Mortality & Life Expectancy)
+
+C64284D_ALL_LATEST.csv
+  Years: 2000-2021
+  Indicators (1):
+    - Healthy Life Expectancy (Mortality & Life Expectancy)
+
+16BBF41_ALL_LATEST.csv
+  Years: 2000-2021
+  Indicators (1):
+    - Suicide Deaths (Mortality & Life Expectancy)
+
+1F96863_ALL_LATEST.csv
+  Years: 2000-2021
+  Indicators (1):
+    - NCD Deaths (Ages 30-70) (Mortality & Life Expectancy)
+
+D6176E2_ALL_LATEST.csv
+  Years: 2021-2021
+  Indicators (1):
+    - Road Traffic Deaths (Mortality & Life Expectancy)
+
+9A706FD_ALL_LATEST.csv
+  Years: 2000-2021
+  Indicators (1):
+    - UHC Service Coverage Index (Health Systems & Access)
+
+F513188_ALL_LATEST.csv
+  Years: 2015-2020
+  Indicators (1):
+    - Hepatitis B in Children (Infectious Diseases)
+
+ED50112_ALL_LATEST.csv
+  Years: 2019-2019
+  Indicators (1):
+    - Deaths from Unsafe WASH (Water, Sanitation & Hygiene)
+
+608DE39_ALL_LATEST.csv
+  Years: 1990-2019
+  Indicators (1):
+    - Hypertension (NCD Risk Factors)
+
+F810947_ALL_LATEST.csv
+  Years: 2010-2019
+  Indicators (1):
+    - Air Pollution (PM2.5) (Environmental Health)
+
+D2A45A5_ALL_LATEST.csv
+  Years: 2004-2016
+  Indicators (1):
+    - Essential Medicines Access (Health Systems & Access)
+
+WB Data 25b.csv
+  Years: No year data
+  Indicators (10):
+    - GNI per capita (Economic Indicators)
+    - GDP per capita growth (Economic Indicators)
+    - GDP growth (Economic Indicators)
+    - National Poverty Headcount (Poverty)
+    - Multidimensional Poverty (UNDP) (Poverty)
+    - Health Expenditure (% of GDP) (Health Expenditure)
+    - Health Expenditure per capita (Health Expenditure)
+    - Out-of-pocket Health Spending (Health Expenditure)
+    - Total Population (Demographics)
+    - Population Growth (Demographics)
+
+
+================================================================================
+RECOMMENDATIONS
+================================================================================
+
+[KEEP] Life Expectancy at Birth from 'Global Burden of Disease'
+  Years: 2018-2023
+  File: IHME_GBD_ALL_YEARS_CONSOLIDATED.csv
+
+[REMOVE] Life Expectancy at Birth from 'Mortality & Life Expectancy'
+  Years: 2000-2021
+  File: 90E2E48_ALL_LATEST.csv
+  Reason: Source 'Global Burden of Disease' has more recent data (2023 vs 2021)
+
+
+Full report saved to: duplicate-indicators-report.json
+
