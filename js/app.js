@@ -1648,17 +1648,34 @@ async function loadGDACSDisasterData() {
 function displayDisastersOnMap(events) {
     const countryCoordinates = getCountryCoordinates();
 
-    // Group events by country
+    // Create mapping from ISO3 to country names we use
+    const iso3ToCountryName = {
+        'AFG': 'Afghanistan', 'BGD': 'Bangladesh', 'BFA': 'Burkina Faso',
+        'CMR': 'Cameroon', 'CAF': 'Central African Republic', 'TCD': 'Chad',
+        'COL': 'Colombia', 'COD': 'Congo DR', 'ETH': 'Ethiopia',
+        'HTI': 'Haiti', 'LBN': 'Lebanon', 'MLI': 'Mali',
+        'MOZ': 'Mozambique', 'MMR': 'Myanmar', 'NER': 'Niger',
+        'NGA': 'Nigeria', 'PAK': 'Pakistan', 'SOM': 'Somalia',
+        'SSD': 'South Sudan', 'SDN': 'Sudan', 'SYR': 'Syria',
+        'UGA': 'Uganda', 'UKR': 'Ukraine', 'VEN': 'Venezuela', 'YEM': 'Yemen'
+    };
+
+    // Group events by country using ISO3 code
     const eventsByCountry = {};
     events.forEach(event => {
         const props = event.properties;
-        const countryName = props.country || props.name;
+        const countryISO3 = props.iso3;
+        const countryName = iso3ToCountryName[countryISO3];
 
-        if (!eventsByCountry[countryName]) {
-            eventsByCountry[countryName] = [];
+        if (countryName) {
+            if (!eventsByCountry[countryName]) {
+                eventsByCountry[countryName] = [];
+            }
+            eventsByCountry[countryName].push(event);
         }
-        eventsByCountry[countryName].push(event);
     });
+
+    console.log('Events grouped by country:', Object.keys(eventsByCountry).map(c => `${c}: ${eventsByCountry[c].length}`));
 
     // Display markers with count
     Object.keys(eventsByCountry).forEach(countryName => {
