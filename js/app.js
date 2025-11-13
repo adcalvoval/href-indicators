@@ -1648,13 +1648,33 @@ async function loadEmdatData(iso3) {
         console.log(`EM-DAT API raw response for ${iso3}:`, data);
         console.log(`EM-DAT API returned ${data.length || 0} events for ${iso3}`);
 
+        // Log first event to see structure
+        if (data && data.length > 0) {
+            console.log('Sample EM-DAT event structure:', data[0]);
+            console.log('Available date fields:', {
+                start_date: data[0].start_date,
+                eventdate: data[0].eventdate,
+                fromdate: data[0].fromdate,
+                year: data[0].year,
+                start_year: data[0].start_year
+            });
+        }
+
         // Filter events from 2018 onwards to match our timeline
         const startDate = new Date('2018-01-01');
         const filteredEvents = (data || []).filter(event => {
-            const eventDate = event.start_date ? new Date(event.start_date) : null;
+            // Try multiple possible date field names
+            const dateStr = event.start_date || event.eventdate || event.fromdate ||
+                           (event.year ? `${event.year}-01-01` : null) ||
+                           (event.start_year ? `${event.start_year}-01-01` : null);
+
+            const eventDate = dateStr ? new Date(dateStr) : null;
             const isValid = eventDate && eventDate >= startDate;
+
             if (eventDate) {
-                console.log(`EM-DAT event: ${event.disaster_type}, Date: ${event.start_date}, Valid: ${isValid}`);
+                console.log(`EM-DAT event: ${event.disaster_type || event.eventtype || 'Unknown'}, Date: ${dateStr}, Valid: ${isValid}`);
+            } else {
+                console.log('EM-DAT event with no valid date:', event);
             }
             return isValid;
         });
@@ -2076,8 +2096,14 @@ function drawTimeline(disasters, drefs, emdatEvents = []) {
 
     // Draw EM-DAT events (orange triangles, same as GDACS)
     emdatEvents.forEach(event => {
-        const eventDate = new Date(event.start_date);
-        if (eventDate >= startDate && eventDate <= endDate) {
+        // Try multiple possible date field names
+        const dateStr = event.start_date || event.eventdate || event.fromdate ||
+                       (event.year ? `${event.year}-01-01` : null) ||
+                       (event.start_year ? `${event.start_year}-01-01` : null);
+
+        const eventDate = dateStr ? new Date(dateStr) : null;
+
+        if (eventDate && eventDate >= startDate && eventDate <= endDate) {
             const x = 40 + ((eventDate - startDate) / timeRange) * (width - 80);
 
             // Create triangle (polygon)
@@ -2092,10 +2118,10 @@ function drawTimeline(disasters, drefs, emdatEvents = []) {
             triangle.style.cursor = 'pointer';
 
             // Prepare tooltip data
-            const eventName = event.disaster_type || 'Disaster Event';
+            const eventName = event.disaster_type || event.eventtype || 'Disaster Event';
             const location = event.location || 'N/A';
-            const deaths = event.total_deaths || 0;
-            const affected = event.total_affected || 0;
+            const deaths = event.total_deaths || event.deaths || 0;
+            const affected = event.total_affected || event.affected || 0;
 
             // Add click event for tooltip
             triangle.addEventListener('click', (e) => {
