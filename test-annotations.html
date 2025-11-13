@@ -32,21 +32,22 @@
                         annotations: {
                             test1: {
                                 type: 'line',
-                                scaleID: 'x',
-                                value: 2020,
+                                xMin: 2020,
+                                xMax: 2020,
                                 borderColor: 'orange',
                                 borderWidth: 2,
                                 borderDash: [5, 5],
                                 label: {
                                     display: true,
                                     content: '▲',
-                                    position: 'end',
+                                    position: 'start',
                                     backgroundColor: 'orange',
                                     color: 'white',
                                     font: {
                                         size: 12,
                                         weight: 'bold'
-                                    }
+                                    },
+                                    yAdjust: -10
                                 }
                             }
                         }

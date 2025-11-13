@@ -31,7 +31,6 @@ function formatNumber(value, decimals = 2) {
 
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // The annotation plugin should auto-register with Chart.js v4
     console.log('Chart.js loaded:', typeof Chart !== 'undefined');
     console.log('Chart version:', typeof Chart !== 'undefined' ? Chart.version : 'N/A');
     console.log('Available plugins:', typeof Chart !== 'undefined' && Chart.registry ? Object.keys(Chart.registry.plugins.items).join(', ') : 'N/A');
@@ -1828,15 +1827,15 @@ function getDisasterEventAnnotations() {
                 const annotationKey = `gdacs_${iso3}_${idx}`;
                 annotations[annotationKey] = {
                     type: 'line',
-                    scaleID: 'x',
-                    value: eventYear,
+                    xMin: eventYear,
+                    xMax: eventYear,
                     borderColor: 'rgba(249, 115, 22, 0.8)', // Orange
                     borderWidth: 2,
                     borderDash: [5, 5],
                     label: {
                         display: true,
                         content: '▲',
-                        position: 'end',
+                        position: 'start',
                         backgroundColor: 'rgba(249, 115, 22, 0.9)',
                         color: 'white',
                         font: {
@@ -1844,7 +1843,7 @@ function getDisasterEventAnnotations() {
                             weight: 'bold'
                         },
                         padding: 4,
-                        yAdjust: 10
+                        yAdjust: -10
                     }
                 };
                 console.log(`Added GDACS annotation: ${annotationKey} at year ${eventYear}`);
@@ -1864,15 +1863,15 @@ function getDisasterEventAnnotations() {
                 const annotationKey = `emdat_${iso3}_${idx}`;
                 annotations[annotationKey] = {
                     type: 'line',
-                    scaleID: 'x',
-                    value: eventYear,
+                    xMin: eventYear,
+                    xMax: eventYear,
                     borderColor: 'rgba(249, 115, 22, 0.8)', // Orange
                     borderWidth: 2,
                     borderDash: [5, 5],
                     label: {
                         display: true,
                         content: '▲',
-                        position: 'end',
+                        position: 'start',
                         backgroundColor: 'rgba(249, 115, 22, 0.9)',
                         color: 'white',
                         font: {
@@ -1880,7 +1879,7 @@ function getDisasterEventAnnotations() {
                             weight: 'bold'
                         },
                         padding: 4,
-                        yAdjust: 10
+                        yAdjust: -10
                     }
                 };
                 console.log(`Added EM-DAT annotation: ${annotationKey} at year ${eventYear}`);
