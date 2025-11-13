@@ -83,6 +83,20 @@
       "color": "#E91E63",
       "indicators": [
         {
+          "id": "Life expectancy",
+          "name": "Life Expectancy at Birth",
+          "file": "IHME_GBD_ALL_YEARS_CONSOLIDATED.csv",
+          "unit": "years",
+          "description": "Expected years of life at birth"
+        },
+        {
+          "id": "HALE (Healthy life expectancy)",
+          "name": "Healthy Life Expectancy (HALE)",
+          "file": "IHME_GBD_ALL_YEARS_CONSOLIDATED.csv",
+          "unit": "years",
+          "description": "Expected years of life in full health"
+        },
+        {
           "id": "MDG_0000000007",
           "name": "Under-5 Mortality Rate",
           "file": "2322814_ALL_LATEST.csv",
@@ -471,7 +485,7 @@
     },
     {
       "id": "ihme_gbd",
-      "name": "Global Burden of Disease",
+      "name": "Disease Burden Metrics",
       "color": "#673AB7",
       "indicators": [
         {
@@ -501,20 +515,6 @@
           "file": "IHME_GBD_ALL_YEARS_CONSOLIDATED.csv",
           "unit": "per 100,000",
           "description": "Years lost due to premature death"
-        },
-        {
-          "id": "Life expectancy",
-          "name": "Life Expectancy at Birth",
-          "file": "IHME_GBD_ALL_YEARS_CONSOLIDATED.csv",
-          "unit": "years",
-          "description": "Expected years of life at birth"
-        },
-        {
-          "id": "HALE (Healthy life expectancy)",
-          "name": "Healthy Life Expectancy (HALE)",
-          "file": "IHME_GBD_ALL_YEARS_CONSOLIDATED.csv",
-          "unit": "years",
-          "description": "Expected years of life in full health"
         }
       ]
     }
