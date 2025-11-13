@@ -1630,6 +1630,34 @@ function getEventTypeLabel(eventType) {
     return eventTypeLabels[eventType] || eventType;
 }
 
+// Load EM-DAT data for a specific country
+async function loadEmdatData(iso3) {
+    try {
+        const response = await fetch(`https://www.gdacs.org/gdacsapi/api/Emdat/getemdatbyiso3?iso3=${iso3}`);
+
+        if (!response.ok) {
+            throw new Error(`EM-DAT API request failed: ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log(`EM-DAT API returned ${data.length || 0} events for ${iso3}`);
+
+        // Filter events from 2018 onwards to match our timeline
+        const startDate = new Date('2018-01-01');
+        const filteredEvents = (data || []).filter(event => {
+            const eventDate = event.start_date ? new Date(event.start_date) : null;
+            return eventDate && eventDate >= startDate;
+        });
+
+        console.log(`Filtered to ${filteredEvents.length} EM-DAT events from 2018 onwards`);
+        return filteredEvents;
+
+    } catch (error) {
+        console.error('Error loading EM-DAT data:', error);
+        return [];
+    }
+}
+
 // Load GDACS disaster data
 // Note: GDACS API returns the 100 most recent events (~3 years of data)
 // No pagination is available, and date parameters are not supported
@@ -1902,11 +1930,12 @@ async function showCountryTimeline(countryName, countryISO3) {
     // Show loading popup
     showLoading('Loading timeline data...');
 
-    // Fetch disaster events and DREFs for this country
+    // Fetch disaster events, DREFs, and EM-DAT events for this country
     try {
-        const [disasters, drefs] = await Promise.all([
+        const [disasters, drefs, emdatEvents] = await Promise.all([
             loadGDACSDisasterData(),
-            loadPastDREFData()
+            loadPastDREFData(),
+            loadEmdatData(countryISO3)
         ]);
 
         // Filter for this country
@@ -1920,10 +1949,10 @@ async function showCountryTimeline(countryName, countryISO3) {
             return drefISO3 === countryISO3;
         });
 
-        console.log(`Timeline for ${countryName}: ${countryDisasters.length} disasters, ${countryDrefs.length} DREFs`);
+        console.log(`Timeline for ${countryName}: ${countryDisasters.length} GDACS disasters, ${countryDrefs.length} DREFs, ${emdatEvents.length} EM-DAT events`);
 
         // Draw timeline
-        drawTimeline(countryDisasters, countryDrefs);
+        drawTimeline(countryDisasters, countryDrefs, emdatEvents);
 
         // Hide loading popup
         hideLoading();
@@ -1935,7 +1964,7 @@ async function showCountryTimeline(countryName, countryISO3) {
 }
 
 // Draw timeline with events
-function drawTimeline(disasters, drefs) {
+function drawTimeline(disasters, drefs, emdatEvents = []) {
     const svg = document.getElementById('timeline-svg');
     const container = document.getElementById('timeline-content');
     const width = container.clientWidth;
@@ -1996,7 +2025,7 @@ function drawTimeline(disasters, drefs) {
     // Get tooltip element
     const tooltip = document.getElementById('timeline-tooltip');
 
-    // Draw disaster events (orange triangles)
+    // Draw GDACS disaster events (orange triangles)
     disasters.forEach(event => {
         const eventDate = new Date(event.properties.fromdate);
         if (eventDate >= startDate && eventDate <= endDate) {
@@ -2021,12 +2050,51 @@ function drawTimeline(disasters, drefs) {
 
             // Add click event for tooltip
             triangle.addEventListener('click', (e) => {
-                const tooltipContent = `<strong>DISASTER EVENT</strong>
+                const tooltipContent = `<strong>GDACS DISASTER EVENT</strong>
                     <div><b>Name:</b> ${eventName}</div>
                     <div><b>Type:</b> ${eventType}</div>
                     <div><b>Date:</b> ${eventDate.toLocaleDateString()}</div>
                     <div><b>Alert Level:</b> ${alertLevel}</div>
                     <div><b>Severity:</b> ${severity}</div>`;
+
+                showTimelineTooltip(e, tooltipContent, x);
+            });
+
+            svg.appendChild(triangle);
+        }
+    });
+
+    // Draw EM-DAT events (orange triangles, same as GDACS)
+    emdatEvents.forEach(event => {
+        const eventDate = new Date(event.start_date);
+        if (eventDate >= startDate && eventDate <= endDate) {
+            const x = 40 + ((eventDate - startDate) / timeRange) * (width - 80);
+
+            // Create triangle (polygon)
+            const triangle = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+            const size = 9;
+            // Points for upward-pointing triangle
+            const points = `${x},${disasterY - size} ${x - size},${disasterY + size} ${x + size},${disasterY + size}`;
+            triangle.setAttribute('points', points);
+            triangle.setAttribute('fill', '#f97316');
+            triangle.setAttribute('stroke', 'white');
+            triangle.setAttribute('stroke-width', '2');
+            triangle.style.cursor = 'pointer';
+
+            // Prepare tooltip data
+            const eventName = event.disaster_type || 'Disaster Event';
+            const location = event.location || 'N/A';
+            const deaths = event.total_deaths || 0;
+            const affected = event.total_affected || 0;
+
+            // Add click event for tooltip
+            triangle.addEventListener('click', (e) => {
+                const tooltipContent = `<strong>EM-DAT DISASTER EVENT</strong>
+                    <div><b>Type:</b> ${eventName}</div>
+                    <div><b>Location:</b> ${location}</div>
+                    <div><b>Date:</b> ${eventDate.toLocaleDateString()}</div>
+                    <div><b>Deaths:</b> ${deaths.toLocaleString()}</div>
+                    <div><b>Affected:</b> ${affected.toLocaleString()}</div>`;
 
                 showTimelineTooltip(e, tooltipContent, x);
             });
