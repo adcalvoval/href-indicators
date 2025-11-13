@@ -1635,23 +1635,37 @@ function updateChartWithFilter() {
     const disasterToggle = document.getElementById('disaster-events-toggle');
     const showDisastersCheckbox = document.getElementById('show-disasters-checkbox');
 
-    // If "All Countries" is selected, show all
+    // If "All Countries" is selected AND it's the ONLY selection (or with all others), show all
     let selectedCountries;
-    if (selectedValues.includes('all')) {
+    const allCountriesOption = selectedValues.includes('all');
+    const onlyAllCountriesSelected = allCountriesOption && selectedValues.length === 1;
+
+    if (onlyAllCountriesSelected) {
+        // User explicitly selected only "All Countries"
         selectedCountries = Object.keys(window.currentTimeSeriesData.timeSeriesData);
         // Hide disaster events option for "All Countries"
         disasterToggle.style.display = 'none';
-        showDisastersCheckbox.checked = false;
-        chartDisasterEvents = {}; // Clear cache
+        if (showDisastersCheckbox.checked) {
+            showDisastersCheckbox.checked = false;
+            chartDisasterEvents = {}; // Clear cache
+        }
+    } else if (allCountriesOption && selectedValues.length > 1) {
+        // "All Countries" is selected along with specific countries - use specific countries only
+        selectedCountries = selectedValues.filter(v => v !== 'all');
+        // Show disaster events option for specific countries
+        disasterToggle.style.display = 'block';
     } else {
+        // Only specific countries selected
         selectedCountries = selectedValues;
         // Show disaster events option for specific countries
         if (selectedCountries.length > 0) {
             disasterToggle.style.display = 'block';
         } else {
             disasterToggle.style.display = 'none';
-            showDisastersCheckbox.checked = false;
-            chartDisasterEvents = {};
+            if (showDisastersCheckbox.checked) {
+                showDisastersCheckbox.checked = false;
+                chartDisasterEvents = {};
+            }
         }
     }
 
