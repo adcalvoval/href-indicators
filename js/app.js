@@ -10,6 +10,7 @@ let currentIndicatorData = null; // Store current indicator info for time series
 const IFRC_API_TOKEN = '3f891db59f4e9fd16ba4f8be803d368a469a1276';
 const DREF_API_URL = 'https://goadmin.ifrc.org/api/v2/appeal/?atype=0&status=0';
 const PAST_DREF_API_URL = 'https://goadmin.ifrc.org/api/v2/appeal/?atype=0';
+const GDACS_API_URL = 'https://www.gdacs.org/gdacsapi/api/events/geteventlist/SEARCH';
 
 // Helper function to format numbers with commas
 function formatNumber(value, decimals = 2) {
@@ -256,17 +257,19 @@ async function onIndicatorChange(event) {
     // Reset current indicator data when changing indicator
     currentIndicatorData = null;
 
-    // Check if this is DREF data (doesn't need year selection or time series)
-    if (indicatorId === 'ACTIVE_DREFS' || indicatorId === 'PAST_DREFS') {
+    // Check if this is API data (DREF or GDACS - doesn't need year selection or time series)
+    if (indicatorId === 'ACTIVE_DREFS' || indicatorId === 'PAST_DREFS' || indicatorId === 'PAST_DISASTERS') {
         yearSelect.disabled = true;
         if (indicatorId === 'ACTIVE_DREFS') {
             yearSelect.innerHTML = '<option value="current">Current (Live Data)</option>';
-        } else {
+        } else if (indicatorId === 'PAST_DREFS') {
+            yearSelect.innerHTML = '<option value="past5years">Last 5 Years</option>';
+        } else if (indicatorId === 'PAST_DISASTERS') {
             yearSelect.innerHTML = '<option value="past5years">Last 5 Years</option>';
         }
         yearSelect.value = yearSelect.options[0].value;
         loadDataBtn.disabled = false;
-        showTrendBtn.disabled = true; // No time series for DREF data
+        showTrendBtn.disabled = true; // No time series for API data
     } else {
         // Get the data file for this indicator
         const selectedOption = indicatorSelect.options[indicatorSelect.selectedIndex];
@@ -364,7 +367,7 @@ async function loadIndicatorData() {
         // Clear existing markers/overlays
         clearMapData();
 
-        // Check if this is DREF data
+        // Check if this is API data (DREF or GDACS)
         if (indicatorId === 'ACTIVE_DREFS') {
             const drefData = await loadDREFData();
             if (drefData && drefData.length > 0) {
@@ -380,6 +383,14 @@ async function loadIndicatorData() {
                 showPastDREFLegend(pastDrefData);
             } else {
                 alert('No past DREF operations found in the last 5 years.');
+            }
+        } else if (indicatorId === 'PAST_DISASTERS') {
+            const disasterData = await loadGDACSDisasterData();
+            if (disasterData && disasterData.length > 0) {
+                displayDisastersOnMap(disasterData);
+                showDisasterLegend(disasterData);
+            } else {
+                alert('No disaster events found in the last 5 years.');
             }
         } else {
             // Regular CSV data
@@ -1177,7 +1188,7 @@ async function loadCountryProfile(countryName, countryCode) {
 
         // Iterate through all categories and indicators
         for (const category of categoriesData.categories) {
-            if (category.id === 'country_view' || category.id === 'dref') continue;
+            if (category.id === 'country_view' || category.id === 'dref' || category.id === 'disasters') continue;
 
             indicatorsByCategory[category.name] = [];
 
@@ -1583,4 +1594,176 @@ function showDataList(data, indicatorName, unit) {
 function closeDataList() {
     const dataListPanel = document.getElementById('data-list-panel');
     dataListPanel.classList.add('hidden');
+}
+
+// Load GDACS disaster data from the last 5 years
+async function loadGDACSDisasterData() {
+    try {
+        const response = await fetch(GDACS_API_URL);
+
+        if (!response.ok) {
+            throw new Error(`GDACS API request failed: ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log('GDACS API Response:', data);
+
+        // Calculate date 5 years ago
+        const fiveYearsAgo = new Date();
+        fiveYearsAgo.setFullYear(fiveYearsAgo.getFullYear() - 5);
+
+        // Target country ISO3 codes
+        const targetISO3Codes = ['AFG', 'BGD', 'BFA', 'CMR', 'CAF', 'TCD', 'COL', 'COD',
+                                 'ETH', 'HTI', 'LBN', 'MLI', 'MOZ', 'MMR', 'NER', 'NGA',
+                                 'PAK', 'SOM', 'SSD', 'SDN', 'SYR', 'UGA', 'UKR', 'VEN', 'YEM'];
+
+        const events = data.features || [];
+
+        const filteredEvents = events.filter(event => {
+            const properties = event.properties;
+            const eventDate = properties.fromdate ? new Date(properties.fromdate) : null;
+            const countryISO3 = properties.iso3 || properties.country;
+
+            // Check if in target countries
+            const isTargetCountry = targetISO3Codes.includes(countryISO3);
+
+            // Check if within last 5 years
+            const isWithinLastFiveYears = eventDate && eventDate >= fiveYearsAgo;
+
+            return isTargetCountry && isWithinLastFiveYears;
+        });
+
+        console.log(`Found ${filteredEvents.length} disaster events in target countries from last 5 years`);
+        console.log(`Date range: ${fiveYearsAgo.toISOString().split('T')[0]} to ${new Date().toISOString().split('T')[0]}`);
+
+        return filteredEvents;
+
+    } catch (error) {
+        console.error('Error loading GDACS disaster data:', error);
+        throw error;
+    }
+}
+
+// Display disaster events on map grouped by country
+function displayDisastersOnMap(events) {
+    const countryCoordinates = getCountryCoordinates();
+
+    // Group events by country
+    const eventsByCountry = {};
+    events.forEach(event => {
+        const props = event.properties;
+        const countryName = props.country || props.name;
+
+        if (!eventsByCountry[countryName]) {
+            eventsByCountry[countryName] = [];
+        }
+        eventsByCountry[countryName].push(event);
+    });
+
+    // Display markers with count
+    Object.keys(eventsByCountry).forEach(countryName => {
+        const coords = countryCoordinates[countryName];
+        const countryEvents = eventsByCountry[countryName];
+
+        if (coords) {
+            // Create badge icon with count
+            const count = countryEvents.length;
+            const badgeIcon = L.divIcon({
+                html: `<div style="
+                    background-color: #f97316;
+                    color: white;
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 14px;
+                    font-weight: bold;
+                    border: 3px solid white;
+                    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+                ">${count}</div>`,
+                className: 'disaster-marker',
+                iconSize: [32, 32],
+                iconAnchor: [16, 16]
+            });
+
+            // Create popup content with list of all events
+            let popupContent = `<div style="min-width: 250px;">`;
+            popupContent += `<h3 style="margin: 0 0 10px 0; color: #f97316;">${countryName}</h3>`;
+            popupContent += `<p style="margin: 0 0 10px 0;"><strong>${count} disaster event${count > 1 ? 's' : ''}</strong></p>`;
+            popupContent += `<div style="max-height: 300px; overflow-y: auto;">`;
+
+            // Sort by date (most recent first)
+            countryEvents.sort((a, b) => {
+                const dateA = new Date(a.properties.fromdate || 0);
+                const dateB = new Date(b.properties.fromdate || 0);
+                return dateB - dateA;
+            });
+
+            countryEvents.forEach((event, idx) => {
+                const props = event.properties;
+                const eventName = props.name || props.eventtype;
+                const eventType = props.eventtype || 'Unknown';
+                const severity = props.severity || props.alertlevel || 'N/A';
+                const date = props.fromdate ? new Date(props.fromdate).toLocaleDateString() : 'N/A';
+
+                popupContent += `
+                    <div style="padding: 8px 0; ${idx > 0 ? 'border-top: 1px solid #eee;' : ''}">
+                        <div style="font-weight: bold; color: #333;">${eventName}</div>
+                        <div style="font-size: 12px; color: #666; margin-top: 4px;">
+                            <div>Type: ${eventType}</div>
+                            <div>Severity: ${severity}</div>
+                            <div>Date: ${date}</div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            popupContent += `</div></div>`;
+
+            const marker = L.marker([coords.lat, coords.lng], { icon: badgeIcon })
+                .bindPopup(popupContent)
+                .addTo(map);
+
+            currentMarkers.push(marker);
+        }
+    });
+}
+
+// Show legend for disaster events
+function showDisasterLegend(events) {
+    // Group by event type for legend
+    const eventTypes = {};
+    events.forEach(event => {
+        const type = event.properties.eventtype || 'Unknown';
+        eventTypes[type] = (eventTypes[type] || 0) + 1;
+    });
+
+    let legendContent = `
+        <div style="background: white; padding: 10px; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+            <h4 style="margin: 0 0 10px 0;">Disaster Events (Last 5 Years)</h4>
+            <div style="font-size: 14px;">
+                <div style="margin-bottom: 5px;"><strong>Total Events:</strong> ${events.length}</div>
+    `;
+
+    // Add event types
+    const sortedTypes = Object.entries(eventTypes).sort((a, b) => b[1] - a[1]);
+    sortedTypes.forEach(([type, count]) => {
+        legendContent += `<div style="margin: 3px 0;">${type}: ${count}</div>`;
+    });
+
+    legendContent += `
+            </div>
+        </div>
+    `;
+
+    const legend = L.control({ position: 'bottomright' });
+    legend.onAdd = function() {
+        const div = L.DomUtil.create('div', 'legend');
+        div.innerHTML = legendContent;
+        return div;
+    };
+    legend.addTo(map);
+    currentOverlays.push(legend);
 }

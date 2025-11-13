@@ -36,6 +36,20 @@
       ]
     },
     {
+      "id": "disasters",
+      "name": "Disaster Events (GDACS)",
+      "color": "#F97316",
+      "indicators": [
+        {
+          "id": "PAST_DISASTERS",
+          "name": "Disaster Events (Last 5 Years)",
+          "file": "API",
+          "unit": "count",
+          "description": "All disaster events from GDACS in the last 5 years"
+        }
+      ]
+    },
+    {
       "id": "wash",
       "name": "Water, Sanitation & Hygiene",
       "color": "#2196F3",
