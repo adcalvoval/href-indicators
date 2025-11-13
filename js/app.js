@@ -1696,7 +1696,8 @@ function displayDisastersOnMap(events) {
         const coords = countryCoordinates[countryName];
         const countryEvents = eventsByCountry[countryName];
 
-        if (coords) {
+        if (coords && coords.length === 2) {
+            const [lat, lng] = coords;
             // Create badge icon with count
             const count = countryEvents.length;
             const badgeIcon = L.divIcon({
@@ -1767,7 +1768,7 @@ function displayDisastersOnMap(events) {
 
             popupContent += `</div></div>`;
 
-            const marker = L.marker([coords.lat, coords.lng], { icon: badgeIcon })
+            const marker = L.marker([lat, lng], { icon: badgeIcon })
                 .bindPopup(popupContent)
                 .addTo(map);
 
