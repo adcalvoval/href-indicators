@@ -1915,7 +1915,7 @@ function drawTimeline(disasters, drefs) {
     const svg = document.getElementById('timeline-svg');
     const container = document.getElementById('timeline-content');
     const width = container.clientWidth;
-    const height = 100; // Fixed height for consistent marker positioning
+    const height = 110; // Increased height to show year labels
 
     // Clear existing content
     svg.innerHTML = '';
@@ -1928,7 +1928,7 @@ function drawTimeline(disasters, drefs) {
     const timeRange = endDate - startDate;
 
     // Draw main timeline axis
-    const axisY = 65; // Position axis to leave room for markers above
+    const axisY = 60; // Position axis to leave room for markers above and labels below
     const axisLine = document.createElementNS('http://www.w3.org/2000/svg', 'line');
     axisLine.setAttribute('x1', 40);
     axisLine.setAttribute('y1', axisY);
@@ -1948,7 +1948,7 @@ function drawTimeline(disasters, drefs) {
         tick.setAttribute('x1', x);
         tick.setAttribute('y1', axisY);
         tick.setAttribute('x2', x);
-        tick.setAttribute('y2', axisY + 5);
+        tick.setAttribute('y2', axisY + 8);
         tick.setAttribute('stroke', '#666');
         tick.setAttribute('stroke-width', '2');
         svg.appendChild(tick);
@@ -1956,16 +1956,17 @@ function drawTimeline(disasters, drefs) {
         // Year label
         const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
         label.setAttribute('x', x);
-        label.setAttribute('y', axisY + 20);
+        label.setAttribute('y', axisY + 25);
         label.setAttribute('text-anchor', 'middle');
-        label.setAttribute('font-size', '12');
+        label.setAttribute('font-size', '13');
+        label.setAttribute('font-weight', '600');
         label.setAttribute('fill', '#333');
         label.textContent = year;
         svg.appendChild(label);
     }
 
     // Fixed Y position for all markers (well above the axis)
-    const markerY = 30;
+    const markerY = 25;
 
     // Get tooltip element
     const tooltip = document.getElementById('timeline-tooltip');
@@ -2055,16 +2056,18 @@ function showTimelineTooltip(event, content, markerX) {
     tooltip.innerHTML = content;
     tooltip.classList.remove('hidden');
 
-    // Position tooltip above the marker
-    const tooltipWidth = 220;
-    const tooltipHeight = tooltip.offsetHeight;
+    // Wait for tooltip to render to get accurate dimensions
+    setTimeout(() => {
+        const tooltipWidth = tooltip.offsetWidth || 220;
+        const tooltipHeight = tooltip.offsetHeight;
 
-    // Calculate position relative to viewport
-    const left = containerRect.left + markerX - (tooltipWidth / 2);
-    const top = containerRect.top + 20; // 20px from top of timeline container
+        // Position tooltip completely above the timeline container
+        const left = containerRect.left + markerX - (tooltipWidth / 2);
+        const top = containerRect.top - tooltipHeight - 10; // 10px above timeline container
 
-    tooltip.style.left = `${left}px`;
-    tooltip.style.top = `${top}px`;
+        tooltip.style.left = `${left}px`;
+        tooltip.style.top = `${top}px`;
+    }, 0);
 }
 
 // Hide tooltip when clicking outside
