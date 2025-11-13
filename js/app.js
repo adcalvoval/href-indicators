@@ -105,9 +105,12 @@ async function loadCountriesGeoJSON() {
 async function loadCompiledData() {
     try {
         // Add cache-busting parameter to ensure latest data is loaded
-        const response = await fetch('data/compiled-indicators.json?v=consolidated');
+        const response = await fetch('data/compiled-indicators.json?v=20251113', {
+            cache: 'no-store'
+        });
         compiledData = await response.json();
         console.log('Compiled data loaded successfully');
+        console.log('IHME files in compiled data:', Object.keys(compiledData).filter(k => k.includes('IHME')));
     } catch (error) {
         console.error('Error loading compiled data:', error);
     }
@@ -307,15 +310,20 @@ async function getAvailableYears(dataFile, indicatorId) {
     const allYears = [2024, 2023, 2022, 2021, 2020, 2019, 2018];
     const availableYears = [];
 
+    console.log(`Getting available years for ${indicatorId} from ${dataFile}`);
+
     // Try to load data from compiled JSON or CSV for each year
     for (const year of allYears) {
         try {
             const data = await loadDataFile(dataFile, indicatorId, year);
             if (data && data.length > 0) {
+                console.log(`  Year ${year}: ${data.length} data points found`);
                 availableYears.push(year);
+            } else {
+                console.log(`  Year ${year}: no data`);
             }
         } catch (e) {
-            // Year not available, skip
+            console.log(`  Year ${year}: error - ${e.message}`);
         }
     }
 
