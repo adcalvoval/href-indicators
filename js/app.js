@@ -1865,19 +1865,27 @@ function hideLoading() {
 
 // Close timeline
 function closeTimeline(event) {
+    console.log('closeTimeline function called', event);
+
     if (event) {
         event.stopPropagation();
+        event.preventDefault();
     }
 
     const timelineContainer = document.getElementById('timeline-container');
     const tooltip = document.getElementById('timeline-tooltip');
 
+    console.log('Timeline container before:', timelineContainer.className);
+
     timelineContainer.classList.add('hidden');
+
+    console.log('Timeline container after:', timelineContainer.className);
+
     if (tooltip) {
         tooltip.classList.add('hidden');
     }
 
-    console.log('Timeline closed');
+    console.log('Timeline closed - container should be hidden');
 }
 
 // Show timeline for a country
@@ -2092,6 +2100,13 @@ function showTimelineTooltip(event, content, markerX) {
 // Hide tooltip when clicking outside
 document.addEventListener('click', (e) => {
     const tooltip = document.getElementById('timeline-tooltip');
+    const closeBtn = document.getElementById('close-timeline-btn');
+
+    // Don't process if clicking close button
+    if (e.target === closeBtn || closeBtn.contains(e.target)) {
+        return;
+    }
+
     // Check if click is on a marker (circle or polygon/triangle) or the tooltip itself
     const isMarker = e.target.tagName === 'circle' || e.target.tagName === 'polygon';
     if (tooltip && !isMarker && !tooltip.contains(e.target)) {

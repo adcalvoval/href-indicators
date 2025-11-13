@@ -538,6 +538,10 @@ footer p {
     flex-direction: column;
 }
 
+#timeline-container.hidden {
+    display: none;
+}
+
 #timeline-header {
     display: flex;
     justify-content: space-between;
