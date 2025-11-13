@@ -533,7 +533,7 @@ footer p {
     background: white;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
     z-index: 1001;
-    height: 180px;
+    height: 200px;
     display: flex;
     flex-direction: column;
 }
@@ -577,7 +577,7 @@ footer p {
     flex: 1;
     overflow-x: auto;
     overflow-y: hidden;
-    padding: 15px;
+    padding: 15px 15px 20px 15px;
     position: relative;
 }
 
