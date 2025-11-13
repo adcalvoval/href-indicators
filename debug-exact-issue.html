@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug HALE Issue - Exact Browser Simulation</title>
+    <style>
+        body { font-family: monospace; padding: 20px; }
+        .error { color: red; font-weight: bold; }
+        .success { color: green; font-weight: bold; }
+        .warn { color: orange; }
+        pre { background: #f0f0f0; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Debugging HALE 2023 - Exact Browser Simulation</h1>
+    <div id="output"></div>
+
+    <script>
+        async function debugHALE() {
+            const output = document.getElementById('output');
+
+            try {
+                output.innerHTML += '<h2>Step 1: Loading compiled data</h2>';
+                const response = await fetch('data/compiled-indicators.json?debug=' + Date.now());
+                const compiledData = await response.json();
+                output.innerHTML += '<p class="success">✓ Loaded</p>';
+
+                output.innerHTML += '<h2>Step 2: Checking IHME files</h2>';
+                const ihmeFiles = Object.keys(compiledData).filter(k => k.includes('IHME'));
+                output.innerHTML += `<p>IHME files found: ${ihmeFiles.length}</p>`;
+                ihmeFiles.forEach(f => output.innerHTML += `<p>  - ${f}</p>`);
+
+                output.innerHTML += '<h2>Step 3: Simulating getAvailableYears</h2>';
+                const fileName = 'IHME_GBD_ALL_YEARS_CONSOLIDATED.csv';
+                const indicatorId = 'HALE (Healthy life expectancy)';
+                const allYears = [2024, 2023, 2022, 2021, 2020, 2019, 2018];
+
+                output.innerHTML += `<p>Testing for: ${indicatorId}</p>`;
+                output.innerHTML += `<p>From file: ${fileName}</p>`;
+
+                const availableYears = [];
+
+                for (const year of allYears) {
+                    output.innerHTML += `<h3>Testing year: ${year}</h3>`;
+
+                    // Simulate loadDataFile logic
+                    const data = [];
+
+                    for (const [dataFileName, rows] of Object.entries(compiledData)) {
+                        if (!dataFileName.includes('IHME') || !rows || rows.length === 0) {
+                            continue;
+                        }
+
+                        output.innerHTML += `<p>Checking file: ${dataFileName} (${rows.length} rows)</p>`;
+
+                        const firstRow = rows[0];
+                        const isIHME = firstRow.hasOwnProperty('location_name') && firstRow.hasOwnProperty('measure_name');
+
+                        if (!isIHME) {
+                            output.innerHTML += `<p class="error">  Not IHME format</p>`;
+                            continue;
+                        }
+
+                        let matchCount = 0;
+                        let filterFailures = {
+                            wrongMeasure: 0,
+                            wrongAge: 0,
+                            wrongSex: 0,
+                            wrongMetric: 0,
+                            hasCause: 0,
+                            hasRei: 0,
+                            wrongYear: 0,
+                            noValue: 0
+                        };
+
+                        for (let rowData of rows) {
+                            const measureName = rowData['measure_name'];
+                            const rowYear = rowData['year'];
+                            const ageName = rowData['age_name'];
+                            const sexName = rowData['sex_name'];
+                            const metricName = rowData['metric_name'];
+                            const causeName = rowData['cause_name'];
+                            const reiName = rowData['rei_name'];
+
+                            // Check measure
+                            if (measureName !== indicatorId) {
+                                filterFailures.wrongMeasure++;
+                                continue;
+                            }
+
+                            // Apply HALE filtering
+                            if (ageName !== '0-6 days') {
+                                filterFailures.wrongAge++;
+                                continue;
+                            }
+                            if (sexName !== 'Both') {
+                                filterFailures.wrongSex++;
+                                continue;
+                            }
+                            if (metricName !== 'Years') {
+                                filterFailures.wrongMetric++;
+                                continue;
+                            }
+                            if (causeName) {
+                                filterFailures.hasCause++;
+                                continue;
+                            }
+                            if (reiName) {
+                                filterFailures.hasRei++;
+                                continue;
+                            }
+
+                            // Check year - THIS IS THE CRITICAL PART
+                            output.innerHTML += `<p>Row year type: ${typeof rowYear}, value: "${rowYear}"</p>`;
+                            output.innerHTML += `<p>Test year type: ${typeof year}, value: "${year}"</p>`;
+                            output.innerHTML += `<p>Comparison (==): ${rowYear == year}</p>`;
+                            output.innerHTML += `<p>Comparison (===): ${rowYear === year}</p>`;
+
+                            if (rowYear == year) {
+                                const rawValue = rowData['val'];
+                                if (rawValue && rawValue !== '' && rawValue !== 'N/A') {
+                                    const value = parseFloat(rawValue);
+                                    if (!isNaN(value)) {
+                                        data.push({
+                                            country: rowData['location_name'],
+                                            value: value
+                                        });
+                                        matchCount++;
+                                    } else {
+                                        filterFailures.noValue++;
+                                    }
+                                } else {
+                                    filterFailures.noValue++;
+                                }
+                            } else {
+                                filterFailures.wrongYear++;
+                            }
+                        }
+
+                        output.innerHTML += `<p>Matches found: ${matchCount}</p>`;
+                        if (matchCount === 0) {
+                            output.innerHTML += '<p class="warn">Filter failures:</p>';
+                            output.innerHTML += `<pre>${JSON.stringify(filterFailures, null, 2)}</pre>`;
+                        }
+                    }
+
+                    if (data.length > 0) {
+                        output.innerHTML += `<p class="success">✓ Year ${year}: Found ${data.length} countries</p>`;
+                        output.innerHTML += '<p>Sample data:</p><ul>';
+                        data.slice(0, 5).forEach(d => {
+                            output.innerHTML += `<li>${d.country}: ${d.value.toFixed(2)}</li>`;
+                        });
+                        output.innerHTML += '</ul>';
+                        availableYears.push(year);
+                    } else {
+                        output.innerHTML += `<p class="error">✗ Year ${year}: No data</p>`;
+                    }
+                }
+
+                output.innerHTML += '<h2>FINAL RESULT</h2>';
+                output.innerHTML += `<p class="success">Available years: ${availableYears.join(', ')}</p>`;
+
+                if (availableYears.includes(2023)) {
+                    output.innerHTML += '<p class="success">✓✓✓ 2023 IS AVAILABLE ✓✓✓</p>';
+                } else {
+                    output.innerHTML += '<p class="error">✗✗✗ 2023 NOT FOUND ✗✗✗</p>';
+                }
+
+            } catch (error) {
+                output.innerHTML += `<p class="error">ERROR: ${error.message}</p>`;
+                output.innerHTML += `<pre>${error.stack}</pre>`;
+            }
+        }
+
+        debugHALE();
+    </script>
+</body>
+</html>
