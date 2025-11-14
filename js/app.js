@@ -2499,15 +2499,16 @@ function drawTimeline(disasters, drefs, emdatEvents = []) {
             triangle.style.cursor = 'pointer';
 
             // Prepare tooltip data
-            const eventName = event.properties.name || event.properties.eventtype;
             const eventType = getEventTypeLabel(event.properties.eventtype);
             const alertLevel = event.properties.alertlevel || 'N/A';
-            const severity = event.properties.severity || 'N/A';
+            const severityRaw = event.properties.severity || 'N/A';
+            const severity = (typeof severityRaw === 'number' || !isNaN(Number(severityRaw)))
+                ? formatNumber(Number(severityRaw), 0)
+                : severityRaw;
 
             // Add click event for tooltip
             triangle.addEventListener('click', (e) => {
                 const tooltipContent = `<strong>GDACS DISASTER EVENT</strong>
-                    <div><b>Name:</b> ${eventName}</div>
                     <div><b>Type:</b> ${eventType}</div>
                     <div><b>Date:</b> ${eventDate.toLocaleDateString()}</div>
                     <div><b>Alert Level:</b> ${alertLevel}</div>
@@ -2546,18 +2547,22 @@ function drawTimeline(disasters, drefs, emdatEvents = []) {
 
             // Prepare tooltip data
             const eventName = event.disastertype || event.disaster_type || event.eventtype || 'Disaster Event';
-            const location = event.location || 'N/A';
-            const deaths = event.totaldeaths || event.total_deaths || event.deaths || 0;
-            const affected = event.totalaffected || event.total_affected || event.affected || 0;
+            const deathsRaw = event.totaldeaths || event.total_deaths || event.deaths || 0;
+            const deaths = (typeof deathsRaw === 'number' || !isNaN(Number(deathsRaw)))
+                ? formatNumber(Number(deathsRaw), 0)
+                : deathsRaw;
+            const affectedRaw = event.totalaffected || event.total_affected || event.affected || 0;
+            const affected = (typeof affectedRaw === 'number' || !isNaN(Number(affectedRaw)))
+                ? formatNumber(Number(affectedRaw), 0)
+                : affectedRaw;
 
             // Add click event for tooltip
             triangle.addEventListener('click', (e) => {
                 const tooltipContent = `<strong>EM-DAT DISASTER EVENT</strong>
                     <div><b>Type:</b> ${eventName}</div>
-                    <div><b>Location:</b> ${location}</div>
                     <div><b>Date:</b> ${eventDate.toLocaleDateString()}</div>
-                    <div><b>Deaths:</b> ${deaths.toLocaleString()}</div>
-                    <div><b>Affected:</b> ${affected.toLocaleString()}</div>`;
+                    <div><b>Deaths:</b> ${deaths}</div>
+                    <div><b>Affected:</b> ${affected}</div>`;
 
                 showTimelineTooltip(e, tooltipContent, x);
             });
