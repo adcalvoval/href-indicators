@@ -1486,14 +1486,13 @@ async function showTimeSeriesChart() {
     // Store time series data globally for filtering
     window.currentTimeSeriesData = { years, timeSeriesData, unit };
 
-    // Hide disaster events toggle initially (since "All Countries" is selected by default)
+    // Initialize disaster events toggle
     const disasterToggle = document.getElementById('disaster-events-toggle');
     const showDisastersCheckbox = document.getElementById('show-disasters-checkbox');
-    disasterToggle.style.display = 'none';
     showDisastersCheckbox.checked = false;
 
-    // Create the chart with all countries
-    createTimeSeriesChart(years, timeSeriesData, unit, countriesWithData);
+    // Apply initial filter logic to show/hide disaster toggle appropriately
+    updateChartWithFilter();
 
     console.log(`Time series chart created with ${countriesWithData.length} countries`);
 }
