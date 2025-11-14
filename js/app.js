@@ -1826,20 +1826,22 @@ function getDisasterEventAnnotations() {
                 const annotationKey = `gdacs_${iso3}_${idx}`;
                 annotations[annotationKey] = {
                     type: 'label',
+                    xScaleID: 'x',
+                    yScaleID: 'y',
                     xValue: eventYear,
-                    yValue: (ctx) => ctx.chart.scales.y.max,
+                    yValue: 'max',
                     content: '▼',
                     backgroundColor: 'rgba(249, 115, 22, 0.95)',
                     color: 'white',
                     font: {
-                        size: 14,
+                        size: 16,
                         weight: 'bold'
                     },
-                    padding: 6,
-                    yAdjust: 8,
-                    callout: {
-                        display: false
-                    }
+                    padding: {
+                        x: 6,
+                        y: 4
+                    },
+                    yAdjust: -5
                 };
                 console.log(`Added GDACS annotation: ${annotationKey} at year ${eventYear}`);
             }
@@ -1858,20 +1860,22 @@ function getDisasterEventAnnotations() {
                 const annotationKey = `emdat_${iso3}_${idx}`;
                 annotations[annotationKey] = {
                     type: 'label',
+                    xScaleID: 'x',
+                    yScaleID: 'y',
                     xValue: eventYear,
-                    yValue: (ctx) => ctx.chart.scales.y.max,
+                    yValue: 'max',
                     content: '▼',
                     backgroundColor: 'rgba(249, 115, 22, 0.95)',
                     color: 'white',
                     font: {
-                        size: 14,
+                        size: 16,
                         weight: 'bold'
                     },
-                    padding: 6,
-                    yAdjust: 8,
-                    callout: {
-                        display: false
-                    }
+                    padding: {
+                        x: 6,
+                        y: 4
+                    },
+                    yAdjust: -5
                 };
                 console.log(`Added EM-DAT annotation: ${annotationKey} at year ${eventYear}`);
             }
