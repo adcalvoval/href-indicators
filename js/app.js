@@ -1888,6 +1888,9 @@ function getDisasterEventAnnotations() {
                 const eventName = event.properties.name || eventType;
                 const severity = event.properties.severity || event.properties.alertlevel || 'N/A';
 
+                // Skip droughts
+                if (eventType.toLowerCase().includes('drought')) return;
+
                 // Store tooltip data in a way we can access it
                 const tooltipData = `${eventType}\n${dateStr}\nSeverity: ${severity}`;
 
@@ -1951,6 +1954,9 @@ function getDisasterEventAnnotations() {
                 const eventType = event.disastertype || event.disaster_type || 'Unknown';
                 const subType = event.disastersubtype || event.disaster_subtype || '';
                 const affected = event.totalaffected || event.total_affected || 'N/A';
+
+                // Skip droughts
+                if (eventType.toLowerCase().includes('drought')) return;
 
                 // Build tooltip data
                 const tooltipDataLines = [eventType];
