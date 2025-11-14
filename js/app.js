@@ -1087,11 +1087,10 @@ async function loadPastDREFData() {
 
         console.log(`Fetched total of ${allDrefs.length} DREFs`);
 
-        // Calculate date 5 years ago
-        const fiveYearsAgo = new Date();
-        fiveYearsAgo.setFullYear(fiveYearsAgo.getFullYear() - 5);
+        // Filter from 2018 onwards
+        const since2018 = new Date('2018-01-01');
 
-        // Filter for the 25 target countries and last 5 years
+        // Filter for the 25 target countries and since 2018
         const targetCountries = categoriesData.countries.map(c => c.name);
         const targetISO3Codes = ['AFG', 'BGD', 'BFA', 'CMR', 'CAF', 'TCD', 'COL', 'COD',
                                  'ETH', 'HTI', 'LBN', 'MLI', 'MOZ', 'MMR', 'NER', 'NGA',
@@ -1105,16 +1104,15 @@ async function loadPastDREFData() {
             // Check if in target countries
             const isTargetCountry = targetCountries.includes(countryName) || targetISO3Codes.includes(countryISO3);
 
-            // Check if started within last 5 years
-            const isWithinLastFiveYears = startDate && startDate >= fiveYearsAgo;
+            // Check if started since 2018
+            const isSince2018 = startDate && startDate >= since2018;
 
-            // Include ALL DREFs from last 5 years (both active and past)
-            // We want to show all DREFs that started in the last 5 years
-            return isTargetCountry && isWithinLastFiveYears;
+            // Include ALL DREFs since 2018 (both active and past)
+            return isTargetCountry && isSince2018;
         });
 
-        console.log(`Found ${filteredDrefs.length} DREFs in target countries from last 5 years`);
-        console.log(`Date range: ${fiveYearsAgo.toISOString().split('T')[0]} to ${new Date().toISOString().split('T')[0]}`);
+        console.log(`Found ${filteredDrefs.length} DREFs in target countries since 2018`);
+        console.log(`Date range: ${since2018.toISOString().split('T')[0]} to ${new Date().toISOString().split('T')[0]}`);
 
         // Cache the results
         cachedPastDrefData = filteredDrefs;
