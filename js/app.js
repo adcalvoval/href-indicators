@@ -1886,7 +1886,10 @@ function getDisasterEventAnnotations() {
                 // Get event details
                 const eventType = event.properties.eventtype || 'Unknown';
                 const eventName = event.properties.name || eventType;
-                const severity = event.properties.severity || event.properties.alertlevel || 'N/A';
+                const severityRaw = event.properties.severity || event.properties.alertlevel || 'N/A';
+                const severity = (typeof severityRaw === 'number' || !isNaN(Number(severityRaw)))
+                    ? formatNumber(Number(severityRaw), 0)
+                    : severityRaw;
 
                 // Skip droughts
                 if (eventType.toLowerCase().includes('drought')) return;
@@ -1953,7 +1956,10 @@ function getDisasterEventAnnotations() {
                 // Get event details
                 const eventType = event.disastertype || event.disaster_type || 'Unknown';
                 const subType = event.disastersubtype || event.disaster_subtype || '';
-                const affected = event.totalaffected || event.total_affected || 'N/A';
+                const affectedRaw = event.totalaffected || event.total_affected || 'N/A';
+                const affected = (affectedRaw !== 'N/A' && (typeof affectedRaw === 'number' || !isNaN(Number(affectedRaw))))
+                    ? formatNumber(Number(affectedRaw), 0)
+                    : affectedRaw;
 
                 // Skip droughts
                 if (eventType.toLowerCase().includes('drought')) return;
