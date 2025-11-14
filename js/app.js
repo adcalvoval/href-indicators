@@ -1519,10 +1519,14 @@ function createTimeSeriesChart(years, timeSeriesData, unit, selectedCountries) {
         }
 
         const yearData = timeSeriesData[country];
-        const dataPoints = years.map(year => yearData[year] || null);
+        // Convert to {x, y} coordinate pairs for linear scale
+        const dataPoints = years.map(year => ({
+            x: year,
+            y: yearData[year] || null
+        }));
 
         // Only add countries that have at least one data point
-        if (dataPoints.some(val => val !== null)) {
+        if (dataPoints.some(point => point.y !== null)) {
             datasets.push({
                 label: country,
                 data: dataPoints,
@@ -1551,7 +1555,6 @@ function createTimeSeriesChart(years, timeSeriesData, unit, selectedCountries) {
     timeSeriesChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: years,
             datasets: datasets
         },
         options: {
@@ -1598,9 +1601,16 @@ function createTimeSeriesChart(years, timeSeriesData, unit, selectedCountries) {
             },
             scales: {
                 x: {
+                    type: 'linear',
                     title: {
                         display: true,
                         text: 'Year'
+                    },
+                    ticks: {
+                        stepSize: 1,
+                        callback: function(value) {
+                            return Math.floor(value); // Show only integer years
+                        }
                     }
                 },
                 y: {
