@@ -1820,6 +1820,10 @@ function getDisasterEventAnnotations() {
         events.gdacs.forEach((event, idx) => {
             const eventDate = new Date(event.properties.fromdate);
             const eventYear = eventDate.getFullYear();
+            const eventMonth = eventDate.getMonth(); // 0-11
+
+            // Calculate decimal year position (e.g., June 2018 = 2018.5)
+            const xPosition = eventYear + (eventMonth / 12);
 
             // Only show events within the year range
             if (eventYear >= minYear && eventYear <= maxYear) {
@@ -1828,7 +1832,7 @@ function getDisasterEventAnnotations() {
                     type: 'label',
                     xScaleID: 'x',
                     yScaleID: 'y',
-                    xValue: eventYear,
+                    xValue: xPosition,
                     yValue: 'max',
                     content: '▼',
                     backgroundColor: 'rgba(249, 115, 22, 0.95)',
@@ -1843,7 +1847,7 @@ function getDisasterEventAnnotations() {
                     },
                     yAdjust: -5
                 };
-                console.log(`Added GDACS annotation: ${annotationKey} at year ${eventYear}`);
+                console.log(`Added GDACS annotation: ${annotationKey} at ${xPosition.toFixed(2)} (${eventMonth + 1}/${eventYear})`);
             }
         });
 
@@ -1854,6 +1858,10 @@ function getDisasterEventAnnotations() {
 
             const eventDate = new Date(dateStr);
             const eventYear = eventDate.getFullYear();
+            const eventMonth = eventDate.getMonth(); // 0-11
+
+            // Calculate decimal year position (e.g., June 2018 = 2018.5)
+            const xPosition = eventYear + (eventMonth / 12);
 
             // Only show events within the year range
             if (eventYear >= minYear && eventYear <= maxYear) {
@@ -1862,7 +1870,7 @@ function getDisasterEventAnnotations() {
                     type: 'label',
                     xScaleID: 'x',
                     yScaleID: 'y',
-                    xValue: eventYear,
+                    xValue: xPosition,
                     yValue: 'max',
                     content: '▼',
                     backgroundColor: 'rgba(249, 115, 22, 0.95)',
@@ -1877,7 +1885,7 @@ function getDisasterEventAnnotations() {
                     },
                     yAdjust: -5
                 };
-                console.log(`Added EM-DAT annotation: ${annotationKey} at year ${eventYear}`);
+                console.log(`Added EM-DAT annotation: ${annotationKey} at ${xPosition.toFixed(2)} (${eventMonth + 1}/${eventYear})`);
             }
         });
     });
