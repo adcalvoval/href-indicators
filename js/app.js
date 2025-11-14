@@ -1838,19 +1838,66 @@ function getDisasterEventAnnotations() {
             // Only show events within the year range
             if (eventYear >= minYear && eventYear <= maxYear) {
                 const annotationKey = `gdacs_${iso3}_${idx}`;
+
+                // Format date for tooltip
+                const dateStr = eventDate.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric'
+                });
+
+                // Get event details
+                const eventType = event.properties.eventtype || 'Unknown';
+                const eventName = event.properties.name || eventType;
+                const severity = event.properties.severity || event.properties.alertlevel || 'N/A';
+
                 annotations[annotationKey] = {
                     type: 'label',
                     xScaleID: 'x',
                     yScaleID: 'y',
                     xValue: xPosition,
                     yValue: 'max',
-                    content: '▼',
+                    content: ['▼'],
                     color: 'rgba(249, 115, 22, 1)',
                     font: {
                         size: 20,
                         weight: 'bold'
                     },
-                    yAdjust: -5
+                    yAdjust: -5,
+                    callout: {
+                        display: true,
+                        borderColor: 'rgba(249, 115, 22, 1)',
+                        borderWidth: 1,
+                        backgroundColor: 'rgba(255, 255, 255, 0.95)',
+                        position: 'top',
+                        margin: 8
+                    },
+                    // Add tooltip-like label that appears on hover
+                    enter: function(ctx) {
+                        ctx.element.options.content = [
+                            '▼',
+                            eventType,
+                            dateStr,
+                            `Severity: ${severity}`
+                        ];
+                        ctx.element.options.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                        ctx.element.options.borderColor = 'rgba(249, 115, 22, 1)';
+                        ctx.element.options.borderWidth = 1;
+                        ctx.element.options.padding = 8;
+                        ctx.element.options.color = '#333';
+                        ctx.element.options.font.size = 12;
+                        return true;
+                    },
+                    leave: function(ctx) {
+                        ctx.element.options.content = ['▼'];
+                        ctx.element.options.backgroundColor = undefined;
+                        ctx.element.options.borderColor = undefined;
+                        ctx.element.options.borderWidth = undefined;
+                        ctx.element.options.padding = undefined;
+                        ctx.element.options.color = 'rgba(249, 115, 22, 1)';
+                        ctx.element.options.font.size = 20;
+                        return true;
+                    }
                 };
                 console.log(`Added GDACS annotation: ${annotationKey} at ${xPosition.toFixed(2)} (${eventMonth + 1}/${eventYear})`);
             }
@@ -1871,19 +1918,66 @@ function getDisasterEventAnnotations() {
             // Only show events within the year range
             if (eventYear >= minYear && eventYear <= maxYear) {
                 const annotationKey = `emdat_${iso3}_${idx}`;
+
+                // Format date for tooltip
+                const displayDate = eventDate.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric'
+                });
+
+                // Get event details
+                const eventType = event.disastertype || event.disaster_type || 'Unknown';
+                const subType = event.disastersubtype || event.disaster_subtype || '';
+                const affected = event.totalaffected || event.total_affected || 'N/A';
+
                 annotations[annotationKey] = {
                     type: 'label',
                     xScaleID: 'x',
                     yScaleID: 'y',
                     xValue: xPosition,
                     yValue: 'max',
-                    content: '▼',
+                    content: ['▼'],
                     color: 'rgba(249, 115, 22, 1)',
                     font: {
                         size: 20,
                         weight: 'bold'
                     },
-                    yAdjust: -5
+                    yAdjust: -5,
+                    callout: {
+                        display: true,
+                        borderColor: 'rgba(249, 115, 22, 1)',
+                        borderWidth: 1,
+                        backgroundColor: 'rgba(255, 255, 255, 0.95)',
+                        position: 'top',
+                        margin: 8
+                    },
+                    // Add tooltip-like label that appears on hover
+                    enter: function(ctx) {
+                        const tooltipContent = ['▼', eventType];
+                        if (subType) tooltipContent.push(subType);
+                        tooltipContent.push(displayDate);
+                        if (affected !== 'N/A') tooltipContent.push(`Affected: ${affected}`);
+
+                        ctx.element.options.content = tooltipContent;
+                        ctx.element.options.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                        ctx.element.options.borderColor = 'rgba(249, 115, 22, 1)';
+                        ctx.element.options.borderWidth = 1;
+                        ctx.element.options.padding = 8;
+                        ctx.element.options.color = '#333';
+                        ctx.element.options.font.size = 12;
+                        return true;
+                    },
+                    leave: function(ctx) {
+                        ctx.element.options.content = ['▼'];
+                        ctx.element.options.backgroundColor = undefined;
+                        ctx.element.options.borderColor = undefined;
+                        ctx.element.options.borderWidth = undefined;
+                        ctx.element.options.padding = undefined;
+                        ctx.element.options.color = 'rgba(249, 115, 22, 1)';
+                        ctx.element.options.font.size = 20;
+                        return true;
+                    }
                 };
                 console.log(`Added EM-DAT annotation: ${annotationKey} at ${xPosition.toFixed(2)} (${eventMonth + 1}/${eventYear})`);
             }
