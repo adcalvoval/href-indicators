@@ -1828,6 +1828,8 @@ function getDisasterEventAnnotations() {
                     type: 'line',
                     xMin: eventYear,
                     xMax: eventYear,
+                    yMin: 'min',
+                    yMax: 'max',
                     borderColor: 'rgba(249, 115, 22, 0.8)', // Orange
                     borderWidth: 2,
                     borderDash: [5, 5],
@@ -1864,6 +1866,8 @@ function getDisasterEventAnnotations() {
                     type: 'line',
                     xMin: eventYear,
                     xMax: eventYear,
+                    yMin: 'min',
+                    yMax: 'max',
                     borderColor: 'rgba(249, 115, 22, 0.8)', // Orange
                     borderWidth: 2,
                     borderDash: [5, 5],
