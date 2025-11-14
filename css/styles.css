@@ -768,13 +768,13 @@ footer p {
 
 .modal-content {
     background-color: white;
-    margin: 5% auto;
+    margin: 2% auto;
     padding: 0;
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    width: 90%;
-    max-width: 700px;
-    max-height: 85vh;
+    width: 95%;
+    max-width: 1000px;
+    max-height: 92vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
