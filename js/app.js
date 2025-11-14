@@ -1845,15 +1845,10 @@ function getDisasterEventAnnotations() {
                     xValue: xPosition,
                     yValue: 'max',
                     content: '▼',
-                    backgroundColor: 'rgba(249, 115, 22, 0.95)',
-                    color: 'white',
+                    color: 'rgba(249, 115, 22, 1)',
                     font: {
-                        size: 16,
+                        size: 20,
                         weight: 'bold'
-                    },
-                    padding: {
-                        x: 6,
-                        y: 4
                     },
                     yAdjust: -5
                 };
@@ -1883,15 +1878,10 @@ function getDisasterEventAnnotations() {
                     xValue: xPosition,
                     yValue: 'max',
                     content: '▼',
-                    backgroundColor: 'rgba(249, 115, 22, 0.95)',
-                    color: 'white',
+                    color: 'rgba(249, 115, 22, 1)',
                     font: {
-                        size: 16,
+                        size: 20,
                         weight: 'bold'
-                    },
-                    padding: {
-                        x: 6,
-                        y: 4
                     },
                     yAdjust: -5
                 };
