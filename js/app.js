@@ -1825,26 +1825,20 @@ function getDisasterEventAnnotations() {
             if (eventYear >= minYear && eventYear <= maxYear) {
                 const annotationKey = `gdacs_${iso3}_${idx}`;
                 annotations[annotationKey] = {
-                    type: 'line',
-                    xMin: eventYear,
-                    xMax: eventYear,
-                    yMin: 'min',
-                    yMax: 'max',
-                    borderColor: 'rgba(249, 115, 22, 0.8)', // Orange
-                    borderWidth: 2,
-                    borderDash: [5, 5],
-                    label: {
-                        display: true,
-                        content: '▲',
-                        position: 'start',
-                        backgroundColor: 'rgba(249, 115, 22, 0.9)',
-                        color: 'white',
-                        font: {
-                            size: 12,
-                            weight: 'bold'
-                        },
-                        padding: 4,
-                        yAdjust: -10
+                    type: 'label',
+                    xValue: eventYear,
+                    yValue: (ctx) => ctx.chart.scales.y.max,
+                    content: '▼',
+                    backgroundColor: 'rgba(249, 115, 22, 0.95)',
+                    color: 'white',
+                    font: {
+                        size: 14,
+                        weight: 'bold'
+                    },
+                    padding: 6,
+                    yAdjust: 8,
+                    callout: {
+                        display: false
                     }
                 };
                 console.log(`Added GDACS annotation: ${annotationKey} at year ${eventYear}`);
@@ -1863,26 +1857,20 @@ function getDisasterEventAnnotations() {
             if (eventYear >= minYear && eventYear <= maxYear) {
                 const annotationKey = `emdat_${iso3}_${idx}`;
                 annotations[annotationKey] = {
-                    type: 'line',
-                    xMin: eventYear,
-                    xMax: eventYear,
-                    yMin: 'min',
-                    yMax: 'max',
-                    borderColor: 'rgba(249, 115, 22, 0.8)', // Orange
-                    borderWidth: 2,
-                    borderDash: [5, 5],
-                    label: {
-                        display: true,
-                        content: '▲',
-                        position: 'start',
-                        backgroundColor: 'rgba(249, 115, 22, 0.9)',
-                        color: 'white',
-                        font: {
-                            size: 12,
-                            weight: 'bold'
-                        },
-                        padding: 4,
-                        yAdjust: -10
+                    type: 'label',
+                    xValue: eventYear,
+                    yValue: (ctx) => ctx.chart.scales.y.max,
+                    content: '▼',
+                    backgroundColor: 'rgba(249, 115, 22, 0.95)',
+                    color: 'white',
+                    font: {
+                        size: 14,
+                        weight: 'bold'
+                    },
+                    padding: 6,
+                    yAdjust: 8,
+                    callout: {
+                        display: false
                     }
                 };
                 console.log(`Added EM-DAT annotation: ${annotationKey} at year ${eventYear}`);
