@@ -194,6 +194,41 @@ function setupEventListeners() {
     } else {
         console.error('Close timeline button not found!');
     }
+
+    // Welcome modal event listeners
+    const infoIcon = document.getElementById('info-icon');
+    const welcomeModal = document.getElementById('welcome-modal');
+    const modalClose = document.querySelector('.modal-close');
+
+    // Show modal when info icon is clicked
+    if (infoIcon) {
+        infoIcon.addEventListener('click', function() {
+            welcomeModal.classList.add('show');
+        });
+    }
+
+    // Close modal when close button is clicked
+    if (modalClose) {
+        modalClose.addEventListener('click', function() {
+            welcomeModal.classList.remove('show');
+        });
+    }
+
+    // Close modal when clicking outside the modal content
+    if (welcomeModal) {
+        welcomeModal.addEventListener('click', function(event) {
+            if (event.target === welcomeModal) {
+                welcomeModal.classList.remove('show');
+            }
+        });
+    }
+
+    // Show welcome modal on page load
+    setTimeout(function() {
+        if (welcomeModal) {
+            welcomeModal.classList.add('show');
+        }
+    }, 500);
 }
 
 // Handle country profile selection change (enable/disable button)

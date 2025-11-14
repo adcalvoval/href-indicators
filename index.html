@@ -23,6 +23,7 @@
     <!-- Header -->
     <header>
         <h1>HREF Indicators Analysis Tool</h1>
+        <button id="info-icon" title="Information">ℹ</button>
     </header>
 
     <!-- Main Content Area -->
@@ -158,6 +159,39 @@
 
         <!-- Timeline Tooltip -->
         <div id="timeline-tooltip" class="timeline-tooltip hidden"></div>
+
+        <!-- Welcome Modal -->
+        <div id="welcome-modal" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <h2>Welcome to the HREF Indicator Analysis tool</h2>
+                <div class="modal-body">
+                    <p>This tool brings together data from WHO, IHME, GDACS, EM-DAT and IFRC for the 25 countries in focus of the H3R initiative (IFRC - HHI).</p>
+
+                    <p>To view all indicators for a specific country, select a country in the dropdown menu in the "Country Profile" box on the left handside, and click on "View Profile". This will highlight the country in question and display the most recent data for all available indicators for that country.</p>
+
+                    <p>Please note that not all countries have the same level of availability of data, so you might not see the same year for some indicators depending on the country.</p>
+
+                    <p>Clicking on "View Profile" will also display a time bar, showing the occurrence of disasters since 2018 (orange triangles) and the data of activation of DREF Operations (red circles). You can click on these icons to get more information as to the event they refer to.</p>
+
+                    <p>Within the "Indicator Analysis" box, you can choose numerous indicators based on their category.</p>
+
+                    <p>First select a Category, then an Indicator. You then have 2 options:</p>
+                    <ul>
+                        <li>you can choose a specific year, which will display the respective values for this indicator for each of the countries in scope</li>
+                        <li>you can ignore the year and click on "Show Time Trend". This will open a new window with a graph, showing the evolution of the selected indicator values along the years (from 2018 to the year of most recently available data)</li>
+                    </ul>
+
+                    <p>Within the Time Trend window, you can select one or more countries (by pressing Ctrl and clicking on the countries of interest).</p>
+
+                    <p>When you select only one country, you can display disaster events for that country by clicking on the "Show disaster events" box on the right of the country selection menu. This will display disaster events overlaid with the curve for the selected indicator.</p>
+
+                    <p>To clear your selection, click on "Clear Map", at the bottom of the "Indicator Analysis" box.</p>
+
+                    <p>For any questions on this tool, the data here displayed, its sources or any other topic, please contact Adrián Calvo-Valderrama (adrian.calvo@ifrc.org)</p>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
