@@ -1805,6 +1805,43 @@ async function loadDisasterEventsForChart() {
     await Promise.all(loadPromises);
 }
 
+// Show disaster marker tooltip
+function showDisasterTooltip(content, x, y) {
+    const tooltip = document.getElementById('disaster-marker-tooltip');
+    if (!tooltip) return;
+
+    // Build HTML content
+    let html = '';
+    if (Array.isArray(content)) {
+        content.forEach((line, index) => {
+            if (index === 0) {
+                html += `<strong>${line}</strong>`;
+            } else {
+                html += `<div>${line}</div>`;
+            }
+        });
+    } else {
+        html = content;
+    }
+
+    tooltip.innerHTML = html;
+    tooltip.classList.remove('hidden');
+
+    // Position tooltip above and centered on the marker
+    // Adjust for tooltip size after rendering
+    const tooltipRect = tooltip.getBoundingClientRect();
+    tooltip.style.left = `${x - tooltipRect.width / 2}px`;
+    tooltip.style.top = `${y - tooltipRect.height - 10}px`; // 10px above marker
+}
+
+// Hide disaster marker tooltip
+function hideDisasterTooltip() {
+    const tooltip = document.getElementById('disaster-marker-tooltip');
+    if (tooltip) {
+        tooltip.classList.add('hidden');
+    }
+}
+
 // Get disaster event annotations for Chart.js
 function getDisasterEventAnnotations() {
     const checkbox = document.getElementById('show-disasters-checkbox');
@@ -1868,8 +1905,18 @@ function getDisasterEventAnnotations() {
                     },
                     yAdjust: -5,
                     // Add click handler to show tooltip
-                    click: function() {
-                        alert(`${eventType}\n${dateStr}\nSeverity: ${severity}`);
+                    click: function(ctx) {
+                        // Get the annotation element position
+                        const chartArea = ctx.chart.chartArea;
+                        const element = ctx.element;
+
+                        // Calculate position relative to the chart canvas
+                        const canvasRect = ctx.chart.canvas.getBoundingClientRect();
+                        const tooltipX = canvasRect.left + element.x;
+                        const tooltipY = canvasRect.top + element.y;
+
+                        // Show tooltip with event info
+                        showDisasterTooltip([eventType, dateStr, `Severity: ${severity}`], tooltipX, tooltipY);
                         return true;
                     }
                 };
@@ -1925,8 +1972,18 @@ function getDisasterEventAnnotations() {
                     },
                     yAdjust: -5,
                     // Add click handler to show tooltip
-                    click: function() {
-                        alert(tooltipDataLines.join('\n'));
+                    click: function(ctx) {
+                        // Get the annotation element position
+                        const chartArea = ctx.chart.chartArea;
+                        const element = ctx.element;
+
+                        // Calculate position relative to the chart canvas
+                        const canvasRect = ctx.chart.canvas.getBoundingClientRect();
+                        const tooltipX = canvasRect.left + element.x;
+                        const tooltipY = canvasRect.top + element.y;
+
+                        // Show tooltip with event info
+                        showDisasterTooltip(tooltipDataLines, tooltipX, tooltipY);
                         return true;
                     }
                 };

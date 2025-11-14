@@ -696,3 +696,31 @@ footer p {
     color: #8B0000;
     font-size: 14px;
 }
+
+/* Disaster Marker Tooltip */
+.disaster-tooltip {
+    position: absolute;
+    background: white;
+    border: 2px solid rgba(249, 115, 22, 1);
+    border-radius: 6px;
+    padding: 10px 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+    pointer-events: none;
+    min-width: 180px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.disaster-tooltip.hidden {
+    display: none;
+}
+
+.disaster-tooltip strong {
+    display: block;
+    margin-bottom: 5px;
+    color: rgba(249, 115, 22, 1);
+    font-size: 14px;
+    font-weight: 600;
+}
